@@ -1,4 +1,4 @@
-﻿$global:baseUrl = "https://talonvoice.com/"
+﻿$global:baseUrl = "https://talon.wiki"
 $global:hrefList = @()
 $global:infoList = @()
 $global:doNotFollowList = @("www.youtube.com", "www.patreon.com", "twitter.com", "talonvoice.com/dl/latest", 
@@ -13,6 +13,9 @@ $global:doNotFollowList = @("www.youtube.com", "www.patreon.com", "twitter.com",
             $result = $href
         } elseif ($href.StartsWith("/")) {
             $result = "$baseUrl$href"
+        }
+        if ($null -ne $result -and $result.EndsWith("/")) {
+            $result = $result.Substring(0, $result.Length - 1)
         }
     }
     return $result
@@ -66,7 +69,9 @@ $global:doNotFollowList = @("www.youtube.com", "www.patreon.com", "twitter.com",
         $global:infoList += "$parentUrl`t$url`t$domain`tIgnore"
     }
 
- }
+}
 
-AddLinks "" $baseUrl 3
-$global:infoList | Set-Clipboard
+$global:infoList += "ParentUrl`tUrl`tDomain`tInfo"
+AddLinks "" $baseUrl 6
+$sorted = $global:infoList | ConvertFrom-Csv -Delimiter "`t" | Select-Object -Property Domain,Url,ParentUrl,Info | Sort-Object -Property Domain,Url
+$sorted | ConvertTo-Csv -NoTypeInformation -Delimiter "`t" | Set-Clipboard
