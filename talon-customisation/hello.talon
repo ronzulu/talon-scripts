@@ -9,5 +9,6 @@ c if: "if ("
 hello man: "hammer"
 c break: "break"
 c break semi: "break;"
+c name space: "namespace "
 
 
