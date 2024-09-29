@@ -53,11 +53,26 @@ namespace ConvertDict
                 word = word.Substring(1, word.Length - 2).Replace(".", "");
                 string[] substringList = word.ToLower().Split(" ");
                 if (substringList.All(i => i.Length == 1))
-                    result = String.Join(" ", substringList);
+                    result = String.Join(" ", substringList.Select(i => ConvertCharToTalon(i[0])));
 
             }
             return result;
         }
+
+        private static string ConvertCharToTalon(char ch) => ch switch
+        {
+            '0' => "zero",
+            '1' => "one",
+            '2' => "two",
+            '3' => "three",
+            '4' => "four",
+            '5' => "five",
+            '6' => "six",
+            '7' => "seven",
+            '8' => "eight",
+            '9' => "nine",
+            _ => ch.ToString()
+        };
 
         /* 
          * 
