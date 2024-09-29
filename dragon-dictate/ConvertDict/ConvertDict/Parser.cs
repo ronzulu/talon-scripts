@@ -31,12 +31,30 @@ namespace ConvertDict
             if (macro.Count == 4)
             {
                 if ((macro[0] == "add-word") &&
-                (macro[1].Length > 0) && 
+                (macro[1].Length > 2) && 
                 (macro[2] == "/keys") &&
                 (macro[3].Length > 0))
                 {
-                    result = new ParseEntity(macro[1], macro[3]);
+                    string? rule = ConvertDragonWordToTalonRule(macro[1]);
+                    if (rule != null)
+                    {
+                        result = new ParseEntity(rule, macro[3]);
+                    }
                 }
+            }
+            return result;
+        }
+
+        private static string? ConvertDragonWordToTalonRule(string word)
+        {
+            string? result = null;
+            if (word.StartsWith('[') && word.EndsWith(']'))
+            {
+                word = word.Substring(1, word.Length - 2).Replace(".", "");
+                string[] substringList = word.ToLower().Split(" ");
+                if (substringList.All(i => i.Length == 1))
+                    result = String.Join(" ", substringList);
+
             }
             return result;
         }
@@ -127,7 +145,7 @@ namespace ConvertDict
 
         public override string ToString()
         {
-            return $"{Word}: {Keys}";
+            return $"{Word}: \"{Keys}\"";
         }
     }
 }
