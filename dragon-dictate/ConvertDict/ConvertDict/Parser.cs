@@ -52,11 +52,15 @@ namespace ConvertDict
             {
                 word = word.Substring(1, word.Length - 2).Replace(".", "");
                 string[] substringList = word.ToLower().Split(" ");
-                if (substringList.All(i => i.Length == 1))
-                    result = String.Join(" ", substringList.Select(i => ConvertCharToTalon(i[0])));
+                result = String.Join(" ", substringList.Select(i => ConvertStringToTalon(i)));
 
             }
             return result;
+        }
+
+        private static string ConvertStringToTalon(string str)
+        {
+            return (str.Length == 1) ? ConvertCharToTalon(str[0]) : str;
         }
 
         private static string ConvertCharToTalon(char ch) => ch switch
