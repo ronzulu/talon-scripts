@@ -10,6 +10,24 @@ namespace ConvertDict
     {
         public Parser() { }
 
+        public List<string> GetAttributeList(string[] lines)
+        {
+            HashSet<string> set = new HashSet<string>();
+            List<List<string>> macroList = MacroParser(lines);
+            foreach (var macro in macroList)
+            {
+                foreach (var str in macro)
+                {
+                    if (str.StartsWith("/"))
+                        set.Add(str);
+                }
+            }
+            var result = from s in set
+                orderby s
+                select s;
+            return result.ToList();
+        }
+
         public List<ParseEntity> Parse(string[] lines)
         {
             List<ParseEntity> result = new List<ParseEntity>();
@@ -28,17 +46,19 @@ namespace ConvertDict
         private ParseEntity? ParseMacro(List<string> macro)
         {
             ParseEntity? result = null;
-            if (macro.Count == 4)
+            if ((macro.Count == 4) || (macro.Count == 5))
             {
                 if ((macro[0] == "add-word") &&
                 (macro[1].Length > 2) && 
                 (macro[2] == "/keys") &&
-                (macro[3].Length > 0))
+                ((macro[3].Length > 3) && macro[3].StartsWith('"') && macro[3].EndsWith('"')) && 
+                ((macro.Count == 4) || ((macro.Count == 5) && (macro[4] == @"/nsc"))))
                 {
                     string? rule = ConvertDragonWordToTalonRule(macro[1]);
                     if (rule != null)
                     {
-                        result = new ParseEntity(rule, macro[3]);
+                        string str = macro[3].Substring(1, macro[3].Length - 2);
+                        result = new ParseEntity(rule, str);
                     }
                 }
             }
@@ -130,7 +150,10 @@ namespace ConvertDict
                 else if (c == '\\')
                     midEscape = true;
                 else if (c == '"')
+                {
+                    sb.Append(c);
                     midQuote = !midQuote;
+                }
                 else if (!midQuote && Char.IsWhiteSpace(c))
                 {
                     if (sb.Length > 0)
