@@ -19,3 +19,4 @@ zed four:
 zed four s:
     user.rz_set_format("Z4S")
 
+test it now: user.rz_test()

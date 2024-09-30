@@ -63,6 +63,21 @@ class ZModeActions:
         if global_next_pre_phrase:
             actions.insert(global_next_pre_phrase)
 
-        actions.user.insert_formatted(text, global_next_format)
+        str = ZModeActions.convert_words_to_symbols(text)
+        actions.user.insert_formatted(str, global_next_format)
         global_next_format = global_subsequent_format
         global_next_pre_phrase = global_subsequent_pre_phrase
+
+    @staticmethod
+    def convert_words_to_symbols(text: str):
+        "Hello"
+        words = text.split(" ")
+        for i, word in enumerate(words):
+            if word.lower() == "dot":
+                words[i] = "."
+
+        return " ".join(words)
+        
+    def rz_test():
+        "Inserts the supplied text, formatted as per last call to rz_set_format"
+        actions.user.insert_formatted("System . Elections . Generic", global_next_format)
