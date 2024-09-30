@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace ConvertDict
 {
-    internal class Parser
+    public class Parser
     {
         public Parser() { }
 
         public List<string> GetAttributeList(string[] lines)
         {
             HashSet<string> set = new HashSet<string>();
-            List<List<string>> macroList = MacroParser(lines);
+            List<Macro> macroList = MacroParser(lines);
             foreach (var macro in macroList)
             {
-                foreach (var str in macro)
-                {
-                    if (str.StartsWith("/"))
-                        set.Add(str);
-                }
+                set.Union(macro.GetAttributeList());
             }
             var result = from s in set
                 orderby s
@@ -31,72 +27,21 @@ namespace ConvertDict
         public List<ParseEntity> Parse(string[] lines)
         {
             List<ParseEntity> result = new List<ParseEntity>();
-            List<List<string>> macroList = MacroParser(lines);
+            List<Macro> macroList = MacroParser(lines);
             foreach (var macro in macroList)
             {
-                ParseEntity? entity = ParseMacro(macro);
+                ParseEntity? entity = macro.Parse();
                 if (entity != null)
                 {
                     result.Add(entity);
                 }
-            }
-            return result;
-        }
-
-        private ParseEntity? ParseMacro(List<string> macro)
-        {
-            ParseEntity? result = null;
-            if ((macro.Count == 4) || (macro.Count == 5))
-            {
-                if ((macro[0] == "add-word") &&
-                (macro[1].Length > 2) && 
-                (macro[2] == "/keys") &&
-                ((macro[3].Length > 3) && macro[3].StartsWith('"') && macro[3].EndsWith('"')) && 
-                ((macro.Count == 4) || ((macro.Count == 5) && (macro[4] == @"/nsc"))))
+                else
                 {
-                    string? rule = ConvertDragonWordToTalonRule(macro[1]);
-                    if (rule != null)
-                    {
-                        string str = macro[3].Substring(1, macro[3].Length - 2);
-                        result = new ParseEntity(rule, str);
-                    }
+                    int i = 0; 
                 }
             }
             return result;
         }
-
-        private static string? ConvertDragonWordToTalonRule(string word)
-        {
-            string? result = null;
-            if (word.StartsWith('[') && word.EndsWith(']'))
-            {
-                word = word.Substring(1, word.Length - 2).Replace(".", "");
-                string[] substringList = word.ToLower().Split(" ");
-                result = String.Join(" ", substringList.Select(i => ConvertStringToTalon(i)));
-
-            }
-            return result;
-        }
-
-        private static string ConvertStringToTalon(string str)
-        {
-            return (str.Length == 1) ? ConvertCharToTalon(str[0]) : str;
-        }
-
-        private static string ConvertCharToTalon(char ch) => ch switch
-        {
-            '0' => "zero",
-            '1' => "one",
-            '2' => "two",
-            '3' => "three",
-            '4' => "four",
-            '5' => "five",
-            '6' => "six",
-            '7' => "seven",
-            '8' => "eight",
-            '9' => "nine",
-            _ => ch.ToString()
-        };
 
         /* 
          * 
@@ -106,14 +51,16 @@ namespace ConvertDict
             add-word "[Power User 1]" /keys PowerUser
 
          */
-        public List<List<string>> MacroParser(string[] lines)
+        public List<Macro> MacroParser(string[] lines)
         {
-            List<List<string>> result = new List<List<string>>();
+            List<Macro> result = new List<Macro>();
             List<string> stringList = new List<string>();
             bool isMidQuote = false;
             for (int i = 0; i < lines.Length; i++)
             {
                 string line = lines[i];
+                if (line.ToUpper().Contains("[D. E. C. 22]"))
+                    isMidQuote = isMidQuote;
                 (List<string> singleStringList, bool nowMidQuote) = ParseSingleLine(line);
                 if (isMidQuote)
                 {
@@ -125,7 +72,7 @@ namespace ConvertDict
                 }
                 if (!nowMidQuote)
                 {
-                    result.Add(new List<string>(stringList));
+                    result.Add(new Macro(new List<string>(stringList)));
                     stringList.Clear();
                 }
                 isMidQuote = nowMidQuote;

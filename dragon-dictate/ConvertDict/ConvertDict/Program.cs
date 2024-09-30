@@ -10,13 +10,14 @@
 
             string[] inputLines = File.ReadAllText(inputFilename).Split("\r\n");
             Parser parser = new Parser();
-            List<string> attributeList = parser.GetAttributeList(inputLines);
-            string str = String.Join("\r\n", attributeList);
-            /* List<ParseEntity> parseEntityList = parser.Parse(inputLines);
+            /* List<string> attributeList = parser.GetAttributeList(inputLines);
+            string str = String.Join("\r\n", attributeList); */
+
+            List<ParseEntity> parseEntityList = parser.Parse(inputLines);
             string str = String.Join("\r\n", parseEntityList.Select(i => i.ToString()));
             File.WriteAllText(tempFilename, str);
 
-            File.Copy(tempFilename, outputFilename, overwrite: true); */
+            File.Copy(tempFilename, outputFilename, overwrite: true);
         }
     }
 }
