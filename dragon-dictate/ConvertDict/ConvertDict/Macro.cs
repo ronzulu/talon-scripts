@@ -40,7 +40,8 @@ namespace ConvertDict
                     if (rule != null)
                     {
                         // string str = strList[3].Substring(1, strList[3].Length - 2);
-                        result = new ParseEntity(rule, Util.RemoveSurroundingQuotes(strList[3]));
+                        KeysConverter.Convert(strList[3], out string talonKeys, out bool hasVirtualKeys);
+                        result = new ParseEntity(rule, talonKeys, hasVirtualKeys);
                     }
                 }
             }

@@ -9,10 +9,12 @@ namespace ConvertDict
 {
     public class KeysConverter
     {
-        public static string Convert(string ddKeys)
+        public static void Convert(string ddKeys, out string talonKeys, out bool hasVirtualKeys)
         {
+            ddKeys = Util.RemoveSurroundingQuotes(ddKeys);
             StringBuilder sb = new StringBuilder();
             int i = 0;
+            hasVirtualKeys = false;
             while (i < ddKeys.Length)
             {
                 char c = ddKeys[i];
@@ -26,6 +28,7 @@ namespace ConvertDict
                         int length = end - i + 1;
                         string virtualKey = ddKeys.Substring(i, length);
                         sb.Append(ConvertSingleKey(virtualKey));
+                        hasVirtualKeys = true;
                         i = end;
                     }
                 }
@@ -34,7 +37,7 @@ namespace ConvertDict
 
                 i++;
             }
-            return sb.ToString();
+            talonKeys = sb.ToString();
         }
 
         public static string ConvertSingleKey(string virtualKey)

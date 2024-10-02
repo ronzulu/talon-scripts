@@ -14,7 +14,7 @@
             string str = String.Join("\r\n", attributeList); */
 
             List<ParseEntity> parseEntityList = parser.Parse(inputLines);
-            string str = String.Join("\r\n", parseEntityList.Select(i => i.ToString()));
+            string str = String.Join("\r\n", parseEntityList.Select(i => i.TalonFormat()));
             File.WriteAllText(tempFilename, str);
 
             File.Copy(tempFilename, outputFilename, overwrite: true);

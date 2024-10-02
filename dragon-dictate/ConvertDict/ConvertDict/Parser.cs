@@ -59,8 +59,6 @@ namespace ConvertDict
             for (int i = 0; i < lines.Length; i++)
             {
                 string line = lines[i];
-                if (line.ToUpper().Contains("[D. E. C. 22]"))
-                    isMidQuote = isMidQuote;
                 (List<string> singleStringList, bool nowMidQuote) = ParseSingleLine(line);
                 if (isMidQuote)
                 {
@@ -125,16 +123,32 @@ namespace ConvertDict
     {
         public string Word { get; set; }
         public string Keys { get; set; }
+        public bool HasVirtualKeys { get; set; }
 
-        public ParseEntity(string word, string keys)
+        public ParseEntity(string word, string keys, bool hasVirtualKeys)
         {
             Word = word;
             Keys = keys;
+            HasVirtualKeys = hasVirtualKeys;
         }
 
         public override string ToString()
         {
             return $"{Word}: \"{Keys}\"";
+        }
+
+        public string TalonFormat()
+        {
+            string result = $"{Word}: ";
+            if (HasVirtualKeys)
+            {
+                // Make braces double, for python
+                string keys = Keys.Replace("{", "{{").Replace("}", "}}");
+                result += $"user.rz_insert_key_sequence(\"{keys}\")";
+            }
+            else
+                result += $"\"{Keys}\"";
+            return result;
         }
     }
 }

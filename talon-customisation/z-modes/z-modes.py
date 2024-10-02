@@ -1,3 +1,4 @@
+import re
 from typing import Dict
 from talon import Module, actions
 
@@ -77,7 +78,30 @@ class ZModeActions:
                 words[i] = "."
 
         return " ".join(words)
-        
-    def rz_test():
+    
+    def rz_insert_key_sequence(text: str):
         "Inserts the supplied text, formatted as per last call to rz_set_format"
-        actions.user.insert_formatted("System . Elections . Generic", global_next_format)
+        words = ZModeActions.extract_substrings(text)
+        for w in words:
+            word = str(w)
+            if word.startswith("{") and word.endswith("}"):
+                s = word[1:-1]
+                actions.key(s)
+            else:
+                actions.insert(word)
+
+        # actions.insert("hello:")
+        # actions.insert("|".join(str))
+        #         actions.user.insert_formatted("count: {str}")
+#         actions.user.insert_formatted("|".join(str), global_next_format)
+        
+    @staticmethod
+    def extract_substrings(s: str):
+        "Hello"
+        # Regular expression to match sequences without '{' and sequences within '{...}'
+        pattern = re.compile(r'[^{]+|\{[^}]*\}')
+        matches = pattern.findall(s)
+        return matches
+
+
+

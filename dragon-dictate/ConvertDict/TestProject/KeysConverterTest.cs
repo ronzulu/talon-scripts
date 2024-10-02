@@ -44,19 +44,26 @@ namespace TestProject
         [Test]
         public void Test100()
         {
-            Test("git branch -vv{Enter}", "git branch -vv{enter}");
+            Test("git branch -vv{Enter}", "git branch -vv{enter}", true);
         }
 
         [Test]
         public void Test101()
         {
-            Test("{Ctrl+Shift+Home}git branch -vv{Enter}", "{ctrl-shift-home}git branch -vv{enter}");
+            Test("{Ctrl+Shift+Home}git branch -vv{Enter}", "{ctrl-shift-home}git branch -vv{enter}", true);
         }
 
-        private void Test(string ddKeys, string expectedTalonKeys)
+        [Test]
+        public void Test102()
         {
-            string actual = KeysConverter.Convert(ddKeys);
+            Test("git branch -v", "git branch -v", false);
+        }
+
+        private void Test(string ddKeys, string expectedTalonKeys, bool expectedHasVirtualKeys)
+        {
+            KeysConverter.Convert(ddKeys, out string actual, out bool hasVirtualKeys);
             Assert.That(actual, Is.EqualTo(expectedTalonKeys));
+            Assert.That(hasVirtualKeys, Is.EqualTo(expectedHasVirtualKeys));
         }
 
         private void TestSingle(string ddKeys, string expectedTalonKeys)
