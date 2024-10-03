@@ -28,7 +28,15 @@ namespace TestProject
         {
             TestSingle($"add-word {q}[Active Directory]{q} /keys {q}Active Directory{q}", "active directory", "Active Directory");
         }
-        
+
+        [Test]
+        public void Test4()
+        {
+            string input = @"add-word ""[C. New Block]"" /keys {{Enter}{Enter}}{Up}{End}{Tab} /nsc";
+
+            TestSingle(input, "c new block", "{left-brace}{enter}{enter}}{up}{end}{tab}");
+        }
+
         [Test]
         public void Test100()
         {

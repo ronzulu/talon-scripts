@@ -64,7 +64,7 @@ class ZModeActions:
         if global_next_pre_phrase:
             actions.insert(global_next_pre_phrase)
 
-        str = ZModeActions.convert_words_to_symbols(text)
+        str = actions.user.convert_words_to_symbols(text)
         actions.user.insert_formatted(str, global_next_format)
         global_next_format = global_subsequent_format
         global_next_pre_phrase = global_subsequent_pre_phrase
@@ -81,12 +81,14 @@ class ZModeActions:
     
     def rz_insert_key_sequence(text: str):
         "Inserts the supplied text, formatted as per last call to rz_set_format"
-        words = ZModeActions.extract_substrings(text)
+        print(f"rz_insert_key_sequence: {text}")
+        words = actions.user.extract_substrings(text)
         for w in words:
             word = str(w)
+            print(f"word: {word}")
             if word.startswith("{") and word.endswith("}"):
                 s = word[1:-1]
-                ZModeActions.handle_command(s)
+                actions.user.handle_command(s)
             else:
                 actions.insert(word)
 
@@ -99,9 +101,13 @@ class ZModeActions:
     def handle_command(s: str):
         "Hello"
         if s.startswith("Z"):
-            ZModeActions.rz_set_format(s)
+            actions.user.rz_set_format(s)
         elif s.startswith("wait:"):
             actions.sleep("{s[5:]}ms")
+        elif s == "left-brace":
+            actions.insert('{')
+        elif s == "right-brace":
+            actions.insert('}')
         else:
             actions.key(s)
        
@@ -109,7 +115,7 @@ class ZModeActions:
     def extract_substrings(s: str):
         "Hello"
         # Regular expression to match sequences without '{' and sequences within '{...}'
-        pattern = re.compile(r'[^{]+|\{[^}]*\}')
+        pattern = re.compile(r'\{?[^{]+|\{[^}]*\}')
         matches = pattern.findall(s)
         return matches
 

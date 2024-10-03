@@ -20,20 +20,28 @@ namespace ConvertDict
                 char c = ddKeys[i];
                 if (c == '{')
                 {
-                    int end = ddKeys.IndexOf('}', i);
-                    if (end == -1)
-                        sb.Append(c);
+                    int pos = ddKeys.IndexOf('{', i + 1);
+                    int end = ddKeys.IndexOf('}', i + 1);
+                    if ((pos != -1) && (pos < end))
+                    {
+                        sb.Append("{left-brace}");
+                    }
                     else
                     {
-                        int length = end - i + 1;
-                        string virtualKey = ddKeys.Substring(i, length);
-                        sb.Append(ConvertSingleKey(virtualKey));
-                        hasVirtualKeys = true;
-                        i = end;
+                        if (end == -1)
+                            sb.Append(c);
+                        else
+                        {
+                            int length = end - i + 1;
+                            string virtualKey = ddKeys.Substring(i, length);
+                            sb.Append(ConvertSingleKey(virtualKey));
+                            hasVirtualKeys = true;
+                            i = end;
+                        }
                     }
                 }
-                else
-                    sb.Append(c);
+                else if (c == '}')
+                    sb.Append("{right-brace}");
 
                 i++;
             }
