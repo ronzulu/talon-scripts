@@ -86,7 +86,7 @@ class ZModeActions:
             word = str(w)
             if word.startswith("{") and word.endswith("}"):
                 s = word[1:-1]
-                actions.key(s)
+                ZModeActions.handle_command(s)
             else:
                 actions.insert(word)
 
@@ -95,6 +95,16 @@ class ZModeActions:
         #         actions.user.insert_formatted("count: {str}")
 #         actions.user.insert_formatted("|".join(str), global_next_format)
         
+    @staticmethod
+    def handle_command(s: str):
+        "Hello"
+        if s.startswith("Z"):
+            ZModeActions.rz_set_format(s)
+        elif s.startswith("wait:"):
+            actions.sleep("{s[5:]}ms")
+        else:
+            actions.key(s)
+       
     @staticmethod
     def extract_substrings(s: str):
         "Hello"
