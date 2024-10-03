@@ -10,8 +10,6 @@ namespace TestProject
 {
     public class KeysConverterTest
     {
-        private static char q = '"';
-
         [SetUp]
         public void Setup()
         {

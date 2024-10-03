@@ -32,16 +32,31 @@ namespace ConvertDict
             if (strList.Count >= 4)
             {
                 if ((strList[0] == "add-word") &&
-                Util.IsSurroundedByQuotes(strList[1]) &&
-                (strList[2] == "/keys") &&
-                (strList[3].Length > 0))
+                    (strList[1].Length > 0) &&
+                    (strList[3].Length > 0))
                 {
                     string? rule = WordConverter.ConvertDragonWordToTalonRule(strList[1]);
                     if (rule != null)
                     {
-                        // string str = strList[3].Substring(1, strList[3].Length - 2);
-                        KeysConverter.Convert(strList[3], out string talonKeys, out bool hasVirtualKeys);
-                        result = new ParseEntity(rule, talonKeys, hasVirtualKeys);
+                        switch (strList[2]) 
+                        {
+                            case "/keys":
+                                KeysConverter.Convert(strList[3], out string talonKeys, out bool hasVirtualKeys);
+                                result = new ParseEntity(rule, talonKeys, hasVirtualKeys);
+                                break;
+
+                            case "/script":
+                                {
+                                    int idx = 3;
+                                    talonKeys = ScriptConverter.Convert(strList, ref idx);
+                                    result = new ParseEntity(rule, talonKeys, false);
+                                    result.IsScript = true;
+                                    break;
+                                }
+
+                            default:
+                                break;
+                        }
                     }
                 }
             }

@@ -8,6 +8,8 @@ namespace ConvertDict
 {
     public class Parser
     {
+        private bool midScript = false;
+
         public Parser() { }
 
         public List<string> GetAttributeList(string[] lines)
@@ -55,33 +57,35 @@ namespace ConvertDict
         {
             List<Macro> result = new List<Macro>();
             List<string> stringList = new List<string>();
-            bool isMidQuote = false;
+            int quoteDepth = 0;
+            midScript = false;
             for (int i = 0; i < lines.Length; i++)
             {
                 string line = lines[i];
-                (List<string> singleStringList, bool nowMidQuote) = ParseSingleLine(line);
-                if (isMidQuote)
+                int newQuoteDepth = quoteDepth;
+                ParseSingleLine(line, ref newQuoteDepth, out List<string> singleStringList);
+                if (quoteDepth > 0)
                 {
+                    stringList.Add("");
                     stringList.AddRange(singleStringList);
                 }
                 else
                 {
                     stringList = singleStringList;
                 }
-                if (!nowMidQuote)
+                if (newQuoteDepth == 0)
                 {
                     result.Add(new Macro(new List<string>(stringList)));
                     stringList.Clear();
                 }
-                isMidQuote = nowMidQuote;
+                quoteDepth = newQuoteDepth;
             }
             return result;
         }
 
-        private (List<string> singleStringList, bool midQuote) ParseSingleLine(string line)
+        private void ParseSingleLine(string line, ref int quoteDepth, out List<string> singleStringList)
         {
             List<string> result = new List<string>();
-            bool midQuote = false;
             bool midEscape = false;
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < line.Length; i++)
@@ -91,19 +95,25 @@ namespace ConvertDict
                 {
                     sb.Append(c);
                     midEscape = false;
+                    if (c == '"')
+                        quoteDepth = (quoteDepth == 2) ? 1 : (quoteDepth + 1);
                 }
                 else if (c == '\\')
                     midEscape = true;
                 else if (c == '"')
                 {
-                    sb.Append(c);
-                    midQuote = !midQuote;
+                    quoteDepth = (quoteDepth == 0) ? 1 : 0;
+                    if (quoteDepth == 0)
+                        midScript = false;
                 }
-                else if (!midQuote && Char.IsWhiteSpace(c))
+                else if (((quoteDepth == 0) || ((quoteDepth == 1) && midScript)) && 
+                    Char.IsWhiteSpace(c))
                 {
                     if (sb.Length > 0)
                     {
                         result.Add(sb.ToString());
+                        if (sb.ToString().ToLower() == "/script")
+                            midScript = true;
                         sb = new StringBuilder();
                     }
                 }
@@ -115,7 +125,7 @@ namespace ConvertDict
             if (sb.Length > 0)
                 result.Add(sb.ToString());
 
-            return (result, midQuote);
+            singleStringList = result;
         }
     }
 
@@ -124,6 +134,7 @@ namespace ConvertDict
         public string Word { get; set; }
         public string Keys { get; set; }
         public bool HasVirtualKeys { get; set; }
+        public bool IsScript { get; set; }
 
         public ParseEntity(string word, string keys, bool hasVirtualKeys)
         {
@@ -140,7 +151,13 @@ namespace ConvertDict
         public string TalonFormat()
         {
             string result = $"{Word}: ";
-            if (HasVirtualKeys)
+            if (IsScript)
+            {
+                // Make braces double, for python
+                string keys = Keys.Replace("{", "{{").Replace("}", "}}");
+                result += $"user.rz_insert_key_sequence(\"{keys}\")";
+            }
+            else if (HasVirtualKeys)
             {
                 // Make braces double, for python
                 string keys = Keys.Replace("{", "{{").Replace("}", "}}");

@@ -12,9 +12,9 @@ namespace ConvertDict
         public static string? ConvertDragonWordToTalonRule(string word)
         {
             string? result = null;
-            if (word.StartsWith("\"[") && word.EndsWith("]\""))
+            if (word.StartsWith("[") && word.EndsWith("]"))
             {
-                word = word.Substring(2, word.Length - 4).Replace(".", "");
+                word = word.Substring(1, word.Length - 2).Replace(".", "");
                 string[] substringList = word.ToLower().Split(" ");
                 result = String.Join(" ", substringList.Select(i => ConvertStringToTalon(i)));
 

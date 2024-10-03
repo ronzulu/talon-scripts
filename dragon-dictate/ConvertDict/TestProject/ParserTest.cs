@@ -2,7 +2,7 @@ using ConvertDict;
 
 namespace TestProject
 {
-    public class MacroTest
+    public class ParserTest
     {
         private static char q = '"';
 
@@ -27,6 +27,14 @@ namespace TestProject
         public void Test3()
         {
             TestSingle($"add-word {q}[Active Directory]{q} /keys {q}Active Directory{q}", "active directory", "Active Directory");
+        }
+        
+        [Test]
+        public void Test100()
+        {
+            string input = @"add-word ""[B. Plus L.]"" /script ""SendKeys \"" + \""
+CapitalizeNext 2"" /nsc";
+            TestSingle(input, "b plus l", " + {Z1L}");
         }
 
         private void TestSingle(string input, string expectedWord, string expectedKeys) 

@@ -533,6 +533,8 @@ at g mail: "@gmail.com"
 at giga: "@giga.net.au"
 at hear here gps: "@hearheregps"
 at heartbeat: "@heartbeat.com.au"
+at if l: user.rz_insert_key_sequence("@if ({{Z1L}}")
+at isaac: "@Isaac"
 at left brace: "@{"
 at left right left: user.rz_insert_key_sequence("@(){{left}}")
 at odhette: "@Odhette"
@@ -540,6 +542,8 @@ at papa: "@p"
 at quote: "@""
 at r e f equals: user.rz_insert_key_sequence("@ref=""{{left}}")
 at ronen: "@Ronen"
+at sign l: user.rz_insert_key_sequence("@{{heardword:"[Z. 1 L.]"}}")
+at sign left brace: "@{"
 at sign left p: "@("
 at sign paste: user.rz_insert_key_sequence("@{{ctrl-v}}")
 at smart silicon: "@smartsilicon.com.au"
@@ -582,6 +586,8 @@ b b c : "BBC"
 b b colon s: "BB: "
 b b discussions: "BB disc"
 b b discussions: "BB discussions"
+b bar bar l: user.rz_insert_key_sequence(" || {{Z1L}}")
+b bar bar: " || "
 b bar clip: " | clip"
 b bar equals: " |= "
 b bar: " | "
@@ -591,17 +597,30 @@ b c e : "BCE"
 b call: "Call "
 b cancel: "cancel"
 b case: "Case "
+b colon l: user.rz_insert_key_sequence(" : {{Z1L}}")
+b colon: " : "
+b comma six: user.rz_insert_key_sequence(", {{heardword:"[Z. 6]"}}")
+b comma dollar: ", $"
+b comma equals to paste: user.rz_insert_key_sequence(", Is.EqualTo({{wait:200}}{{Ctrl+v}}{{wait:200}})")
+b comma l: user.rz_insert_key_sequence(", {{Z1L}}")
+b comma: user.rz_insert_key_sequence(", {{heardword:"[Z. 1]"}}")
+b dim l: user.rz_insert_key_sequence("Dim {{Z1L}}")
+b dim: "Dim "
 b e l e l cap i: "belelI"
 b e l e l i: "beleli"
 b e r t : "BERT"
 b e r: "ber"
 b echo: "e"
 b else if: "Else If "
+b equals l: user.rz_insert_key_sequence(" = {{Z1L}}")
+b equals p: " = p"
 b equals: " = "
 b f six: "BF"
 b false: "FALSE"
 b foxtrot: "f"
 b from: " FROM "
+b g enter: user.rz_insert_key_sequence("{{Enter}}{{heardword:"[Z. 2]"}}")
+b g g g: user.rz_insert_key_sequence("gg{{enter}}")
 b g g l: user.rz_insert_key_sequence("gl{{enter}}")
 b g n r: user.rz_insert_key_sequence("nr{{enter}}")
 b g name: "mahboos"
@@ -609,6 +628,8 @@ b g smile: ":-)"
 b golf: "g"
 b goto: "Goto "
 b greater than equal: " >= "
+b greater than l: user.rz_insert_key_sequence(" > {{Z1L}}")
+b greater than: " > "
 b h p  coal: "BHP Coal"
 b h p : "BHP"
 b hat: " ^ "
@@ -617,6 +638,8 @@ b i six: "BI"
 b i d a l: "BiDal"
 b i n: "bin"
 b i t: "bit"
+b if l: user.rz_insert_key_sequence("If ({{Z1L}}")
+b if not: "If (Not "
 b if: "If ("
 b imports: "Imports "
 b in: " In "
@@ -631,22 +654,34 @@ b l u m: "Blum"
 b left shift: " << "
 b less than equal: " <= "
 b less than equals: user.rz_insert_key_sequence("{{space}}<={{space}}")
+b less than l: user.rz_insert_key_sequence(" < {{Z1L}}")
+b less than: " < "
 b loop: "Loop "
+b minus l: user.rz_insert_key_sequence(" - {{Z1L}}")
+b minus: " - "
 b n: "n"
 b name space: "Namespace "
 b new: "New "
 b next: "Next"
 b not equal: " <> "
+b not equals l: user.rz_insert_key_sequence(" <> {{Z1L}}")
+b not equals: " <> "
+b not l: user.rz_insert_key_sequence("Not {{Z1L}}")
+b not: "Not "
 b o m: "bom"
 b o t o three: "boto3"
 b o x: "box"
 b or: " OR "
 b papa: "p"
 b percent: " % "
+b plus l: user.rz_insert_key_sequence(" + {{Z1L}}")
+b plus: " + "
 b property: "Property "
 b quote: " ""
 b r i t: "brit"
 b r paren: " )"
+b return l: user.rz_insert_key_sequence("Return {{Z1L}}")
+b return s: "Return "
 b right shift: " >> "
 b s b : "BSB"
 b s p six: "BSP"
@@ -655,6 +690,10 @@ b s s: "bss"
 b semi: "; "
 b set: "Set "
 b shared: "Shared "
+b slash l: user.rz_insert_key_sequence(" / {{Z1L}}")
+b slash: " / "
+b star l: user.rz_insert_key_sequence(" * {{Z1L}}")
+b star: " * "
 b sub: "Sub "
 b t dash: "BT-"
 b t n dash: "btn-"
@@ -711,6 +750,8 @@ back t a u: "\tau"
 back tango: "\t"
 back therefore: "\therefore"
 back theta one: "\theta_1"
+back tick paste tick: user.rz_insert_key_sequence("`{{wait:200}}{{Ctrl+v}}{{wait:200}}`")
+back tick: "`"
 back times: "\times"
 back v e c: "\vec "
 backslash delta: "\d"
@@ -729,6 +770,12 @@ base under parcel six: "BASE_PARCEL"
 bash he: "Bashi"
 bash space: "bash "
 beagle bone: "BeagleBone"
+begin capitalize: user.rz_insert_key_sequence("")
+begin document: user.rz_insert_key_sequence("{{Z1}}")
+begin lowercase: user.rz_insert_key_sequence("")
+begin no space: user.rz_insert_key_sequence("")
+begin title: user.rz_insert_key_sequence("{{Z1}}")
+begin uppercase: user.rz_insert_key_sequence("")
 belly b dollar 45: "bellyB$45"
 belly b dollar 45: "bellyB$45"
 belly b 44: "bellyb44"
@@ -744,12 +791,15 @@ binyan dash: "binyan-"
 black list: "blacklist"
 blacks land: "Blaxland"
 blazer o: "Blazor"
+bless you: user.rz_insert_key_sequence("")
 block h: "Bloch"
 block under street address six: "BLOCK_STREET_ADDRESS"
 blu-ray five: "bluray"
 blue tack: "Blu-Tack"
 blue tools: "BlueTools"
 blue tooth: "Bluetooth"
+boil five less: user.rz_insert_key_sequence("bool {{Z1L}}")
+boil five s: "bool "
 boil five t: user.rz_insert_key_sequence("bool{{tab}}")
 boil five: "bool"
 book plural: "books"
@@ -786,6 +836,11 @@ buildings two point zero: "Buildings 2.0"
 built in: "built-in"
 bulk r b s : "Bulk RBS"
 button seven: "button"
+by val l: user.rz_insert_key_sequence("ByVal {{Z1L}}")
+by value l: user.rz_insert_key_sequence("ByVal {{Z1L}}")
+by value: "ByVal "
+byte five less: user.rz_insert_key_sequence("byte {{Z1L}}")
+byte five: "byte"
 byte by byte: "byte-by-byte"
 byte s: "BYTE "
 byte t: user.rz_insert_key_sequence("BYTE{{tab}}")
@@ -831,6 +886,8 @@ c boil t: user.rz_insert_key_sequence("BOOL{{tab}}")
 c boolean: "BOOLEAN"
 c break semi: "break;"
 c break: "break"
+c by less: user.rz_insert_key_sequence(" by {{Z1L}}")
+c by: " by "
 c byte array: "byte[]"
 c byte s: "BYTE "
 c byte s: "BYTE "
@@ -857,14 +914,20 @@ c cast short: "(short)"
 c cast string: "(string)"
 c catch: "catch ("
 c caz: "CCas"
+c char less: user.rz_insert_key_sequence("char {{Z1L}}")
+c char s: "char "
 c charlie: "c"
 c class s: "class "
 c class: "class"
 c colon back: "c:\"
 c colon base: " : base("
+c colon less: user.rz_insert_key_sequence(": {{Z1L}}")
+c colon software: "c:\sw\"
 c colon: " : "
 c combo: "combo"
 c comment line: user.rz_insert_key_sequence("//////////////////////////////////////////////////////////////////////{{enter}}")
+c con less: user.rz_insert_key_sequence("const {{Z1L}}")
+c con s: "const "
 c config: "CConfig"
 c const s: "const "
 c continue: "continue"
@@ -875,16 +938,23 @@ c d k six: "CDK"
 c d l g: "dlg"
 c d space: "cd "
 c debug: "CDebug"
+c decimal less: user.rz_insert_key_sequence("decimal {{Z1L}}")
+c default: "default:"
 c delegate s: "delegate "
 c delete p: "delete p"
 c delete: "delete "
 c do: "do"
+c dot l: user.rz_insert_key_sequence("c.{{Z1L}}")
+c double less: user.rz_insert_key_sequence("double {{Z1L}}")
+c double: "double"
 c e numb s: "enum "
 c e numb: "enum"
 c e r t: "cert"
 c else if: "else if ("
 c else: "else"
 c end if: user.rz_insert_key_sequence("#endif{{enter}}")
+c equals l: user.rz_insert_key_sequence(" == {{Z1L}}")
+c equals: " == "
 c event s: "event "
 c explicit: "explicit "
 c external: "extern "
@@ -899,11 +969,18 @@ c file time: "FILETIME"
 c finally: "finally"
 c for each: "foreach ("
 c for i loop: "for (int i = 0; i < ; i++)"
-c for index: ""for (Index = 0; Index < ; Index++)"
+c for index: "for (Index = 0; Index < ; Index++)"
+c for j loop: "for (int j = 0; j < ; j++)"
 c friend: "friend "
+c from l: user.rz_insert_key_sequence("from {{Z1L}}")
+c from less: user.rz_insert_key_sequence("from {{Z1L}}")
+c g j : "CGJ"
 c g t six: "CGT"
 c get set: user.rz_insert_key_sequence("{{{{}} get; set; }}")
 c get: "get"
+c group l: user.rz_insert_key_sequence("group {{Z1L}}")
+c group less: user.rz_insert_key_sequence("group {{Z1L}}")
+c group: "group "
 c h a g: "chag"
 c h a i: "Chai"
 c h a n i: "Chani"
@@ -922,16 +999,25 @@ c i d: "cid"
 c i lambda: "i => "
 c i t b : "CITB"
 c i t b six: "CITB"
+c if l: user.rz_insert_key_sequence("if ({{Z1L}}")
+c if not l: user.rz_insert_key_sequence("if (!{{Z1L}}")
+c if not: "if (!"
 c if: "if ("
+c in less: user.rz_insert_key_sequence(" in {{Z1L}}")
+c in question: "int?"
 c in s: " in "
 c in t s: "int "
 c in t: user.rz_insert_key_sequence("int{{tab}}")
 c in: "int"
 c inline: "inline "
 c int array: "int[] "
+c int less: user.rz_insert_key_sequence("int {{Z1L}}")
+c int s: "int "
 c interface: "interface"
 c internal s: "internal "
 c internal: "internal"
+c into less: user.rz_insert_key_sequence(" into {{Z1L}}")
+c into: " into "
 c iso: "CIso"
 c l six: "CL"
 c l a six: "CLA"
@@ -945,16 +1031,26 @@ c l p: "lp"
 c l y m: "Clym"
 c lambda: " => "
 c left shift: "<<"
+c let l: user.rz_insert_key_sequence("let {{Z1L}}")
+c let less: user.rz_insert_key_sequence("let {{Z1L}}")
+c lock l: user.rz_insert_key_sequence("lock ({{Z1L}}")
+c lock: "lock ("
+c long less: user.rz_insert_key_sequence("long {{Z1L}}")
+c long s: "long "
 c long: "long"
 c m b under: "cmb_"
 c m b: "cmb"
 c m d lambda: "(cmd) => "
 c m d: "cmd"
+c m dash l: user.rz_insert_key_sequence("cm-{{Z1L}}")
+c m i six: "CMI"
 c m k six: "CMK"
 c m p: "cmp"
 c mad: "CMad"
 c map e: "cMapi"
 c map x: "CMapX"
+c mark l: user.rz_insert_key_sequence("!{{Z1L}}")
+c mark: "!"
 c message s: user.rz_insert_key_sequence("message{{space}}")
 c minus line: "-----------------------------------------------------------------------------"
 c n c six: "CNC"
@@ -963,6 +1059,10 @@ c n t: "cnt"
 c name of: "nameof("
 c new block: user.rz_insert_key_sequence("{{{{enter}}{{enter}}}}{{up}}{{end}}{{tab}}")
 c new: "new "
+c not equals l: user.rz_insert_key_sequence(" != {{Z1L}}")
+c not equals: " != "
+c note: user.rz_insert_key_sequence("NOTE: {{heardword:"[Z. 2 C.]"}}")
+c november: "n"
 c null: "NULL"
 c o two: "CO2"
 c o five: "co"
@@ -989,11 +1089,15 @@ c o r p: "corp"
 c o r s : "CORS"
 c o s: "cos"
 c o t s six: "COTS"
+c object less: user.rz_insert_key_sequence("object {{Z1L}}")
+c object s: "object "
 c object: "object"
 c open brace: user.rz_insert_key_sequence("{{{{}}{{del}}{{backspace}}")
 c operator: "operator"
 c order by: "orderby "
 c oscar: "o"
+c out less: user.rz_insert_key_sequence("out {{Z1L}}")
+c out s: "out "
 c out: "out"
 c override: "override"
 c p five: "cp"
@@ -1040,11 +1144,15 @@ c pack: "pack("
 c parameters s: "params "
 c percent delta: "%d"
 c percent sierra: "%s"
+c plus equals l: user.rz_insert_key_sequence(" += {{Z1L}}")
+c plus equals: " += "
 c point: "CPoint"
 c position: "POSITION"
 c pragma: "#pragma "
 c prams s: "params "
 c private colon: user.rz_insert_key_sequence("private:{{enter}}")
+c private less: user.rz_insert_key_sequence("private {{Z1L}}")
+c private s: "private "
 c private static: "private static "
 c private string: "private string "
 c private: "private"
@@ -1054,6 +1162,8 @@ c public class: "public class "
 c public colon: "public:"
 c public const: "public const "
 c public in t: "public int "
+c public l: user.rz_insert_key_sequence("public {{Z1L}}")
+c public override: "public override "
 c public pool: "public bool "
 c public s: "public "
 c public static: "public static "
@@ -1071,9 +1181,13 @@ c r s six: "CRS"
 c read only s: "readonly "
 c read only: "readonly "
 c rect: "RECT"
+c ref less: user.rz_insert_key_sequence("ref {{Z1L}}")
+c ref s: "ref "
 c ref: "ref"
 c repeated s: user.rz_insert_key_sequence("repeated{{space}}")
 c return false: "return false;"
+c return less: user.rz_insert_key_sequence("return {{Z1L}}")
+c return new: "return new "
 c return null: "return null;"
 c return result: "return result;"
 c return s: "return "
@@ -1086,6 +1200,8 @@ c s a: "csa"
 c s b six: "CSB"
 c s con: " const"
 c s g : "CSG"
+c s lyn: user.rz_insert_key_sequence(" in {{Z1L}}")
+c s p c: "CSpc"
 c s p: "csp"
 c s r six: "CSR"
 c s reference: "ref "
@@ -1095,6 +1211,8 @@ c s v: "csv"
 c s z: "sz"
 c scanf: "scanf("
 c select s: "select "
+c semi l: user.rz_insert_key_sequence(";{{Enter}}{{Z1L}}")
+c semi left: user.rz_insert_key_sequence(";{{enter}}{{backspace}}")
 c semi s: "; "
 c semi: user.rz_insert_key_sequence(";{{enter}}")
 c set: "set"
@@ -1104,7 +1222,11 @@ c sharp: "C#"
 c short s: "short "
 c short: "short"
 c size of: "sizeof("
-c slash return: ""// Return:"
+c slash c: user.rz_insert_key_sequence("// {{heardword:"[Z. 2 C.]"}}")
+c slash input: user.rz_insert_key_sequence("//{{space}}Input:{{enter}}//{{tab}}{{tab}}")
+c slash return: "// Return:"
+c slash: user.rz_insert_key_sequence("// {{heardword:"[Z. 2]"}}")
+c sss: "CSSS"
 c static s: "static "
 c static: "static"
 c string one: "CString1"
@@ -1113,6 +1235,8 @@ c string s: "CString "
 c string t: user.rz_insert_key_sequence("CString{{tab}}")
 c struct: "struct"
 c structure: "struct"
+c switch l: user.rz_insert_key_sequence("switch ({{Z1L}}")
+c switch: "switch ("
 c system time: "SYSTEMTIME"
 c t six: "CT"
 c t a p six: "CTAP"
@@ -1150,11 +1274,17 @@ c v s e com: "C:\sw\cas\cvsmnt\ecom\"
 c v v six: "CVV"
 c v v: "cvv"
 c value: "value"
+c var l: user.rz_insert_key_sequence("var {{Z1L}}")
+c var less: user.rz_insert_key_sequence("var {{Z1L}}")
+c var s: "var "
 c variant: "VARIANT"
 c void s: "void "
 c void t: user.rz_insert_key_sequence("void{{tab}}")
 c void: "void"
 c volatile: "volatile "
+c where less: user.rz_insert_key_sequence("where {{Z1L}}")
+c while less: user.rz_insert_key_sequence("while ({{Z1L}}")
+c while: "while"
 c win 32: "WIN32"
 c word s: "WORD "
 c word: "WORD"
@@ -1162,6 +1292,8 @@ c y b g six: "CYBG"
 c yield return: "yield return "
 c yield s: "yield "
 c yield: "yield"
+ccolon colon l: user.rz_insert_key_sequence("::{{Z1L}}")
+clpcstr: "LPCSTR"
 cad parcel id six: "CAD_PARCEL_ID"
 cad states: "CAD States"
 cad under six: "CAD_"
@@ -1188,6 +1320,7 @@ cap sierra seven: "S7"
 cap tea: "Capti"
 cap x: "CapEx"
 capitalize next two: "CapitalizeNext 2"
+capitalize next: user.rz_insert_key_sequence("{{Z1}}")
 caps r two: "R2"
 caps v one v two: "V1 V2"
 caps v one: "V1"
@@ -1212,12 +1345,15 @@ center link: "Centrelink"
 centroid edition: "Centroid Edition"
 change log dot m d: "changelog.md"
 change log: "changelog"
+char s star l: user.rz_insert_key_sequence("char *{{Z1L}}")
+charge back: "chargeback"
 charlie three: "C3"
 charlie colon back: "c:\"
 chat g p t : "ChatGPT"
 check box one: "CheckBox"
 check box seven: "checkBox"
-cheers ronny: ""Cheers"
+cheers ronny: "Cheers"
+cheese els: "Cheezels"
 cheque q: "cheque"
 child item : "ChildItem "
 chile olives: "ChilliOlives"
@@ -1257,6 +1393,8 @@ coles enter: user.rz_insert_key_sequence("Coles{{enter}}")
 colon back: ":\"
 colon boolean: ": boolean"
 colon colon colon: ":::"
+colon colon l: user.rz_insert_key_sequence("::{{Z1L}}")
+colon colon s: user.rz_insert_key_sequence("::{{space}}")
 colon colon: "::"
 colon enter: user.rz_insert_key_sequence(":{{enter}}")
 colon n zero: ":N0"
@@ -1265,6 +1403,8 @@ colon no s: ":"
 colon number: ": number"
 colon promise left: user.rz_insert_key_sequence(": Promise<>{{left}}")
 colon quote: ":""
+colon s l: user.rz_insert_key_sequence(": {{Z1L}}")
+colon s: ": "
 colon slash slash: "://"
 colon string: ": string"
 colon void: ": void"
@@ -1299,6 +1439,10 @@ control romeo: user.rz_insert_key_sequence("{{ctrl-r}}")
 control shift victor: user.rz_insert_key_sequence("{{ctrl-v}}")
 copy and go: user.rz_insert_key_sequence("{{ctrl-c}}{{ctrl-u}}")
 copy dash: "Copy-"
+copy email to clipboard: user.rz_insert_key_sequence("{{Enter}}{{wait:1000}}{{Ctrl+a}}{{Ctrl+c}}{{wait:1000}}{{heardword:"[Close Window]"}}")
+copy end key left: user.rz_insert_key_sequence("{{shift-end}}{{shift-left}}{{ctrl-c}}")
+copy house key slow: user.rz_insert_key_sequence("{{Shift+Home}}{{wait:200}}{{Shift+Home}}{{Ctrl+c}}")
+core sera: "Coursera"
 corner under flag equals y: "CORNER_FLAG = 'Y'"
 cosmos d b : "CosmosDB"
 covert p i under: "CovertPI_"
@@ -1335,8 +1479,12 @@ d b g exit error: "DBG_EXIT_ERROR"
 d b g exit: "DBG_EXIT"
 d b g function: "DBG_FUNCTION(""
 d b g note: "DBG_NOTE"
+d b g return six: user.rz_insert_key_sequence("DBG_RETURN_{{heardword:"[Z. 6]"}}")
+d b g return: "DBG_RETURN_"
 d b g thread: "DBG_THREAD(""
 d b g trace: "DBG_TRACE"
+d b g under: user.rz_insert_key_sequence("DBG_{{heardword:"[Z. 6]"}}")
+d b g verbose: "DBG_VERBOSE"
 d b o five: "dbo"
 d b o: "dbo"
 d b parameter: "DbParameter"
@@ -1441,6 +1589,8 @@ d u b: "dub"
 d u e: "due"
 d u i: "dui"
 d v d five: "dvd"
+d v dot l: user.rz_insert_key_sequence("dv.{{heardword:"[Z. 1 L.]"}}")
+d v i r: "Dvir"
 d word s: "DWORD "
 d word t: user.rz_insert_key_sequence("DWORD{{tab}}")
 darrell one l: "Darrel"
@@ -1496,6 +1646,8 @@ dash i a : "-IA"
 dash i d five: "-id"
 dash id: " -ID"
 dash in dash: "-in-"
+dash l: user.rz_insert_key_sequence("-{{heardword:"[Z. 1 L.]"}}")
+dash mon: "-Mon"
 dash name: " -Name "
 dash not equals: " -ne "
 dash not s: "-not "
@@ -1639,8 +1791,16 @@ dollar e n v colon: "$env:"
 dollar env colon path: "$env:path"
 dollar env colon: "$env:"
 dollar error enter: user.rz_insert_key_sequence("$Error{{enter}}")
+dollar global colon l: user.rz_insert_key_sequence("$global:{{heardword:"[Z. 1 L.]"}}")
+dollar i d x: "$idx"
 dollar l alpha: "$a"
 dollar l file one: "$file1"
+dollar l: user.rz_insert_key_sequence("${{Z1L}}")
+dollar latest six: "$LATEST"
+dollar left brace l: user.rz_insert_key_sequence("${{{{}}{{Z1L}}")
+dollar left dollar right: user.rz_insert_key_sequence("$($){{left}}")
+dollar left right brace left l: user.rz_insert_key_sequence("${{{{}}}}{{Left}}{{Z1L}}")
+dollar left right left: user.rz_insert_key_sequence("$(){{left}}")
 dollar left: "$("
 dollar name: "$name"
 dollar null: "$null"
@@ -1648,7 +1808,11 @@ dollar quote: "$""
 dollar result: "$result"
 dollar s t r dot: "$str."
 dollar s t r: "$str"
+dollar sign brace l: user.rz_insert_key_sequence("${{{{heardword:"[Z. 1 L.]"}}")
+dollar sign brace: user.rz_insert_key_sequence("${{{{}}")
 dollar sign dollar: "$$"
+dollar sign l: user.rz_insert_key_sequence("${{heardword:"[Z. 1 L.]"}}")
+dollar sign sign: "$$"
 dollar true: "$True"
 dollar under dot: "$_."
 domain one: "Domain"
@@ -1666,6 +1830,8 @@ dot  get: ".Get"
 dot  is: ".Is"
 dot  second: ".second"
 dot  v t: ".vt"
+dot six: user.rz_insert_key_sequence(".{{heardword:"[Z. 6]"}}")
+dot a p a : ".APA"
 dot add: ".Add"
 dot any: ".Any("
 dot append: ".Append"
@@ -1754,6 +1920,8 @@ dot to: ".To"
 dot total: ".Total"
 dot try: ".Try"
 dot type: ".Type"
+dot under l: user.rz_insert_key_sequence("._{{Z1L}}")
+dot unfold: ".unfold("
 dot value map: ".valueMap("
 dot value of: ".valueOf("
 dot value s: ".values("
@@ -1819,6 +1987,7 @@ dub what if: " -WhatIf"
 dub while: "While ("
 due date: "DueDate"
 due to: "due to"
+duplicate that: user.rz_insert_key_sequence("{{Ctrl+c}}{{Ctrl+v}}{{Ctrl+v}}")
 dynamo d b: "DynamoDB"
 e b six: "EB"
 e b s six: "EBS"
@@ -1956,14 +2125,21 @@ email brian g mail: "brian.beckor@gmail.com"
 email except only: user.rz_insert_key_sequence("(email excerpt only, full email see ){{left}}")
 email rob mar: "robmar@hear-here.com.au"
 email william g mail: "wlombardibj@gmail.com"
+end capitalize: user.rz_insert_key_sequence("")
 end dash user: "end-user"
 end function: "End Function"
+end lowercase: user.rz_insert_key_sequence("")
 end name space: "End Namespace"
+end no space: user.rz_insert_key_sequence("")
 end point: "endpoint"
 end select: "End Select"
+end uppercase: user.rz_insert_key_sequence("")
 end using: "End Using"
 end while: "WEnd"
 energy australia: "EnergyAustralia"
+enter tab l: user.rz_insert_key_sequence("{{Enter}}{{Tab}}{{Z1L}}")
+enter tab: user.rz_insert_key_sequence("{{end}}{{enter}}{{tab}}")
+enterprise ethernet one: "EnterpriseEthernet"
 enterprise ethernet: "Enterprise Ethernet"
 equals zero: " = 0"
 equals column left p: "=COLUMN("
@@ -2048,6 +2224,8 @@ f s a designation: "FSA Designation"
 f s a m six: "FSAM"
 f s a m: "fsam"
 f s a: "fsa"
+f s dot el: user.rz_insert_key_sequence("fs.{{Z1L}}")
+f s m: "fsm"
 f s r s six: "FSRS"
 f s x : "FSx"
 f sam six: "FSAM"
@@ -2086,6 +2264,8 @@ feb 20: "FEB20"
 feb dash 20 20: "feb-2020"
 february 20 22: "February 2022"
 feed forward: "feedforward"
+feeling lucky: user.rz_insert_key_sequence("{{Ctrl+.}}{{wait:200}}{{Enter}}")
+feet dash: "feat-"
 fibre asset: "fibre asset"
 fibre con x: "FibreconX"
 fibre expansion program one: "FibreExpansionProgram"
@@ -2433,6 +2613,7 @@ h w n d: "hWnd"
 h x five: "hx"
 ha bud: "Chabad"
 hands free: "handsfree"
+harabeleben: "Shit in your yogurt"
 harbour quays: "Harbour Quays"
 hark ham: "Harkham"
 has under geometry: "HAS_GEOMETRY"
@@ -2466,7 +2647,10 @@ hash cards jewish history: "#flashcards/jewish/history"
 hash cards m l: "#flashcards/ml"
 hash cards slash: "#flashcards/"
 hash course slash: "#course/"
+hash define: user.rz_insert_key_sequence("#define ")
 hash else: user.rz_insert_key_sequence("#else{{enter}}")
+hash end if enter: user.rz_insert_key_sequence("#endif{{wait:250}}{{Enter}}a")
+hash end if: user.rz_insert_key_sequence("#endif{{Enter}}")
 hash end region: "#endregion"
 hash flash card slash: "#flashcard/"
 hash flashcards: "#flashcards"
@@ -2479,13 +2663,20 @@ hash if not defined: "#ifndef "
 hash if not now: "#if NotNow"
 hash ifndef: "#ifndef "
 hash import: "#import ""
+hash include angle l: user.rz_insert_key_sequence("#include <>{{Left}}{{Z1L}}")
+hash include angle: user.rz_insert_key_sequence("#include <.h>{{left}}{{left}}{{left}}")
 hash include include: user.rz_insert_key_sequence("#include "..\include\.h"{{left}}{{left}}{{left}}")
 hash include: user.rz_insert_key_sequence("#include ".h"{{left}}{{left}}{{left}}")
 hash medical info: "#medical-info"
 hash org slash: "#org/"
 hash person slash: "#person/"
 hash pragma: "#pragma "
-hash q a w s : ""----"
+hash q a w s : "----"
+hash q data science: "----"
+hash q m l: user.rz_insert_key_sequence("----{{Enter}}#flashcards/ml{{wait:200}}{{Enter}}{{Enter}}# Questions{{Enter}}{{Enter}}")
+hash q math: user.rz_insert_key_sequence("----{{Enter}}#flashcards/math{{wait:200}}{{Enter}}{{Enter}}# Questions{{Enter}}{{Enter}}")
+hash q physics: user.rz_insert_key_sequence("----{{Enter}}#flashcards/science/physics{{wait:200}}{{Enter}}{{Enter}}# Questions{{Enter}}{{Enter}}")
+hash questions enter: user.rz_insert_key_sequence("# Questions{{enter}}")
 hash region: "#region"
 hash review: "#review"
 hash set left: "HashSet<"
@@ -2528,9 +2719,12 @@ hebrew happy new year: "Shana Tova"
 hebrew phrase: "HebrewPhrase"
 hebrew source: "HebrewSource"
 hebrew word one: "HebrewWord"
+hello mars three: user.rz_insert_key_sequence("")
 help s: user.rz_insert_key_sequence("help{{space}}")
 help stars left: user.rz_insert_key_sequence("help **{{left}}")
 hi ashlesha: "Hi Ashlesha"
+hi at brian: user.rz_insert_key_sequence("Hi @{{wait:1000}}Brian")
+hi at: "Hi @"
 hi brian comments: user.rz_insert_key_sequence("Hi Brian, comments?{{enter}}{{enter}}")
 hi guys: user.rz_insert_key_sequence("Hi Guys{{enter}}")
 hi ha: "Hi Ha"
@@ -2540,6 +2734,7 @@ high pages: "hipages"
 high tail one: "Hightail"
 high tail: "hightail"
 hire h: "Haier"
+hload: "hload 2 sct.hex"
 home key delete: user.rz_insert_key_sequence("{{home}}{{del}}")
 home key mark: user.rz_insert_key_sequence("{{home}}!")
 home track: "Hometrack"
@@ -2576,6 +2771,8 @@ i d equals five: "id="
 i d f six: "IDF"
 i d o k: "IDOK"
 i d s six: "IDS"
+i d s under: user.rz_insert_key_sequence("IDS_{{heardword:"[Z. 6]"}}")
+i d under n b n : "ID_NBN"
 i d x: "idx"
 i dash med: "I-Med"
 i data: "iData"
@@ -2663,6 +2860,8 @@ i v l: "ivl"
 i v r : "IVR"
 i w i w d : "IWIWD"
 i w m six: "IWM"
+id under: user.rz_insert_key_sequence("ID_{{heardword:"[Z. 6]"}}")
+iiterator: "IIterator"
 id consulting: "id Consulting"
 if def debug: user.rz_insert_key_sequence("#ifdef _DEBUG{{enter}}")
 import dash module: "Import-Module"
@@ -2734,7 +2933,8 @@ jeera six: "JIRA"
 jet star: "Jetstar"
 jim kirk: "Jim Kirk"
 jira five: "jira"
-jira no format: user.rz_insert_key_sequence(""{{noformat}}")
+jira no format: user.rz_insert_key_sequence("{{noformat}}")
+jira quote: user.rz_insert_key_sequence("{{quote}}{{quote}}{{left}}{{left}}{{left}}{{left}}{{left}}{{left}}{{left}}")
 jira table line: user.rz_insert_key_sequence("|||{{enter}}{{up}}{{right}}")
 join dash: "Join-"
 juggle no e: "Juggl"
@@ -2773,6 +2973,8 @@ k v p six: "KVP"
 k v p string string: "KvpStringString"
 k v p: "kvp"
 ken two ens: "Kenn"
+key cat l: user.rz_insert_key_sequence("")
+key dash: "key-"
 key pass: "keepass"
 key set: "keyset"
 key sets: "keysets"
@@ -2836,6 +3038,7 @@ l t r six: "LTR"
 l t r: "ltr"
 l t s six: "LTS"
 l y n x: "lynx"
+laasot: "to do"
 label seven: "label"
 lambda at edge: "Lambda@Edge"
 land tenure: "Land Tenure"
@@ -2856,12 +3059,16 @@ left brace three right: user.rz_insert_key_sequence("{{{{}}3}}")
 left brace brace: user.rz_insert_key_sequence("{{{{}}{{{{}}")
 left brace bracket right: user.rz_insert_key_sequence("{{{{}}[]}}{{left}}{{left}}")
 left brace delete back: user.rz_insert_key_sequence("{{{{del}}{{backspace}}")
+left brace l: user.rz_insert_key_sequence("{{{{Z1L}}")
+left brace right left: user.rz_insert_key_sequence("{{{{}}}}{{left}}")
 left brace s: "{ "
 left bracket bracket bar left: user.rz_insert_key_sequence("[[|{{left}}")
 left bracket bracket bar: user.rz_insert_key_sequence("|{{left}}[[")
 left bracket bracket c: "[["
 left bracket bracket: "[["
 left bracket hat: "[^"
+left bracket l: user.rz_insert_key_sequence("[{{Z1L}}")
+left bracket quote: "[""
 left bracket space quote: "[ ""
 left bracket space: "[ "
 left cancelled right: "[cancelled]"
@@ -2888,10 +3095,19 @@ left no format right: user.rz_insert_key_sequence("{{noformat}}")
 left out one right: "[Out] "
 left out right: "[out] "
 left p back quote: "(`"
+left p delete: user.rz_insert_key_sequence("({{wait:800}}{{Del}}")
+left p dollar l: user.rz_insert_key_sequence("(${{Z1L}}")
+left p dollar: "($"
 left p i right: "(i)"
+left p l: user.rz_insert_key_sequence("({{Z1L}}")
+left p star right p: "(*)"
+left paren l: user.rz_insert_key_sequence("({{Z1L}}")
+left partial right: "(partial)"
 left proposed right: "[Proposed]"
 left remarks right: "<remarks>"
 left right angle left: user.rz_insert_key_sequence("<>{{left}}")
+left right brace left l: user.rz_insert_key_sequence("{{{{}}}}{{Left}}{{Z1L}}")
+left right brace left: user.rz_insert_key_sequence("{{{{}}}}{{left}}")
 left right bracket as: user.rz_insert_key_sequence("[] as{{space}}")
 left right bracket ellipses: "[...]"
 left right bracket hat: user.rz_insert_key_sequence("[^]{{left}}")
@@ -2901,6 +3117,8 @@ left right bracket: "[]"
 left right colon colon: "[]::"
 left right lambda: "() => "
 left right p hash: user.rz_insert_key_sequence("(#){{left}}")
+left right p left l: user.rz_insert_key_sequence("(){{Left}}{{Z1L}}")
+left right p left: user.rz_insert_key_sequence("(){{left}}")
 left right p: "()"
 left right semi: "();"
 left s right: "(s)"
@@ -2949,6 +3167,7 @@ log id: "logId"
 log output: "LogOutput"
 long five: "long"
 lot under number six: "LOT_NUMBER"
+lowercase next: user.rz_insert_key_sequence("{{Z1L}}")
 m two: "m2"
 m two dot r z: "m2.rz"
 m three dot large: "m3.large"
@@ -3068,6 +3287,7 @@ m x net: "MXNet"
 m y o b : "MYOB"
 m z six: "MZ"
 m z slash r z : "MZ/RZ"
+maatarotze: "what do you want"
 mack nard jif: "MAKNARDJIFF"
 mail item one: "MailItem"
 main address three: "Main Address"
@@ -3099,6 +3319,7 @@ mark k k c: "![["
 market safe: "MarketSafe"
 mars two: "Mars2"
 mars three six: "MARS3"
+mars three hello: user.rz_insert_key_sequence("")
 mars three: "Mars3"
 mars four six: "MARS4"
 mars five six: "MARS5"
@@ -3186,6 +3407,8 @@ mega pixel: "megapixel"
 melbourne metro: "Melbourne Metro"
 mem c p y: "memcpy("
 mem set: "memset("
+memo paragraph: user.rz_insert_key_sequence("{{ctrl+enter}}{{ctrl+enter}}")
+memory d b : "MemoryDB"
 men you h: "Menucha"
 menu log enter: user.rz_insert_key_sequence("menulog{{enter}}")
 menu log: "Menulog"
@@ -3217,10 +3440,14 @@ minus echo space: "-e "
 minus foxtrot space: "-f "
 minus india space: "-i "
 minus kilo space: "-k "
+minus l: user.rz_insert_key_sequence(" -{{Z1L}}")
+minus lima space: "-l "
 minus minus space: user.rz_insert_key_sequence("--{{space}}")
 minus minus: "--"
 minus out space: "-out "
 minus papa space: "-p "
+minus sign l: user.rz_insert_key_sequence("-{{heardword:"[Z. 1 L.]"}}")
+minus sign s: user.rz_insert_key_sequence("-{{space}}")
 misc search commercial: "D:\_MMO\Misc\Search Commercial"
 mobile pre: "MobilePre"
 montefiore home: "Montefiore Home"
@@ -3397,6 +3624,12 @@ new get: "nuget"
 new line two: user.rz_insert_key_sequence("{{enter}}{{enter}}")
 new line back: user.rz_insert_key_sequence("{{enter}}{{shift-tab}}")
 new line bar: user.rz_insert_key_sequence("{{enter}}|")
+new line l: user.rz_insert_key_sequence("{{Enter}}{{Z1L}}")
+new paragraph two: user.rz_insert_key_sequence("{{Enter}}{{Enter}}{{heardword:"[Z. 2 C.]"}}")
+new paragraph bar: user.rz_insert_key_sequence("{{Enter}}|")
+new paragraph: user.rz_insert_key_sequence("{{Enter}}{{heardword:"[Z. 2 C.]"}}")
+new record: user.rz_insert_key_sequence("")
+new scope: "NuSkope"
 newton mark three: user.rz_insert_key_sequence("k7!Hx^Eh58{{enter}}")
 next gen dot net: "NextGen.Net"
 next gen: "NextGen"
@@ -3408,6 +3641,7 @@ nine bot: "Ninebot"
 no enter: user.rz_insert_key_sequence("No{{enter}}")
 no error: "NO_ERROR"
 no s q l: "NoSQL"
+no space: user.rz_insert_key_sequence("")
 node one: "Node1"
 node two i d: "Node2Id"
 node two: "Node2"
@@ -3424,6 +3658,8 @@ nose hash: "#"
 not now: "NotNow"
 notepad lines to spaces: user.rz_insert_key_sequence("{{ctrl-end}}{{ctrl-shift-home}}{{ctrl-v}}{{ctrl-h}}\r\n{{tab}}{{space}}{{alt-x}}{{alt-a}}{{esc}}{{ctrl-a}}{{ctrl-c}}")
 notepad merge lines: user.rz_insert_key_sequence("{{ctrl-a}}{{ctrl-v}}{{ctrl-h}}(\r\n)+{{tab}}{{space}}{{alt-g}}{{alt-a}}{{esc}}{{ctrl-a}}{{ctrl-c}}")
+notepad reformat bullets: user.rz_insert_key_sequence("{{heardword:"[Notepad Merge Lines]"}}{{Ctrl+h}}\x{{{{}}2022}}{{Space}}{{Tab}}\r\n-{{Space}}{{Alt+g}}{{Alt+a}}{{Esc}}{{Ctrl+a}}{{Ctrl+c}}")
+nov 19: "NOV19"
 nov 20: "NOV20"
 november 20 22: "November 2022"
 november dash: "n-"
@@ -3435,6 +3671,8 @@ number five: "number"
 number combo: "NumberCombo"
 number sign three 90: "#390"
 number sign five: "#5"
+number sign l: user.rz_insert_key_sequence("#{{heardword:"[Z. 1 L.]"}}")
+number sign s: "# "
 number under first six: "NUMBER_FIRST"
 o a six: "OA"
 o a c six: "OAC"
@@ -3448,7 +3686,8 @@ o c r six: "OCR"
 o c t 18: "OCT18"
 o c t six: "OCT"
 o c t: "oct"
-o code block: ""```"
+o code block: "```"
+o comment: user.rz_insert_key_sequence("%%%%{{left}}{{left}}")
 o d b c six: "ODBC"
 o d b c: "odbc"
 o d i: "Odi"
@@ -3520,7 +3759,8 @@ o s r: "osr"
 o t six: "OT"
 o t p six: "OTP"
 o t t six: "OTT"
-o table template: ""| Col1 | Col2 | "
+o table template: "| Col1 | Col2 | "
+o u six: "OU"
 o use: "OUs"
 o warning: user.rz_insert_key_sequence("> [!WARNING]{{enter}}")
 o yam l: user.rz_insert_key_sequence("---{{enter}}{{enter}}---{{up}}")
@@ -3960,12 +4200,15 @@ postcode boundaries: "Postcode Boundaries"
 pow less than: " -lt "
 pow not: " -not"
 power of three: "^3"
+power shell admin: user.rz_insert_key_sequence("Powershell{{heardword:"[M. Right]"}}")
+power user one: "PowerUser"
 pre dash: "pre-"
 precisely one: "Precisely"
 presto d b : "PrestoDB"
 primary under address six: "PRIMARY_ADDRESS"
 primary under secondary six: "PRIMARY_SECONDARY"
 print f: "printf(""
+printf: "printf("
 private function: "Private Function "
 private link: "PrivateLink"
 private set: "Private Set"
@@ -4030,19 +4273,24 @@ q with roll up: "WITH ROLLUP"
 quebec one: "Q1"
 quebec three: "Q3"
 quebec four: "Q4"
+question dot l: user.rz_insert_key_sequence("?.{{Z1L}}")
+question dot: "?."
 question left right bracket s: user.rz_insert_key_sequence("?[]{{space}}")
 question mark enter: user.rz_insert_key_sequence("?{{enter}}")
 question mark mark: "??"
 question mark question: "??"
+question mark s l: user.rz_insert_key_sequence("? {{Z1L}}")
+question s l: user.rz_insert_key_sequence("? {{Z1L}}")
+question space: "? "
 quick action: user.rz_insert_key_sequence("{{ctrl-.}}")
 quick copy: "Kwik Kopy"
 quick sight q: "QuickSight Q"
 quick sight: "QuickSight"
-quote one quote: ""1""
-quote back n: ""\n""
+quote one quote: "1"
+quote back n: "\n"
 quote back zero: "'\0'"
 quote left bracket: ""["
-quote paste quote: user.rz_insert_key_sequence(""{{ctrl-v}}"")
+quote paste quote: user.rz_insert_key_sequence("{{ctrl-v}}")
 quote quote left: user.rz_insert_key_sequence("""{{left}}")
 quote quote semi: """;"
 quote quote: """"
@@ -4150,6 +4398,8 @@ r z slash y a : "RZ/YA"
 r z slash: "RZ/"
 r z solo: "RZ Solo"
 r z under: "rz_"
+rab s l: user.rz_insert_key_sequence("> {{Z1L}}")
+rad zen: "Radzen"
 radio button seven: "radioButton"
 ram cam six: "RAMCAM"
 ram cam: "ramcam"
@@ -4177,7 +4427,8 @@ reg c r s: "REGCRS"
 reg edit: "regedit"
 reg s v r 32: "regsvr32 "
 reg size: "REGSIZ"
-regards ronny: ""Regards"
+regards ronny: "Regards"
+relationship under confidence: "RELATIONSHIP_CONFIDENCE"
 release under id: "RELEASE_ID"
 reliability under code: "RELIABILITY_CODE"
 rem note: "RemNote"
@@ -4197,6 +4448,8 @@ return value: "RetVal"
 rex ray: "REX-Ray"
 rich text box seven: "richTextBox"
 right angle bracket s: "> "
+right angle s l: user.rz_insert_key_sequence("> {{Z1L}}")
+right bang left: "]!["
 right brace brace: "}}"
 right brace enter: user.rz_insert_key_sequence("}}{{enter}}")
 right brace semi: "};"
@@ -4204,12 +4457,16 @@ right bracket bracket: "]]"
 right bracket quote: "]""
 right click: "right click"
 right k k: "]]"
+right new block: user.rz_insert_key_sequence("){{Enter}}{{heardword:"[C. New Block]"}}")
+right p comma: "),"
 right p enter: user.rz_insert_key_sequence("){{enter}}")
 right p s: user.rz_insert_key_sequence("){{space}}")
 right p semi: ");"
 right paren brace: ") { "
 right sizing: "rightsizing"
 road six: "ROAD"
+road dash six: user.rz_insert_key_sequence("ROAD-")
+road map: "roadmap"
 road type code six: "ROAD_TYPE_CODE"
 road under pid six: "ROAD_PID"
 roads under hierarchy six: "ROADS_HIERARCHY"
@@ -4238,6 +4495,7 @@ run three: "Run3"
 run four: "Run4"
 run five: "Run5"
 run no space: "Run"
+run test: user.rz_insert_key_sequence("{{Ctrl+r}}t")
 s  card verify: "SCardVerify"
 s  s  spew e: "ssscpuwe"
 s  t  r: "str"
@@ -4270,10 +4528,14 @@ s a v t a: "Savta"
 s a x: "sax"
 s a: "sa"
 s as: " AS "
+s asterisk l &: user.rz_insert_key_sequence(" *{{Z1L}}")
+s at sign: user.rz_insert_key_sequence("{{space}}@")
 s b five: "sb"
 s b dot: "sb."
 s b s six: "SBS"
 s back quote: user.rz_insert_key_sequence("{{space}}`")
+s brace brace: user.rz_insert_key_sequence("{{Space}}{{{{}}{{{{}}")
+s brace enter: user.rz_insert_key_sequence("{{space}}{{{{}}{{enter}}")
 s c one five: "sc1"
 s c five: "sc"
 s c six: "SC"
@@ -4297,13 +4559,21 @@ s d n six: "SDN"
 s d u : "SDU"
 s d u six: "SDU"
 s d use: "SDUs"
+s dash five: user.rz_insert_key_sequence("{{Space}}-{{heardword:"[Z. 5]"}}")
+s dash cap delta: user.rz_insert_key_sequence("{{space}}-D")
+s dash dash l: user.rz_insert_key_sequence("{{Space}}--{{heardword:"[Z. 1 L.]"}}")
+s dash dash max count: user.rz_insert_key_sequence("{{space}}--max-count=")
 s dash dash one line: user.rz_insert_key_sequence("{{space}}--oneline")
+s dash l: user.rz_insert_key_sequence("{{Space}}-{{heardword:"[Z. 1 L.]"}}")
+s dash message: " -Message"
 s dash p s : " -PS"
 s dash pro: "S-Pro"
 s dash verb: " -Verb"
 s dash victor: user.rz_insert_key_sequence("{{space}}-v")
 s dash: " -"
 s declare: "DECLARE "
+s dollar l: user.rz_insert_key_sequence(" ${{Z1L}}")
+s dot net: " dotnet"
 s dot v i c : "S.VIC"
 s dot: "S."
 s e five: "se"
@@ -4349,6 +4619,8 @@ s l a six: "SLA"
 s l a a: "slaa"
 s l r six: "SLR"
 s l t six: "SLT"
+s l: user.rz_insert_key_sequence(" {{Z1L}}")
+s left brace s: " { "
 s left brace: " {"
 s left right p left: user.rz_insert_key_sequence("{{space}}(){{left}}")
 s lock u s b: "ssslkusb"
@@ -4443,6 +4715,8 @@ s t a t: "stat"
 s t d five: "std"
 s t d six: "STD"
 s t d call: "stdcall"
+s t d colon: user.rz_insert_key_sequence("std::{{Z1L}}")
+s t d i o: "stdio"
 s t d string: "std::string"
 s t d: "std"
 s t g six: "STG"
@@ -4478,18 +4752,26 @@ s w l: "swl"
 s y g i c: "sygic"
 s y n c: "sync"
 s y s: "sys"
+s21: "S21"
 sdash dash delete: user.rz_insert_key_sequence("{{space}}--delete{{space}}")
 sdash t r five: " -tr"
 sacks institute: "Sax Institute"
 safe array: "SAFEARRAY"
 sam six: "SAM"
 sam ten: "Samten"
+samba: "Samba"
 same era: "Sameera"
 san disk: "SanDisk"
 saturn under c: "SATURN_C"
 scale a: "Scala"
 schema dot table seven: "schemaDotTable"
 sci ends: "Sciens"
+scratch one: user.rz_insert_key_sequence("")
+scratch two: user.rz_insert_key_sequence("")
+scratch three: user.rz_insert_key_sequence("")
+scratch four: user.rz_insert_key_sequence("")
+scratch five: user.rz_insert_key_sequence("")
+scratch that: user.rz_insert_key_sequence("")
 screen shot: "screenshot"
 screen shots: "screenshots"
 scroll bar three: "ScrollBar"
@@ -4564,6 +4846,8 @@ shalom nahag: "hello driver"
 shape file one: "Shapefile"
 shift d 10: user.rz_insert_key_sequence("{{shift-down}}{{shift-down}}{{shift-down}}{{shift-down}}{{shift-down}}{{shift-down}}{{shift-down}}{{shift-down}}{{shift-down}}{{shift-down}}")
 shift house key k k: user.rz_insert_key_sequence("{{shift-home}}[[")
+shift house key slow k k: user.rz_insert_key_sequence("{{Shift+Home}}{{wait:200}}{{Shift+Home}}[[")
+shift m up: user.rz_insert_key_sequence("{{f4}}")
 shill off: "Chilov"
 shop a docket: "Shop-A-Docket"
 shop mate: "ShopMate"
@@ -4580,6 +4864,8 @@ sigh kit learn: "scikit-learn"
 signal r: "SignalR"
 signer one: "Signer"
 sim card: "SimCard"
+single quote l: user.rz_insert_key_sequence("'{{Z1L}}")
+single quote paste quote: user.rz_insert_key_sequence("'{{ctrl-v}}'")
 single quote quote braces: user.rz_insert_key_sequence("'{{}}'{{left}}{{left}}")
 single quote quote left: user.rz_insert_key_sequence("''{{left}}")
 single quote quote: "''"
@@ -4662,8 +4948,18 @@ slash nine 20 21: "/9/2021"
 slash nine: "/9"
 slash ancient: "/ancient"
 slash b b : "BB"
-slash info excerpt: ""/info"
+slash child: user.rz_insert_key_sequence("/{{wait:250}}child")
+slash code enter: user.rz_insert_key_sequence("/{{wait:250}}code{{Enter}}")
+slash divider: user.rz_insert_key_sequence("/{{wait:200}}divider{{Enter}}")
+slash exports: "/exports "
+slash info excerpt: "/info"
+slash info: user.rz_insert_key_sequence("/{{wait:200}}info{{Enter}}")
+slash jeera: user.rz_insert_key_sequence("/{{wait:300}}JIRA{{Enter}}")
+slash l: user.rz_insert_key_sequence("/{{Z1L}}")
+slash link enter: user.rz_insert_key_sequence("/link{{enter}}")
 slash n 1000: "/n1000 "
+slash quote: user.rz_insert_key_sequence("/{{wait:300}}quote{{Enter}}")
+slash r z : "/RZ"
 slash right angle bracket: "/>"
 slash romeo space: "/r "
 slash slash : "//"
@@ -4701,12 +4997,17 @@ source dash: "source-"
 source safe: "SourceSafe"
 space ampersand: " & "
 space back: " \"
+space bar l: user.rz_insert_key_sequence(" {{Z1L}}")
+space d: "spaced"
 space dollar sign: " $"
+space l: user.rz_insert_key_sequence(" {{Z1L}}")
+space right bracket: " ]"
 space slash right angle: user.rz_insert_key_sequence("{{space}}/>")
 space slash right: " />"
 space space: "  "
 space vertical bar: " |"
 spacy five: "spacy"
+spacy: "spaCy"
 spark three: "Spark"
 spatial lite: "SpatiaLite"
 speed enter: user.rz_insert_key_sequence("speed{{enter}}")
@@ -4743,6 +5044,8 @@ street under line: "STREET_LINE"
 street under locality line: "STREET_LOCALITY_LINE"
 street under locality p i d : "STREET_LOCALITY_PID"
 street under locality: "STREET_LOCALITY"
+string five less: user.rz_insert_key_sequence("string {{Z1L}}")
+string five s: "string "
 string five t: user.rz_insert_key_sequence("string{{tab}}")
 string five: "string"
 string ampersand: "string&"
@@ -4805,6 +5108,8 @@ surround with: user.rz_insert_key_sequence("{{ctrl-k}}s")
 surry hills: "Surry Hills"
 swift x: "Swyftx"
 swimming under pool six: "SWIMMING_POOL"
+switch x comma y: user.rz_insert_key_sequence("{{Shift+ExtEnd}}{{Ctrl+x}}{{BackSpace}}{{ExtHome}}{{wait:100}}{{Ctrl+v}},{{Space}}{{End}}")
+sys dash: "SYS-"
 system dot: "System."
 system net: "Systemnet"
 t  zero: "T0"
@@ -4818,6 +5123,8 @@ t a s colon s: "TAS: "
 t a s comma: "TAS,"
 t a s under: "TAS_"
 t a u: "tau"
+t a under: user.rz_insert_key_sequence("TA_")
+t a v i six: "TAVI"
 t ampersand t: "T&T"
 t and t state: "T&T State"
 t b d six: "TBD"
@@ -4833,6 +5140,8 @@ t cache under: "tCache_"
 t char: "TCHAR"
 t d five: "td"
 t d six: "TD"
+t d dot l: user.rz_insert_key_sequence("td.{{Z1L}}")
+t d under: "TD_"
 t e c h: "tech"
 t e m p: "temp"
 t equals zero: "T=0"
@@ -4845,6 +5154,10 @@ t f keras dot: "tf.keras."
 t f n six: "TFN"
 t f t p : "TFTP"
 t file: "TFile"
+t for con less: user.rz_insert_key_sequence("for (const  in ) {{{{Z1L}}")
+t function s: user.rz_insert_key_sequence("function{{space}}")
+t get less: user.rz_insert_key_sequence("get {{Z1L}}")
+t h c six: "THC"
 t h c: "thc"
 t h x: "thx"
 t i five: "ti"
@@ -4938,6 +5251,9 @@ tab six: "TAB"
 tab seven colon: user.rz_insert_key_sequence("{{tab}}7:")
 tab eight colon: user.rz_insert_key_sequence("{{tab}}8:")
 tab nine colon: user.rz_insert_key_sequence("{{tab}}9:")
+tab key two slow: user.rz_insert_key_sequence("{{Tab}}{{wait:200}}{{Tab}}")
+tab key l: user.rz_insert_key_sequence("{{Tab}}{{Z1L}}")
+tab key s: user.rz_insert_key_sequence("{{tab}}{{space}}")
 tab lu: "Tableau"
 tab minus 10: user.rz_insert_key_sequence("{{tab}}-10")
 tab minus 15: user.rz_insert_key_sequence("{{tab}}-15")
@@ -4952,6 +5268,8 @@ tag search commercial: "Tag: Search Commercial"
 tail space: "tail "
 tango under left: user.rz_insert_key_sequence("T_{{left}}")
 task left: "Task<"
+task manager admin: user.rz_insert_key_sequence("Task Manager{{heardword:"[M. Right]"}}")
+team viewer: "TeamViewer"
 teams one: "Teams"
 tech type seven: "techType"
 tell net: "telnet"
@@ -4970,9 +5288,12 @@ text box seven: "textBox"
 text box: "TextBox"
 text direction one: "TextDirection"
 text racked: "Textract"
-thanks ronny: ""Thanks"
+thanks ronny: "Thanks"
+the ta: "theta"
 the word hotmail: "bellyB@44HM"
 third t: "third"
+this dot l: user.rz_insert_key_sequence("this.{{Z1L}}")
+this dot: "this."
 tick tock: "TikTok"
 tilde tilde: "~~"
 time code: "timecode"
@@ -4980,6 +5301,7 @@ time codes: "timecodes"
 time span: "TimeSpan"
 time stamp: "timestamp"
 time stream: "Timestream"
+timtzotskoofim: "Go suck monkeys"
 tinker pop: "TinkerPop"
 to alpha: "to a"
 to be: "to be"
@@ -5015,6 +5337,10 @@ transport hierarchy code six: "TRANSPORT_HIERARCHY_CODE"
 transport under hierarchy code: "TRANSPORT_HIERARCHY_CODE"
 tree no: "Trino"
 tribo electric: "triboelectric"
+triple slash angle: user.rz_insert_key_sequence("/// <")
+triple slash remarks: "/// <remarks>"
+triple slash: user.rz_insert_key_sequence("/// ")
+true five: "true"
 trunk five: "trunk"
 truth e: "truthy"
 tuple string string: "TupleStringString"
@@ -5144,6 +5470,8 @@ under i n d: "_ind"
 under j t t: "_JTT"
 under juliet: "_j"
 under l o g: "_Log"
+under l: user.rz_insert_key_sequence("_{{Z1L}}")
+under last six: "_LAST"
 under line six: "_LINE"
 under lit six: "_LIT"
 under locality six: "_LOCALITY"
@@ -5229,6 +5557,8 @@ underscore echo: "_e"
 underscore golf: "_g"
 underscore india: "_i"
 underscore kilo: "_k"
+underscore l: user.rz_insert_key_sequence("_{{Z1L}}")
+underscore lima: "_l"
 underscore mike: "_m"
 underscore tango: "_t"
 underscore uniform: "_u"
@@ -5241,6 +5571,7 @@ unit dash: "UNIT-"
 unit test: "UnitTest"
 up jeep: "Abhijeet"
 update data: "UpdateData("
+uppercase next: user.rz_insert_key_sequence("")
 upstream dash: "upstream-"
 user name: "user name"
 using call point dot: "using Callpoint."
@@ -5323,6 +5654,8 @@ v s s: "vss"
 v s x f l: "VsXfl"
 v t dash x: "VT-x"
 v t l six: "VTL"
+v t under: user.rz_insert_key_sequence("VT_{{heardword:"[Z. 6]"}}")
+v u meter: "VUMeter"
 v vocus system: "Vocus system"
 v vocus: "Vocus"
 v x d six: "VXD"
@@ -5342,6 +5675,8 @@ victor six: "v6"
 victor 17: "v17"
 virtual box: "VirtualBox"
 visual s v n : "VisualSVN"
+visual studio admin: user.rz_insert_key_sequence("Visual Studio{{heardword:"[M. Right]"}}")
+vitamin delta: "vitamin D"
 vitamin kilo: "vitamin K"
 vocus dash pricing: "Vocus-Pricing"
 voice mail: "voicemail"
@@ -5498,7 +5833,10 @@ x o d o: "xodo"
 x p six: "XP"
 x p s: "xps"
 x path: "XPath"
+x s colon l: user.rz_insert_key_sequence("xs:{{Z1L}}")
+x s d five: user.rz_insert_key_sequence("xsd")
 x s d six: "XSD"
+x s d under: user.rz_insert_key_sequence("xsd_")
 x s d: "xsd"
 x s l t : "XSLT"
 x slash y: "x/y"
@@ -5536,6 +5874,8 @@ you b key: "YubiKey"
 you tube: "YouTube"
 your car log one: "YourCarLog"
 z period: "period"
+z one l  s: user.rz_insert_key_sequence("")
+z 55: "Z55"
 z 56: "Z56"
 z nine six u w six: "Z96Uw6"
 z alpha: "alpha"
@@ -5589,6 +5929,7 @@ z whiskey: "whiskey"
 z x-ray: "x-ray"
 z yankee: "yankee"
 z zango: "Zango"
+zainbeayin: "Dick in your eye"
 zala com: "Xalacom"
 zala tan: "Xalatan"
 zed man here: "zedmanhere"
