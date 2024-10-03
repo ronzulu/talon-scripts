@@ -104,9 +104,9 @@ class ZModeActions:
             actions.user.rz_set_format(s)
         elif s.startswith("wait:"):
             actions.sleep("{s[5:]}ms")
-        elif s == "left-brace":
+        elif s == "l-brace":
             actions.insert('{')
-        elif s == "right-brace":
+        elif s == "r-brace":
             actions.insert('}')
         else:
             actions.key(s)

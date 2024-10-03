@@ -5,4 +5,4 @@ test it sometime: user.rz_insert_key_sequence("{{left-brace}}{{enter}}{{enter}}{
 
 (c name space | c namespace | ten name space): "namespace "
 
-hullo: "hello"
+(hullo | hallo) : "hello"

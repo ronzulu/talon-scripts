@@ -24,7 +24,7 @@ namespace ConvertDict
                     int end = ddKeys.IndexOf('}', i + 1);
                     if ((pos != -1) && (pos < end))
                     {
-                        sb.Append("{left-brace}");
+                        sb.Append("{l-brace}");
                     }
                     else
                     {
@@ -41,7 +41,9 @@ namespace ConvertDict
                     }
                 }
                 else if (c == '}')
-                    sb.Append("{right-brace}");
+                    sb.Append("{r-brace}");
+                else
+                    sb.Append(c);
 
                 i++;
             }

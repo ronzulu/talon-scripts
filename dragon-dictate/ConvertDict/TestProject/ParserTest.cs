@@ -34,7 +34,7 @@ namespace TestProject
         {
             string input = @"add-word ""[C. New Block]"" /keys {{Enter}{Enter}}{Up}{End}{Tab} /nsc";
 
-            TestSingle(input, "c new block", "{left-brace}{enter}{enter}}{up}{end}{tab}");
+            TestSingle(input, "c new block", "{l-brace}{enter}{enter}{r-brace}{up}{end}{tab}");
         }
 
         [Test]
