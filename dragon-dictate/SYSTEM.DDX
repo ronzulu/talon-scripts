@@ -365,7 +365,6 @@ add-word "[Alt Hotel]" /keys {Alt+h} /nsc
 add-word "[Alt India]" /keys {Alt+i} /nsc
 add-word "[Alt Juliet]" /keys {Alt+j} /nsc
 add-word "[Alt Key Enter]" /keys {Alt+Enter} /nsc
-add-word "[Alt Key]" /script "ShiftKey 3, 2" /nsc /nrs /u /m
 add-word "[Alt Kilo]" /keys {Alt+k} /nsc
 add-word "[Alt Lima]" /keys {Alt+l} /nsc
 add-word "[Alt Mike]" /keys {Alt+m} /nsc
@@ -394,35 +393,14 @@ add-word "[Back Tab Copy]" /keys {Shift+Tab}{Ctrl+c} /nsc
 add-word "[Back Tab]" /keys {Shift+Tab} /sa0 /sb0 /u /m
 add-word "[Backspace Key]" /keys {Backspace} /nsc /u /m
 add-word [Backspace] /keys {Backspace} /nsc /u /m
-add-word "[Begin Document]" /script "ResetGroup
-SetDictationMode 1
-CapitalizeNext 1
-NoSpaceNext 1" /nsc /u /m
 add-word "[Beginning of Line]" /keys {Home} /nsc
-add-word "[Betty Please]" /script "listenfromGroup 1" /nsc
 add-word "[Bottom of Document]" /keys {Ctrl+End} /nsc
-add-word "[Bring Up The]" /script AppBringUp /nsc /u /nr /nf
-add-word "[Bring Up]" /script AppBringUp /nsc /u /nr /m
-add-word "[Button Click]" /script "ButtonClick 1,1" /nsc
-add-word "[Button Double Click]" /script "ButtonClick 1,2" /nsc /m /nf
-add-word "[C. And. L.]" /script "SendKeys \" && \"
-CapitalizeNext 2" /nsc
-add-word "[Caps Lock]" /script "CapitalizeBegin 5" /nsc /u /m
-add-word "[Clear Desktop]" /script ClearDesktop /nsc /u /nr /m
-add-word "[Clear Flags]" /script "ShiftKey 0
-NoSpaceNext 1
-CapitalizeBegin 0
-NoSpaceBegin 0
-NoSpaceNext 0
-CapitalizeNext 0" /nsc /u /m
 add-word "[Close Document]" /keys {Ctrl+F4} /nsc
 add-word "[Close Window]" /keys {Alt+F4} /nsc
 add-word "[Command Copy]" /keys {Ctrl+c} /nsc
 add-word "[Command Cut]" /keys {Ctrl+x} /nsc
 add-word "[Command Paste]" /keys {Ctrl+v} /nsc
 add-word "[Command Undo]" /keys {Ctrl+z} /nsc
-add-word "[Computer Please]" /script "NoSpaceNext 1
-ListenFromGroup 1" /nsc /u /nr /m
 add-word "[Control Alpha]" /keys {Ctrl+a} /nsc
 add-word "[Control Alt 0]" /keys {Ctrl+Alt+0} /nsc
 add-word "[Control Alt 2]" /keys {Ctrl+Alt+2} /nsc
@@ -440,8 +418,6 @@ add-word "[Control Delete 5]" /keys {Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctr
 add-word "[Control Delete]" /keys {Ctrl+Del} /nsc
 add-word "[Control Delta]" /keys {Ctrl+d} /nsc
 add-word "[Control Down Arrow]" /keys {Ctrl+Down} /nsc
-add-word "[Control Drag]" /script "ShiftKey 2
-HeardWord \"[Key Drag]\"" /nsc
 add-word "[Control Echo]" /keys {Ctrl+e} /nsc
 add-word "[Control Enter]" /keys {Ctrl+Enter} /nsc
 add-word "[Control F. 3]" /keys {Ctrl+F3} /nsc
@@ -484,18 +460,9 @@ add-word "[Copy End Key]" /script "SendKeys \"{Shift+End}{Ctrl+c}\"" /nsc
 add-word "[Copy Home Key]" /script "SendKeys \"{Shift+Home}{Ctrl+c}\"" /nsc
 add-word "[Copy House Key]" /script "SendKeys \"{Shift+Home}{Ctrl+c}\"" /nsc
 add-word "[Copy That]" /script "SendKeys \"{ctrl+c}\"" /nsc
-add-word "[Copy To Dragon Pad]" /script "SendKeys \"{Ctrl+c}\"
-HeardWord \"[Show Mars 3]\"
-HeardWord \"[Send  Clipboard]\"
-ShellExecute \"C:\\sw\\Mars2Exec.exe Mars3.ShellExecute|C:\\Windows\\System32\\Notepad.exe\", 6
-Wait 200
-SendKeys \"{Ctrl+v}\"
-HeardWord \"[Speak Naturally]\"" /nsc
-add-word [Copy] /keys {Ctrl+c} /nsc /nf
 add-word "[Cut End Key]" /script "SendKeys \"{Shift+End}{Ctrl+x}\"" /nsc
 add-word "[Cut House Key]" /keys {Shift+Home}{Ctrl+x} /nsc
 add-word "[Cut That]" /script "SendKeys \"{ctrl+x}\"" /nsc
-add-word [Cut] /keys {Ctrl+x} /nsc /nf
 add-word "[Delete All]" /keys {End}{Shift+Home}{Del} /nsc
 add-word "[Delete Back]" /keys {Del}{BackSpace} /nsc
 add-word "[Delete Bottom Of Document]" /keys {Ctrl+Shift+End}{Del} /nsc
@@ -516,21 +483,6 @@ CapitalizeNext 2" /nsc
 add-word "[Double Click]" /script "ButtonClick 1,2" /nsc /m /nf
 add-word "[Down Arrow]" /keys {Down} /nsc /m
 add-word [Down] /keys {Down} /nsc /m /nf
-add-word "[Drag Down]" /script "DragMouse 3" /nsc
-add-word "[Drag It]" /script "DragMouse 3
-HeardWord \"[Slower]\"
-HeardWord \"[Slower]\"
-HeardWord \"[Slower]\"
-HeardWord \"[Slower]\"
-HeardWord \"[Slower]\"" /nsc
-add-word "[Drag Left]" /script "DragMouse 4" /nsc /m /nf
-add-word "[Drag Lower Left]" /script "DragMouse 7" /nsc /m /nf
-add-word "[Drag Lower Right]" /script "DragMouse 6" /nsc /m /nf
-add-word "[Drag Right]" /script "DragMouse 2" /nsc /m /nf
-add-word "[Drag to Here]" /script "DragToPoint 1" /nsc
-add-word "[Drag Up]" /script "DragMouse 1" /nsc /m /nf
-add-word "[Drag Upper Left]" /script "DragMouse 8" /nsc /m /nf
-add-word "[Drag Upper Right]" /script "DragMouse 5" /nsc /m /nf
 add-word "[Drive Alpha]" /keys {Alt+v}a{Alt+d} /nsc
 add-word "[Drive Charlie]" /keys {Alt+v}c{Alt+d} /nsc
 add-word "[Drive Delta]" /keys {Alt+v}d{Alt+d} /nsc
@@ -538,9 +490,6 @@ add-word "[Drive Mike]" /keys {Alt+v}m{Alt+d} /nsc
 add-word "[Drive Papa]" /keys {Alt+v}p{Alt+d} /nsc
 add-word "[Drop List]" /keys {Alt+ExtDown} /nsc /u /nr /m
 add-word "[Edit Duplicate]" /script "SendKeys \"{Ctrl+c}{Ctrl+v}{Ctrl+v}\"" /nsc
-add-word "[Edit Find]" /script "MenuPick \"Edit\"
-MenuPick \"Find\"
-HeardWord \"[EditPaste]\"" /nsc
 add-word "[End Key Copy]" /keys {Shift+ExtEnd}{Ctrl+c} /nsc
 add-word "[End Key]" /keys {End} /nsc /m
 add-word "[End of Line]" /keys {End} /nsc
@@ -554,54 +503,11 @@ add-word "[Enter Letters]" /script "ListenFromGroup 1,\"Enter Letters\",\"Voiceb
 add-word "[Enter Number]" /script "ListenFromGroup 1,\"Number\",\"Number\"" /nsc /u /m
 add-word "[Enter Path]" /script "ListenFromGroup 1, \"Path\", \"RonnyZ\"" /nsc /u
 add-word "[Enter Time]" /script "ListenFromGroup 1, \"Time\", \"RonnyZ\"" /nsc
-add-word [Enter] /keys {Enter} /nsc /m /nf
-add-word "[Entered Date L. S.]" /script "SendKeys \" \"
-ListenFromGroup 1, \"DateLong\", \"RonnyZ\"" /nsc
 add-word "[Escape Key]" /keys {Esc} /nsc
 add-word [Escape] /keys {Esc} /nsc /m /nf
-add-word "[F. F. 2]" /keys {F2} /nsc
-add-word "[F. F. 3]" /keys {F3} /nsc
-add-word [F1] /keys {F1} /nsc /m /nf
-add-word [F10] /keys {F10} /nsc /m /nf
-add-word [F11] /keys {F11} /nsc /m /nf
-add-word [F12] /keys {F12} /nsc /m /nf
-add-word [F2] /keys {F2} /nsc /m /nf
-add-word [F3] /keys {F3} /nsc /m /nf
-add-word [F4] /keys {F4} /nsc /m /nf
-add-word [F5] /keys {F5} /nsc /m /nf
-add-word [F6] /keys {F6} /nsc /m /nf
-add-word [F7] /keys {F7} /nsc /m /nf
-add-word [F8] /keys {F8} /nsc /m /nf
-add-word [F9] /keys {F9} /nsc /m /nf
-add-word "[File Manager]" /script "AppBringUp \"File Manager\"" /nsc
-add-word "[File Open]" /script "MenuPick \"File\"
-MenuPick \"Open\"" /nsc
-add-word "[Files of Type All]" /script "ControlPick \"Files of Type\"
-SendKeys \"a\"" /nsc
-add-word "[Function 1]" /keys {F1} /nsc
-add-word "[Function 10]" /keys {F10} /nsc
-add-word "[Function 11]" /keys {F11} /nsc /nf
-add-word "[Function 12]" /keys {F12} /nsc /nf
-add-word "[Function 2]" /keys {F2} /nsc
-add-word "[Function 3]" /keys {F3} /nsc
-add-word "[Function 4]" /keys {F4} /nsc /nf
-add-word "[Function 5]" /keys {F5} /nsc
-add-word "[Function 6]" /keys {F6} /nsc
-add-word "[Function 7]" /keys {F7} /nsc
-add-word "[Function 8]" /keys {F8} /nsc /nf
-add-word "[Function 9]" /keys {F9} /nsc
-add-word "[Get Help]" /keys {F1} /nsc
 add-word "[Go And Paste]" /keys {Enter}{Ctrl+v} /nsc
-add-word "[Go to Sleep Betty]" /script GoToSleep /nsc
-add-word "[Hex H.]" /script "ListenFromGroup 1,\"HexH\",\"RonnyZ\"" /nsc
-add-word "[Hex Tab]" /script "ListenFromGroup 1,\"HexTab\",\"RonnyZ\"" /nsc
-add-word "[Hex X. Comma]" /script "ListenFromGroup 1,\"HexX Comma\",\"RonnyZ\"" /nsc
-add-word "[Hex X. S.]" /script "SendKeys \" \"
-ListenFromGroup 1,\"HexX\",\"RonnyZ\"" /nsc
-add-word "[Hex X.]" /script "ListenFromGroup 1,\"HexX\",\"RonnyZ\"" /nsc
 add-word "[Home Key Copy]" /keys {Shift+ExtHome}{Ctrl+c} /nsc
 add-word "[Home Key]" /keys {Home} /nsc /m
-add-word "[Insert Key]" /keys {Ins} /nsc /nf
 add-word "[K. 7 Mark]" /keys k7!Hx^Eh /nsc
 add-word "[K. Left 1]" /keys {Ctrl+Shift+Left} /nsc
 add-word "[K. Left 2]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left} /nsc
@@ -609,52 +515,6 @@ add-word "[K. Left 3]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left}
 add-word "[K. Left 4]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left} /nsc
 add-word "[K. Left 5]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left} /nsc
 add-word "[K. Left Arrow]" /keys {Ctrl+Shift+Left} /nsc
-add-word "[Keepass Callpoint]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe Mars3.ShellExecute|`E:\\Documents\\Callpoint__\\Admin\\Callpoint Passwords.kdbx`\", 6" /nsc
-add-word "[Key Cat 6]" /script "HeardWord \"[Key Cat]\"
-HeardWord \"[Z. 6]\"" /nsc
-add-word "[Key Cat C.]" /script "ButtonClick 1,2
-NoSpaceNext
-ShiftKey 1, 0
-CapitalizeNext 1" /nsc
-add-word "[Key Cat]" /script "ButtonClick 1,2
-NoSpaceNext
-ShiftKey 1, 0
-CapitalizeNext 0" /nsc
-add-word "[Key Delete]" /keys {Del} /nsc
-add-word "[Key Drag]" /script "DragMouse 3
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower
-MoveSlower" /nsc
-add-word "[Key Enter]" /keys {Enter} /nsc
 add-word [L.] /script "HeardWord \"[Z. 1 L.]\"" /nsc
 add-word "[left angle bracket]" /keys < /sa0 /u
 add-word "[Left Arrow]" /keys {Left} /nsc /m
@@ -662,30 +522,9 @@ add-word "[Left Bracket]" /keys [ /sa0 /cr /u /m
 add-word "[Left Click]" /script "ButtonClick 1,1" /nsc /m /nf
 add-word "[Left Double Click]" /script "ButtonClick 1,2" /nsc /m /nf
 add-word [Left] /keys {Left} /nsc /m /nf
-add-word "[M. Active]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.ToggleActive\", 6" /nsc
-add-word "[M. Double Click]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.NextDoubleClick\", 6" /nsc
-add-word "[M. Left]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.NextClickLeft\", 6" /nsc
-add-word "[M. Right]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.NextClickRight\", 6"
-add-word "[Mac Alpha]" /keys ";CA1416" /nsc
-add-word "[Mac Bravo]" /keys {Shift+Down}{Shift+Down}{Shift+Down}{Del}{Down} /nsc
-add-word "[Mac Charlie]" /keys "3wS01?]a\\ob5" /nsc
-add-word "[Mac Delta]" /script "HeardWord \"[Zed]\"
 HeardWord \"[EditCut]\"" /nsc
-add-word "[Mac Echo]" /keys "#define {Home}{Down}" /nsc
-add-word "[Mark Here]" /script RememberPoint /nsc
 add-word "[Maximize Document]" /keys {Alt+-}x /nsc
-add-word "[Microphone Off]" /script "SetMicrophone 0" /nsc /u /nr /m
 add-word "[Minimize Document]" /keys {Alt+-}n /nsc
-add-word "[Mouse Down]" /script "MoveMouse 3" /nsc /m /nf
-add-word "[Mouse Grid on Window]" /script "MouseGrid 2" /nsc /m
-add-word "[Mouse Grid]" /script "MouseGrid 1" /nsc /m
-add-word "[Mouse Left]" /script "MoveMouse 4" /nsc /m /nf
-add-word "[Mouse Lower Left]" /script "MoveMouse 7" /nsc /m /nf
-add-word "[Mouse Lower Right]" /script "MoveMouse 6" /nsc /m /nf
-add-word "[Mouse Right]" /script "MoveMouse 2" /nsc /m /nf
-add-word "[Mouse Up]" /script "MoveMouse 1" /nsc /m /nf
-add-word "[Mouse Upper Left]" /script "MoveMouse 8" /nsc /m /nf
-add-word "[Mouse Upper Right]" /script "MoveMouse 5" /nsc /m /nf
 add-word "[Move Down 1]" /keys {Down} /nsc /m
 add-word "[Move Down 10]" /keys {Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down} /nsc
 add-word "[Move Down 2]" /keys {Down}{Down} /nsc /m
@@ -711,18 +550,12 @@ add-word "[Move Up 2]" /keys {Up}{Up} /nsc /m
 add-word "[Move Up 3]" /keys {Up}{Up}{Up} /nsc /m
 add-word "[Move Up 4]" /keys {Up}{Up}{Up}{Up} /nsc /m
 add-word "[Move Up 5]" /keys {Up}{Up}{Up}{Up}{Up} /nsc /m
-add-word "[Move Up]" /script "MoveCaret 1" /nsc /m /nf
-add-word "[Move VoiceBar]" /script MoveVoiceBar /nsc /u /nr /m
-add-word "[Move Voicebar]" /script MoveVoicebar /nsc /m /nf
 add-word "[Move Window]" /keys {Alt+Space}m /nsc
 add-word "[New Line]" /keys {Enter} /sa0 /sb0 /cr /u /m
-add-word "[New Paragraph 2]" /script "HeardWord \"[New Paragraph]\"
-HeardWord \"[New Paragraph]\""
 add-word "[Next Document]" /keys {Ctrl+F6} /nsc
 add-word "[Next Window]" /script "SendSystemKeys \"{Alt+Esc}\"" /nsc
 add-word "[No Space Tango]" /keys t /nsc
 add-word "[Open Bracket]" /keys [ /sa0 /cr /u /m
-add-word "[Open Personal Keepass]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe Mars3.ShellExecute|C:\\Users\\ronny\\OneDrive\\Passwords.kdbx\", 6" /nsc
 add-word "[P. Hot Mail]" /keys bellyB@44HM{Enter} /nsc
 add-word "[P. Mars 4]" /keys QQ*m-4*qUQUqpjMlrS2?PbdA!*ng)rzE{Enter} /nsc
 add-word "[P. Whack V. M.]" /script "SendKeys \"$f0G8o&-ihpKr?t.%;z(H-yCJ.cNXvKx\"" /nsc
@@ -744,73 +577,12 @@ add-word "[Paste And Go]" /keys {Ctrl+v}{Enter} /nsc
 add-word "[Paste End Key]" /keys {Shift+End}{Ctrl+v} /nsc
 add-word "[Paste House Key]" /script "SendKeys \"{Shift+Home}{Ctrl+v}\"" /nsc
 add-word "[Paste That Dot]" /keys {Ctrl+v}. /nsc
-add-word "[Paste That]" /script "SendKeys \"{ctrl+v}\"" /nsc
-add-word [Paste] /keys {Ctrl+v} /nsc /nf
 add-word "[Peek Def]" /keys {Alt+F12} /nsc
-add-word "[Phone Extension]" /script "ListenFromGroup 1,\"Extension\",\"Number\"" /nsc /u /m
-add-word "[Phone Number]" /script "ListenFromGroup 1,\"Phone Number\",\"Number\"" /nsc /u /m
-add-word "[Phone Ring.]" /script GoToSleep /nsc
-add-word "[Postal Code]" /script "ListenFromGroup 1,\"Zip Code\",\"Number\"" /nsc /u /m
-add-word "[Press Enter]" /keys {Enter} /nsc /nf
 add-word "[Previous Document]" /keys {Shift+Ctrl+F6} /nsc
 add-word "[Previous Window]" /script "SendSystemKeys \"{Shift+Alt+Esc}\"" /nsc
-add-word "[Program Manager]" /script "AppBringUp \"Progman\"" /nsc
-add-word "[R. Click]" /script "ButtonClick 2,1" /nsc
 add-word "[R. Z. 5]" /keys rz
-add-word "[Read Document]" /script "SendKeys \"{Ctrl+Home}\"
-Wait 20
-SendKeys \"{Shift+Ctrl+End}\"
-Wait 200
-HeardWord \"[Read That]\"
-SendKeys \"{Ctrl+End}\"" /nsc
-add-word "[Read e-mail]" /script "SendKeys \"{Ctrl+Home}\"
-Wait 20
-SendKeys \"{Shift+Ctrl+End}\"
-Wait 20
-SendKeys \"{Ctrl+c}\"
-TTSPlayString \"\", \"/e\"
-SendKeys \"{Ctrl+End}\"" /nsc
-add-word "[Read Line]" /script "SendKeys \"{ExtHome}\"
-Wait 20
-SendKeys \"{Shift+ExtEnd}\"
-HeardWord \"[Read That]\"
-SendKeys \"{ExtEnd}\"" /nsc
-add-word "[Read Page]" /script "SendKeys \"{ExtHome}{Ctrl+ExtPgUp}\"
-Wait 20
-SendKeys \"{Ctrl+Shift+ExtPgDn}\"
-Wait 20
-SendKeys \"{Shift+ExtEnd}\"
-HeardWord \"[Read That]\"
-SendKeys \"{ExtEnd}\"" /nsc /nf
-add-word "[Read That X]" /script "Wait 20
-SendKeys \"{Ctrl+c}\"
-Wait 20
-TTSPlayString" /nsc /nf
-add-word "[Read That]" /script "Wait 20
-SendKeys \"{Ctrl+c}\"
-Wait 20
-TTSPlayString" /nsc
-add-word "[Read Word]" /script "SendKeys \"{Ctrl+ExtLeft}\"
-Wait 20
-SendKeys \"{Ctrl+Shift+ExtRight}\"
-HeardWord \"[Read That]\"
-SendKeys \"{Ctrl+ExtLeft}{Ctrl+ExtRight}\"" /nsc
 add-word "[Replace All]" /keys {Ctrl+End}{Ctrl+Shift+Home}{Ctrl+v} /nsc
 add-word "[Restore Document]" /keys {Alt+-}r /nsc
-add-word "[Right Alt]" /script "ShiftKey 6, 2" /nsc /nrs /u /m
-add-word "[Right Arrow]" /keys {Right} /nsc /m
-add-word "[Right Click]" /script "ButtonClick 2,1" /nsc /m /nf
-add-word "[Right Control]" /script "ShiftKey 5, 2" /nsc /nrs /u /m
-add-word "[Right Double Click]" /script "ButtonClick 2,2" /nsc /m /nf
-add-word "[Right Shift]" /script "ShiftKey 4, 2" /nsc /nrs /u /m
-add-word [Right] /keys {Right} /nsc /m /nf
-add-word "[Run Debug]" /script "AppBringUp \"DebugWin\"" /nsc
-add-word "[Run Microsoft Access]" /script "AppBringUp \"Microsoft Access\"" /nsc
-add-word "[Run Microsoft Word]" /script "AppBringUp \"Microsoft Word\"" /nsc
-add-word "[Run Visual]" /script "AppBringUp \"Visual C++\"" /nsc
-add-word "[Scroll Lock]" /keys {ScrollLock} /nsc /m
-add-word "[Send  Clipboard]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe Clipboard.Send\", 6" /nsc
-add-word "[Set Program Group]" /script "SetHomeGroup \"Word\",\"\",\"Programming\",\"RonnyZ\",0" /nsc
 add-word "[Shift Bottom Of Document]" /keys {Shift+Ctrl+End} /nsc
 add-word "[Shift D. 1]" /keys {Shift+Down} /nsc
 add-word "[Shift D. 10]" /keys {Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down} /nsc
@@ -824,8 +596,6 @@ add-word "[Shift End Key Left]" /keys {Shift+End}{Shift+ExtLeft} /nsc
 add-word "[Shift End Key]" /keys {Shift+End} /nsc
 add-word "[Shift Enter Key]" /keys {Shift+Enter} /nsc
 add-word "[Shift Enter]" /keys {Shift+Enter} /nsc
-add-word "[Shift F. 3]" /keys {Shift+F3} /nsc
-add-word "[Shift F2]" /keys {shift+F2} /nsc
 add-word "[Shift House Key]" /keys {Shift+Home} /nsc
 add-word "[Shift Key]" /script "ShiftKey 1, 2" /nsc /nrs /u /m
 add-word "[Shift Left 2]" /keys {Shift+Left}{Shift+Left} /nsc
@@ -853,8 +623,6 @@ add-word "[Shift Up 5]" /keys {Shift+Up}{Shift+Up}{Shift+Up}{Shift+Up}{Shift+Up}
 add-word "[Show Mars 2]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe ShowMachineWindow|MARS2\", 6" /nsc
 add-word "[Show Mars 3]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe ShowMachineWindow|MARS3\", 6" /nsc
 add-word "[Show Mars 4]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe ShowMachineWindow|MARS4\", 6"
-add-word "[Show Task List]" /script "ResetGroup
-SendKeys \"{ctrl+Esc}\"" /nsc
 add-word "[Show The Desktop]" /keys {Ctrl+F5} /nsc
 add-word "[Single Quote Paste Quote]" /keys '{Ctrl+v}' /nsc
 add-word "[Size Window]" /keys {Alt+Space}s /nsc
