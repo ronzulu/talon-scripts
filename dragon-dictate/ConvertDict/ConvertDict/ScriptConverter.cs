@@ -81,6 +81,13 @@ namespace ConvertDict
                 case "nospacebegin":
                 case "rejectpreviousword":
                 case "shellexecute":
+                case "gotosleep":
+                case "wordhistory":
+                case "showrecognitiongroups":
+                case "'":
+                case "appbringup":
+                case "controlpick":
+                case "shiftkey":
                     break;
 
                 default:

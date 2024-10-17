@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            string inputFilename = @"C:\Users\ronny\AppData\Roaming\talon\user\talon-scripts\dragon-dictate\DICTATIO.DDX";
+            string inputFilename = @"C:\Users\ronny\AppData\Roaming\talon\user\talon-scripts\dragon-dictate\SYSTEM.DDX";
             string tempFilename = @"c:\temp\talon\dictation.talon";
-            string outputFilename = @"C:\Users\ronny\AppData\Roaming\talon\user\talon-scripts\talon-customisation\dictation.talon";
+            string outputFilename = @"C:\Users\ronny\AppData\Roaming\talon\user\talon-scripts\talon-customisation\system.talon";
 
             string[] inputLines = File.ReadAllText(inputFilename).Split("\r\n");
             Parser parser = new Parser();

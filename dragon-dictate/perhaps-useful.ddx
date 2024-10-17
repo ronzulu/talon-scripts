@@ -1,0 +1,82 @@
+add-word "[Z Ack Copy]" /script "HeardWord \"[K Ack]\"
+HeardWord \"[EditCopy]\"" /nsc
+add-word "[Z Ack Paste]" /script "HeardWord \"[K Ack]\"
+HeardWord \"[EditPaste]\"" /nsc /nf
+add-word "[Z Ack Shift]" /script "ButtonClick 1,2
+NoSpaceNext
+ShiftKey 1, 1" /nsc
+add-word "[Z Click Paste]" /script "HeardWord \"[Z Click]\"
+HeardWord \"[EditPaste]\"" /nsc
+add-word "[Z Click]" /script "ButtonClick 1,1" /nsc
+add-word "[Z. Copy]" /script "HeardWord \"[Key Cat]\"
+Wait 100
+HeardWord \"[Copy That]\"" /nsc
+add-word "[Z. Paste]" /script "HeardWord \"[Key Cat]\"
+Wait 100
+HeardWord \"[Paste That]\"" /nsc
+add-word "[Z. Shift]" /script "ButtonClick 1,2
+NoSpaceNext
+ShiftKey 1, 1" /nsc
+add-word "a [alpha]" /keys /ss0 /u /m
+add-word "A [Cap alpha]" /keys /ss0
+add-word "b [bravo]" /keys /ss0 /u /m
+add-word "B [Cap bravo]" /keys /ss0
+add-word "C [Cap Charlie]" /keys /ss0
+add-word "c [charlie]" /keys /ss0 /u /m
+add-word "D [Cap delta]" /keys /ss0
+add-word "d [delta]" /keys /ss0 /u /m
+add-word "E [Cap echo]" /keys /ss0
+add-word "e [echo]" /keys /ss0 /u /m
+add-word "F [Cap foxtrot]" /keys /ss0
+add-word "f [foxtrot]" /keys /ss0 /u /m
+add-word "G [Cap golf]" /keys /ss0
+add-word "g [golf]" /keys /ss0 /u /m
+add-word "H [Cap hotel]" /keys /ss0
+add-word "h [hotel]" /keys /ss0 /u /m
+add-word "I [Cap India]" /keys /ss0
+add-word "i [india]" /keys /ss0 /u /m
+add-word "J [Cap Juliet]" /keys /ss0
+add-word "j [juliett]" /keys /ss0 /u /m
+add-word "K [Cap kilo]" /keys /ss0
+add-word "k [kilo]" /keys /ss0 /u /m
+add-word "L [Cap Lima]" /keys /ss0
+add-word "l [lima]" /keys /ss0 /u /m
+add-word "M [Cap Mike]" /keys /ss0
+add-word "m [mike]" /keys /ss0 /u /m
+add-word "N [Cap November]" /keys /ss0
+add-word "n [no thank you]" /keys
+add-word "n [november]" /keys /ss0 /u /m
+add-word "O [Cap Oscar]" /keys /ss0
+add-word "o [oscar]" /keys /ss0 /u /m
+add-word "P [Cap papa]" /keys /ss0
+add-word "p [papa]" /keys /ss0 /u /m
+add-word "Q [Cap Quebec]" /keys /ss0
+add-word "q [quebec]" /keys /ss0 /u /m
+add-word "R [Cap Romeo]" /keys /ss0
+add-word "r [romeo]" /keys /ss0 /u /m
+add-word "S [Cap sierra]" /keys /ss0
+add-word "s [sierra]" /keys /ss0 /u /m
+add-word "T [Cap tango]" /keys /ss0
+add-word "t [tango]" /keys /ss0 /u /m
+add-word "U [Cap uniform]" /keys /ss0
+add-word "u [uniform]" /keys /ss0 /u /m
+add-word "V [Cap victor]" /keys /ss0
+add-word "v [victor]" /keys /ss0 /u /m
+add-word "W [Cap whiskey]" /keys /ss0
+add-word "w [whiskey]" /keys /ss0 /u /m
+add-word "X [Cap X. Ray]" /keys /ss0
+add-word "x [xray]" /keys /ss0 /u /m
+add-word "Y [Cap Yankee]" /keys /ss0
+add-word "y [yankee]" /keys /ss0 /u /m
+add-word "y [yes please]" /keys
+add-word "Z [Cap Zulu]" /keys /ss0
+add-word "z [zulu]" /keys /ss0 /u /m
+add-word "[Maximize Document]" /keys {Alt+-}x /nsc
+add-word "[Minimize Document]" /keys {Alt+-}n /nsc
+
+add-word [L.] /script "HeardWord \"[Z. 1 L.]\"" /nsc
+add-word "[left angle bracket]" /keys < /sa0 /u
+add-word "[Left Arrow]" /keys {Left} /nsc /m
+add-word "[Left Bracket]" /keys [ /sa0 /cr /u /m
+add-word "[Next Window]" /script "SendSystemKeys \"{Alt+Esc}\"" /nsc
+add-word "[Previous Window]" /script "SendSystemKeys \"{Shift+Alt+Esc}\"" /nsc
