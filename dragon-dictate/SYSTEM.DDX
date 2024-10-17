@@ -1,0 +1,1656 @@
+switch-to-vocabulary /create /module System System
+switch-to-group /create System
+switch-to-group /create "Always Active"
+switch-to-group /create "Global Commands"
+switch-to-group /create "Bring Up"
+switch-to-group /create "Arrow Movement"
+switch-to-group /create "Mouse Movement"
+switch-to-group /create "Mouse Grid"
+switch-to-group /create Sleeping
+switch-to-group /create "Pop-up Menu"
+switch-to-group /create "Choice List"
+switch-to-group /create "Environmental Sounds"
+switch-to-group /create "Move or Select"
+switch-to-group /create Direction
+switch-to-group /create System
+switch-to-group /create "Always Active"
+add-word "[Alt Shift Romeo]" /keys {Alt+R} /nsc
+add-word "[Back Tab Tab]" /keys {Shift+Tab}{Shift+Tab} /nsc
+add-word "[Command Mode]" /script "ResetGroup
+SetDictationMode 0" /nsc /u /nr /m
+add-word "[Control Shift India]" /keys {Ctrl+I} /nsc
+add-word "[Dictate Betty]" /script "ResetGroup
+SetDictationMode 1" /nsc
+add-word "[Dictate Mode]" /script "ResetGroup
+SetDictationMode 1" /nsc /u /m
+add-word "[Do It Betty]" /script "ResetGroup
+SetDictationMode 0" /nsc
+add-word "[Go Sleep]" /script GoToSleep /nsc /u /nr
+add-word "[Go to Sleep Betty]" /script GoToSleep /nsc
+add-word "[Go to Sleep]" /script GoToSleep /nsc /u /nr /m
+add-word "[Lech Lishon Betty]" /script GoToSleep /nsc
+add-word "[Lech Lishon]" /script GoToSleep /nsc
+add-word "[Oops 2]" /script "WordHistory 1
+Wait 500
+SendKeys \"{Alt+2}{Enter}\"" /nsc
+add-word [Oops] /script "WordHistory 1" /nsc /u /nr /m
+add-word "[Shift F. 5]" /keys {Shift+F5} /nsc
+add-word "[What Can I Say]" /script ShowRecognitionGroups /nsc /u /nr /m
+switch-to-group /create "Global Commands"
+add-word "[<Move or Select> <Direction> <Number/1 to 40>]" /script "SendKeys \"{\"+Move_or_Select_1+Direction_1+\" \"+_1_to_40_1+\"}\",1" /nsc
+add-word "[Bring Up <Bring Up>]" /script ' /nsc
+add-word "! [exclamation mark]" /keys /ca /sa2 /sb0 /u /m
+add-word "! [exclamation point]" /keys /ca /sa2 /sb0 /u /m
+add-word "\" [close quote]" /keys /sb0 /cr /u /m
+add-word "\" [double quote]" /keys /sa0 /sb0 /u /m
+add-word "\" [open quote]" /keys /sa0 /cr /u /m
+add-word "\" [quote mark]" /keys /sa0 /sb0 /u /m
+add-word "\" [quote]" /keys /sa0 /sb0 /u /m
+add-word "# [number sign]" /keys /sa0 /ss0 /u /m
+add-word "# [pound sign]" /keys /sa0 /u /m
+add-word "$ [dollar sign]" /keys /sa0 /ss0 /u /m
+add-word "% [percent sign]" /keys /sb0 /u /m
+add-word "% [percent]" /keys /sb0 /u /m
+add-word "& [ampersand]" /keys /u /m
+add-word "' [apostrophe]" /keys /sb0 /u /m
+add-word "' [close single quote]" /keys /sb0 /cr /u /m
+add-word "' [open single quote]" /keys /sa0 /cr /u /m
+add-word "' [single quote]" /keys /sa0 /sb0 /u /m
+add-word "( [left P.]" /keys /sa0 /cr /u
+add-word "( [left paren]" /keys /sa0 /cr /u /m
+add-word "( [left parenthesis]" /keys /sa0 /cr /u /m
+add-word "( [open paren]" /keys /sa0 /cr /u /m
+add-word "( [open parenthesis]" /keys /sa0 /cr /u /m
+add-word ") [close paren]" /keys /sb0 /cr /u /m
+add-word ") [close parenthesis]" /keys /sb0 /cr /u /m
+add-word ") [right P.]" /keys /sb0 /cr /u
+add-word ") [right paren]" /keys /sb0 /cr /u /m
+add-word ") [right parenthesis]" /keys /sb0 /cr /u /m
+add-word "* [asterisk]" /keys /sa0 /sb0 /u /m
+add-word "* [star]" /keys /sa0 /sb0 /u /m
+add-word "+ [plus sign]" /keys /u /m
+add-word "+ [plus]" /keys /u /m
+add-word ", [comma]" /keys /sb0 /u /m
+add-word "- [hyphen]" /keys /sa0 /sb0 /u /m
+add-word "- [minus sign]" /keys /sa0 /ss0 /u /m
+add-word "- [minus]" /keys /sa0 /ss0 /u /m
+add-word "- [negative]" /keys /sa0 /ss0 /u /m
+add-word ". [dot]" /keys /sa0 /sb0 /u /m
+add-word ". [period]" /keys /ca /sb0 /u
+add-word ". [point]" /keys /sa0 /sb0 /u /m
+add-word ".. [dot dot]" /keys
+add-word "/ [slash]" /keys /sa0 /sb0 /u /m
+add-word ": [colon]" /keys /sb0 /ss0 /u /m
+add-word "; [semicolon]" /keys /sb0 /u /m
+add-word "< [left angle bracket]" /keys /ca /sa0 /u /m
+add-word "< [less than]" /keys /u /m
+add-word "< [open angle bracket]" /keys /ca /sa0 /u /m
+add-word "= [equal sign]" /keys /u /m
+add-word "= [equal]" /keys /u /m
+add-word "= [equals]" /keys /u /m
+add-word "> [close angle bracket]" /keys /sb0 /cr /u /m
+add-word "> [greater than]" /keys /u /m
+add-word "> [right angle bracket]" /keys /sb0 /cr /u /m
+add-word "? [question mark]" /keys /ca /sb0 /u
+add-word "@ [at sign]" /keys /sa0 /u /m
+add-word "[1 0 7]" /keys 107
+add-word "[1 2 3 4]" /keys 1234
+add-word "[4 Zeros]" /keys 0000
+add-word "[Add Abbreviation 5]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[]{left}\"
+ListenFromGroup 1, \"LetterAbbreviation5\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation 6]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[]{left}\"
+ListenFromGroup 1, \"LetterAbbreviation6\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation 7]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[]{left}\"
+ListenFromGroup 1, \"LetterAbbreviation7\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation Dot Space]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}\"
+ListenFromGroup 1, \"LetterAbbreviationDotSpace\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation Dot]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}e{Up}{Up}{Shift+Tab}\"
+ListenFromGroup 1, \"LetterAbbreviationDot\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation No 6 Under]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[]{left}\"
+ListenFromGroup 1, \"LetterAbbreviationNo6Under\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation No 6]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[]{left}\"
+ListenFromGroup 1, \"LetterAbbreviationNo6\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation Space]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}\"
+ListenFromGroup 1, \"LetterAbbreviationSpace\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation Star Dot Space]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}\"
+ListenFromGroup 1, \"LetterAbbreviationStarDotSpace\", \"RonnyZ\"" /nsc
+add-word "[Add Abbreviation Star Dot]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}\"
+ListenFromGroup 1, \"LetterAbbreviationStarDot\", \"RonnyZ\"" /nsc
+add-word "[Add New Abbreviation]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}e{Up}{Up}{Shift+Tab}[]{left}\"
+ListenFromGroup 1, \"LetterAbbreviation\", \"RonnyZ\"" /nsc
+add-word "[Add New Dub]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}e{Up}{Up}{Shift+Tab}[Dub ]{left}\"
+HeardWord \"[Z. 3]\"" /nsc
+add-word "[Add New Q.]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}e{Up}{Up}{Shift+Tab}[Q. ]{left}\"
+HeardWord \"[Z. 3]\"" /nsc
+add-word "[Add New Under]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}e{Up}{Up}{Shift+Tab}[Under ]{left}\"
+HeardWord \"[Z. 3]\"" /nsc
+add-word "[Add New Word]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}e{Up}{Up}{Shift+Tab}[]{left}\"
+HeardWord \"[Z. 3]\"" /nsc
+add-word "[Add Point Number]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Down}{Shift+Tab}[]{left}\"
+ListenFromGroup 1, \"PointNumber\", \"RonnyZ\"" /nsc
+add-word "[Add Word Alfalfa]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.AA ]{Alt+R}A\"
+SendKeys \"{Alt+R}{Del}{Alt+W}{End}{Backspace}\"" /nsc
+add-word "[Add Word Alpha Bravo]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.AB \"
+'rem HeardWord \"[Z1]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 1
+NoSpaceNext" /nsc
+add-word "[Add Word Alpha Charlie]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.AC \"
+'rem HeardWord \"[Z1]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 1
+NoSpaceNext" /nsc
+add-word "[Add Word Alpha Delta]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.AD \"
+'rem HeardWord \"[Z3]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Add Word Alpha Echo]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.AE \"
+HeardWord \"[Z3]\"" /nsc
+add-word "[Add Word Alpha Foxtrot]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.AF \"
+HeardWord \"[Z3]\"" /nsc
+add-word "[Add Word Alpha Tango]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.AT \"" /nsc
+add-word "[Add Word Ampersand]" /script "SendKeys \"{Home}{Ctrl+Right}{Shift+End}{Ctrl+C}\"
+SendKeys \"{Alt+R}{Ctrl+V}{Alt+W}{End} &]\"
+Wait 400
+ControlPick \"Train\"" /nsc
+add-word "[Add Word Bravo]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+'System/Global Commands vocabulary
+SendKeys \"{Alt+v}D{Shift+Tab}[.B ]{left}\"
+'rem HeardWord \"[Z3]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Add Word Charlie Tango]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.CT ]{left}\"
+HeardWord \"[Z1]\"" /nsc
+add-word "[Add Word Charlie]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.C ]{left}\"
+HeardWord \"[Z3]\"" /nsc
+add-word "[Add Word Complete]" /script "SendKeys \"{Home}{Ctrl+Right}{Shift+End}{Ctrl+C}\"
+SendKeys \"{Alt+R}{Ctrl+V}{Alt+W}{End}]\"
+Wait 400
+ControlPick \"Train Word\"" /nsc
+add-word "[Add Word DOS]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.DOS ]{Alt+R}A\"
+ControlPick \"Advanced\"
+SendKeys \"{Alt+S}\"
+ControlPick \"Ok\"
+SendKeys \"{Alt+R}{Del}{Alt+W}{End}{Backspace}\"" /nsc
+add-word "[Add Word Echo]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[E. ]{left}\"
+HeardWord \"[Z. 3]\"" /nsc
+add-word "[Add Word India]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.I ]{left}\"
+HeardWord \"[Z3]\"" /nsc
+add-word "[Add Word Star Dot]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}\"
+ListenFromGroup 1, \"LetterAbbreviationStarDot\", \"RonnyZ\"" /nsc
+add-word "[Add Word Victor]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.V \"
+'rem HeardWord \"[Z1]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 1
+NoSpaceNext" /nsc
+add-word "[Add Word X-ray]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.X ]{left}\"
+'rem HeardWord \"[Z3]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Add Word Yankee]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+SendKeys \"{Alt+v}d{Shift+Tab}[.Y ]{left}\"
+'rem HeardWord \"[Z3]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Add Word Zulu]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}\"
+MenuPick \"Tools\"
+MenuPick \"Add Word\"
+'System/Global Commands vocabulary
+SendKeys \"{Alt+v}s{Down 5}{Shift+Tab}[Z ]{left}\"
+'rem HeardWord \"[Z3]\"
+ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Alt Alpha]" /keys {Alt+a} /nsc
+add-word "[Alt Bravo]" /keys {Alt+b} /nsc
+add-word "[Alt Charlie]" /keys {Alt+c} /nsc
+add-word "[Alt Delta]" /keys {Alt+d} /nsc
+add-word "[Alt Echo]" /keys {Alt+e} /nsc
+add-word "[Alt F. 4]" /keys {Alt+F4} /nsc
+add-word "[Alt F4]" /keys {Alt+F4} /nsc
+add-word "[Alt Foxtrot]" /keys {Alt+f} /nsc
+add-word "[Alt Golf]" /keys {Alt+g} /nsc
+add-word "[Alt Hotel]" /keys {Alt+h} /nsc
+add-word "[Alt India]" /keys {Alt+i} /nsc
+add-word "[Alt Juliet]" /keys {Alt+j} /nsc
+add-word "[Alt Key Enter]" /keys {Alt+Enter} /nsc
+add-word "[Alt Key]" /script "ShiftKey 3, 2" /nsc /nrs /u /m
+add-word "[Alt Kilo]" /keys {Alt+k} /nsc
+add-word "[Alt Lima]" /keys {Alt+l} /nsc
+add-word "[Alt Mike]" /keys {Alt+m} /nsc
+add-word "[Alt November]" /keys {Alt+n} /nsc
+add-word "[Alt Oscar]" /keys {Alt+o} /nsc
+add-word "[Alt Papa]" /keys {Alt+p} /nsc
+add-word "[Alt Quebec]" /keys {Alt+q} /nsc
+add-word "[Alt Romeo]" /keys {Alt+r} /nsc
+add-word "[Alt Sierra]" /keys {Alt+s} /nsc
+add-word "[Alt Tango]" /keys {Alt+t} /nsc
+add-word "[Alt Uniform]" /keys {Alt+u} /nsc
+add-word "[Alt Up]" /keys {Alt+Up} /nsc
+add-word "[Alt Victor]" /keys {Alt+v} /nsc
+add-word "[Alt Whiskey]" /keys {Alt+w} /nsc
+add-word "[Alt X-ray]" /keys {Alt+x} /nsc
+add-word "[Alt Yankee]" /keys {Alt+y} /nsc
+add-word "[Alt Zulu]" /keys {Alt+z} /nsc
+add-word "[Back 1]" /keys {Backspace} /nsc
+add-word "[Back 10]" /keys "{Backspace 10}" /nsc
+add-word "[Back 2]" /keys "{Backspace 2}" /nsc
+add-word "[Back 3]" /keys "{Backspace 3}" /nsc
+add-word "[Back 4]" /keys "{Backspace 4}" /nsc
+add-word "[Back 5]" /keys "{Backspace 5}" /nsc
+add-word "[Back 7]" /keys {BackSpace}{BackSpace}{BackSpace}{BackSpace}{BackSpace}{BackSpace}{BackSpace} /nsc
+add-word "[Back Tab Copy]" /keys {Shift+Tab}{Ctrl+c} /nsc
+add-word "[Back Tab]" /keys {Shift+Tab} /sa0 /sb0 /u /m
+add-word "[Backspace Key]" /keys {Backspace} /nsc /u /m
+add-word [Backspace] /keys {Backspace} /nsc /u /m
+add-word "[Begin Document]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeNext 1
+NoSpaceNext 1" /nsc /u /m
+add-word "[Beginning of Line]" /keys {Home} /nsc
+add-word "[Betty Please]" /script "listenfromGroup 1" /nsc
+add-word "[Bottom of Document]" /keys {Ctrl+End} /nsc
+add-word "[Bring Up The]" /script AppBringUp /nsc /u /nr /nf
+add-word "[Bring Up]" /script AppBringUp /nsc /u /nr /m
+add-word "[Button Click]" /script "ButtonClick 1,1" /nsc
+add-word "[Button Double Click]" /script "ButtonClick 1,2" /nsc /m /nf
+add-word "[C. And. L.]" /script "SendKeys \" && \"
+CapitalizeNext 2" /nsc
+add-word "[Caps Lock]" /script "CapitalizeBegin 5" /nsc /u /m
+add-word "[Clear Desktop]" /script ClearDesktop /nsc /u /nr /m
+add-word "[Clear Flags]" /script "ShiftKey 0
+NoSpaceNext 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+NoSpaceNext 0
+CapitalizeNext 0" /nsc /u /m
+add-word "[Close Document]" /keys {Ctrl+F4} /nsc
+add-word "[Close Window]" /keys {Alt+F4} /nsc
+add-word "[Command Copy]" /keys {Ctrl+c} /nsc
+add-word "[Command Cut]" /keys {Ctrl+x} /nsc
+add-word "[Command Paste]" /keys {Ctrl+v} /nsc
+add-word "[Command Undo]" /keys {Ctrl+z} /nsc
+add-word "[Computer Please]" /script "NoSpaceNext 1
+ListenFromGroup 1" /nsc /u /nr /m
+add-word "[Control Alpha]" /keys {Ctrl+a} /nsc
+add-word "[Control Alt 0]" /keys {Ctrl+Alt+0} /nsc
+add-word "[Control Alt 2]" /keys {Ctrl+Alt+2} /nsc
+add-word "[Control Alt 3]" /keys {Ctrl+Alt+3} /nsc
+add-word "[Control Back 2]" /keys {Ctrl+BackSpace}{Ctrl+BackSpace} /nsc
+add-word "[Control Back Slash]" /keys "{Ctrl+\\}" /nsc
+add-word "[Control Backspace]" /keys {Ctrl+BackSpace} /nsc
+add-word "[Control Bravo]" /keys {Ctrl+b} /nsc
+add-word "[Control Charlie]" /keys {Ctrl+c} /nsc
+add-word "[Control Delete 10]" /keys {Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del} /nsc
+add-word "[Control Delete 2]" /keys {Ctrl+Del}{Ctrl+Del} /nsc
+add-word "[Control Delete 3]" /keys {Ctrl+Del}{Ctrl+Del}{Ctrl+Del} /nsc
+add-word "[Control Delete 4]" /keys {Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del} /nsc
+add-word "[Control Delete 5]" /keys {Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del}{Ctrl+Del} /nsc
+add-word "[Control Delete]" /keys {Ctrl+Del} /nsc
+add-word "[Control Delta]" /keys {Ctrl+d} /nsc
+add-word "[Control Down Arrow]" /keys {Ctrl+Down} /nsc
+add-word "[Control Drag]" /script "ShiftKey 2
+HeardWord \"[Key Drag]\"" /nsc
+add-word "[Control Echo]" /keys {Ctrl+e} /nsc
+add-word "[Control Enter]" /keys {Ctrl+Enter} /nsc
+add-word "[Control F. 3]" /keys {Ctrl+F3} /nsc
+add-word "[Control Foxtrot]" /keys {Ctrl+f} /nsc
+add-word "[Control Function 2]" /keys {RightCtrl+F2} /nsc /nf
+add-word "[Control Golf]" /keys {Ctrl+g} /nsc
+add-word "[Control Hotel]" /script "SendKeys \"{Ctrl+h}\"" /nsc
+add-word "[Control India]" /keys {Ctrl+i} /nsc
+add-word "[Control Key]" /script "ShiftKey 2, 2" /nsc /nrs /u /m
+add-word "[Control Kilo Kilo]" /keys {Ctrl+k}{Ctrl+k} /nsc
+add-word "[Control Kilo November]" /keys {Ctrl+k}{Ctrl+n} /nsc
+add-word "[Control Kilo Papa]" /keys {Ctrl+k}{Ctrl+p} /nsc
+add-word "[Control Kilo]" /keys {Ctrl+k} /nsc
+add-word "[Control Left 2]" /keys {Ctrl+Left}{Ctrl+Left} /nsc
+add-word "[Control Left 3]" /keys {Ctrl+Left}{Ctrl+Left}{Ctrl+Left} /nsc
+add-word "[Control Left Arrow]" /keys {Ctrl+Left} /nsc
+add-word "[Control November]" /keys {Ctrl+n} /nsc
+add-word "[Control Papa]" /keys {Ctrl+p} /nsc
+add-word "[Control Quebec]" /keys {Ctrl+q} /nsc
+add-word "[Control R. Control T.]" /keys {Ctrl+r}{Ctrl+t} /nsc
+add-word "[Control Romeo Control Tango]" /keys {Ctrl+r}{Ctrl+t} /nsc
+add-word "[Control Romeo]" /keys {Ctrl+r} /nsc
+add-word "[Control Shift 5]" /keys {Ctrl+Shift+5} /nsc
+add-word "[Control Shift Enter]" /keys {Ctrl+Shift+Enter} /nsc
+add-word "[Control Shift F. 3]" /keys {Ctrl+Shift+F3} /nsc
+add-word "[Control Shift Juliet]" /keys {Ctrl+J} /nsc
+add-word "[Control Shift Mike]" /keys {Ctrl+M} /nsc
+add-word "[Control Shift November]" /keys {Ctrl+N} /nsc
+add-word "[Control Sierra]" /keys {Ctrl+s} /nsc
+add-word "[Control Tab]" /keys {Ctrl+Tab} /nsc
+add-word "[Control Tango]" /keys {Ctrl+t} /nsc
+add-word "[Control Uniform]" /keys {Ctrl+u} /nsc
+add-word "[Control Up]" /keys {Ctrl+Up} /nsc
+add-word "[Control Victor]" /keys {Ctrl+v} /nsc
+add-word "[Control Whiskey]" /keys {Ctrl+w} /nsc
+add-word "[Control Yankee]" /keys {Ctrl+y} /nsc
+add-word "[Control Zulu]" /script "SendKeys \"{Ctrl+z}\"" /nsc
+add-word "[Copy All Clipboard]" /keys {Ctrl+a}{Ctrl+c} /nsc
+add-word "[Copy End Key]" /script "SendKeys \"{Shift+End}{Ctrl+c}\"" /nsc
+add-word "[Copy Home Key]" /script "SendKeys \"{Shift+Home}{Ctrl+c}\"" /nsc
+add-word "[Copy House Key]" /script "SendKeys \"{Shift+Home}{Ctrl+c}\"" /nsc
+add-word "[Copy That]" /script "SendKeys \"{ctrl+c}\"" /nsc
+add-word "[Copy To Dragon Pad]" /script "SendKeys \"{Ctrl+c}\"
+HeardWord \"[Show Mars 3]\"
+HeardWord \"[Send  Clipboard]\"
+ShellExecute \"C:\\sw\\Mars2Exec.exe Mars3.ShellExecute|C:\\Windows\\System32\\Notepad.exe\", 6
+Wait 200
+SendKeys \"{Ctrl+v}\"
+HeardWord \"[Speak Naturally]\"" /nsc
+add-word [Copy] /keys {Ctrl+c} /nsc /nf
+add-word "[Cut End Key]" /script "SendKeys \"{Shift+End}{Ctrl+x}\"" /nsc
+add-word "[Cut House Key]" /keys {Shift+Home}{Ctrl+x} /nsc
+add-word "[Cut That]" /script "SendKeys \"{ctrl+x}\"" /nsc
+add-word [Cut] /keys {Ctrl+x} /nsc /nf
+add-word "[Delete All]" /keys {End}{Shift+Home}{Del} /nsc
+add-word "[Delete Back]" /keys {Del}{BackSpace} /nsc
+add-word "[Delete Bottom Of Document]" /keys {Ctrl+Shift+End}{Del} /nsc
+add-word "[Delete End Key Left]" /keys {Shift+End}{Shift+Left}{Del} /nsc
+add-word "[Delete End Key]" /keys {Shift+End}{Del} /nsc
+add-word "[Delete Enter]" /keys {Del}{Enter} /nsc
+add-word "[Delete House Key]" /keys {Shift+Home}{Del} /nsc
+add-word "[Delete Key 2]" /keys {Del}{Del} /nsc
+add-word "[Delete Key 3]" /keys {Del}{Del}{Del} /nsc
+add-word "[Delete Key 4]" /keys {Del}{Del}{Del}{Del} /nsc
+add-word "[Delete Key 5]" /keys {Del}{Del}{Del}{Del}{Del} /nsc
+add-word "[Delete Key]" /keys {Del} /nsc /m
+add-word "[Delete Space]" /keys {Del}{Space} /nsc
+add-word "[Delete Top Of Document]" /keys {Ctrl+Shift+Home}{Del} /nsc
+add-word "[Document Menu]" /keys {Alt+-} /nsc
+add-word "[Dot El]" /script "SendKeys \".\"
+CapitalizeNext 2" /nsc
+add-word "[Double Click]" /script "ButtonClick 1,2" /nsc /m /nf
+add-word "[Down Arrow]" /keys {Down} /nsc /m
+add-word [Down] /keys {Down} /nsc /m /nf
+add-word "[Drag Down]" /script "DragMouse 3" /nsc
+add-word "[Drag It]" /script "DragMouse 3
+HeardWord \"[Slower]\"
+HeardWord \"[Slower]\"
+HeardWord \"[Slower]\"
+HeardWord \"[Slower]\"
+HeardWord \"[Slower]\"" /nsc
+add-word "[Drag Left]" /script "DragMouse 4" /nsc /m /nf
+add-word "[Drag Lower Left]" /script "DragMouse 7" /nsc /m /nf
+add-word "[Drag Lower Right]" /script "DragMouse 6" /nsc /m /nf
+add-word "[Drag Right]" /script "DragMouse 2" /nsc /m /nf
+add-word "[Drag to Here]" /script "DragToPoint 1" /nsc
+add-word "[Drag Up]" /script "DragMouse 1" /nsc /m /nf
+add-word "[Drag Upper Left]" /script "DragMouse 8" /nsc /m /nf
+add-word "[Drag Upper Right]" /script "DragMouse 5" /nsc /m /nf
+add-word "[Drive Alpha]" /keys {Alt+v}a{Alt+d} /nsc
+add-word "[Drive Charlie]" /keys {Alt+v}c{Alt+d} /nsc
+add-word "[Drive Delta]" /keys {Alt+v}d{Alt+d} /nsc
+add-word "[Drive Mike]" /keys {Alt+v}m{Alt+d} /nsc
+add-word "[Drive Papa]" /keys {Alt+v}p{Alt+d} /nsc
+add-word "[Drop List]" /keys {Alt+ExtDown} /nsc /u /nr /m
+add-word "[Edit Duplicate]" /script "SendKeys \"{Ctrl+c}{Ctrl+v}{Ctrl+v}\"" /nsc
+add-word "[Edit Find]" /script "MenuPick \"Edit\"
+MenuPick \"Find\"
+HeardWord \"[EditPaste]\"" /nsc
+add-word "[End Key Copy]" /keys {Shift+ExtEnd}{Ctrl+c} /nsc
+add-word "[End Key]" /keys {End} /nsc /m
+add-word "[End of Line]" /keys {End} /nsc
+add-word "[Enter Date El]" /script "ListenFromGroup 1, \"DateLong\", \"RonnyZ\"" /nsc /u
+add-word "[Enter Date]" /script "ListenFromGroup 1, \"Date\", \"RonnyZ\"" /nsc /u
+add-word "[Enter Hex C. S.]" /script "ListenFromGroup 1,\"HexContinuousSpace\",\"RonnyZ\"" /nsc
+add-word "[Enter Hex C.]" /script "ListenFromGroup 1,\"HexContinuous\",\"RonnyZ\"" /nsc
+add-word "[Enter Hex]" /script "ListenFromGroup 1,\"Hex\",\"Number\"" /nsc /u
+add-word "[Enter Key]" /keys {Enter} /sa0 /sb0 /cr /u /m
+add-word "[Enter Letters]" /script "ListenFromGroup 1,\"Enter Letters\",\"Voicebar\"" /nsc /u /m
+add-word "[Enter Number]" /script "ListenFromGroup 1,\"Number\",\"Number\"" /nsc /u /m
+add-word "[Enter Path]" /script "ListenFromGroup 1, \"Path\", \"RonnyZ\"" /nsc /u
+add-word "[Enter Time]" /script "ListenFromGroup 1, \"Time\", \"RonnyZ\"" /nsc
+add-word [Enter] /keys {Enter} /nsc /m /nf
+add-word "[Entered Date L. S.]" /script "SendKeys \" \"
+ListenFromGroup 1, \"DateLong\", \"RonnyZ\"" /nsc
+add-word "[Escape Key]" /keys {Esc} /nsc
+add-word [Escape] /keys {Esc} /nsc /m /nf
+add-word "[F. F. 2]" /keys {F2} /nsc
+add-word "[F. F. 3]" /keys {F3} /nsc
+add-word [F1] /keys {F1} /nsc /m /nf
+add-word [F10] /keys {F10} /nsc /m /nf
+add-word [F11] /keys {F11} /nsc /m /nf
+add-word [F12] /keys {F12} /nsc /m /nf
+add-word [F2] /keys {F2} /nsc /m /nf
+add-word [F3] /keys {F3} /nsc /m /nf
+add-word [F4] /keys {F4} /nsc /m /nf
+add-word [F5] /keys {F5} /nsc /m /nf
+add-word [F6] /keys {F6} /nsc /m /nf
+add-word [F7] /keys {F7} /nsc /m /nf
+add-word [F8] /keys {F8} /nsc /m /nf
+add-word [F9] /keys {F9} /nsc /m /nf
+add-word "[File Manager]" /script "AppBringUp \"File Manager\"" /nsc
+add-word "[File Open]" /script "MenuPick \"File\"
+MenuPick \"Open\"" /nsc
+add-word "[Files of Type All]" /script "ControlPick \"Files of Type\"
+SendKeys \"a\"" /nsc
+add-word "[Function 1]" /keys {F1} /nsc
+add-word "[Function 10]" /keys {F10} /nsc
+add-word "[Function 11]" /keys {F11} /nsc /nf
+add-word "[Function 12]" /keys {F12} /nsc /nf
+add-word "[Function 2]" /keys {F2} /nsc
+add-word "[Function 3]" /keys {F3} /nsc
+add-word "[Function 4]" /keys {F4} /nsc /nf
+add-word "[Function 5]" /keys {F5} /nsc
+add-word "[Function 6]" /keys {F6} /nsc
+add-word "[Function 7]" /keys {F7} /nsc
+add-word "[Function 8]" /keys {F8} /nsc /nf
+add-word "[Function 9]" /keys {F9} /nsc
+add-word "[Get Help]" /keys {F1} /nsc
+add-word "[Go And Paste]" /keys {Enter}{Ctrl+v} /nsc
+add-word "[Go to Sleep Betty]" /script GoToSleep /nsc
+add-word "[Hex H.]" /script "ListenFromGroup 1,\"HexH\",\"RonnyZ\"" /nsc
+add-word "[Hex Tab]" /script "ListenFromGroup 1,\"HexTab\",\"RonnyZ\"" /nsc
+add-word "[Hex X. Comma]" /script "ListenFromGroup 1,\"HexX Comma\",\"RonnyZ\"" /nsc
+add-word "[Hex X. S.]" /script "SendKeys \" \"
+ListenFromGroup 1,\"HexX\",\"RonnyZ\"" /nsc
+add-word "[Hex X.]" /script "ListenFromGroup 1,\"HexX\",\"RonnyZ\"" /nsc
+add-word "[Home Key Copy]" /keys {Shift+ExtHome}{Ctrl+c} /nsc
+add-word "[Home Key]" /keys {Home} /nsc /m
+add-word "[Insert Key]" /keys {Ins} /nsc /nf
+add-word "[K. 7 Mark]" /keys k7!Hx^Eh /nsc
+add-word "[K. Left 1]" /keys {Ctrl+Shift+Left} /nsc
+add-word "[K. Left 2]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left} /nsc
+add-word "[K. Left 3]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left} /nsc
+add-word "[K. Left 4]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left} /nsc
+add-word "[K. Left 5]" /keys {Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left}{Ctrl+Shift+Left} /nsc
+add-word "[K. Left Arrow]" /keys {Ctrl+Shift+Left} /nsc
+add-word "[Keepass Callpoint]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe Mars3.ShellExecute|`E:\\Documents\\Callpoint__\\Admin\\Callpoint Passwords.kdbx`\", 6" /nsc
+add-word "[Key Cat 6]" /script "HeardWord \"[Key Cat]\"
+HeardWord \"[Z. 6]\"" /nsc
+add-word "[Key Cat C.]" /script "ButtonClick 1,2
+NoSpaceNext
+ShiftKey 1, 0
+CapitalizeNext 1" /nsc
+add-word "[Key Cat]" /script "ButtonClick 1,2
+NoSpaceNext
+ShiftKey 1, 0
+CapitalizeNext 0" /nsc
+add-word "[Key Delete]" /keys {Del} /nsc
+add-word "[Key Drag]" /script "DragMouse 3
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower" /nsc
+add-word "[Key Enter]" /keys {Enter} /nsc
+add-word [L.] /script "HeardWord \"[Z. 1 L.]\"" /nsc
+add-word "[left angle bracket]" /keys < /sa0 /u
+add-word "[Left Arrow]" /keys {Left} /nsc /m
+add-word "[Left Bracket]" /keys [ /sa0 /cr /u /m
+add-word "[Left Click]" /script "ButtonClick 1,1" /nsc /m /nf
+add-word "[Left Double Click]" /script "ButtonClick 1,2" /nsc /m /nf
+add-word [Left] /keys {Left} /nsc /m /nf
+add-word "[M. Active]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.ToggleActive\", 6" /nsc
+add-word "[M. Double Click]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.NextDoubleClick\", 6" /nsc
+add-word "[M. Left]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.NextClickLeft\", 6" /nsc
+add-word "[M. Right]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe MouseTool.NextClickRight\", 6"
+add-word "[Mac Alpha]" /keys ";CA1416" /nsc
+add-word "[Mac Bravo]" /keys {Shift+Down}{Shift+Down}{Shift+Down}{Del}{Down} /nsc
+add-word "[Mac Charlie]" /keys "3wS01?]a\\ob5" /nsc
+add-word "[Mac Delta]" /script "HeardWord \"[Zed]\"
+HeardWord \"[EditCut]\"" /nsc
+add-word "[Mac Echo]" /keys "#define {Home}{Down}" /nsc
+add-word "[Mark Here]" /script RememberPoint /nsc
+add-word "[Maximize Document]" /keys {Alt+-}x /nsc
+add-word "[Microphone Off]" /script "SetMicrophone 0" /nsc /u /nr /m
+add-word "[Minimize Document]" /keys {Alt+-}n /nsc
+add-word "[Mouse Down]" /script "MoveMouse 3" /nsc /m /nf
+add-word "[Mouse Grid on Window]" /script "MouseGrid 2" /nsc /m
+add-word "[Mouse Grid]" /script "MouseGrid 1" /nsc /m
+add-word "[Mouse Left]" /script "MoveMouse 4" /nsc /m /nf
+add-word "[Mouse Lower Left]" /script "MoveMouse 7" /nsc /m /nf
+add-word "[Mouse Lower Right]" /script "MoveMouse 6" /nsc /m /nf
+add-word "[Mouse Right]" /script "MoveMouse 2" /nsc /m /nf
+add-word "[Mouse Up]" /script "MoveMouse 1" /nsc /m /nf
+add-word "[Mouse Upper Left]" /script "MoveMouse 8" /nsc /m /nf
+add-word "[Mouse Upper Right]" /script "MoveMouse 5" /nsc /m /nf
+add-word "[Move Down 1]" /keys {Down} /nsc /m
+add-word "[Move Down 10]" /keys {Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down} /nsc
+add-word "[Move Down 2]" /keys {Down}{Down} /nsc /m
+add-word "[Move Down 3]" /keys {Down}{Down}{Down} /nsc /m
+add-word "[Move Down 4]" /keys {Down}{Down}{Down}{Down} /nsc /m
+add-word "[Move Down 5]" /keys {Down}{Down}{Down}{Down}{Down} /nsc /m
+add-word "[Move Down]" /script "MoveCaret 3" /nsc /m /nf
+add-word "[Move Left 1]" /keys {Left} /nsc /m
+add-word "[Move Left 2]" /keys {Left}{Left} /nsc /m
+add-word "[Move Left 3]" /keys {Left}{Left}{Left} /nsc /m
+add-word "[Move Left 4]" /keys {Left}{Left}{Left}{Left} /nsc /m
+add-word "[Move Left 5]" /keys {Left}{Left}{Left}{Left}{Left} /nsc /m
+add-word "[Move Left]" /script "MoveCaret 4" /nsc /m /nf
+add-word "[Move Right 1]" /keys {Right} /nsc /m
+add-word "[Move Right 2]" /keys {Right}{Right} /nsc /m
+add-word "[Move Right 3]" /keys {Right}{Right}{Right} /nsc /m
+add-word "[Move Right 4]" /keys {Right}{Right}{Right}{Right} /nsc /m
+add-word "[Move Right 5]" /keys {Right}{Right}{Right}{Right}{Right} /nsc /m
+add-word "[Move Right]" /script "MoveCaret 2" /nsc /m /nf
+add-word "[Move Up 1]" /keys {Up} /nsc /m
+add-word "[Move Up 10]" /keys {Up}{Up}{Up}{Up}{Up}{Up}{Up}{Up}{Up}{Up} /nsc
+add-word "[Move Up 2]" /keys {Up}{Up} /nsc /m
+add-word "[Move Up 3]" /keys {Up}{Up}{Up} /nsc /m
+add-word "[Move Up 4]" /keys {Up}{Up}{Up}{Up} /nsc /m
+add-word "[Move Up 5]" /keys {Up}{Up}{Up}{Up}{Up} /nsc /m
+add-word "[Move Up]" /script "MoveCaret 1" /nsc /m /nf
+add-word "[Move VoiceBar]" /script MoveVoiceBar /nsc /u /nr /m
+add-word "[Move Voicebar]" /script MoveVoicebar /nsc /m /nf
+add-word "[Move Window]" /keys {Alt+Space}m /nsc
+add-word "[New Line]" /keys {Enter} /sa0 /sb0 /cr /u /m
+add-word "[New Paragraph 2]" /script "HeardWord \"[New Paragraph]\"
+HeardWord \"[New Paragraph]\""
+add-word "[Next Document]" /keys {Ctrl+F6} /nsc
+add-word "[Next Window]" /script "SendSystemKeys \"{Alt+Esc}\"" /nsc
+add-word "[No Space Tango]" /keys t /nsc
+add-word "[Open Bracket]" /keys [ /sa0 /cr /u /m
+add-word "[Open Personal Keepass]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe Mars3.ShellExecute|C:\\Users\\ronny\\OneDrive\\Passwords.kdbx\", 6" /nsc
+add-word "[P. Hot Mail]" /keys bellyB@44HM{Enter} /nsc
+add-word "[P. Mars 4]" /keys QQ*m-4*qUQUqpjMlrS2?PbdA!*ng)rzE{Enter} /nsc
+add-word "[P. Whack V. M.]" /script "SendKeys \"$f0G8o&-ihpKr?t.%;z(H-yCJ.cNXvKx\"" /nsc
+add-word "[Page D. 2]" /keys {PgDn}{PgDn} /nsc
+add-word "[Page D.]" /keys {PgDn} /nsc
+add-word "[Page Down 2]" /keys {PgDn}{PgDn} /nsc
+add-word "[Page Down 3]" /keys {PgDn}{PgDn}{PgDn} /nsc
+add-word "[Page Down 4]" /keys {PgDn}{PgDn}{PgDn}{PgDn} /nsc
+add-word "[Page Down 5]" /keys {PgDn}{PgDn}{PgDn}{PgDn}{PgDn} /nsc
+add-word "[Page Down]" /keys {PgDn} /nsc /m
+add-word "[Page U. 2]" /keys {PgUp}{PgUp} /nsc
+add-word "[Page U.]" /keys {PgUp} /nsc
+add-word "[Page Up 2]" /keys {PgUp}{PgUp} /nsc
+add-word "[Page Up 3]" /keys {PgUp}{PgUp}{PgUp} /nsc
+add-word "[Page Up 4]" /keys {PgUp}{PgUp}{PgUp}{PgUp} /nsc
+add-word "[Page Up 5]" /keys {PgUp}{PgUp}{PgUp}{PgUp}{PgUp} /nsc
+add-word "[Page Up]" /keys {PgUp} /nsc /m
+add-word "[Paste And Go]" /keys {Ctrl+v}{Enter} /nsc
+add-word "[Paste End Key]" /keys {Shift+End}{Ctrl+v} /nsc
+add-word "[Paste House Key]" /script "SendKeys \"{Shift+Home}{Ctrl+v}\"" /nsc
+add-word "[Paste That Dot]" /keys {Ctrl+v}. /nsc
+add-word "[Paste That]" /script "SendKeys \"{ctrl+v}\"" /nsc
+add-word [Paste] /keys {Ctrl+v} /nsc /nf
+add-word "[Peek Def]" /keys {Alt+F12} /nsc
+add-word "[Phone Extension]" /script "ListenFromGroup 1,\"Extension\",\"Number\"" /nsc /u /m
+add-word "[Phone Number]" /script "ListenFromGroup 1,\"Phone Number\",\"Number\"" /nsc /u /m
+add-word "[Phone Ring.]" /script GoToSleep /nsc
+add-word "[Postal Code]" /script "ListenFromGroup 1,\"Zip Code\",\"Number\"" /nsc /u /m
+add-word "[Press Enter]" /keys {Enter} /nsc /nf
+add-word "[Previous Document]" /keys {Shift+Ctrl+F6} /nsc
+add-word "[Previous Window]" /script "SendSystemKeys \"{Shift+Alt+Esc}\"" /nsc
+add-word "[Program Manager]" /script "AppBringUp \"Progman\"" /nsc
+add-word "[R. Click]" /script "ButtonClick 2,1" /nsc
+add-word "[R. Z. 5]" /keys rz
+add-word "[Read Document]" /script "SendKeys \"{Ctrl+Home}\"
+Wait 20
+SendKeys \"{Shift+Ctrl+End}\"
+Wait 200
+HeardWord \"[Read That]\"
+SendKeys \"{Ctrl+End}\"" /nsc
+add-word "[Read e-mail]" /script "SendKeys \"{Ctrl+Home}\"
+Wait 20
+SendKeys \"{Shift+Ctrl+End}\"
+Wait 20
+SendKeys \"{Ctrl+c}\"
+TTSPlayString \"\", \"/e\"
+SendKeys \"{Ctrl+End}\"" /nsc
+add-word "[Read Line]" /script "SendKeys \"{ExtHome}\"
+Wait 20
+SendKeys \"{Shift+ExtEnd}\"
+HeardWord \"[Read That]\"
+SendKeys \"{ExtEnd}\"" /nsc
+add-word "[Read Page]" /script "SendKeys \"{ExtHome}{Ctrl+ExtPgUp}\"
+Wait 20
+SendKeys \"{Ctrl+Shift+ExtPgDn}\"
+Wait 20
+SendKeys \"{Shift+ExtEnd}\"
+HeardWord \"[Read That]\"
+SendKeys \"{ExtEnd}\"" /nsc /nf
+add-word "[Read That X]" /script "Wait 20
+SendKeys \"{Ctrl+c}\"
+Wait 20
+TTSPlayString" /nsc /nf
+add-word "[Read That]" /script "Wait 20
+SendKeys \"{Ctrl+c}\"
+Wait 20
+TTSPlayString" /nsc
+add-word "[Read Word]" /script "SendKeys \"{Ctrl+ExtLeft}\"
+Wait 20
+SendKeys \"{Ctrl+Shift+ExtRight}\"
+HeardWord \"[Read That]\"
+SendKeys \"{Ctrl+ExtLeft}{Ctrl+ExtRight}\"" /nsc
+add-word "[Replace All]" /keys {Ctrl+End}{Ctrl+Shift+Home}{Ctrl+v} /nsc
+add-word "[Restore Document]" /keys {Alt+-}r /nsc
+add-word "[Right Alt]" /script "ShiftKey 6, 2" /nsc /nrs /u /m
+add-word "[Right Arrow]" /keys {Right} /nsc /m
+add-word "[Right Click]" /script "ButtonClick 2,1" /nsc /m /nf
+add-word "[Right Control]" /script "ShiftKey 5, 2" /nsc /nrs /u /m
+add-word "[Right Double Click]" /script "ButtonClick 2,2" /nsc /m /nf
+add-word "[Right Shift]" /script "ShiftKey 4, 2" /nsc /nrs /u /m
+add-word [Right] /keys {Right} /nsc /m /nf
+add-word "[Run Debug]" /script "AppBringUp \"DebugWin\"" /nsc
+add-word "[Run Microsoft Access]" /script "AppBringUp \"Microsoft Access\"" /nsc
+add-word "[Run Microsoft Word]" /script "AppBringUp \"Microsoft Word\"" /nsc
+add-word "[Run Visual]" /script "AppBringUp \"Visual C++\"" /nsc
+add-word "[Scroll Lock]" /keys {ScrollLock} /nsc /m
+add-word "[Send  Clipboard]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe Clipboard.Send\", 6" /nsc
+add-word "[Set Program Group]" /script "SetHomeGroup \"Word\",\"\",\"Programming\",\"RonnyZ\",0" /nsc
+add-word "[Shift Bottom Of Document]" /keys {Shift+Ctrl+End} /nsc
+add-word "[Shift D. 1]" /keys {Shift+Down} /nsc
+add-word "[Shift D. 10]" /keys {Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down} /nsc
+add-word "[Shift D. 2]" /keys {Shift+Down}{Shift+Down} /nsc
+add-word "[Shift D. 3]" /keys {Shift+Down}{Shift+Down}{Shift+Down} /nsc
+add-word "[Shift D. 4]" /keys {Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down} /nsc
+add-word "[Shift D. 5]" /keys {Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down}{Shift+Down} /nsc
+add-word "[Shift Delete Key]" /keys {Shift+Del} /nsc
+add-word "[Shift Delete]" /keys {Shift+Del} /nsc
+add-word "[Shift End Key Left]" /keys {Shift+End}{Shift+ExtLeft} /nsc
+add-word "[Shift End Key]" /keys {Shift+End} /nsc
+add-word "[Shift Enter Key]" /keys {Shift+Enter} /nsc
+add-word "[Shift Enter]" /keys {Shift+Enter} /nsc
+add-word "[Shift F. 3]" /keys {Shift+F3} /nsc
+add-word "[Shift F2]" /keys {shift+F2} /nsc
+add-word "[Shift House Key]" /keys {Shift+Home} /nsc
+add-word "[Shift Key]" /script "ShiftKey 1, 2" /nsc /nrs /u /m
+add-word "[Shift Left 2]" /keys {Shift+Left}{Shift+Left} /nsc
+add-word "[Shift Left 3]" /keys {Shift+Left}{Shift+Left}{Shift+Left} /nsc
+add-word "[Shift Left 4]" /keys {Shift+Left}{Shift+Left}{Shift+Left}{Shift+Left} /nsc
+add-word "[Shift Left 5]" /keys {Shift+Left}{Shift+Left}{Shift+Left}{Shift+Left}{Shift+Left} /nsc
+add-word "[Shift Left Arrow]" /keys {Shift+Left} /nsc
+add-word "[Shift M. Down]" /keys {F3} /nsc
+add-word "[Shift M. Up]" /keys {F4} /nsc
+add-word "[Shift Page Down]" /keys {Shift+PgDn} /nsc
+add-word "[Shift Page Up]" /keys {Shift+PgUp} /nsc
+add-word "[Shift Right 1]" /keys {Shift+Right} /nsc
+add-word "[Shift Right 2]" /keys {Shift+Right}{Shift+Right} /nsc
+add-word "[Shift Right 3]" /keys {Shift+Right}{Shift+Right}{Shift+Right} /nsc
+add-word "[Shift Right 4]" /keys {Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right} /nsc
+add-word "[Shift Right 5]" /keys {Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right} /nsc
+add-word "[Shift Right Arrow]" /keys {Shift+Right} /nsc
+add-word "[Shift Tab]" /keys {Shift+Tab} /sa0 /sb0 /u /m
+add-word "[Shift Top Of Document]" /keys {Shift+Ctrl+Home} /nsc
+add-word "[Shift Up 1]" /keys {Shift+Up} /nsc
+add-word "[Shift Up 2]" /keys {Shift+Up}{Shift+Up} /nsc
+add-word "[Shift Up 3]" /keys {Shift+Up}{Shift+Up}{Shift+Up} /nsc
+add-word "[Shift Up 4]" /keys {Shift+Up}{Shift+Up}{Shift+Up}{Shift+Up} /nsc
+add-word "[Shift Up 5]" /keys {Shift+Up}{Shift+Up}{Shift+Up}{Shift+Up}{Shift+Up} /nsc
+add-word "[Show Mars 2]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe ShowMachineWindow|MARS2\", 6" /nsc
+add-word "[Show Mars 3]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe ShowMachineWindow|MARS3\", 6" /nsc
+add-word "[Show Mars 4]" /script "ShellExecute \"C:\\sw\\Mars2Exec.exe ShowMachineWindow|MARS4\", 6"
+add-word "[Show Task List]" /script "ResetGroup
+SendKeys \"{ctrl+Esc}\"" /nsc
+add-word "[Show The Desktop]" /keys {Ctrl+F5} /nsc
+add-word "[Single Quote Paste Quote]" /keys '{Ctrl+v}' /nsc
+add-word "[Size Window]" /keys {Alt+Space}s /nsc
+add-word "[Space And Paste]" /keys {Space}{Ctrl+v} /nsc
+add-word "[Space Bar]" /keys {Space} /sa0 /sb0 /cr /u /m
+add-word [Space] /keys {Space} /nsc
+add-word "[Speak Naturally]" /script "SendKeys \"{Ctrl+Shift+F6}\"
+SetMicrophone 0" /nsc
+add-word [SqlWindows] /script "AppBringUp \"SQLWindows Designer\",\"C:\\GUPTA\\sqlwin50.exe\",1,\"C:\\GUPTA\"" /nsc
+add-word "[Start Dragon Pad]" /script "HeardWord \"[Show Mars 3]\"
+Wait 200
+SendKeys \"{NumKey*}\"
+Wait 200
+SendKeys \"t\"
+Wait 100
+SendKeys \"p\"
+HeardWord \"[Speak Naturally]\"" /nsc
+add-word "[Start Menu]" /script "SendSystemKeys \"{Ctrl+Esc}\"" /nsc
+add-word "[Swap With]" /script AppSwapWith /nsc /u /nr /m
+add-word "[Switch to NaturallySpeaking]" /script "HeardWord \"[Bring Up Cancel]\"
+AppBringUp \"Natspeak\"
+SetMicrophone 0
+ShellExecute \"MicSwap\"" /nsc
+add-word "[T. Middle]" /keys {Ctrl+Alt+Shift+F11}A /nsc
+add-word "[Tab Key 2]" /keys {tab}{tab} /sa0 /sb0 /cr
+add-word "[Tab Key 3]" /keys {tab}{tab}{tab} /sa0 /sb0 /cr
+add-word "[Tab Key 4]" /keys {Tab}{Tab}{Tab}{Tab} /nsc
+add-word "[Tab Key 5]" /keys {Tab}{Tab}{Tab}{Tab}{Tab} /nsc
+add-word "[Tab Key Copy]" /keys {Tab}{Ctrl+c} /nsc
+add-word "[Tab Key Enter]" /keys {Tab}{Enter} /nsc
+add-word "[Tab Key Paste]" /keys {Tab}{Ctrl+v} /nsc
+add-word "[Tab Key]" /keys {Tab} /sa0 /sb0 /cr /u /m
+add-word [Tab] /keys {Tab} /nsc /m /nf
+add-word "[Test This Now]" /script "DDEExecute \"Dde1\", \"System\", \"[Bold 0][Italic 0][Underline 0]\"" /nsc
+add-word "[Toggle Full Screen]" /keys {Ctrl+Alt+F} /nsc
+add-word "[Toggle VoiceBar]" /script SetVoiceBarSize /nsc /u /nr /m
+add-word "[Toggle Voicebar]" /script SetVoicebarSize /nsc /m /nf
+add-word "[Top of Document]" /keys {Ctrl+Home} /nsc
+add-word "[Type Capitalized]" /script "NoSpaceNext 1
+CapitalizeNext 1
+ListenFromGroup 0,\"Dictation\",\"Dictation\"" /nsc /m /nf
+add-word "[Type Word]" /script "NoSpaceNext 1
+ListenFromGroup 0,\"Dictation\",\"Dictation\"" /nsc /m /nf
+add-word [Undo] /keys {Ctrl+z} /nsc /nf
+add-word "[Up Arrow]" /keys {Up} /nsc /m
+add-word "[Up Enter]" /keys {Up}{Enter} /nsc
+add-word [Up] /keys {Up} /nsc /m /nf
+add-word "[Vocabulary Manager]" /script "AppBringUp \"Vocabulary Manager\",\"Vocman\"" /nsc
+add-word "[Voice Menu]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}{Down}\"" /nsc /u /nr /m
+add-word "[What's The Time?]" /script "AppBringUp \"Clock\"" /nsc
+add-word "[Window Menu]" /keys {Alt+-} /nsc /m /nf
+add-word "[Word Left 1]" /keys "{Ctrl+Left 1}" /nsc
+add-word "[Word Left 10]" /keys "{Ctrl+Left 10}" /nsc
+add-word "[Word Left 2]" /keys "{Ctrl+Left 2}" /nsc
+add-word "[Word Left 3]" /keys "{Ctrl+Left 3}" /nsc
+add-word "[Word Left 4]" /keys "{Ctrl+Left 4}" /nsc
+add-word "[Word Left 5]" /keys "{Ctrl+Left 5}" /nsc
+add-word "[Word Right 1]" /keys "{Ctrl+Right 1}" /nsc
+add-word "[Word Right 10]" /keys "{Ctrl+Right 10}" /nsc
+add-word "[Word Right 2]" /keys "{Ctrl+Right 2}" /nsc
+add-word "[Word Right 3]" /keys "{Ctrl+Right 3}" /nsc
+add-word "[Word Right 4]" /keys "{Ctrl+Right 4}" /nsc
+add-word "[Word Right 5]" /keys "{Ctrl+Right 5}" /nsc
+add-word "[Z Ack Copy]" /script "HeardWord \"[K Ack]\"
+HeardWord \"[EditCopy]\"" /nsc
+add-word "[Z Ack Paste]" /script "HeardWord \"[K Ack]\"
+HeardWord \"[EditPaste]\"" /nsc /nf
+add-word "[Z Ack Shift]" /script "ButtonClick 1,2
+NoSpaceNext
+ShiftKey 1, 1" /nsc
+add-word "[Z Click Paste]" /script "HeardWord \"[Z Click]\"
+HeardWord \"[EditPaste]\"" /nsc
+add-word "[Z Click]" /script "ButtonClick 1,1" /nsc
+add-word "[Z Drag]" /script "DragMouse 3
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower" /nsc
+add-word "[Z Drop]" /keys {Alt+Down} /nsc
+add-word "[Z Make Name Alpha &]" /script "ControlPick \"Modify Word\"
+SendKeys \"{home}{right}{del}A\"
+ControlPick \"OK\"" /nsc
+add-word "[Z New Alpha]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}f\"
+Wait 100
+SendKeys \"[Mac A\"
+Wait 1000
+ControlPick \"Modify\"
+SendKeys \"{Alt+R}\"" /nsc
+add-word "[Z New Bravo]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}f\"
+Wait 100
+SendKeys \"[Mac B\"
+Wait 1000
+ControlPick \"Modify\"
+SendKeys \"{Alt+R}\"" /nsc
+add-word "[Z New Charlie]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}f\"
+Wait 100
+SendKeys \"[Mac C\"
+Wait 1000
+ControlPick \"Modify\"
+SendKeys \"{Alt+R}\"" /nsc
+add-word "[Z New Delta]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}f\"
+Wait 100
+SendKeys \"[Mac D\"
+Wait 1000
+ControlPick \"Modify\"
+SendKeys \"{Alt+R}\"" /nsc
+add-word "[Z New Echo]" /script "AppBringUp \"Voicebar\"
+SendKeys \"{Alt+v}f\"
+Wait 100
+SendKeys \"[Mac E\"
+Wait 1000
+ControlPick \"Modify\"
+SendKeys \"{Alt+R}\"" /nsc
+add-word "[Z Train Word]" /script "ControlPick \"Train\"
+ControlPick \"Stop Training\"
+ControlPick \"Options\"
+ControlPick \"Light\"
+ControlPick \"Ok\"
+ControlPick \"Stop Training\"
+ControlPick \"Start\"" /nsc
+add-word "[Z. 1 L.]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin
+NoSpaceBegin
+CapitalizeNext 2" /nsc
+add-word "[Z. 1 l]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin
+NoSpaceBegin
+CapitalizeNext 2" /nsc
+add-word "[Z. 1 S.]" /script "SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 1
+SendKeys \" \"" /nsc /u
+add-word "[Z. 1 s]" /script "SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 1
+SendKeys \" \"" /nsc /u
+add-word "[Z. 1]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin
+NoSpaceBegin" /nsc
+add-word "[Z. 2 C.]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+CapitalizeNext
+NoSpaceNext" /nsc
+add-word "[Z. 2 c]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+CapitalizeNext
+NoSpaceNext" /nsc
+add-word "[Z. 2 S. C.]" /script "SetDictationMode 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+CapitalizeNext 1
+NoSpaceNext 0" /nsc
+add-word "[Z. 2 s. c.]" /script "SetDictationMode 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+CapitalizeNext 1
+NoSpaceNext 0" /nsc
+add-word "[Z. 2 S.]" /script "SetDictationMode 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+CapitalizeNext 0
+NoSpaceNext 0" /nsc
+add-word "[Z. 2 s]" /script "SetDictationMode 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+CapitalizeNext 0
+NoSpaceNext 0" /nsc
+add-word "[Z. 2]" /script "SetDictationMode 1
+CapitalizeBegin 0
+NoSpaceBegin 0
+CapitalizeNext 0
+NoSpaceNext" /nsc
+add-word "[Z. 3 S.]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext 0" /nsc
+add-word "[Z. 3 s]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext 0" /nsc
+add-word "[Z. 3]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 1
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Z. 4 S.]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 3
+NoSpaceBegin 0
+NoSpaceNext 0" /nsc
+add-word "[Z. 4]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 3
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Z. 5 S.]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 2
+NoSpaceBegin
+SendKeys \" \"" /nsc
+add-word "[Z. 5]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 2
+NoSpaceBegin
+NoSpaceNext" /nsc
+add-word "[Z. 6 S.]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 3
+NoSpaceBegin
+SendKeys \" \"" /nsc
+add-word "[Z. 6]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 3
+NoSpaceBegin
+NoSpaceNext" /nsc
+add-word "[Z. Colon]" /keys colon
+add-word "[Z. Copy]" /script "HeardWord \"[Key Cat]\"
+Wait 100
+HeardWord \"[Copy That]\"" /nsc
+add-word "[Z. Paste]" /script "HeardWord \"[Key Cat]\"
+Wait 100
+HeardWord \"[Paste That]\"" /nsc
+add-word "[Z. Shift]" /script "ButtonClick 1,2
+NoSpaceNext
+ShiftKey 1, 1" /nsc
+add-word "[Z4 s]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 3
+NoSpaceBegin 0
+NoSpaceNext 0" /nsc
+add-word [Z4] /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 3
+NoSpaceBegin 0
+NoSpaceNext" /nsc
+add-word "[Z5 s]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 2
+NoSpaceBegin
+SendKeys \" \"" /nsc
+add-word "[Z6 s]" /script "ResetGroup
+SetDictationMode 1
+CapitalizeBegin 3
+NoSpaceBegin
+SendKeys \" \"" /nsc
+add-word [Zed] /script "ButtonClick 1,1" /nsc
+add-word "[Zip Code]" /script "ListenFromGroup 1,\"Zip Code\",\"Number\"" /nsc /u /m
+add-word "\\ [backslash]" /keys /sa0 /sb0 /u /m
+add-word "] [close bracket]" /keys /sb0 /cr /u /m
+add-word "] [right bracket]" /keys /sb0 /cr /u /m
+add-word "^ [caret]" /keys /u /m
+add-word "^ [hat]" /keys /u /m
+add-word "_ [underscore]" /keys /sa0 /sb0 /u /m
+add-word "` [back quote]" /keys /sa0 /cr /u /m
+add-word "{ [left brace]" /keys /sa0 /cr /u /m
+add-word "{ [open brace]" /keys /sa0 /cr /u /m
+add-word "| [vertical bar]" /keys /u /m
+add-word "} [close brace]" /keys /sb0 /cr /u /m
+add-word "} [right brace]" /keys /sb0 /cr /u /m
+add-word "~ [tilde]" /keys /sa0 /u /m
+add-word "0 [numeral 0]" /keys /ss0 /u /m
+add-word "0 [oh]" /keys /ss0 /u /m
+add-word "0 [zero]" /keys /ss0 /u /m
+add-word 00 /keys /ss0
+add-word 1 /keys /ss0 /u /m
+add-word "1 [numeral 1]" /keys /ss0 /u /m
+add-word 10 /keys
+add-word 2 /keys /ss0 /u /m
+add-word "2 [numeral 2]" /keys /ss0 /u /m
+add-word 3 /keys /ss0 /u /m
+add-word "3 [numeral 3]" /keys /ss0 /u /m
+add-word 4 /keys /ss0 /u /m
+add-word "4 [numeral 4]" /keys /ss0 /u /m
+add-word 5 /keys /ss0 /u /m
+add-word "5 [numeral 5]" /keys /ss0 /u /m
+add-word 50 /keys
+add-word 6 /keys /ss0 /u /m
+add-word "6 [numeral 6]" /keys /ss0 /u /m
+add-word 7 /keys /ss0 /u /m
+add-word "7 [numeral 7]" /keys /ss0 /u /m
+add-word 8 /keys /ss0 /u /m
+add-word "8 [numeral 8]" /keys /ss0 /u /m
+add-word 9 /keys /ss0 /u /m
+add-word "9 [numeral 9]" /keys /ss0 /u /m
+add-word "a [alpha]" /keys /ss0 /u /m
+add-word "A [Cap alpha]" /keys /ss0
+add-word "b [bravo]" /keys /ss0 /u /m
+add-word "B [Cap bravo]" /keys /ss0
+add-word "C [Cap Charlie]" /keys /ss0
+add-word "c [charlie]" /keys /ss0 /u /m
+add-word "D [Cap delta]" /keys /ss0
+add-word "d [delta]" /keys /ss0 /u /m
+add-word "E [Cap echo]" /keys /ss0
+add-word "e [echo]" /keys /ss0 /u /m
+add-word "F [Cap foxtrot]" /keys /ss0
+add-word "f [foxtrot]" /keys /ss0 /u /m
+add-word "G [Cap golf]" /keys /ss0
+add-word "g [golf]" /keys /ss0 /u /m
+add-word "H [Cap hotel]" /keys /ss0
+add-word "h [hotel]" /keys /ss0 /u /m
+add-word "I [Cap India]" /keys /ss0
+add-word "i [india]" /keys /ss0 /u /m
+add-word "J [Cap Juliet]" /keys /ss0
+add-word "j [juliett]" /keys /ss0 /u /m
+add-word "K [Cap kilo]" /keys /ss0
+add-word "k [kilo]" /keys /ss0 /u /m
+add-word "L [Cap Lima]" /keys /ss0
+add-word "l [lima]" /keys /ss0 /u /m
+add-word "M [Cap Mike]" /keys /ss0
+add-word "m [mike]" /keys /ss0 /u /m
+add-word "N [Cap November]" /keys /ss0
+add-word "n [no thank you]" /keys
+add-word "n [november]" /keys /ss0 /u /m
+add-word "O [Cap Oscar]" /keys /ss0
+add-word "o [oscar]" /keys /ss0 /u /m
+add-word "P [Cap papa]" /keys /ss0
+add-word "p [papa]" /keys /ss0 /u /m
+add-word "Q [Cap Quebec]" /keys /ss0
+add-word "q [quebec]" /keys /ss0 /u /m
+add-word "R [Cap Romeo]" /keys /ss0
+add-word "r [romeo]" /keys /ss0 /u /m
+add-word "S [Cap sierra]" /keys /ss0
+add-word "s [sierra]" /keys /ss0 /u /m
+add-word "T [Cap tango]" /keys /ss0
+add-word "t [tango]" /keys /ss0 /u /m
+add-word "U [Cap uniform]" /keys /ss0
+add-word "u [uniform]" /keys /ss0 /u /m
+add-word "V [Cap victor]" /keys /ss0
+add-word "v [victor]" /keys /ss0 /u /m
+add-word "W [Cap whiskey]" /keys /ss0
+add-word "w [whiskey]" /keys /ss0 /u /m
+add-word "X [Cap X. Ray]" /keys /ss0
+add-word "x [xray]" /keys /ss0 /u /m
+add-word "Y [Cap Yankee]" /keys /ss0
+add-word "y [yankee]" /keys /ss0 /u /m
+add-word "y [yes please]" /keys
+add-word "Z [Cap Zulu]" /keys /ss0
+add-word "z [zulu]" /keys /ss0 /u /m
+switch-to-group /create "Bring Up"
+add-word [Audacity] /script "AppBringUp \"Audacity\",\"C:\\PROGRA~1\\Audacity\\audacity.exe\",1,\"C:\\PROGRA~1\\Audacity\""
+add-word "[Audio Setup Wizard]" /script "AppBringUp \"Audio Setup Wizard\",\"C:\\PROGRA~1\\DDWIN\\AUDIO.EXE\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word [Calculator] /script "AppBringUp \"Calculator\",\"C:\\WINDOWS\\Calc.exe\",1,\"C:\\WINDOWS\""
+add-word [Calendar] /script "AppBringUp \"Calendar\",\"Calendar.exe\",1,\"C:\\WINDOWS\""
+add-word [Cancel] /script ResetGroup /nsc /m
+add-word [Cardfile] /script "AppBringUp \"Cardfile\",\"Cardfile.exe\",1,\"C:\\WINDOWS\""
+add-word [Clock] /script "AppBringUp \"Clock\",\"Clock.exe\",1,\"C:\\WINDOWS\""
+add-word [Dbgview] /script "AppBringUp \"Dbgview\",\"C:\\PROGRA~1\\DBGV98\\DBGVIEW.EXE\",1,\"C:\\PROGRA~1\\DBGV98\""
+add-word "[Dragon Systems Home Page]" /script "AppBringUp \"Dragon Systems Home Page\",\"C:\\PROGRA~1\\DDWIN\\DRAGONSY.URL\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word "[DragonDictate Classic Edition]" /script "AppBringUp \"DragonDictate Classic Edition\",\"C:\\PROGRA~1\\DDWIN\\VOICEBAR.EXE\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word "[DragonDictate Help]" /script "AppBringUp \"DragonDictate Help\",\"C:\\PROGRA~1\\DDWIN\\DDWIN.HLP\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word "[DragonDictate Read Me]" /script "AppBringUp \"DragonDictate Read Me\",\"C:\\WINDOWS\\WRITE.EXE C:\\PROGRA~1\\DDWIN\\README.WRI\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word "[DragonDictate User's Guide]" /script "AppBringUp \"DragonDictate User's Guide\",\"C:\\PROGRA~1\\DDWIN\\DGNONDOC.EXE\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word [DragonDictate] /script "AppBringUp \"DragonDictate\",\"C:\\DDWIN\\voicebar.exe\",1,\"C:\\DDWIN\""
+add-word "[Internet Explorer]" /script "AppBringUp \"Internet Explorer\",\"C:\\PROGRA~1\\INTERN~1\\IEXPLORE.EXE\",1,\"c:\\PROGRA~1\\INTERN~1\""
+add-word "[Macro Language Help]" /script "AppBringUp \"Macro Language Help\",\"C:\\PROGRA~1\\DDWIN\\MACROLNG.HLP\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word "[Microsoft Access]" /script "AppBringUp \"Microsoft Access\",\"C:\\Windows\\Application Data\\Microsoft\\Installer\\{00000409-78E1-11D2-B60F-006097C998E7}\\accicons.exe\",1,\"C:\\WINDOWS\""
+add-word "[Microsoft Excel]" /script "AppBringUp \"Microsoft Excel\",\"C:\\PROGRA~1\\MICROS~2\\OFFICE\\EXCEL.EXE\",1,\"c:\\PROGRA~1\\MICROS~2\\OFFICE\""
+add-word "[Microsoft FrontPage]" /script "AppBringUp \"Microsoft FrontPage\",\"C:\\Windows\\Application Data\\Microsoft\\Installer\\{00000409-78E1-11D2-B60F-006097C998E7}\\misc.exe\",1,\"C:\\WINDOWS\""
+add-word "[Microsoft PowerPoint]" /script "AppBringUp \"Microsoft PowerPoint\",\"C:\\PROGRA~1\\MICROS~2\\OFFICE\\POWERPNT.EXE\",1,\"c:\\PROGRA~1\\MICROS~2\\OFFICE\""
+add-word "[Microsoft Word]" /script "AppBringUp \"Microsoft Word\",\"C:\\PROGRA~1\\MICROS~2\\OFFICE\\WINWORD.EXE\",1,\"c:\\PROGRA~1\\MICROS~2\\OFFICE\""
+add-word [Minesweeper] /script "AppBringUp \"Minesweeper\",\"C:\\WINDOWS\\winmine.exe\",1,\"C:\\WINDOWS\""
+add-word [MouseLoad] /script "AppBringUp \"MouseLoad\",\"C:\\UTIL\\MOUSEL~1.EXE\",1,\"C:\\UTIL\""
+add-word "[Mozilla Firefox]" /script "AppBringUp \"Mozilla Firefox\",\"C:\\PROGRA~1\\MOZILL~1\\firefox.exe\",1,\"C:\\PROGRA~1\\MOZILL~1\""
+add-word "[MS-DOS Prompt]" /script "AppBringUp \"MS-DOS Prompt\",\"C:\\WINDOWS\\STARTM~1\\PROGRAMS\\MS-DOS~1.PIF\",1,\"C:\\Windows\\Start Menu\\Programs\""
+add-word "[MSN Messenger]" /script "AppBringUp \"MSN Messenger\",\"C:\\PROGRA~1\\MESSEN~1\\MSMSGS.EXE\",1,\"C:\\WINDOWS\""
+add-word [MSN] /script "AppBringUp \"MSN\",\"C:\\PROGRA~1\\MSN\\MSNCOR~1\\Install\\msnsusii.exe\",1,\"C:\\PROGRA~1\\MSN\\MSNCOR~1\\Install\""
+add-word "[Napster Music Community]" /script "AppBringUp \"Napster Music Community\",\"C:\\PROGRA~1\\NAPSTER\\NAPSTER.EXE\",1,\"C:\\WINDOWS\""
+add-word "[NCSA Mosaic 2.0.0b1]" /script "AppBringUp \"NCSA Mosaic 2.0.0b1\",\"C:\\MOSAIC\\mosaic.exe\",1,\"C:\\MOSAIC\""
+add-word [Netscape] /script "AppBringUp \"Netscape\",\"D:\\NETSCAPE\\NETSCAPE.EXE\",1,\"D:\\NETSCAPE\""
+add-word [Notepad] /script "AppBringUp \"Notepad\",\"C:\\WINDOWS\\Notepad.exe\",1,\"C:\\WINDOWS\""
+add-word "[Outlook Express]" /script "AppBringUp \"Outlook Express\",\"C:\\PROGRA~1\\OUTLOO~1\\MSIMN.EXE\",1,\"C:\\WINDOWS\""
+add-word "[Program Manager]" /script "AppBringUp \"Progman\"" /nsc
+add-word [Solitaire] /script "AppBringUp \"Solitaire\",\"C:\\WINDOWS\\sol.exe\",1,\"C:\\WINDOWS\""
+add-word "[SQLWindows Designer]" /script "AppBringUp \"SQLWindows Designer\",\"C:\\GUPTA\\sqlwin50.exe\",1,\"C:\\data\\GUPTA\""
+add-word "[Task 1]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 1}{Space}\"" /nsc /m
+add-word "[Task 10]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 10}{Space}\"" /nsc /m
+add-word "[Task 2]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 2}{Space}\"" /nsc /m
+add-word "[Task 3]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 3}{Space}\"" /nsc /m
+add-word "[Task 4]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 4}{Space}\"" /nsc /m
+add-word "[Task 5]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 5}{Space}\"" /nsc /m
+add-word "[Task 6]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 6}{Space}\"" /nsc /m
+add-word "[Task 7]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 7}{Space}\"" /nsc /m
+add-word "[Task 8]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 8}{Space}\"" /nsc /m
+add-word "[Task 9]" /script "SendSystemKeys \"{Ctrl+Esc}\"
+Wait 50
+SendKeys \"{Esc}{Ctrl+CapsLock}{Tab}{Right 9}{Space}\"" /nsc /m
+add-word "[Task List]" /script "ResetGroup
+SendSystemKeys \"{Ctrl+Esc}\"" /nsc /m
+add-word [Terminal] /script "AppBringUp \"Terminal\",\"TERMINAL.EXE\",1,\"\\data\\terminal\""
+add-word [Tutorial] /script "AppBringUp \"Tutorial\",\"C:\\PROGRA~1\\DDWIN\\DRAGTUT.EXE\",1,\"C:\\PROGRA~1\\DDWIN\""
+add-word "[Visual C++]" /script "AppBringUp \"Visual C++\",\"C:\\MSVC\\BIN\\msvc.exe\",1,\"C:\\data\\MSVC\""
+add-word "[Vocabulary Manager]" /script "AppBringUp \"Vocabulary Manager\",\"Vocman\"" /nsc /m
+add-word [VoiceBar] /script "AppBringUp \"Voicebar\"" /nsc /m
+add-word [Voicebar] /script "AppBringUp \"Voicebar\"" /nsc /m
+add-word "[Windows Media Player]" /script "AppBringUp \"Windows Media Player\",\"C:\\PROGRA~1\\WINDOW~2\\wmplayer.exe /prefetch:1\",1,\"C:\\WINDOWS\""
+add-word "[Windows Messenger]" /script "AppBringUp \"Windows Messenger\",\"C:\\PROGRA~1\\MESSEN~1\\msmsgs.exe\",1,\"C:\\WINDOWS\""
+add-word "[Windows Update]" /script "AppBringUp \"Windows Update\",\"C:\\WINDOWS\\WUPDMGR.EXE\",1,\"C:\\WINDOWS\""
+add-word [WinZip] /script "AppBringUp \"WinZip\",\"C:\\PROGRA~1\\WINZIP\\WINZIP32.EXE\",1,\"C:\\WINDOWS\""
+add-word [WordPad] /script "AppBringUp \"WordPad\",\"C:\\PROGRA~1\\ACCESS~1\\WORDPAD.EXE\",1,\"c:\\PROGRA~1\\ACCESS~1\""
+add-word [Write] /script "AppBringUp \"Write\",\"write.exe\",1,\"C:\\WINDOWS\""
+switch-to-group /create "Arrow Movement"
+add-word [Cancel] /script "ShiftKey 0
+ResetGroup" /nsc /m
+add-word [Down] /script "MoveCaret 3" /nsc /m
+add-word [Faster] /script MoveFaster /nsc /m
+add-word [Left] /script "MoveCaret 4" /nsc /m
+add-word "[Move Down]" /script "MoveCaret 3" /nsc /m
+add-word "[Move Left]" /script "MoveCaret 4" /nsc /m
+add-word "[Move Right]" /script "MoveCaret 2" /nsc /m
+add-word "[Move Up]" /script "MoveCaret 1" /nsc /m
+add-word "[Much Faster]" /script "MoveFaster
+MoveFaster
+MoveFaster
+MoveFaster
+MoveFaster" /nsc /m
+add-word "[Much Slower]" /script "MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower" /nsc /m
+add-word [Right] /script "MoveCaret 2" /nsc /m
+add-word [Slower] /script MoveSlower /nsc /m
+add-word [Stop] /script "ShiftKey 0
+ResetGroup" /nsc /m
+add-word [Up] /script "MoveCaret 1" /nsc /m
+add-word "[Very Fast]" /script "SetKeySpeed 1000" /nsc /m
+add-word "[Very Slow]" /script "SetKeySpeed   40" /nsc /m
+switch-to-group /create "Mouse Movement"
+add-word "[Button Click]" /script "ResetGroup
+ButtonClick 1,1" /nsc /m
+add-word "[Button Double Click]" /script "ResetGroup
+ButtonClick 1,2" /nsc /m
+add-word [Cancel] /script ResetGroup /nsc /m
+add-word "[Delete Key 1]" /script "ResetGroup
+SendKeys \"{Del}\"
+HeardWord \"[Z. 1]\"" /nsc
+add-word "[Delete Key]" /script "ResetGroup
+SendKeys \"{Del}\"" /nsc
+add-word "[Double Click]" /script "ResetGroup
+ButtonClick 1,2" /nsc /m
+add-word [Down] /script "MoveMouse 3" /nsc /m
+add-word "[Drag Down]" /script "DragMouse 3" /nsc /m
+add-word "[Drag Left]" /script "DragMouse 4" /nsc /m
+add-word "[Drag Lower Left]" /script "DragMouse 7" /nsc /m
+add-word "[Drag Lower Right]" /script "DragMouse 6" /nsc /m
+add-word "[Drag Right]" /script "DragMouse 2" /nsc /m
+add-word "[Drag to Here]" /script "DragToPoint 1" /nsc /m /nf
+add-word "[Drag Up]" /script "DragMouse 1" /nsc /m
+add-word "[Drag Upper Left]" /script "DragMouse 8" /nsc /m
+add-word "[Drag Upper Right]" /script "DragMouse 5" /nsc /m
+add-word "[Edit Copy 1]" /script "ResetGroup
+SendKeys \"{Ctrl+c}\"
+HeardWord \"[Z. 1]\"" /nsc
+add-word "[Edit Copy]" /script "ResetGroup
+SendKeys \"{Ctrl+c}\"" /nsc
+add-word "[Edit Cut 1]" /script "ResetGroup
+SendKeys \"{Ctrl+x}\"
+HeardWord \"[Z. 1]\"" /nsc
+add-word "[Edit Cut]" /script "ResetGroup
+SendKeys \"{Ctrl+x}\"" /nsc
+add-word "[Edit Paste 1]" /script "ResetGroup
+SendKeys \"{Ctrl+v}\"
+HeardWord \"[Z. 1]\"" /nsc
+add-word "[Edit Paste]" /script "ResetGroup
+SendKeys \"{Ctrl+v}\"" /nsc
+add-word [EditCopy] /script "ResetGroup
+SendKeys \"{Ctrl+c}\"" /nsc
+add-word [EditCut] /script "ResetGroup
+SendKeys \"{Ctrl+x}\"" /nsc
+add-word [EditPaste] /script "ResetGroup
+SendKeys \"{Ctrl+v}\"" /nsc
+add-word [Faster] /script MoveFaster /nsc /m
+add-word "[Left Click]" /script "ResetGroup
+ButtonClick 1,1" /nsc /m /nf
+add-word "[Left Double Click]" /script "ResetGroup
+ButtonClick 1,2" /nsc /m /nf
+add-word [Left] /script "MoveMouse 4" /nsc /m
+add-word "[Lower Left]" /script "MoveMouse 7" /nsc /m
+add-word "[Lower Right]" /script "MoveMouse 6" /nsc /m
+add-word "[Mark Here]" /script RememberPoint /nsc /m /nf
+add-word "[Mouse Down]" /script "MoveMouse 3" /nsc /m
+add-word "[Mouse Left]" /script "MoveMouse 4" /nsc /m
+add-word "[Mouse Lower Left]" /script "MoveMouse 7" /nsc /m
+add-word "[Mouse Lower Right]" /script "MoveMouse 6" /nsc /m
+add-word "[Mouse Right]" /script "MoveMouse 2" /nsc /m
+add-word "[Mouse Up]" /script "MoveMouse 1" /nsc /m
+add-word "[Mouse Upper Left]" /script "MoveMouse 8" /nsc /m
+add-word "[Mouse Upper Right]" /script "MoveMouse 5" /nsc /m
+add-word "[Much Faster]" /script "MoveFaster
+MoveFaster
+MoveFaster
+MoveFaster
+MoveFaster" /nsc /m
+add-word "[Much Slower]" /script "MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower
+MoveSlower" /nsc /m
+add-word "[Right Click]" /script "ResetGroup
+ButtonClick 2,1" /nsc /m /nf
+add-word "[Right Double Click]" /script "ResetGroup
+ButtonClick 2,2" /nsc /m /nf
+add-word [Right] /script "MoveMouse 2" /nsc /m
+add-word [Slower] /script MoveSlower /nsc /m
+add-word [Stop] /script ResetGroup /nsc /m
+add-word [Up] /script "MoveMouse 1" /nsc /m
+add-word "[Upper Left]" /script "MoveMouse 8" /nsc /m
+add-word "[Upper Right]" /script "MoveMouse 5" /nsc /m
+add-word "[Very Fast]" /script "SetMouseSpeed 1000" /nsc /m
+add-word "[Very Slow]" /script "SetMouseSpeed   20" /nsc /m
+switch-to-group /create "Mouse Grid"
+add-word [1] /script "MouseGrid 1,1" /nsc /m
+add-word [2] /script "MouseGrid 1,2" /nsc /m
+add-word [3] /script "MouseGrid 1,3" /nsc /m
+add-word [4] /script "MouseGrid 1,4" /nsc /m
+add-word [5] /script "MouseGrid 1,5" /nsc /m
+add-word [6] /script "MouseGrid 1,6" /nsc /m
+add-word [7] /script "MouseGrid 1,7" /nsc /m
+add-word [8] /script "MouseGrid 1,8" /nsc /m
+add-word [9] /script "MouseGrid 1,9" /nsc /m
+add-word "[Button Click]" /script "MouseGrid 0
+ButtonClick 1,1" /nsc /m
+add-word "[Button Double Click]" /script "MouseGrid 0
+ButtonClick 1,2" /nsc /m
+add-word [Cancel] /script "MouseGrid 0" /nsc /m
+add-word [Center] /script "MouseGrid 1,5" /nsc /m
+add-word "[Double Click]" /script "MouseGrid 0
+ButtonClick 1,2" /nsc /m
+add-word [Down] /script "MouseGrid 1,8" /nsc /m
+add-word "[Drag Down]" /script "DragMouse 3" /nsc /m /nf
+add-word "[Drag Left]" /script "DragMouse 4" /nsc /m /nf
+add-word "[Drag Lower Left]" /script "DragMouse 7" /nsc /m /nf
+add-word "[Drag Lower Right]" /script "DragMouse 6" /nsc /m /nf
+add-word "[Drag Right]" /script "DragMouse 2" /nsc /m /nf
+add-word "[Drag to Here]" /script "DragToPoint 1" /nsc /m /nf
+add-word "[Drag Up]" /script "DragMouse 1" /nsc /m /nf
+add-word "[Drag Upper Left]" /script "DragMouse 8" /nsc /m /nf
+add-word "[Drag Upper Right]" /script "DragMouse 5" /nsc /m /nf
+add-word "[Left Click]" /script "MouseGrid 0
+ButtonClick 1,1" /nsc /m
+add-word "[Left Double Click]" /script "MouseGrid 0
+ButtonClick 1,2" /nsc /m /nf
+add-word [Left] /script "MouseGrid 1,4" /nsc /m
+add-word "[Lower Left]" /script "MouseGrid 1,7" /nsc /m
+add-word "[Lower Right]" /script "MouseGrid 1,9" /nsc /m
+add-word "[Mark Here]" /script RememberPoint /nsc /m /nf
+add-word "[Mouse Down]" /script "MoveMouse 3" /nsc /m /nf
+add-word "[Mouse Grid on Window]" /script "MouseGrid 0
+MouseGrid 2" /nsc /m
+add-word "[Mouse Grid]" /script "MouseGrid 1" /nsc /m
+add-word "[Mouse Left]" /script "MoveMouse 4" /nsc /m /nf
+add-word "[Mouse Lower Left]" /script "MoveMouse 7" /nsc /m /nf
+add-word "[Mouse Lower Right]" /script "MoveMouse 6" /nsc /m /nf
+add-word "[Mouse Right]" /script "MoveMouse 2" /nsc /m /nf
+add-word "[Mouse Up]" /script "MoveMouse 1" /nsc /m /nf
+add-word "[Mouse Upper Left]" /script "MoveMouse 8" /nsc /m /nf
+add-word "[Mouse Upper Right]" /script "MoveMouse 5" /nsc /m /nf
+add-word "[Right Click]" /script "MouseGrid 0
+ButtonClick 2,1" /nsc /m
+add-word "[Right Double Click]" /script "MouseGrid 0
+ButtonClick 2,2" /nsc /m /nf
+add-word [Right] /script "MouseGrid 1,6" /nsc /m
+add-word [Stop] /script "MouseGrid 0" /nsc /m
+add-word [Undo] /script "MouseGrid 1,0" /nsc /m
+add-word [Up] /script "MouseGrid 1,2" /nsc /m
+add-word "[Upper Left]" /script "MouseGrid 1,1" /nsc /m
+add-word "[Upper Right]" /script "MouseGrid 1,3" /nsc /m
+switch-to-group /create Sleeping
+add-word "[Now Wake Up Betty]" /script WakeUp /nsc
+switch-to-group /create "Pop-up Menu"
+add-word [Cancel] /keys {Esc} /nsc /m
+add-word [OK] /keys {Enter} /nsc /m
+switch-to-group /create "Choice List"
+add-word [<Voicebar/LetterString>] /script "SendKeys LetterString_1,1" /nsc
+add-word "[Add Phrase]" /keys {Alt+a} /nsc /m
+add-word [Cancel] /keys {Esc} /nsc /m
+add-word "[Choose 1 0]" /script "SelectChoice 10" /nsc
+add-word "[Choose 1]" /script "SelectChoice 1" /nsc /m
+add-word "[Choose 10]" /script "SelectChoice 10" /nsc /m
+add-word "[Choose 2]" /script "SelectChoice 2" /nsc /m
+add-word "[Choose 3]" /script "SelectChoice 3" /nsc /m
+add-word "[Choose 4]" /script "SelectChoice 4" /nsc /m
+add-word "[Choose 5]" /script "SelectChoice 5" /nsc /m
+add-word "[Choose 6]" /script "SelectChoice 6" /nsc /m
+add-word "[Choose 7]" /script "SelectChoice 7" /nsc /m
+add-word "[Choose 8]" /script "SelectChoice 8" /nsc /m
+add-word "[Choose 9]" /script "SelectChoice 9" /nsc /m
+add-word "[Choose No]" /keys {Alt+0}{Enter} /nsc
+add-word "[Edit 1]" /script "SpellMode
+SendKeys \"{Alt+1}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 2]" /script "SpellMode
+SendKeys \"{Alt+2}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 3]" /script "SpellMode
+SendKeys \"{Alt+3}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 4]" /script "SpellMode
+SendKeys \"{Alt+4}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 5]" /script "SpellMode
+SendKeys \"{Alt+5}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 6]" /script "SpellMode
+SendKeys \"{Alt+6}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 7]" /script "SpellMode
+SendKeys \"{Alt+7}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 8]" /script "SpellMode
+SendKeys \"{Alt+8}{End}{Left 2}\"" /nsc /m
+add-word "[Edit 9]" /script "SpellMode
+SendKeys \"{Alt+9}{End}{Left 2}\"" /nsc /m
+add-word "[Modify Word]" /keys {Alt+o} /nsc /m
+add-word "[Next Space]" /keys {Ctrl+Space} /nsc /m
+add-word [OK] /keys {Enter} /nsc /m
+add-word [Oops] /script "WordHistory 1" /nsc /u /nr /m
+add-word "[Previous Space]" /keys {Ctrl+Shift+Space} /nsc /m
+add-word "[Select 1]" /script "SpellMode
+SendKeys \"{Alt+1}\"" /nsc /m
+add-word "[Select 10]" /script "SpellMode
+SendKeys \"{Alt+0}\"" /nsc /m
+add-word "[Select 2]" /script "SpellMode
+SendKeys \"{Alt+2}\"" /nsc /m
+add-word "[Select 3]" /script "SpellMode
+SendKeys \"{Alt+3}\"" /nsc /m
+add-word "[Select 4]" /script "SpellMode
+SendKeys \"{Alt+4}\"" /nsc /m
+add-word "[Select 5]" /script "SpellMode
+SendKeys \"{Alt+5}\"" /nsc /m
+add-word "[Select 6]" /script "SpellMode
+SendKeys \"{Alt+6}\"" /nsc /m
+add-word "[Select 7]" /script "SpellMode
+SendKeys \"{Alt+7}\"" /nsc /m
+add-word "[Select 8]" /script "SpellMode
+SendKeys \"{Alt+8}\"" /nsc /m
+add-word "[Select 9]" /script "SpellMode
+SendKeys \"{Alt+9}\"" /nsc /m
+add-word "[Spell Alpha]" /script "SpellMode 1
+HeardWord \"a [alpha]\"" /nsc
+add-word "[Spell Bracket]" /script "SpellMode 1
+HeardWord \"[Left Bracket]\"" /nsc
+add-word "[Spell Bravo]" /script "SpellMode 1
+HeardWord \"b [bravo]\"" /nsc
+add-word "[Spell Charlie]" /script "SpellMode 1
+HeardWord \"c [charlie]\"" /nsc
+add-word "[Spell Delta]" /script "SpellMode 1
+HeardWord \"d [delta]\"" /nsc
+add-word "[Spell Echo]" /script "SpellMode 1
+HeardWord \"e [echo]\"" /nsc
+add-word "[Spell Foxtrot]" /script "SpellMode 1
+HeardWord \"f [foxtrot]\"" /nsc
+add-word "[Spell Golf]" /script "SpellMode 1
+HeardWord \"g [golf]\"" /nsc
+add-word "[Spell Group Alfalfa]" /script "SpellMode 1
+SendKeys \"[.AA \"" /nsc
+add-word "[Spell Group Alpha Delta]" /script "SpellMode 1
+SendKeys \"[.AD \"" /nsc
+add-word "[Spell Group Alpha Tango]" /script "SpellMode 1
+SendKeys \"[.AT \"" /nsc
+add-word "[Spell Group Bravo]" /script "SpellMode 1
+SendKeys \"[.B \"" /nsc
+add-word "[Spell Group Charlie]" /script "SpellMode 1
+SendKeys \"[.C \"" /nsc
+add-word "[Spell Group India]" /script "SpellMode 1
+SendKeys \"[.I \"" /nsc
+add-word "[Spell Group Sal]" /script "SpellMode 1
+SendKeys \"[.X Sal\"" /nsc
+add-word "[Spell Group Victor]" /script "SpellMode 1
+SendKeys \"[.V \"" /nsc
+add-word "[Spell Group X-ray]" /script "SpellMode 1
+SendKeys \"[.X \"" /nsc
+add-word "[Spell Group Yankee]" /script "SpellMode 1
+SendKeys \"[.Y \"" /nsc
+add-word "[Spell Hotel]" /script "SpellMode 1
+HeardWord \"h [hotel]\"" /nsc
+add-word "[Spell India]" /script "SpellMode 1
+HeardWord \"i [india]\"" /nsc
+add-word "[Spell Juliet]" /script "SpellMode 1
+HeardWord \"j [juliett]\"" /nsc
+add-word "[Spell Kilo]" /script "SpellMode 1
+HeardWord \"k [kilo]\"" /nsc
+add-word "[Spell Lima]" /script "SpellMode 1
+HeardWord \"l [lima]\"" /nsc
+add-word "[Spell Mike]" /script "SpellMode 1
+HeardWord \"m [mike]\"" /nsc
+add-word "[Spell Mode]" /script SpellMode /nsc /m
+add-word "[Spell November]" /script "SpellMode 1
+HeardWord \"n [november]\"" /nsc
+add-word "[Spell Oscar]" /script "SpellMode 1
+HeardWord \"o [oscar]\"" /nsc
+add-word "[Spell Papa]" /script "SpellMode 1
+HeardWord \"p [papa]\"" /nsc
+add-word "[Spell Quebec]" /script "SpellMode 1
+HeardWord \"q [quebec]\"" /nsc
+add-word "[Spell Romeo]" /script "SpellMode 1
+HeardWord \"r [romeo]\"" /nsc
+add-word "[Spell Sierra]" /script "SpellMode 1
+HeardWord \"s [sierra]\"" /nsc
+add-word "[Spell Tango]" /script "SpellMode 1
+HeardWord \"t [tango]\"" /nsc
+add-word "[Spell Uniform]" /script "SpellMode 1
+HeardWord \"u [uniform]\"" /nsc
+add-word "[Spell Victor]" /script "SpellMode 1
+HeardWord \"v [victor]\"" /nsc
+add-word "[Spell Whiskey]" /script "SpellMode 1
+HeardWord \"w [whiskey]\"" /nsc
+add-word "[Spell X-ray]" /script "SpellMode 1
+HeardWord \"x [xray]\"" /nsc
+add-word "[Spell Yankee]" /script "SpellMode 1
+HeardWord \"y [yankee]\"" /nsc
+add-word "[Spell Zulu]" /script "SpellMode 1
+HeardWord \"z [zulu]\"" /nsc
+add-word "[System Menu]" /keys {Alt+Space} /nsc /m
+add-word "[Train Word]" /keys {Alt+t} /nsc /m
+add-word to /keys
+switch-to-group /create "Environmental Sounds"
+add-word [(breath)] /script ' /nsc /m
+add-word [(chuckle)] /script ' /nsc /m
+add-word [(clap)] /script ' /nsc /m
+add-word "[(clear throat)]" /script ' /nsc /m
+add-word [(cough)] /script ' /nsc /m
+add-word "[(desk drawer slam)]" /script ' /nsc /m
+add-word "[(door slam)]" /script ' /nsc /m
+add-word "[(drop book)]" /script ' /nsc /m
+add-word "[(drop microphone)]" /script ' /nsc /m
+add-word "[(file drawer slam)]" /script ' /nsc /m
+add-word [(laugh)] /script ' /nsc /m
+add-word "[(lip smack)]" /script ' /nsc /m
+add-word "[(paper rustling)]" /script ' /nsc /m
+add-word [(shout)] /script ' /nsc /m
+add-word [(sigh)] /script ' /nsc /m
+add-word [(slurp)] /script ' /nsc /m
+add-word [(sneeze)] /script ' /nsc /m
+add-word [(sniff)] /script ' /nsc /m
+add-word "[(stapler slam)]" /script ' /nsc /m
+add-word [(whistle)] /script ' /nsc /m
+add-word [(yawn)] /script ' /nsc /m
+switch-to-group /create "Move or Select"
+add-word [Move] /script "ReturnValue \"\"" /nsc
+add-word [Select] /script "ReturnValue \"Shift+\"" /nsc
+switch-to-group /create Direction
+add-word [Down] /script "ReturnValue \"Down\"" /nsc
+add-word [Left] /script "ReturnValue \"Left\"" /nsc
+add-word [Right] /script "ReturnValue \"Right\"" /nsc
+add-word [Up] /script "ReturnValue \"Up\"" /nsc
