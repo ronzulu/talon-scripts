@@ -80,3 +80,11 @@ add-word "[Left Arrow]" /keys {Left} /nsc /m
 add-word "[Left Bracket]" /keys [ /sa0 /cr /u /m
 add-word "[Next Window]" /script "SendSystemKeys \"{Alt+Esc}\"" /nsc
 add-word "[Previous Window]" /script "SendSystemKeys \"{Shift+Alt+Esc}\"" /nsc
+
+# 
+close document: user.rz_insert_key_sequence("{{ctrl-f4}}")
+close window: user.rz_insert_key_sequence("{{alt-f4}}")
+drop list: user.rz_insert_key_sequence("{{alt-down}}")
+previous document: user.rz_insert_key_sequence("{{shift-ctrl-f6}}")
+peek def: user.rz_insert_key_sequence("{{alt-f12}}")
+restore document: user.rz_insert_key_sequence("{{alt--}}r")
