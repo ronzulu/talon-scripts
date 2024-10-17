@@ -1,0 +1,30 @@
+list: user.letter
+language: en
+-
+air: a
+bat: b
+cute: c
+drum: d
+echo: e
+fine: f
+gust: g
+harp: h
+indie: i
+jury: j
+kilo: k
+lima: l
+mike: m
+near: n
+odd: o
+pit: p
+quench: q
+red: r
+sun: s
+trap: t
+urge: u
+vest: v
+whale: w
+plex: x
+yank: y
+zip: z
+  

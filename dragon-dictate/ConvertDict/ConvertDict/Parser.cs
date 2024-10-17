@@ -133,6 +133,7 @@ namespace ConvertDict
     {
         public string Word { get; set; }
         public string Keys { get; set; }
+        public List<string> AttributeList { get; set; }
         public bool HasVirtualKeys { get; set; }
         public bool IsScript { get; set; }
 
@@ -141,6 +142,7 @@ namespace ConvertDict
             Word = word;
             Keys = keys;
             HasVirtualKeys = hasVirtualKeys;
+            AttributeList = new List<string>();
         }
 
         public override string ToString()

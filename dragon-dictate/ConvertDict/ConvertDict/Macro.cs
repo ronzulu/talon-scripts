@@ -38,16 +38,16 @@ namespace ConvertDict
                     string? rule = WordConverter.ConvertDragonWordToTalonRule(strList[1]);
                     if (rule != null)
                     {
+                        int idx = 3;
                         switch (strList[2]) 
                         {
                             case "/keys":
-                                KeysConverter.Convert(strList[3], out string talonKeys, out bool hasVirtualKeys);
+                                KeysConverter.Convert(strList[idx++], out string talonKeys, out bool hasVirtualKeys);
                                 result = new ParseEntity(rule, talonKeys, hasVirtualKeys);
                                 break;
 
                             case "/script":
                                 {
-                                    int idx = 3;
                                     talonKeys = ScriptConverter.Convert(strList, ref idx);
                                     result = new ParseEntity(rule, talonKeys, false);
                                     result.IsScript = true;
@@ -56,6 +56,10 @@ namespace ConvertDict
 
                             default:
                                 break;
+                        }
+                        if (result != null)
+                        {
+                            result.AttributeList = strList.ToList().Skip(idx).ToList();
                         }
                     }
                 }

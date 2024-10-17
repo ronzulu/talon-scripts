@@ -10,6 +10,12 @@ zed one l s:
     user.rz_set_format("Z1LS")
 zed two:
     user.rz_set_format("Z2")
+zed two (c | see | sea):
+    user.rz_set_format("Z2C")
+zed two s:
+    user.rz_set_format("Z2S")
+zed two s (c | see | sea):
+    user.rz_set_format("Z2SC")
 zed three:
     user.rz_set_format("Z3")
 zed three s:

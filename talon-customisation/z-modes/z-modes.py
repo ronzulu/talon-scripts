@@ -25,6 +25,15 @@ class ZModeActions:
             case "Z2":
                 actions.user.rz_set_next_format("", "NOOP")
                 actions.user.rz_set_subsequent_format(" ", "NOOP")
+            case "Z2C":
+                actions.user.rz_set_next_format("", "CAPITALIZE_FIRST_WORD")
+                actions.user.rz_set_subsequent_format(" ", "NOOP")
+            case "Z2S":
+                actions.user.rz_set_next_format(" ", "NOOP")
+                actions.user.rz_set_subsequent_format(" ", "NOOP")
+            case "Z2SC":
+                actions.user.rz_set_next_format(" ", "CAPITALIZE_FIRST_WORD")
+                actions.user.rz_set_subsequent_format(" ", "NOOP")
             case "Z3":
                 actions.user.rz_set_next_format("", "CAPITALIZE_ALL_WORDS")
                 actions.user.rz_set_subsequent_format(" ", "CAPITALIZE_ALL_WORDS")
