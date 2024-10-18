@@ -4526,7 +4526,6 @@ s a r u s h: "Sarush"
 s a under: "SA_"
 s a v t a: "Savta"
 s a x: "sax"
-s a: "sa"
 s as: " AS "
 s asterisk l &: user.rz_insert_key_sequence(" *{{Z1L}}")
 s at sign: user.rz_insert_key_sequence("{{space}}@")
