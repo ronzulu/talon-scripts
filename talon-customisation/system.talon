@@ -15,17 +15,21 @@ new line: user.rz_insert_key_sequence("{{enter}}")
 next document: user.rz_insert_key_sequence("{{ctrl-f6}}")
 tab key enter: user.rz_insert_key_sequence("{{tab}}{{enter}}")
 up enter: user.rz_insert_key_sequence("{{up}}{{enter}}")
-back quote: "`"
+(back | bat) quote: "`"
+single quote: "'"
+(open | close) quote: '"'
+left p: "("
+right p: ")"
+clothes: "close"
 
 # Text deletion
-back one: user.rz_insert_key_sequence("{{backspace}}")
-back ten: user.rz_insert_key_sequence("{{backspace:10}}")
-back two: user.rz_insert_key_sequence("{{backspace:2}}")
-back three: user.rz_insert_key_sequence("{{backspace:3}}")
-back four: user.rz_insert_key_sequence("{{backspace:4}}")
-back five: user.rz_insert_key_sequence("{{backspace:5}}")
-back seven: user.rz_insert_key_sequence("{{backspace}}{{backspace}}{{backspace}}{{backspace}}{{backspace}}{{backspace}}{{backspace}}")
-(backspace | bat space) [key]: user.rz_insert_key_sequence("{{backspace}}")
+(backspace | bat space): user.rz_insert_key_sequence("{{backspace}}")
+((back | brack) [space] | backspace) one: user.rz_insert_key_sequence("{{backspace}}")
+((back | brack) [space] | backspace) two: user.rz_insert_key_sequence("{{backspace:2}}")
+((back | brack) [space] | backspace) three: user.rz_insert_key_sequence("{{backspace:3}}")
+((back | brack) [space] | backspace) four: user.rz_insert_key_sequence("{{backspace:4}}")
+((back | brack) [space] | backspace) five: user.rz_insert_key_sequence("{{backspace:5}}")
+((back | brack) [space] | backspace) ten: user.rz_insert_key_sequence("{{backspace:10}}")
 control delete ten: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}")
 control delete two: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}")
 control delete three: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}")
