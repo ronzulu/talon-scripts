@@ -78,14 +78,18 @@ tab key copy: user.rz_insert_key_sequence("{{tab}}{{ctrl-c}}")
 tab key paste: user.rz_insert_key_sequence("{{tab}}{{ctrl-v}}")
 tab key: user.rz_insert_key_sequence("{{tab}}")
 
-hunt for duke: 
-    mouse_click()
-    mouse_click()
-    sleep(25ms)
+hunt all that: 
     edit.copy()
     user.find_everywhere("")
     sleep(25ms)
     edit.paste()
+hunt for duke: 
+    mouse_click()
+    mouse_click()
+    sleep(25ms)
+    mimic("hunt all that")
+
+
 sell word left: edit.extend_word_left()
 sell word right: edit.extend_word_right()
 sell left: edit.extend_left()
