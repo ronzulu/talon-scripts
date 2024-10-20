@@ -25,30 +25,14 @@ apostrophe s: "'s"
 
 # Text deletion
 (backspace | bat space | brack space): user.rz_insert_key_sequence("{{backspace}}")
-((back | brack) [space] | backspace) one: user.rz_insert_key_sequence("{{backspace}}")
-((back | brack) [space] | backspace) two: user.rz_insert_key_sequence("{{backspace:2}}")
-((back | brack) [space] | backspace) three: user.rz_insert_key_sequence("{{backspace:3}}")
-((back | brack) [space] | backspace) four: user.rz_insert_key_sequence("{{backspace:4}}")
-((back | brack) [space] | backspace) five: user.rz_insert_key_sequence("{{backspace:5}}")
-((back | brack) [space] | backspace) ten: user.rz_insert_key_sequence("{{backspace:10}}")
-control delete ten: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}")
-control delete two: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}")
-control delete three: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}")
-control delete four: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}")
-control delete five: user.rz_insert_key_sequence("{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}{{ctrl-del}}")
-control delete: user.rz_insert_key_sequence("{{ctrl-del}}")
-delete all: user.rz_insert_key_sequence("{{end}}{{shift-home}}{{del}}")
+# control delete: user.rz_insert_key_sequence("{{ctrl-del}}")
 delete back: user.rz_insert_key_sequence("{{del}}{{backspace}}")
 delete bottom of document: user.rz_insert_key_sequence("{{ctrl-shift-end}}{{del}}")
 delete end key left: user.rz_insert_key_sequence("{{shift-end}}{{shift-left}}{{del}}")
 delete end key: user.rz_insert_key_sequence("{{shift-end}}{{del}}")
 delete enter: user.rz_insert_key_sequence("{{del}}{{enter}}")
 delete house key: user.rz_insert_key_sequence("{{shift-home}}{{del}}")
-delete key (two | to): user.rz_insert_key_sequence("{{del}}{{del}}")
-delete key three: user.rz_insert_key_sequence("{{del}}{{del}}{{del}}")
-delete key four: user.rz_insert_key_sequence("{{del}}{{del}}{{del}}{{del}}")
-delete key five: user.rz_insert_key_sequence("{{del}}{{del}}{{del}}{{del}}{{del}}")
-delete key: user.rz_insert_key_sequence("{{del}}")
+# delete key (two | to): user.rz_insert_key_sequence("{{del}}{{del}}")
 delete space: user.rz_insert_key_sequence("{{del}}{{space}}")
 delete top of document: user.rz_insert_key_sequence("{{ctrl-shift-home}}{{del}}")
 
@@ -81,49 +65,18 @@ paste house key: user.rz_insert_key_sequence("{{shift-home}}{{ctrl-v}}")
 replace all: user.rz_insert_key_sequence("{{ctrl-end}}{{ctrl-shift-home}}{{ctrl-v}}")
 shift bottom of document: user.rz_insert_key_sequence("{{shift-ctrl-end}}")
 # shift d one: user.rz_insert_key_sequence("{{shift-down}}")
-shift delete key: user.rz_insert_key_sequence("{{shift-del}}")
-shift delete: user.rz_insert_key_sequence("{{shift-del}}")
 shift end key left: user.rz_insert_key_sequence("{{shift-end}}{{shift-left}}")
 shift end key: user.rz_insert_key_sequence("{{shift-end}}")
-shift enter key: user.rz_insert_key_sequence("{{shift-enter}}")
-shift enter: user.rz_insert_key_sequence("{{shift-enter}}")
+shift enter [key]: user.rz_insert_key_sequence("{{shift-enter}}")
 shift house key: user.rz_insert_key_sequence("{{shift-home}}")
-shift left two: user.rz_insert_key_sequence("{{shift-left}}{{shift-left}}")
-shift left three: user.rz_insert_key_sequence("{{shift-left}}{{shift-left}}{{shift-left}}")
-shift left four: user.rz_insert_key_sequence("{{shift-left}}{{shift-left}}{{shift-left}}{{shift-left}}")
-shift left five: user.rz_insert_key_sequence("{{shift-left}}{{shift-left}}{{shift-left}}{{shift-left}}{{shift-left}}")
-shift left arrow: user.rz_insert_key_sequence("{{shift-left}}")
-shift page down: user.rz_insert_key_sequence("{{shift-pagedown}}")
-shift page up: user.rz_insert_key_sequence("{{shift-pageup}}")
-shift right one: user.rz_insert_key_sequence("{{shift-right}}")
-shift right two: user.rz_insert_key_sequence("{{shift-right}}{{shift-right}}")
-shift right three: user.rz_insert_key_sequence("{{shift-right}}{{shift-right}}{{shift-right}}")
-shift right four: user.rz_insert_key_sequence("{{shift-right}}{{shift-right}}{{shift-right}}{{shift-right}}")
-shift right five: user.rz_insert_key_sequence("{{shift-right}}{{shift-right}}{{shift-right}}{{shift-right}}{{shift-right}}")
-shift right arrow: user.rz_insert_key_sequence("{{shift-right}}")
+(shift | cell | select) (page | scroll) down: user.rz_insert_key_sequence("{{shift-pagedown}}")
+(shift | cell | select) (page | scroll) up: user.rz_insert_key_sequence("{{shift-pageup}}")
 shift top of document: user.rz_insert_key_sequence("{{shift-ctrl-home}}")
-shift up one: user.rz_insert_key_sequence("{{shift-up}}")
-shift up two: user.rz_insert_key_sequence("{{shift-up}}{{shift-up}}")
-shift up three: user.rz_insert_key_sequence("{{shift-up}}{{shift-up}}{{shift-up}}")
-shift up four: user.rz_insert_key_sequence("{{shift-up}}{{shift-up}}{{shift-up}}{{shift-up}}")
-shift up five: user.rz_insert_key_sequence("{{shift-up}}{{shift-up}}{{shift-up}}{{shift-up}}{{shift-up}}")
 single quote paste quote: user.rz_insert_key_sequence("'{{ctrl-v}}'")
 space and paste: user.rz_insert_key_sequence("{{space}}{{ctrl-v}}")
 tab key copy: user.rz_insert_key_sequence("{{tab}}{{ctrl-c}}")
 tab key paste: user.rz_insert_key_sequence("{{tab}}{{ctrl-v}}")
 tab key: user.rz_insert_key_sequence("{{tab}}")
-word left one: user.rz_insert_key_sequence("{{ctrl-left:1}}")
-word left ten: user.rz_insert_key_sequence("{{ctrl-left:10}}")
-word left two: user.rz_insert_key_sequence("{{ctrl-left:2}}")
-word left three: user.rz_insert_key_sequence("{{ctrl-left:3}}")
-word left four: user.rz_insert_key_sequence("{{ctrl-left:4}}")
-word left five: user.rz_insert_key_sequence("{{ctrl-left:5}}")
-word right one: user.rz_insert_key_sequence("{{ctrl-right:1}}")
-word right ten: user.rz_insert_key_sequence("{{ctrl-right:10}}")
-word right two: user.rz_insert_key_sequence("{{ctrl-right:2}}")
-word right three: user.rz_insert_key_sequence("{{ctrl-right:3}}")
-word right four: user.rz_insert_key_sequence("{{ctrl-right:4}}")
-word right five: user.rz_insert_key_sequence("{{ctrl-right:5}}")
 
 hunt for duke: 
     mouse_click()
@@ -135,6 +88,43 @@ hunt for duke:
     edit.paste()
 sell word left: edit.extend_word_left()
 sell word right: edit.extend_word_right()
+sell left: edit.extend_left()
+sell right: edit.extend_right()
+sell down: user.rz_insert_key_sequence("{{shift-down}}")
+sell up: user.rz_insert_key_sequence("{{shift-up}}")
+delete left: mimic("clear left")
+delete right: mimic("clear right")
+delete up: mimic("clear up")
+delete down: mimic("clear down")
+delete word left: mimic("clear word left")
+delete word right: mimic("clear word right")
+
+cap air: "A"
+cap bat: "B"
+cap cute: "C"
+cap drum: "D"
+cap echo: "E"
+cap fine: "F"
+cap golf: "G"
+cap harp: "H"
+cap indie: "I"
+cap julie: "J"
+cap kilo: "K"
+cap lima: "L"
+cap mike: "M"
+cap near: "N"
+cap ox: "O"
+cap pit: "P"
+cap quench: "Q"
+cap red: "R"
+cap sun: "S"
+cap trap: "T"
+cap urge: "U"
+cap vest: "V"
+cap whale: "W"
+cap plex: "X"
+cap yank: "Y"
+cap zip: "Z"
 
 # Belongs elsewhere?
 dot el: user.rz_insert_key_sequence(".{{Z1L}}")
