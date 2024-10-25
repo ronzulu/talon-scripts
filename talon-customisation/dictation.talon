@@ -1,4 +1,0 @@
-something somewhat interesting: "smartphones"
-
-
-
