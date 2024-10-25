@@ -13,6 +13,10 @@ new block: mimic("c new block")
 echo: "e"
 
 dock you sore us: "docusaurus"
+# <user.word>$: user.rz_add(word)
 
-<user.word>$: user.rz_add(word)
+# something reasonably: "<something reasonably>"
+# something reasonably interesting: "<something reasonably interesting>"
+# interesting: "<interesting>"
 
+prefix {user.dictionary}: "hello.{dictionary}"
