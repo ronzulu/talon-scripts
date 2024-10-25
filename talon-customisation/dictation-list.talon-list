@@ -1,27 +1,29 @@
+list: user.dictionary
+-
 dos a colon &: "a:"
-dos back acts &: "\acts"
-dos back acts back &: "\acts\"
-dos back gfc four hundred &: "\gfc400\"
-dos back maint &: "\maint"
-dos back ronny &: "\ronny"
-dos back util &: "\util\"
+dos back acts &: "\\acts"
+dos back acts back &: "\\acts\\"
+dos back gfc four hundred &: "\\gfc400\\"
+dos back maint &: "\\maint"
+dos back ronny &: "\\ronny"
+dos back util &: "\\util\\"
 dos c colon: "c:"
 dos dir wide: "dir /W "
 dos dir: "dir "
 dos dot bmp &: ".bmp"
-dos dot dot back &: "..\"
+dos dot dot back &: "..\\"
 dos dot idx &: ".idx"
 dos dot mak &: ".mak"
 dos dot qsf &: ".qsf"
 dos dot rc &: ".rc"
 dos dot sbr &: ".sbr"
 dos e colon &: "e:"
-dos e colon acts &: "e:\ronny\acts\"
+dos e colon acts &: "e:\\ronny\\acts\\"
 dos help author &: "helpauth"
-dos log file: "c:\acts\acts.log"
+dos log file: "c:\\acts\\acts.log"
 dos lpt3 &: "LPT3:"
 dos print: "print /D:LPT3 "
-dos temp one: "c:\dos\temp1.tmp "
+dos temp one: "c:\\dos\\temp1.tmp "
 dos type: "type "
 zero zero colon: "00:"
 zero zero: "00"
@@ -354,7 +356,7 @@ a q p: "aqp"
 a q pro one: "AQPro"
 a q pro five: "aqpro"
 a q pro a p i: "AQ Pro API"
-a q pro batch files: "D:\sw\Callpoint\AQ Pro\trunk\WebAQPro2\TestData\BatchFiles"
+a q pro batch files: "D:\\sw\\Callpoint\\AQ Pro\\trunk\\WebAQPro2\\TestData\\BatchFiles"
 a q pro cust: "AQProCust"
 a q pro dash: "aqpro-"
 a q pro global: "AQProGlobal"
@@ -705,54 +707,54 @@ b union: " UNION "
 b where: " WHERE "
 b whiskey: "w"
 b y o l : "BYOL"
-back twenty twenty four enter: user.rz_insert_key_sequence("\2024{{enter}}")
-back alpha: "\alpha"
-back approximate: "\approx"
-back back v m ware host: "\\vmware-host"
-back c dot: "\cdot"
-back comma: "\,"
-back delta three: "\Delta"
-back epsilon: "\epsilon"
-back f r a c: "\frac"
-back gamma: "\gamma"
-back huge: "\huge"
-back l t: "\lt"
-back lambda: "\lambda"
-back large: "\large"
+back twenty twenty four enter: user.rz_insert_key_sequence("\\2024{{enter}}")
+back alpha: "\\alpha"
+back approximate: "\\approx"
+back back v m ware host: "\\\\vmware-host"
+back c dot: "\\cdot"
+back comma: "\\,"
+back delta three: "\\Delta"
+back epsilon: "\\epsilon"
+back f r a c: "\\frac"
+back gamma: "\\gamma"
+back huge: "\\huge"
+back l t: "\\lt"
+back lambda: "\\lambda"
+back large: "\\large"
 back link: "backlink"
 back links: "backlinks"
-back not equals: "\neq"
-back november: "\\n"
-back o s r enter: user.rz_insert_key_sequence("\osr{{enter}}{{enter}}")
-back o s r: "\osr"
-back omega: "\omega"
-back p h i: "\phi"
-back pi: "\pi"
-back prop to: "\propto"
+back not equals: "\\neq"
+back november: "\\\\n"
+back o s r enter: user.rz_insert_key_sequence("\\osr{{enter}}{{enter}}")
+back o s r: "\\osr"
+back omega: "\\omega"
+back p h i: "\\phi"
+back pi: "\\pi"
+back prop to: "\\propto"
 back propagation: "backpropagation"
 back quote enter: user.rz_insert_key_sequence("`{{enter}}")
 back quote november: "`n"
 back quote quote: "`""
 back quote romeo: "`r"
 back quote tango: "`t"
-back r h o: "\rho"
-back romeo november two: "\r\n\r\n"
-back romeo november: "\r\n"
-back romeo: "\r"
-back s u m: "\sum"
-back shared folders: "\Shared Folders"
-back t a u: "\tau"
-back tango: "\t"
-back therefore: "\therefore"
-back theta one: "\theta_1"
+back r h o: "\\rho"
+back romeo november two: "\\r\\n\\r\\n"
+back romeo november: "\\r\\n"
+back romeo: "\\r"
+back s u m: "\\sum"
+back shared folders: "\\Shared Folders"
+back t a u: "\\tau"
+back tango: "\\t"
+back therefore: "\\therefore"
+back theta one: "\\theta_1"
 back tick paste tick: user.rz_insert_key_sequence("`{{wait:200}}{{Ctrl+v}}{{wait:200}}`")
 back tick: "`"
-back times: "\times"
-back v e c: "\vec "
-backslash delta: "\d"
-backslash dot: "\."
-backslash n: "\n"
-backslash trunk: "\trunk"
+back times: "\\times"
+back v e c: "\\vec "
+backslash delta: "\\d"
+backslash dot: "\\."
+backslash n: "\\n"
+backslash trunk: "\\trunk"
 backup service: "Backup Service"
 bam back: "Bamback"
 band id: "BandId"
@@ -776,8 +778,8 @@ belly b forty four: "bellyb44"
 belly b: "bellyb"
 belly bat forty four: "bellyB@44"
 big era waters: "Biggera Waters"
-bin back debug enter: user.rz_insert_key_sequence("bin\debug{{enter}}")
-bin debug net eight windows: "bin\debug\net8.0-windows"
+bin back debug enter: user.rz_insert_key_sequence("bin\\debug{{enter}}")
+bin debug net eight windows: "bin\\debug\\net8.0-windows"
 bin pack: "binpack"
 bin yan conjugation: "BinyanConjugation"
 bin yan: "binyan"
@@ -912,10 +914,10 @@ c char s: "char "
 c charlie: "c"
 c class s: "class "
 c class: "class"
-c colon back: "c:\"
+c colon back: "c:\\"
 c colon base: " : base("
 c colon less: user.rz_insert_key_sequence(": {{Z1L}}")
-c colon software: "c:\sw\"
+c colon software: "c:\\sw\\"
 c colon: " : "
 c combo: "combo"
 c comment line: user.rz_insert_key_sequence("//////////////////////////////////////////////////////////////////////{{enter}}")
@@ -926,7 +928,7 @@ c const s: "const "
 c continue: "continue"
 c cos etsi: "CCosEtsi"
 c cos: "CCos"
-c d dot dot back: "cd ..\"
+c d dot dot back: "cd ..\\"
 c d k six: "CDK"
 c d l g: "dlg"
 c d space: "cd "
@@ -1263,7 +1265,7 @@ c union: "union "
 c using left: "using ("
 c using: "using "
 c v five: "cv"
-c v s e com: "C:\sw\cas\cvsmnt\ecom\"
+c v s e com: "C:\\sw\\cas\\cvsmnt\\ecom\\"
 c v v six: "CVV"
 c v v: "cvv"
 c value: "value"
@@ -1296,7 +1298,7 @@ cadastre under pid six: "CADASTRE_PID"
 cadlite extra: "Cadlite Extra"
 cal three d: "Cal3D"
 call point: "Callpoint"
-callpoint s v n: "D:\sw\Callpoint\"
+callpoint s v n: "D:\\sw\\Callpoint\\"
 callpoint spatial: "Callpoint Spatial"
 can six: "CAN"
 cancelled colon s: "Cancelled: "
@@ -1341,7 +1343,7 @@ change log: "changelog"
 char s star l: user.rz_insert_key_sequence("char *{{Z1L}}")
 charge back: "chargeback"
 charlie three: "C3"
-charlie colon back: "c:\"
+charlie colon back: "c:\\"
 chat g p t : "ChatGPT"
 check box one: "CheckBox"
 check box seven: "checkBox"
@@ -1383,7 +1385,7 @@ codet user: "CODET User"
 cog paf six: "COGPAF"
 cognito one: "Cognito"
 coles enter: user.rz_insert_key_sequence("Coles{{enter}}")
-colon back: ":\"
+colon back: ":\\"
 colon boolean: ": boolean"
 colon colon colon: ":::"
 colon colon l: user.rz_insert_key_sequence("::{{Z1L}}")
@@ -1697,16 +1699,16 @@ david jensen: "David Jensen"
 david jensonberg: "davidjensonberg"
 day or night: "DayOrNight"
 de whyn: "De-Whyn"
-dear code commit: "d:\CodeCommit"
-dear git hub o s r : "D:\github\osr"
-dear medical: "d:\obsidian\medical"
-dear o s r: "d:\github\osr\"
-dear obsidian my stuff: "d:\obsidian\obsidian\MyStuff\"
-dear obsidian people: "d:\obsidian\obsidian\people\"
-dear obsidian: "d:\obsidian\obsidian\"
-dear organizations: "d:\obsidian\obsidian\organisations"
-dear talon user: "c:\users\ronny\AppData\Roaming\talon\user"
-dear tax receipts: "e:\documents\finance\tax\2024\receipts"
+dear code commit: "d:\\CodeCommit"
+dear git hub o s r : "D:\\github\\osr"
+dear medical: "d:\\obsidian\\medical"
+dear o s r: "d:\\github\\osr\\"
+dear obsidian my stuff: "d:\\obsidian\\obsidian\\MyStuff\\"
+dear obsidian people: "d:\\obsidian\\obsidian\\people\\"
+dear obsidian: "d:\\obsidian\\obsidian\\"
+dear organizations: "d:\\obsidian\\obsidian\\organisations"
+dear talon user: "c:\\users\\ronny\\AppData\\Roaming\\talon\\user"
+dear tax receipts: "e:\\documents\\finance\\tax\\2024\\receipts"
 december twenty twenty two: "December 2022"
 deck tree: "deckTree"
 deep fake: "deepfake"
@@ -1717,9 +1719,9 @@ delete key tab: user.rz_insert_key_sequence("{{del}}{{tab}}")
 delete space: user.rz_insert_key_sequence("{{del}}{{space}}")
 delete tab key: user.rz_insert_key_sequence("{{del}}{{tab}}")
 delete that: user.rz_insert_key_sequence("{{del}}")
-delta colon back: "d:\"
+delta colon back: "d:\\"
 delta colon enter: user.rz_insert_key_sequence("D:{{enter}}")
-delta temp back: "d:\temp\"
+delta temp back: "d:\\temp\\"
 dem dash: "DEM-"
 demo one: "demo1"
 desk one: "DESK1"
@@ -1735,31 +1737,31 @@ device i  o  control: "DeviceIoControl"
 dialog result: "DialogResult"
 dictionary left: "Dictionary<"
 dingo blue: "dingoblue.net.au"
-dir delta temp back: "d:\temp\"
-dir medical reports: "d:\obsidian\medical\reports"
+dir delta temp back: "d:\\temp\\"
+dir medical reports: "d:\\obsidian\\medical\\reports"
 direct connect: "Direct Connect"
-directory  point cook: "E:\Documents\Callpoint\Customers\Ericsson\Stage 1\PointCook"
-directory echo temp: "e:\temp"
-directory f d r: "E:\FDR"
-directory latest p s m a: "D:\_MMO\PSMA\2018_11"
-directory obsidian medical: "d:\obsidian\medical"
-directory obsidian organisations: "d:\obsidian\obsidian\organisations"
-directory papa temp back: "P:\temp\"
-directory software logs: "c:\sw\logs"
-directory tax receipts: "e:\documents\finance\tax\2023\receipts"
-directory temp back: "c:\temp\"
-directory temp logs: "c:\temp\logs"
-directory temp: "c:\temp"
+directory  point cook: "E:\\Documents\\Callpoint\\Customers\\Ericsson\\Stage 1\\PointCook"
+directory echo temp: "e:\\temp"
+directory f d r: "E:\\FDR"
+directory latest p s m a: "D:\\_MMO\\PSMA\\2018_11"
+directory obsidian medical: "d:\\obsidian\\medical"
+directory obsidian organisations: "d:\\obsidian\\obsidian\\organisations"
+directory papa temp back: "P:\\temp\\"
+directory software logs: "c:\\sw\\logs"
+directory tax receipts: "e:\\documents\\finance\\tax\\2023\\receipts"
+directory temp back: "c:\\temp\\"
+directory temp logs: "c:\\temp\\logs"
+directory temp: "c:\\temp"
 dirty five: "35"
 dirty six: "36"
 disk part enter: user.rz_insert_key_sequence("diskpart{{enter}}")
 do c m d: "DoCmd."
-do dump bin: "C:\PROGRA~1\MICROS~3\VC98\Bin\DUMPBIN.EXE "
-do g a c util: "C:\PROGRA~1\MICROS~2.NET\SDK\v1.1\Bin\gacutil.exe "
+do dump bin: "C:\\PROGRA~1\\MICROS~3\\VC98\\Bin\\DUMPBIN.EXE "
+do g a c util: "C:\\PROGRA~1\\MICROS~2.NET\\SDK\\v1.1\\Bin\\gacutil.exe "
 do modal: "DoModal()"
 do production: " ::== "
-do reg a s m: "C:\WINDOWS\MICROS~1.NET\FRAMEW~1\V11~1.432\RegAsm.exe "
-do v c vars thirty two: user.rz_insert_key_sequence("C:\PROGRA~1\MICROS~3\VC98\Bin\VCVARS32.BAT{{enter}}")
+do reg a s m: "C:\\WINDOWS\\MICROS~1.NET\\FRAMEW~1\\V11~1.432\\RegAsm.exe "
+do v c vars thirty two: user.rz_insert_key_sequence("C:\\PROGRA~1\\MICROS~3\\VC98\\Bin\\VCVARS32.BAT{{enter}}")
 doc you sign: "DocuSign"
 doctor forner: "Dr Forner"
 doctor giri: "Dr Giri"
@@ -1770,18 +1772,18 @@ doctor shill off: "Dr Chilov"
 doctor spar: "Dr Spahr"
 doctor we: "Dr Ooi"
 doctor wettstein: "Dr Wettstein"
-documents amatek: "D:\Documents\Amatek"
-documents callpoint: "C:\Users\ronny\Documents\CallPoint"
-documents codet: "D:\Documents\Amatek\Codet"
-documents my diary: user.rz_insert_key_sequence("C:\Documents and Settings\ronny\My Documents\{{personal}}\Personal Growth\diary 2009.doc")
-documents organizations: "C:\Users\ronny\Documents\Organisations"
-documents paddington: user.rz_insert_key_sequence("C:\Documents and Settings\ronny\My Documents\{{personal}}\M&E\Paddington")
+documents amatek: "D:\\Documents\\Amatek"
+documents callpoint: "C:\\Users\\ronny\\Documents\\CallPoint"
+documents codet: "D:\\Documents\\Amatek\\Codet"
+documents my diary: user.rz_insert_key_sequence("C:\\Documents and Settings\\ronny\\My Documents\\{{personal}}\\Personal Growth\\diary 2009.doc")
+documents organizations: "C:\\Users\\ronny\\Documents\\Organisations"
+documents paddington: user.rz_insert_key_sequence("C:\\Documents and Settings\\ronny\\My Documents\\{{personal}}\\M&E\\Paddington")
 dollar forty five z m h: "$45zmH"
 dollar at quote: "$@""
-dollar dollar huge: user.rz_insert_key_sequence("$\huge ${{left}}")
-dollar dollar large: user.rz_insert_key_sequence("$\large ${{left}}")
+dollar dollar huge: user.rz_insert_key_sequence("$\\huge ${{left}}")
+dollar dollar large: user.rz_insert_key_sequence("$\\large ${{left}}")
 dollar dollar left: user.rz_insert_key_sequence("$${{left}}")
-dollar dollar right arrow: "$\rightarrow$"
+dollar dollar right arrow: "$\\rightarrow$"
 dollar e n v colon: "$env:"
 dollar env colon path: "$env:path"
 dollar env colon: "$env:"
@@ -2109,7 +2111,7 @@ e z six: "EZ"
 ear buds: "earbuds"
 earth sized: "earth-sized"
 easy card: "EasyCard"
-echo colon back: "e:\"
+echo colon back: "e:\\"
 echo space: "echo "
 edge cliff: "Edgecliff"
 elana zulaikha: "Elana Zulaikha"
@@ -2659,7 +2661,7 @@ hash ifndef: "#ifndef "
 hash import: "#import ""
 hash include angle l: user.rz_insert_key_sequence("#include <>{{Left}}{{Z1L}}")
 hash include angle: user.rz_insert_key_sequence("#include <.h>{{left}}{{left}}{{left}}")
-hash include include: user.rz_insert_key_sequence("#include "..\include\.h"{{left}}{{left}}{{left}}")
+hash include include: user.rz_insert_key_sequence("#include "..\\include\\.h"{{left}}{{left}}{{left}}")
 hash include: user.rz_insert_key_sequence("#include ".h"{{left}}{{left}}{{left}}")
 hash medical info: "#medical-info"
 hash org slash: "#org/"
@@ -2684,7 +2686,7 @@ hash undefine: "#undef "
 hat one: "^1"
 hat two: "^2"
 hat ninety nine: "^99"
-hat one third: user.rz_insert_key_sequence("^{{l-brace}}{{}}\frac 1 3{{r-brace}}")
+hat one third: user.rz_insert_key_sequence("^{{l-brace}}{{}}\\frac 1 3{{r-brace}}")
 hat parentheses one: user.rz_insert_key_sequence("^{{(1)}}")
 hat parentheses two: user.rz_insert_key_sequence("^{{(2)}}")
 hat parentheses three: user.rz_insert_key_sequence("^{{(3)}}")
@@ -2863,7 +2865,7 @@ in five: "in"
 in box: "inbox"
 in car: "in-car"
 in progress: "In Progress"
-include back: "include\"
+include back: "include\\"
 info sec: "InfoSec"
 initialize dash: "Initialize-"
 ink scape: "Inkscape"
@@ -3319,22 +3321,22 @@ mars six: "MARS"
 mars s three: "MarsS3"
 mary am: "Maryam"
 math alpha layer left: user.rz_insert_key_sequence("a^{{l-brace}}{{}}[]{{r-brace}}{{left}}{{left}}")
-math alpha prime: "$\large a'$"
-math alpha: user.rz_insert_key_sequence("$\large a${{left}}")
-math b to the n: "$\large b^n$"
-math bravo: user.rz_insert_key_sequence("$\large b${{left}}")
-math cap alpha: user.rz_insert_key_sequence("$\large A${{left}}")
-math cap echo: user.rz_insert_key_sequence("$\large E${{left}}")
-math cap juliet: "$\large J$"
-math cap quebec: user.rz_insert_key_sequence("$\large Q${{left}}")
-math cap sierra: user.rz_insert_key_sequence("$\large S${{left}}")
-math cap victor under mike: "$\large V_m$"
-math cap victor: user.rz_insert_key_sequence("$\large V${{left}}")
-math charlie: user.rz_insert_key_sequence("$\large c${{left}}")
+math alpha prime: "$\\large a'$"
+math alpha: user.rz_insert_key_sequence("$\\large a${{left}}")
+math b to the n: "$\\large b^n$"
+math bravo: user.rz_insert_key_sequence("$\\large b${{left}}")
+math cap alpha: user.rz_insert_key_sequence("$\\large A${{left}}")
+math cap echo: user.rz_insert_key_sequence("$\\large E${{left}}")
+math cap juliet: "$\\large J$"
+math cap quebec: user.rz_insert_key_sequence("$\\large Q${{left}}")
+math cap sierra: user.rz_insert_key_sequence("$\\large S${{left}}")
+math cap victor under mike: "$\\large V_m$"
+math cap victor: user.rz_insert_key_sequence("$\\large V${{left}}")
+math charlie: user.rz_insert_key_sequence("$\\large c${{left}}")
 math dot: "Math."
 math e hat braces: user.rz_insert_key_sequence("e^{{l-brace}}{{}}{{r-brace}}{{left}}")
-math epsilon: "$\large \epsilon$"
-math g of z: "$\large g(z)$"
+math epsilon: "$\\large \\epsilon$"
+math g of z: "$\\large g(z)$"
 math hat two: "^2"
 math hat braces: user.rz_insert_key_sequence("^{{l-brace}}{{}}{{r-brace}}{{left}}")
 math hat brackets lima: user.rz_insert_key_sequence("^{{l-brace}}{{}}[l]{{r-brace}}")
@@ -3342,46 +3344,46 @@ math hat left: user.rz_insert_key_sequence("^{{l-brace}}{{}}left{{r-brace}}")
 math hat november: "^n"
 math hat right: user.rz_insert_key_sequence("^{{l-brace}}{{}}right{{r-brace}}")
 math hat root: user.rz_insert_key_sequence("^{{l-brace}}{{}}root{{r-brace}}")
-math india: user.rz_insert_key_sequence("$\large i${{left}}")
+math india: user.rz_insert_key_sequence("$\\large i${{left}}")
 math jacks: "MathJax"
-math juliet t h: "$\large j$th"
-math juliet under c v: user.rz_insert_key_sequence("$\large J_{{cv}}$")
-math juliet under train: user.rz_insert_key_sequence("$\large J_{{train}}$")
+math juliet t h: "$\\large j$th"
+math juliet under c v: user.rz_insert_key_sequence("$\\large J_{{cv}}$")
+math juliet under train: user.rz_insert_key_sequence("$\\large J_{{train}}$")
 math juliet under: user.rz_insert_key_sequence("J_{{l-brace}}{{}}{{r-brace}}{{left}}")
-math juliet: user.rz_insert_key_sequence("$\large j${{left}}")
-math kilo: user.rz_insert_key_sequence("$\large k${{left}}")
-math large juliet: user.rz_insert_key_sequence("$\large ${{left}}J")
-math large mike: user.rz_insert_key_sequence("$\large ${{left}}m")
-math large x-ray: user.rz_insert_key_sequence("$\large x${{left}}")
-math lima: user.rz_insert_key_sequence("$\large l${{left}}")
-math log of x-ray: "$\large \log(x)$"
-math mike under c v: user.rz_insert_key_sequence("$\large m_{{cv}}$")
-math mu: "$\large \mu$"
-math november: user.rz_insert_key_sequence("$\large n${{left}}")
-math papa of x-ray: user.rz_insert_key_sequence("$\large p{{(x)}}$")
-math papa under one: "$\large p_1$"
-math papa: user.rz_insert_key_sequence("$\large p${{left}}")
-math pi of s: "$\large \pi(s)$"
-math q of s a: "$\large Q(s, a)$"
-math q of s prime a prime: "$\large Q(s', a')$"
-math sierra prime: "$\large s'$"
-math sierra: user.rz_insert_key_sequence("$\large s${{left}}")
+math juliet: user.rz_insert_key_sequence("$\\large j${{left}}")
+math kilo: user.rz_insert_key_sequence("$\\large k${{left}}")
+math large juliet: user.rz_insert_key_sequence("$\\large ${{left}}J")
+math large mike: user.rz_insert_key_sequence("$\\large ${{left}}m")
+math large x-ray: user.rz_insert_key_sequence("$\\large x${{left}}")
+math lima: user.rz_insert_key_sequence("$\\large l${{left}}")
+math log of x-ray: "$\\large \\log(x)$"
+math mike under c v: user.rz_insert_key_sequence("$\\large m_{{cv}}$")
+math mu: "$\\large \\mu$"
+math november: user.rz_insert_key_sequence("$\\large n${{left}}")
+math papa of x-ray: user.rz_insert_key_sequence("$\\large p{{(x)}}$")
+math papa under one: "$\\large p_1$"
+math papa: user.rz_insert_key_sequence("$\\large p${{left}}")
+math pi of s: "$\\large \\pi(s)$"
+math q of s a: "$\\large Q(s, a)$"
+math q of s prime a prime: "$\\large Q(s', a')$"
+math sierra prime: "$\\large s'$"
+math sierra: user.rz_insert_key_sequence("$\\large s${{left}}")
 math subscript test: user.rz_insert_key_sequence("_{{test}}")
 math subscript train: user.rz_insert_key_sequence("_{{train}}")
 math under c v: user.rz_insert_key_sequence("_{{l-brace}}{{}}cv{{r-brace}}")
 math under test: user.rz_insert_key_sequence("_{{l-brace}}{{}}test{{r-brace}}")
 math under train: user.rz_insert_key_sequence("_{{l-brace}}{{}}train{{r-brace}}")
-math vector cap echo: "\vec E"
-math vector cap foxtrot: "\vec F"
-math whiskey hat left: user.rz_insert_key_sequence("$\large w^{{l-brace}}{{}}left{{r-brace}}$")
-math whiskey hat right: user.rz_insert_key_sequence("$\large w^{{l-brace}}{{}}right{{r-brace}}$")
-math whiskey: user.rz_insert_key_sequence("$\large w${{left}}")
-math x-ray under one: "$\large x_1$"
-math x-ray under two: "$\large x_2$"
-math x-ray under: user.rz_insert_key_sequence("$\large x_${{left}}")
-math x-ray: user.rz_insert_key_sequence("$\large x${{left}}")
-math yankee: user.rz_insert_key_sequence("$\large y${{left}}")
-math zulu: user.rz_insert_key_sequence("$\large z${{left}}")
+math vector cap echo: "\\vec E"
+math vector cap foxtrot: "\\vec F"
+math whiskey hat left: user.rz_insert_key_sequence("$\\large w^{{l-brace}}{{}}left{{r-brace}}$")
+math whiskey hat right: user.rz_insert_key_sequence("$\\large w^{{l-brace}}{{}}right{{r-brace}}$")
+math whiskey: user.rz_insert_key_sequence("$\\large w${{left}}")
+math x-ray under one: "$\\large x_1$"
+math x-ray under two: "$\\large x_2$"
+math x-ray under: user.rz_insert_key_sequence("$\\large x_${{left}}")
+math x-ray: user.rz_insert_key_sequence("$\\large x${{left}}")
+math yankee: user.rz_insert_key_sequence("$\\large y${{left}}")
+math zulu: user.rz_insert_key_sequence("$\\large z${{left}}")
 matt s: "Mattes"
 max out: "Maxout"
 max under path: "MAX_PATH"
@@ -3440,7 +3442,7 @@ minus out space: "-out "
 minus papa space: "-p "
 minus sign l: user.rz_insert_key_sequence("-{{Z1L}}")
 minus sign s: user.rz_insert_key_sequence("-{{space}}")
-misc search commercial: "D:\_MMO\Misc\Search Commercial"
+misc search commercial: "D:\\_MMO\\Misc\\Search Commercial"
 mobile pre: "MobilePre"
 montefiore home: "Montefiore Home"
 more telecom one: "MoreTelecom"
@@ -3466,8 +3468,8 @@ move up two: user.rz_insert_key_sequence("{{up 2}}")
 move up three: user.rz_insert_key_sequence("{{up 3}}")
 move up four: user.rz_insert_key_sequence("{{up 4}}")
 move up five: user.rz_insert_key_sequence("{{up 5}}")
-mow callpoint then: "P:\_MMO\Callpoint\2020_08"
-mow geoscape now: "Y:\_MMO\PSMA\2022_08"
+mow callpoint then: "P:\\_MMO\\Callpoint\\2020_08"
+mow geoscape now: "Y:\\_MMO\\PSMA\\2022_08"
 multi a z: "Multi-AZ"
 multi class: "multiclass"
 multi dash: "multi-"
@@ -3648,9 +3650,9 @@ north side: "Northside"
 nose backquote: "`"
 nose hash: "#"
 not now: "NotNow"
-notepad lines to spaces: user.rz_insert_key_sequence("{{ctrl-end}}{{ctrl-shift-home}}{{ctrl-v}}{{ctrl-h}}\r\n{{tab}}{{space}}{{alt-x}}{{alt-a}}{{esc}}{{ctrl-a}}{{ctrl-c}}")
-notepad merge lines: user.rz_insert_key_sequence("{{ctrl-a}}{{ctrl-v}}{{ctrl-h}}(\r\n)+{{tab}}{{space}}{{alt-g}}{{alt-a}}{{esc}}{{ctrl-a}}{{ctrl-c}}")
-notepad reformat bullets: user.rz_insert_key_sequence("{{heardword:"[Notepad Merge Lines]"}}{{Ctrl+h}}\x{{{{}}2022}}{{Space}}{{Tab}}\r\n-{{Space}}{{Alt+g}}{{Alt+a}}{{Esc}}{{Ctrl+a}}{{Ctrl+c}}")
+notepad lines to spaces: user.rz_insert_key_sequence("{{ctrl-end}}{{ctrl-shift-home}}{{ctrl-v}}{{ctrl-h}}\\r\\n{{tab}}{{space}}{{alt-x}}{{alt-a}}{{esc}}{{ctrl-a}}{{ctrl-c}}")
+notepad merge lines: user.rz_insert_key_sequence("{{ctrl-a}}{{ctrl-v}}{{ctrl-h}}(\\r\\n)+{{tab}}{{space}}{{alt-g}}{{alt-a}}{{esc}}{{ctrl-a}}{{ctrl-c}}")
+notepad reformat bullets: user.rz_insert_key_sequence("{{heardword:"[Notepad Merge Lines]"}}{{Ctrl+h}}\\x{{{{}}2022}}{{Space}}{{Tab}}\\r\\n-{{Space}}{{Alt+g}}{{Alt+a}}{{Esc}}{{Ctrl+a}}{{Ctrl+c}}")
 nov nineteen: "NOV19"
 nov twenty: "NOV20"
 november twenty twenty two: "November 2022"
@@ -3837,7 +3839,7 @@ p d s six: "PDS"
 p d under: "PD_"
 p dash not: "-not "
 p dash or: "-or "
-p digital pigeon: user.rz_insert_key_sequence("B~Js47%K\f|{{l-brace}}{{enter}}")
+p digital pigeon: user.rz_insert_key_sequence("B~Js47%K\\f|{{l-brace}}{{enter}}")
 p dot x: "P.X"
 p e l: "pEl"
 p e m six: "PEM"
@@ -3998,22 +4000,22 @@ paste and space: user.rz_insert_key_sequence("{{ctrl-v}}{{space}}")
 paste end key left: user.rz_insert_key_sequence("{{shift-end}}{{shift-left}}{{ctrl-v}}")
 path dot: "Path."
 path enter: user.rz_insert_key_sequence("path{{enter}}")
-path h h c s: "c:\sw\hearhere\lib\hhcs"
-path h h studio: "c:\sw\hearhere\tools\hhstudio"
-path hear here documents: "C:\Documents and Settings\Ronny\My Documents\Hear Here"
-path hear here experiments: "c:\sw\hearhere\experiments"
-path hear here minutes: "C:\Documents and Settings\Ronny\My Documents\Hear Here\Admin\Minutes"
+path h h c s: "c:\\sw\\hearhere\\lib\\hhcs"
+path h h studio: "c:\\sw\\hearhere\\tools\\hhstudio"
+path hear here documents: "C:\\Documents and Settings\\Ronny\\My Documents\\Hear Here"
+path hear here experiments: "c:\\sw\\hearhere\\experiments"
+path hear here minutes: "C:\\Documents and Settings\\Ronny\\My Documents\\Hear Here\\Admin\\Minutes"
 path point: "PathPoint"
-path program files: "c:\Program Files"
-path releases: "d:\releases"
-path software call point: "c:\sw\callpoint"
-path software hear here: "c:\sw\HearHere"
-path software junk: "c:\sw\junk"
-path software samples: "c:\sw\samples"
-path software: "c:\sw\"
-path v c ninety eight include: "C:\Program Files\Microsoft Visual Studio\VC98\Include"
-path windows system thirty two: "c:\windows\system32"
-path word templates: "C:\Documents and Settings\Ronny\Application Data\Microsoft\Templates"
+path program files: "c:\\Program Files"
+path releases: "d:\\releases"
+path software call point: "c:\\sw\\callpoint"
+path software hear here: "c:\\sw\\HearHere"
+path software junk: "c:\\sw\\junk"
+path software samples: "c:\\sw\\samples"
+path software: "c:\\sw\\"
+path v c ninety eight include: "C:\\Program Files\\Microsoft Visual Studio\\VC98\\Include"
+path windows system thirty two: "c:\\windows\\system32"
+path word templates: "C:\\Documents and Settings\\Ronny\\Application Data\\Microsoft\\Templates"
 pay  pal: "PayPal"
 pea limb: "pealim"
 pea under (c): "p_"
@@ -4208,7 +4210,7 @@ pro leah: "Prolia"
 prod one colon: "PROD1:"
 prod one: "PROD1"
 prod two: "PROD2"
-program files sim spec: "c:\program files\SimSpect"
+program files sim spec: "c:\\program files\\SimSpect"
 progress bar seven: "progressBar"
 project one: "Project1"
 promise left: "Promise<"
@@ -4278,8 +4280,8 @@ quick copy: "Kwik Kopy"
 quick sight q: "QuickSight Q"
 quick sight: "QuickSight"
 quote one quote: "1"
-quote back n: "\n"
-quote back zero: "'\0'"
+quote back n: "\\n"
+quote back zero: "'\\0'"
 quote left bracket: ""["
 quote paste quote: user.rz_insert_key_sequence("{{ctrl-v}}")
 quote quote left: user.rz_insert_key_sequence("""{{left}}")
@@ -4736,7 +4738,7 @@ s v r: "svr"
 s vertical bar: user.rz_insert_key_sequence("{{space}}|")
 s w two: "SW2"
 s w five: "sw"
-s w back: "sw\\"
+s w back: "sw\\\\"
 s w f six: "SWF"
 s w l: "swl"
 s y g i c: "sygic"
@@ -4846,7 +4848,7 @@ show refs: user.rz_insert_key_sequence("{{shift-f12}}")
 shul cloud: "ShulCloud"
 shutdown dash s: "shutdown -s"
 sierra four: "S4"
-sierra colon back: "S:\"
+sierra colon back: "S:\\"
 sierra colon: "s:"
 sierra dot dash: "S. Dash"
 sig win: "cygwin"
@@ -4960,23 +4962,23 @@ smote six: "SMOTE"
 soar six: "SOAR"
 soft max: "softmax"
 soft phone: "softphone"
-software a q pro: "D:\sw\callpoint\AQ Pro\trunk"
-software amatek: "d:\sw\amatek\"
-software aq pro: "d:\sw\callpoint\aq pro"
-software callpoint: "D:\sw\Callpoint"
-software codet: "D:\sw\Amatek\Codet_trunk\F070 software\"
-software d n lib: "D:\sw\callpoint\dnlib\trunk"
-software digital elevation: "c:\sw\callpoint\DigitalElevation"
-software hear here m p three: "C:\sw\HearHere\Experiments\mp3"
-software hear here: "c:\sw\hearhere"
-software logs: "c:\sw\logs"
-software m m o config: "D:\sw\callpoint\upa\MmoConfig\trunk"
-software m m o: "D:\sw\Callpoint\Upa\Mmo\trunk"
-software pipu: "E:\sw\Callpoint_svn\Util\PipUtil\trunk"
-software shortest path: "C:\sw\CallPoint\ShortestPath"
-software street intersections: "C:\sw\CallPoint\StreetIntersections\"
-software u p a releases: "D:\sw\Callpoint\Upa\Upa\releases"
-software u p a: "D:\sw\Callpoint\Upa\trunk"
+software a q pro: "D:\\sw\\callpoint\\AQ Pro\\trunk"
+software amatek: "d:\\sw\\amatek\\"
+software aq pro: "d:\\sw\\callpoint\\aq pro"
+software callpoint: "D:\\sw\\Callpoint"
+software codet: "D:\\sw\\Amatek\\Codet_trunk\\F070 software\\"
+software d n lib: "D:\\sw\\callpoint\\dnlib\\trunk"
+software digital elevation: "c:\\sw\\callpoint\\DigitalElevation"
+software hear here m p three: "C:\\sw\\HearHere\\Experiments\\mp3"
+software hear here: "c:\\sw\\hearhere"
+software logs: "c:\\sw\\logs"
+software m m o config: "D:\\sw\\callpoint\\upa\\MmoConfig\\trunk"
+software m m o: "D:\\sw\\Callpoint\\Upa\\Mmo\\trunk"
+software pipu: "E:\\sw\\Callpoint_svn\\Util\\PipUtil\\trunk"
+software shortest path: "C:\\sw\\CallPoint\\ShortestPath"
+software street intersections: "C:\\sw\\CallPoint\\StreetIntersections\\"
+software u p a releases: "D:\\sw\\Callpoint\\Upa\\Upa\\releases"
+software u p a: "D:\\sw\\Callpoint\\Upa\\trunk"
 sol jen: "Solgen"
 solar p v : "Solar PV"
 solar under address six: "SOLAR_ADDRESS"
@@ -4986,7 +4988,7 @@ sound x: "Soundex"
 source dash: "source-"
 source safe: "SourceSafe"
 space ampersand: " & "
-space back: " \"
+space back: " \\"
 space bar l: user.rz_insert_key_sequence(" {{Z1L}}")
 space d: "spaced"
 space dollar sign: " $"
@@ -5933,3 +5935,4 @@ ad: "add"
 my (talon | talent): "talon"
 cap my (talon | talent): "Talon"
 
+ 
