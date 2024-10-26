@@ -124,7 +124,7 @@ class ZModeActions:
     def extract_substrings(s: str):
         "Hello"
         # Regular expression to match sequences without '{' and sequences within '{...}'
-        pattern = re.compile(r'\{?[^{]+|\{[^}]*\}')
+        pattern = re.compile(r'\{?[^{}]+\}?|\{[^}]*\}')
         matches = pattern.findall(s)
         return matches
 

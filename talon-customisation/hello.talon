@@ -19,4 +19,4 @@ dock you sore us: "docusaurus"
 # something reasonably interesting: "<something reasonably interesting>"
 # interesting: "<interesting>"
 
-prefix {user.dictionary}: "hello.{dictionary}"
+{user.dictionary}: user.rz_insert_key_sequence("{dictionary}")
