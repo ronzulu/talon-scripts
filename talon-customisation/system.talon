@@ -22,6 +22,7 @@ left p: "("
 right p: ")"
 clothes: "close"
 apostrophe s: "'s"
+pad arrow: " -> "
 
 # Text deletion
 (backspace | bat space | brack space): user.rz_insert_key_sequence("{{backspace}}")
@@ -78,16 +79,26 @@ tab key copy: user.rz_insert_key_sequence("{{tab}}{{ctrl-c}}")
 tab key paste: user.rz_insert_key_sequence("{{tab}}{{ctrl-v}}")
 tab key: user.rz_insert_key_sequence("{{tab}}")
 
-hunt all that: 
+hunt (all | for) (that | clipboard): 
     edit.copy()
     user.find_everywhere("")
     sleep(25ms)
     edit.paste()
-hunt for duke: 
+(duke and | key cat | dubclick) hunt [all]: 
     mouse_click()
     mouse_click()
     sleep(25ms)
     mimic("hunt all that")
+(duke and | key cat | dubclick) copy: 
+    mouse_click()
+    mouse_click()
+    sleep(25ms)
+    edit.copy()
+(duke and | key cat | dubclick) paste: 
+    mouse_click()
+    mouse_click()
+    sleep(25ms)
+    edit.paste()
 
 
 sell word left: edit.extend_word_left()

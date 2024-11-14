@@ -659,7 +659,6 @@ b minus: " - "
 b n: "n"
 b name space: "Namespace "
 b new: "New "
-b next: "Next"
 b not equal: " <> "
 b not equals l: " <> {Z1L}"
 b not equals: " <> "
@@ -5908,8 +5907,16 @@ zip path three: "ZipPath"
 #
 (ronnie | ronny): "Ronny"
 (Zulaikha | zoo like her): "Zulaikha"
-(Woollahra | wool are a): "Woollahra"
+(Woollahra | wool are a | woolly array): "Woollahra"
 ad: "add"
 (I see six | icy six): "IC"
 my (talon | talent): "talon"
 cap my (talon | talent): "Talon"
+self dot: "self."
+(n e w | near new) : new
+r e p l six: REPL
+t o d o: todo
+dock o to do: docotodo
+dock o feedback: docofeedback
+h u d six: HUD
+talon h u d: Talon HUD
