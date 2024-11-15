@@ -2,14 +2,14 @@
 
 cd "D:\github\talon-community-wiki"
 
-Write-Host "1. npm start"
-Write-Host "2. npm run build"
-Write-Host "3. npm run serve"
-Write-Host "4. stop port 3000 processes"
-Write-Host "exit"
+# Write-Host "1. npm start"
+# Write-Host "2. npm run build"
+# Write-Host "3. npm run serve"
+# Write-Host "4. stop port 3000 processes"
+# Write-Host "exit"
 
-$selection = Read-Host "Please enter your selection"
-$selection
+# $selection = Read-Host "Please enter your selection"
+$selection = "1"
 
 
 switch ($selection) {

@@ -1,3 +1,5 @@
+language: en
+-
 pass are: "parser"
 hello talon: "hello world90210!!"
 hello friend: "rnd"
@@ -20,3 +22,15 @@ dock you sore us: "docusaurus"
 # interesting: "<interesting>"
 
 {user.dictionary}: user.rz_insert_key_sequence("{dictionary}")
+
+(Zulaikha | zoo like her): "Zulaikha"
+
+
+middle drag | drag middle:
+    # close zoom if open
+    user.zoom_close()
+    user.mouse_drag(2)
+    # close the mouse grid
+    user.grid_close()
+
+next right: user.clickless_mouse_next_standstill_action("right_click")
