@@ -10,7 +10,7 @@ state new: "new "
 
 (hullo | hallo) : "hello"
 
-new block: mimic("c new block")
+# new block: mimic("c new block")
 
 echo: "e"
 
@@ -22,6 +22,8 @@ dock you sore us: "docusaurus"
 # interesting: "<interesting>"
 
 {user.dictionary}: user.rz_insert_key_sequence("{dictionary}")
+# proud {user.dictionary}: "p2:{dictionary}"
+prouder {user.dictionary}: user.rz_insert_key_sequence(str("p3:") + "{dictionary}")
 
 (Zulaikha | zoo like her): "Zulaikha"
 
@@ -33,4 +35,5 @@ middle drag | drag middle:
     # close the mouse grid
     user.grid_close()
 
-next right: user.clickless_mouse_next_standstill_action("right_click")
+^next {user.clickless_mouse_action}$: 
+    user.clickless_mouse_next_standstill_action(clickless_mouse_action)

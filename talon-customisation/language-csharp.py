@@ -3,8 +3,9 @@ from talon import Context, Module, app
 mod = Module()
 mod.list("code_modifier", desc="All table keys")
 mod.list("code_datatype", desc="All table keys")
-mod.list("code_collections", desc="All table keys")
+mod.list("code_generic_type", desc="All table keys")
 mod.list("variable_prefix", desc="All table keys")
+mod.list("code_whitespace", desc="All table keys")
 
 
 @mod.capture(rule="{self.code_modifier}")
@@ -27,6 +28,21 @@ def code_datatype(m) -> str:
 def variable_prefix(m) -> str:
     "One directional table key"
     return m.variable_prefix
+
+@mod.capture(rule="{self.code_generic_type}")
+def code_generic_type(m) -> str:
+    "One directional table key"
+    return m.code_generic_type
+
+@mod.capture(rule="{self.code_whitespace}")
+def code_whitespace(m) -> str:
+    "One directional table key"
+    return m.code_whitespace
+
+@mod.capture(rule="{self.code_generic_type} [of] {self.code_datatype}")
+def code_concrete_generic(m) -> str:
+    "One directional table key"
+    return f"{m.code_generic_type}<{m.code_datatype}>"
 
 ctx = Context()
 
@@ -76,8 +92,13 @@ ctx.lists["self.variable_prefix"] = {
 #    "": "",
 }
 
-ctx.lists["self.code_collections"] = {
+ctx.lists["self.code_generic_type"] = {
     "list": "List",
     "dictionary": "Dictionary",
+#    "": "",
+}
+
+ctx.lists["self.code_whitespace"] = {
+    "s": " ",
 #    "": "",
 }
