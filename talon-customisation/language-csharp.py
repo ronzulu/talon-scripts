@@ -44,6 +44,19 @@ def code_concrete_generic(m) -> str:
     "One directional table key"
     return f"{m.code_generic_type}<{m.code_datatype}>"
 
+@mod.capture(rule="{self.code_datatype} [{self.code_whitespace}] [{self.variable_prefix}]")
+def code_datatype_ex(m) -> str:
+    print("code_datatype_ex: ", type(m), m)
+    str = m.code_datatype
+    if hasattr(m, "code_whitespace"):
+        str += m.code_whitespace
+    if hasattr(m, "variable_prefix"):
+        if not hasattr(m, "code_whitespace"):
+            str += " "
+        str += m.variable_prefix
+    "One directional table key"
+    return str
+
 ctx = Context()
 
 ctx.lists["self.code_modifier"] = {

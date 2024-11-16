@@ -17,14 +17,13 @@
 <user.code_statement_prefix> <user.code_modifiers> <user.code_datatype>: 
     insert("{code_modifiers} {code_datatype} ")
 
-# for example: "kind integer" -> "int"
 # "kind" used instead of "type"
-kind <user.code_datatype> [<user.code_whitespace>]: 
-    insert("{code_datatype}{code_whitespace or ''}")
+# for example:
+#   "kind integer" -> "int"
+#   "kind integer s" -> "int "
+#   "kind string l p" -> "string lp"
+kind <user.code_datatype_ex>: 
+    insert("{code_datatype_ex}")
 
 kind <user.code_concrete_generic>: 
     insert("{code_concrete_generic}")
-
-# for example: "kind string l p" -> "string lp"
-kind <user.code_datatype> <user.variable_prefix> : 
-    insert("{code_datatype} {variable_prefix}")
