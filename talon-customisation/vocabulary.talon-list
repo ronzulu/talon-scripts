@@ -21,3 +21,14 @@ talent: talon
 e talent: talent
 talon script: TalonScript
 talent script: TalonScript
+call point: Callpoint
+c p five: cp
+brief d l l: "dll"
+d l l: "dll"
+dynamic l l: "dll"
+o s six: "OS"
+s  t  r: "str"
+
+sea sharp: "C#"
+brief utility: util
+ad: add
