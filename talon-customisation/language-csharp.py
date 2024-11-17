@@ -7,47 +7,34 @@ mod.list("code_generic_type", desc="All table keys")
 mod.list("variable_prefix", desc="All table keys")
 mod.list("code_whitespace", desc="All table keys")
 
-
-@mod.capture(rule="{self.code_modifier}")
-def code_modifier(m) -> str:
-    "One directional table key"
-    return m.code_modifier
-
-
-@mod.capture(rule="<self.code_modifier>+")
+# "code_modifier" is a list, "code_modifiers" (plural) is a capture
+@mod.capture(rule="{self.code_modifier}+")
 def code_modifiers(m) -> str:
     "One or more table keys separated by a space"
     return str(m)
 
-@mod.capture(rule="{self.code_datatype_simple}")
-def code_datatype_simple(m) -> str:
-    "One directional table key"
-    return m.code_datatype_simple
-
 @mod.capture(rule="{self.variable_prefix}")
 def variable_prefix(m) -> str:
     "One directional table key"
-    return m.variable_prefix
 
-@mod.capture(rule="{self.code_generic_type}")
-def code_generic_type(m) -> str:
+@mod.capture(rule="[{self.code_generic_type} [of]] [{self.code_generic_type} [of]] {self.code_datatype_simple}")
+def code_datatype_complex(m) -> str:
     "One directional table key"
-    return m.code_generic_type
+    if hasattr(m, "code_generic_type_2"):
+        part2 = f"{m.code_generic_type_2}<{m.code_datatype_simple}>"
+    else:
+        part2 = m.code_datatype_simple
 
-@mod.capture(rule="{self.code_whitespace}")
-def code_whitespace(m) -> str:
-    "One directional table key"
-    return m.code_whitespace
+    if hasattr(m, "code_generic_type_1"):
+        str = f"{m.code_generic_type_1}<{part2}>"
+    else:
+        str = part2
+    return str
 
-@mod.capture(rule="{self.code_generic_type} [of] {self.code_datatype_simple}")
-def code_concrete_generic(m) -> str:
-    "One directional table key"
-    return f"{m.code_generic_type}<{m.code_datatype_simple}>"
-
-@mod.capture(rule="{self.code_datatype_simple} [{self.code_whitespace}] [{self.variable_prefix}]")
+@mod.capture(rule="<self.code_datatype_complex> [{self.code_whitespace}] [{self.variable_prefix}]")
 def code_datatype_ex(m) -> str:
     print("code_datatype_ex: ", type(m), m)
-    str = m.code_datatype_simple
+    str = m.code_datatype_complex
     if hasattr(m, "code_whitespace"):
         str += m.code_whitespace
     if hasattr(m, "variable_prefix"):
