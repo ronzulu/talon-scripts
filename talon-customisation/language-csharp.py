@@ -2,7 +2,7 @@ from talon import Context, Module, app
 
 mod = Module()
 mod.list("code_modifier", desc="All table keys")
-mod.list("code_datatype", desc="All table keys")
+mod.list("code_datatype_simple", desc="All table keys")
 mod.list("code_generic_type", desc="All table keys")
 mod.list("variable_prefix", desc="All table keys")
 mod.list("code_whitespace", desc="All table keys")
@@ -19,10 +19,10 @@ def code_modifiers(m) -> str:
     "One or more table keys separated by a space"
     return str(m)
 
-@mod.capture(rule="{self.code_datatype}")
-def code_datatype(m) -> str:
+@mod.capture(rule="{self.code_datatype_simple}")
+def code_datatype_simple(m) -> str:
     "One directional table key"
-    return m.code_datatype
+    return m.code_datatype_simple
 
 @mod.capture(rule="{self.variable_prefix}")
 def variable_prefix(m) -> str:
@@ -39,15 +39,15 @@ def code_whitespace(m) -> str:
     "One directional table key"
     return m.code_whitespace
 
-@mod.capture(rule="{self.code_generic_type} [of] {self.code_datatype}")
+@mod.capture(rule="{self.code_generic_type} [of] {self.code_datatype_simple}")
 def code_concrete_generic(m) -> str:
     "One directional table key"
-    return f"{m.code_generic_type}<{m.code_datatype}>"
+    return f"{m.code_generic_type}<{m.code_datatype_simple}>"
 
-@mod.capture(rule="{self.code_datatype} [{self.code_whitespace}] [{self.variable_prefix}]")
+@mod.capture(rule="{self.code_datatype_simple} [{self.code_whitespace}] [{self.variable_prefix}]")
 def code_datatype_ex(m) -> str:
     print("code_datatype_ex: ", type(m), m)
-    str = m.code_datatype
+    str = m.code_datatype_simple
     if hasattr(m, "code_whitespace"):
         str += m.code_whitespace
     if hasattr(m, "variable_prefix"):
@@ -86,7 +86,7 @@ ctx.lists["self.code_modifier"] = {
 
 }
 
-ctx.lists["self.code_datatype"] = {
+ctx.lists["self.code_datatype_simple"] = {
     "boolean": "bool",
     "bullion": "bool",
     "integer": "int",

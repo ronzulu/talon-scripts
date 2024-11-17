@@ -14,8 +14,8 @@
     insert("{code_modifiers} ")
 
 # for example: "state public static boolean" -> "public static bool "
-<user.code_statement_prefix> <user.code_modifiers> <user.code_datatype>: 
-    insert("{code_modifiers} {code_datatype} ")
+<user.code_statement_prefix> <user.code_modifiers> <user.code_datatype_simple>: 
+    insert("{code_modifiers} {code_datatype_simple} ")
 
 # "kind" used instead of "type"
 # for example:
