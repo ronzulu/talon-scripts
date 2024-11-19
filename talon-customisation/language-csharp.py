@@ -31,15 +31,12 @@ def code_datatype_complex(m) -> str:
         str = part2
     return str
 
-@mod.capture(rule="<self.code_datatype_complex> [{self.code_whitespace}] [{self.variable_prefix}]")
+@mod.capture(rule="<self.code_datatype_complex> [{self.variable_prefix}]")
 def code_datatype_ex(m) -> str:
     print("code_datatype_ex: ", type(m), m)
     str = m.code_datatype_complex
-    if hasattr(m, "code_whitespace"):
-        str += m.code_whitespace
+    str += " "
     if hasattr(m, "variable_prefix"):
-        if not hasattr(m, "code_whitespace"):
-            str += " "
         str += m.variable_prefix
     "One directional table key"
     return str

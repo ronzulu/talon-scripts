@@ -28,8 +28,11 @@ d l l: "dll"
 dynamic l l: "dll"
 o s six: "OS"
 s  t  r: "str"
+brief s  t  r: "str"
 white space: whitespace
 
 sea sharp: "C#"
 brief utility: util
+u t i l: util
+u till: util
 ad: add

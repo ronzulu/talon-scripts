@@ -7,6 +7,7 @@
 # state goodbye <user.code_access_modifiers>: insert("hello: " + code_access_modifiers)
 
 <user.code_statement_prefix> new: "new "
+<user.code_statement_prefix> using: "using "
 
 
 # for example: "state public abstract" -> "public abstract"
