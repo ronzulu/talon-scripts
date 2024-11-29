@@ -16,22 +16,36 @@ class user_actions:
         file = open(file_path,"w") 
         file.write(f"# hello Ronny\n\n")
 
-        file_list = actions.user.generate_talon_file_list()
-        for filename in file_list:
-            file.write(f"----------\nfilename: {filename}\n")
+        app_to_tag_dict = actions.user.analyze_all_talon_community()
+        # file_list = actions.user.generate_talon_file_list()
+        for app, child_tag_list in app_to_tag_dict.items():
+            file.write(f"app: {app}, {child_tag_list}\n")
 
-            app_list, tag_list, child_tag_list = actions.user.analyze_file(filename)
-            for s in app_list:
-                file.write(f"app: {s}\n")
-            for s in tag_list:
-                file.write(f"tag: {s}\n")
-            for s in child_tag_list:
-                file.write(f"child_tag: {s}\n")
+            # app_list, tag_list, child_tag_list = actions.user.analyze_file(filename)
+            # for s in app_list:
+            #     file.write(f"app: {s}\n")
+            # for s in tag_list:
+            #     file.write(f"tag: {s}\n")
+            # for s in child_tag_list:
+            #     file.write(f"child_tag: {s}\n")
 
         file.close()
 
+    def analyze_all_talon_community() -> dict[str, list[str]]:
+        """Print out a sheet of talon commands"""
+
+        app_to_tag_dict = dict()
+
+        file_list = actions.user.generate_talon_file_list()
+        for filename in file_list:
+            app_list, tag_list, child_tag_list = actions.user.analyze_file(filename)
+            for app in app_list:
+                app_to_tag_dict[app] = child_tag_list
+
+        return app_to_tag_dict
+
     @staticmethod
-    def analyze_file(filename: str)-> Tuple[list[str], list[str], list[str]]:
+    def analyze_file(filename: str) -> Tuple[list[str], list[str], list[str]]:
         """This function is a test."""
         app_list = []
         tag_list = []
@@ -41,13 +55,11 @@ class user_actions:
         file = open(filename, "r") 
         while True:
             line = file.readline()
-            print("*", line)
             if not line:
                 break
             if in_frontmatter:
                 if line.startswith("-"):
                     in_frontmatter = False
-                    print("* in_frontmatter = False")
                 else:
                     bits = line.split()
                     if len(bits) == 2 and bits[0].endswith(":") and len(bits[0]) > 1:
@@ -59,7 +71,6 @@ class user_actions:
                             tag_list.append(v)
             else:
                 bits = line.split()
-                print("******", bits)
                 if len(bits) == 2 and bits[0] == "tag():" and len(bits[1]) > 1:
                     child_tag_list.append(bits[1])
 
