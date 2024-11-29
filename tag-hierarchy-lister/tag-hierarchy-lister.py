@@ -16,10 +16,12 @@ class user_actions:
         file = open(file_path,"w") 
         file.write(f"# hello Ronny\n\n")
 
-        app_to_tag_dict = actions.user.analyze_all_talon_community()
+        app_to_child_tag_dict, tag_to_child_tag_dict = actions.user.analyze_all_talon_community()
         # file_list = actions.user.generate_talon_file_list()
-        for app, child_tag_list in app_to_tag_dict.items():
+        for app, child_tag_list in app_to_child_tag_dict.items():
             file.write(f"app: {app}, {child_tag_list}\n")
+        for tag, child_tag_list in tag_to_child_tag_dict.items():
+            file.write(f"tag: {tag}, {child_tag_list}\n")
 
             # app_list, tag_list, child_tag_list = actions.user.analyze_file(filename)
             # for s in app_list:
@@ -31,18 +33,21 @@ class user_actions:
 
         file.close()
 
-    def analyze_all_talon_community() -> dict[str, list[str]]:
+    def analyze_all_talon_community() -> tuple[dict[str, list[str]], dict[str, list[str]]]:
         """Print out a sheet of talon commands"""
 
-        app_to_tag_dict = dict()
+        app_to_child_tag_dict = dict()
+        tag_to_child_tag_dict = dict()
 
         file_list = actions.user.generate_talon_file_list()
         for filename in file_list:
             app_list, tag_list, child_tag_list = actions.user.analyze_file(filename)
             for app in app_list:
-                app_to_tag_dict[app] = child_tag_list
+                app_to_child_tag_dict[app] = child_tag_list
+            for tag in tag_list:
+                tag_to_child_tag_dict[tag] = child_tag_list
 
-        return app_to_tag_dict
+        return [app_to_child_tag_dict, tag_to_child_tag_dict]
 
     @staticmethod
     def analyze_file(filename: str) -> Tuple[list[str], list[str], list[str]]:
