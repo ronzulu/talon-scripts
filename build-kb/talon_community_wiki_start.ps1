@@ -9,7 +9,7 @@ cd "D:\github\talon-community-wiki"
 # Write-Host "exit"
 
 # $selection = Read-Host "Please enter your selection"
-$selection = "1"
+$selection = "4"
 
 
 switch ($selection) {
