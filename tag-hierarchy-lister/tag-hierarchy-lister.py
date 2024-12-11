@@ -41,6 +41,28 @@ class tag_hierarchy_calculator:
         return [app_to_child_tag_dict, tag_to_child_tag_dict]
 
     @staticmethod
+    def determine_command_group_list(app_to_child_tag_dict, tag_to_child_tag_dict) -> list[str]:
+        """Print out a sheet of talon commands"""
+
+        print(f"determine_command_group_list: {app_to_child_tag_dict}, {tag_to_child_tag_dict}")
+        s = set()
+        for command_group_list in app_to_child_tag_dict.items():
+            print(f"name1A: {type(command_group_list)} {command_group_list}")
+            for name in command_group_list:
+                print(f"name1B: {type(name)} {name}")
+                s.update(name)
+        for command_group_list in tag_to_child_tag_dict.items():
+            print(f"name2A: {type(command_group_list)} {command_group_list}")
+            for name in command_group_list:
+                print(f"name2B: {type(name)} {name}")
+                s.update(name)
+
+        print(f"s: {s}")
+        result = list(s).sort()
+        print(f"result: {result}")
+        return result
+
+    @staticmethod
     def analyze_file(filename: str) -> Tuple[list[str], list[str], list[str], list[str]]:
         """This function is a test."""
         app_list = []
@@ -97,29 +119,39 @@ class user_actions:
     def tag_hierarchy_lister():
         """Print out a sheet of talon commands"""
         #open file
+        app_to_child_tag_dict, tag_to_child_tag_dict = tag_hierarchy_calculator.analyze_all_talon_community()
 
         this_dir = os.path.dirname(os.path.realpath(__file__))
         file_path = os.path.join(this_dir, 'tag-hierarchy-list.md')
         file = open(file_path,"w") 
-        file.write(f"# hello Ronny\n\n")
 
-        app_to_child_tag_dict, tag_to_child_tag_dict = tag_hierarchy_calculator.analyze_all_talon_community()
-        # file_list = actions.user.generate_talon_file_list()
+        file.write(f"# Command group list\n\n")
+        file.write("| Command Groups |")
+        file.write("| -------------- |")
+        command_group_list = tag_hierarchy_calculator.determine_command_group_list(app_to_child_tag_dict, tag_to_child_tag_dict)
+        for command_group_name in command_group_list:
+            file.write(f"| {command_group_name} |\n")
+
+
+        file.write(f"# Application to command group list\n\n")
+        file.write("| Application               | Command Groups |")
+        file.write("| ------------------------- | -------------- |")
+
         for app, child_tag_list in app_to_child_tag_dict.items():
             list = child_tag_list
             for tag in child_tag_list:
                 list.extend(tag_hierarchy_calculator.get_descendant_tag_list(tag, tag_to_child_tag_dict))
             
-            file.write(f"app: {app}, {list}\n")
-        # for tag, child_tag_list in tag_to_child_tag_dict.items():
-        #     file.write(f"tag: {tag}, {child_tag_list}\n")
-
-            # app_list, tag_list, child_tag_list = actions.user.analyze_file(filename)
-            # for s in app_list:
-            #     file.write(f"app: {s}\n")
-            # for s in tag_list:
-            #     file.write(f"tag: {s}\n")
-            # for s in child_tag_list:
-            #     file.write(f"child_tag: {s}\n")
+            file.write(f"| {app} | {user_actions.format_child_tag_list(list)} |\n")
 
         file.close()
+
+    @staticmethod
+    def format_child_tag_list(list: list[str]) -> str:
+        """Print out a sheet of talon commands"""
+        formatted_list = []
+        for str in list:
+            command_group = str.replace("'", "").replace("user.", "")
+            formatted = f"[{command_group}](./Command%20Groups/{command_group}.md)"
+            formatted_list.append(formatted)
+        return ", ".join(formatted_list)

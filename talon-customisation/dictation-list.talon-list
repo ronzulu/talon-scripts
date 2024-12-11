@@ -148,6 +148,8 @@ twenty twenty four dash zero seven: "2024-07"
 twenty twenty four dash zero eight: "2024-08"
 twenty twenty four dash zero nine: "2024-09"
 twenty twenty four dash ten: "2024-10"
+twenty twenty four dash eleven: "2024-11"
+twenty twenty four dash twelve: "2024-12"
 twenty twenty four dash: "2024-"
 twenty twenty four: "2024"
 twenty twenty five: "2025"
@@ -413,7 +415,6 @@ a v i one: "Avi"
 a v i v i: "Avivi"
 a w k: "awk"
 a w s five: "aws"
-a w s six: "AWS"
 a w s amplify: "AWS Amplify"
 a w s batch: "AWS Batch"
 a w s config: "AWS Config"
@@ -515,7 +516,6 @@ as p e r: "as per"
 as string: " As String"
 as variant: " As Variant"
 ass sure a d : "Azure AD"
-ass sure: "Azure"
 assert dot that: "Assert.That("
 assert dot throws: "Assert.Throws<>(() => "
 assert dot: "Assert."
@@ -598,7 +598,6 @@ b colon l: " : {Z1L}"
 b colon: " : "
 b comma six: ", {Z6}"
 b comma dollar: ", $"
-b comma equals to paste: ", Is.EqualTo({wait:200}{Ctrl+v}{wait:200})"
 b comma l: ", {Z1L}"
 b comma: ", {Z1}"
 b dim l: "Dim {Z1L}"
@@ -746,7 +745,6 @@ back t a u: "\\tau"
 back tango: "\\t"
 back therefore: "\\therefore"
 back theta one: "\\theta_1"
-back tick paste tick: "`{wait:200}{Ctrl+v}{wait:200}`"
 back tick: "`"
 back times: "\\times"
 back v e c: "\\vec "
@@ -780,7 +778,6 @@ binyan dash: "binyan-"
 black list: "blacklist"
 blacks land: "Blaxland"
 blazer o: "Blazor"
-block h: "Bloch"
 block under street address six: "BLOCK_STREET_ADDRESS"
 blu-ray five: "bluray"
 blue tack: "Blu-Tack"
@@ -980,7 +977,6 @@ c h v: "chv"
 c hat: " ^ "
 c hotel: "h"
 c i five: "ci"
-c i c d : "CI/CD"
 c i d r : "CIDR"
 c i d: "cid"
 c i lambda: "i => "
@@ -1420,15 +1416,13 @@ connect os: "connectOS"
 console dot log: "console.log(`"
 context dot get value: "context.GetValue("
 context dot set value: "context.SetValue("
-control alt one: "{ctrl-alt-1}"
-control alt four: "{ctrl-alt-4}"
+# control alt one: "{ctrl-alt-1}"
+# control alt four: "{ctrl-alt-4}"
 control romeo: "{ctrl-r}"
 control shift victor: "{ctrl-v}"
 copy and go: "{ctrl-c}{ctrl-u}"
 copy dash: "Copy-"
-copy email to clipboard: "{enter}{wait:1000}{Ctrl+a}{Ctrl+c}{wait:1000}{{heardword:\"[Close Window]\"}}"
 copy end key left: "{shift-end}{shift-left}{ctrl-c}"
-copy house key slow: "{Shift+Home}{wait:200}{Shift+Home}{Ctrl+c}"
 core sera: "Coursera"
 corner under flag equals y: "CORNER_FLAG = 'Y'"
 cosmos d b : "CosmosDB"
@@ -1552,6 +1546,7 @@ d o c: "doc"
 d o d: "dod"
 d o f six: "DOF"
 d o m: "dom"
+d o m six: "DOM"
 d o n t: "dont"
 d o t net core: "Dot.NET Core"
 d o t net framework: "Dot.NET Framework"
@@ -2248,7 +2243,6 @@ feb twenty: "FEB20"
 feb dash twenty twenty: "feb-2020"
 february twenty twenty two: "February 2022"
 feed forward: "feedforward"
-feeling lucky: "{{Ctrl+.}}{wait:200}{enter}"
 feet dash: "feat-"
 fibre asset: "fibre asset"
 fibre con x: "FibreconX"
@@ -2632,7 +2626,6 @@ hash cards slash: "#flashcards/"
 hash course slash: "#course/"
 hash define: "#define "
 hash else: "#else{enter}"
-hash end if enter: "#endif{wait:250}{enter}a"
 hash end if: "#endif{enter}"
 hash end region: "#endregion"
 hash flash card slash: "#flashcard/"
@@ -2656,9 +2649,6 @@ hash person slash: "#person/"
 hash pragma: "#pragma "
 hash q a w s : "----"
 hash q data science: "----"
-hash q m l: "----{enter}#flashcards/ml{wait:200}{enter}{enter}# Questions{enter}{enter}"
-hash q math: "----{enter}#flashcards/math{wait:200}{enter}{enter}# Questions{enter}{enter}"
-hash q physics: "----{enter}#flashcards/science/physics{wait:200}{enter}{enter}# Questions{enter}{enter}"
 hash questions enter: "# Questions{enter}"
 hash region: "#region"
 hash review: "#review"
@@ -2706,7 +2696,6 @@ hello mars three: ""
 help s: "help{space}"
 help stars left: "help **{left}"
 hi ashlesha: "Hi Ashlesha"
-hi at brian: "Hi @{wait:1000}Brian"
 hi at: "Hi @"
 hi brian comments: "Hi Brian, comments?{enter}{enter}"
 hi guys: "Hi Guys{enter}"
@@ -2833,7 +2822,6 @@ i s r six: "ISR"
 i s r s: "ISrs"
 i s r: "isr"
 i saver: "iSaver"
-i t six: "IT"
 i t i l six: "ITIL"
 i t r o : "ITRO"
 i t r o six: "ITRO"
@@ -3078,7 +3066,6 @@ left no format right: "{noformat}"
 left out one right: "[Out] "
 left out right: "[out] "
 left p back quote: "(`"
-left p delete: "({wait:800}{Del}"
 left p dollar l: "(${Z1L}"
 left p dollar: "($"
 left p i right: "(i)"
@@ -3470,7 +3457,7 @@ mum email: "elana.zulaikha@gmail.com"
 mum's email gmail: "elana.zulaikha@gmail.com"
 my c v v: "295"
 my cell dot: "MySel."
-my e-mail: "ronzul@exemail.com.au"
+my email exe mail: "ronzul@exemail.com.au"
 my e mail callpoint: "ronzul@callpointspatial.com.au"
 my email amatek: "ronnyz@amatek.com"
 my email call point: "ronzul@callpointspatial.com.au"
@@ -3490,13 +3477,8 @@ my mobile one: "0414937146"
 my mobile: "0414 937 146"
 my name: "Ronny Zulaikha"
 my phone: "9328-2575"
-my s q l three: "MySql"
-my s q l six: "MYSQL"
-my s q l retryable conn: "MySqlRetryableConnection"
-my s q l: "MySql"
 my service number: "0201333925"
 my session dot: "MySession."
-my set: "MySet"
 my street address woollahra: "26/297 Edgecliff Rd Woollahra"
 my street address: "26/297 Edgecliff Rd"
 my super: "MySuper"
@@ -3595,7 +3577,6 @@ nav point: "NavPoint"
 nav tech: "NAVTEQ"
 near net: "Near-Net"
 necks e tell: "NexeTEL"
-neo four j: "Neo4j"
 net seven point zero: "net7.0"
 net c f : "NETCF"
 net gear: "Netgear"
@@ -3638,7 +3619,7 @@ north side: "Northside"
 nose backquote: "`"
 nose hash: "#"
 not now: "NotNow"
-notepad lines to spaces: "{ctrl-end}{ctrl-shift-home}{ctrl-v}{ctrl-h}\\r\\n{tab}{space}{alt-x}{alt-a}{esc}{ctrl-a}{ctrl-c}"
+# notepad lines to spaces: "{ctrl-end}{ctrl-shift-home}{ctrl-v}{ctrl-h}\\r\\n{tab}{space}{alt-x}{alt-a}{esc}{ctrl-a}{ctrl-c}"
 notepad merge lines: "{ctrl-a}{ctrl-v}{ctrl-h}(\\r\\n)+{tab}{space}{alt-g}{alt-a}{esc}{ctrl-a}{ctrl-c}"
 # notepad reformat bullets: "{{heardword:"[Notepad Merge Lines]\"}}{Ctrl+h}\\x{{{{}}2022}}{Space}{Tab}\\r\\n-{Space}{Alt+g}{Alt+a}{Esc}{Ctrl+a}{Ctrl+c}"
 nov nineteen: "NOV19"
@@ -4176,7 +4157,6 @@ poly cam: "Polycam"
 poly id: "PolyId"
 post back: "postback"
 post dash: "post-"
-post gres: "Postgres"
 post man: "Postman"
 postal under delivery type: "POSTAL_DELIVERY_TYPE"
 postcode boundaries: "Postcode Boundaries"
@@ -4249,7 +4229,6 @@ q stars: "QStarz"
 q t y: "qty"
 q u e: "Que"
 q u i p: "Quip"
-q under: "q_"
 q use: "USE{space}"
 q where: "WHERE "
 q with roll up: "WITH ROLLUP"
@@ -4337,7 +4316,7 @@ r m space: "rm "
 r n d: "rnd"
 r n enz : "RNNs"
 r n n six: "RNN"
-r net: "AARnet"
+a a r net: "AARnet"
 r o i : "ROI"
 r o k: "rok"
 r o l y: "roly"
@@ -4486,7 +4465,6 @@ s three glacier: "S3 Glacier"
 s three one zone: "S3 One Zone"
 s three standard: "S3 Standard"
 s three t a : "S3TA"
-s three: "S3"
 s a one five: "sa1"
 s a one: "SA1"
 s a two five: "sa2"
@@ -4637,7 +4615,6 @@ s p under p: " p_p"
 s p: " p"
 s q k m: "sqkm"
 s q l five: "sql"
-s q l six: "SQL"
 s q l geography: "SqlGeography"
 s q l geometry: "SqlGeometry"
 s q l server one: "SqlServer"
@@ -4816,12 +4793,11 @@ serve enter: "{space}serve{enter}"
 service class three: "Service Class"
 service lens: "ServiceLens"
 set dash: "Set-"
-set next statement: "{ctrl-shift-f10}"
+# set next statement: "{ctrl-shift-f10}"
 shalom nahag: "hello driver"
 shape file one: "Shapefile"
 shift d ten: "{shift-down}{shift-down}{shift-down}{shift-down}{shift-down}{shift-down}{shift-down}{shift-down}{shift-down}{shift-down}"
 shift house key k k: "{shift-home}[["
-shift house key slow k k: "{Shift+Home}{wait:200}{Shift+Home}[["
 shift m up: "{f4}"
 shill off: "Chilov"
 shop a docket: "Shop-A-Docket"
@@ -4923,17 +4899,11 @@ slash nine twenty twenty one: "/9/2021"
 slash nine: "/9"
 slash ancient: "/ancient"
 slash b b : "BB"
-slash child: "/{wait:250}child"
-slash code enter: "/{wait:250}code{enter}"
-slash divider: "/{wait:200}divider{enter}"
 slash exports: "/exports "
 slash info excerpt: "/info"
-slash info: "/{wait:200}info{enter}"
-slash jeera: "/{wait:300}JIRA{enter}"
 slash l: "/{Z1L}"
 slash link enter: "/link{enter}"
 slash n ten [hundred]: "/n1000 "
-slash quote: "/{wait:300}quote{enter}"
 slash r z : "/RZ"
 slash right angle bracket: "/>"
 slash romeo space: "/r "
@@ -5082,7 +5052,6 @@ surround with: "{ctrl-k}s"
 surry hills: "Surry Hills"
 swift x: "Swyftx"
 swimming under pool six: "SWIMMING_POOL"
-switch x comma y: "{Shift+ExtEnd}{Ctrl+x}{BackSpace}{ExtHome}{wait:100}{Ctrl+v},{Space}{End}"
 sys dash: "SYS-"
 system dot: "System."
 system net: "Systemnet"
@@ -5224,7 +5193,6 @@ tab six: "TAB"
 tab seven colon: "{tab}7:"
 tab eight colon: "{tab}8:"
 tab nine colon: "{tab}9:"
-tab key two slow: "{Tab}{wait:200}{Tab}"
 tab key l: "{Tab}{Z1L}"
 tab key s: "{tab}{space}"
 tab lu: "Tableau"
@@ -5921,6 +5889,100 @@ r e p l six: REPL
 t o d o: todo
 dock o to do: docotodo
 dock o feedback: docofeedback
+dock o scope: docoscope
 h u d six: HUD
 talon h u d: Talon HUD
 pie pie: PyPi
+
+##### GLOBAL_VOCAB_MARKER
+# This file explicitly does not have a `.talon-list` extension, because we don't want talon to read it.
+# Instead this is included into both and `dictation-list.tolan-list` and `vocabulary.talon-list`.
+# as talon doesn't have a "#include" mechanism, the contents of this file is
+# added into both of these files by custom code.
+#
+# The content here replaces the "global vocabulary section" in the target files if already present.
+# Otherwise, the content is appended to the existing content of the target files.
+# The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
+
+a b n dash: ABN-
+a b r six: ABR
+a j n dash: AJN-
+a j n six: AJN
+a w s six: "AWS"
+and slash or: and/or
+ass sure: "Azure"
+asset net: Assetnet
+block h: "Bloch"
+cap bat: B
+c i c d : "CI/CD"
+c s g six: CSG
+d b cluster: DB cluster
+d b cluster three: DB Cluster
+d c p dash: DCP-
+dock under six: DOC_
+e n dash: EN-
+f c f c o a: FCFCOA
+f m c six: FMC
+i t six: "IT"
+j ode ya: Joadja
+j c a six: JCA
+J P six: JP
+J P dash: JP-
+jupiter lab: JupyterLab
+jupiter y: Jupyter
+jupiter notebook: Jupyter Notebook
+linked in six: LINKEDIN
+mark c: Marc
+merit on: Meriton
+my s q l three: "MySql"
+my s q l six: "MYSQL"
+my s q l: "MySql"
+name ass sure: "Azure"
+
+name Bowral: Bowral
+name crema: Karima
+name fern: Fern
+name near: Neer
+name nova peris: Nova Peris
+name car in: Karin
+name Ferrer: Ferrer
+name Jimenez: Jimenez
+name ley or: Lior
+name lawn: Lorne
+name Longobardi: Longobardi
+name marina: Marina
+name nicki c: Nicky
+name nicki k: Nikki
+name paul: Paul
+name pinball: Pymble
+name rob: Rob
+name ya hell: Yael
+name Yael Abraham: Yael Abraham
+name Yael Ferrer: Yael Ferrer
+name Yael Jimenez: Yael Jimenez
+neo four j: "Neo4j"
+nine bot: Ninebot
+nine bot s two: Ninebot S2
+one drive: OneDrive
+post gres: "Postgres"
+post gres s q l: "PostgresSQL"
+q under: "q_"
+rose w: rows
+s m h: SMH
+s q l six: "SQL"
+s three: "S3"
+safe ta: Savta
+seg bot: Segbot
+shoe e: shoe
+shoe spec: shoe spec
+sparkle q: SPARQL
+spec c: spec
+speck c: spec
+specie: spec
+Speccy: spec
+Stephen v: Steven
+System net: Systemnet
+t n dash: TN-
+used dash name: used-name
+v i s: vis
+whats at: WhatsApp

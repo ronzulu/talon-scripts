@@ -14,7 +14,6 @@ state new: "new "
 
 echo: "e"
 
-dock you sore us: "docusaurus"
 # <user.word>$: user.rz_add(word)
 
 # something reasonably: "<something reasonably>"
@@ -23,7 +22,7 @@ dock you sore us: "docusaurus"
 
 {user.dictionary}: user.rz_insert_key_sequence("{dictionary}")
 # proud {user.dictionary}: "p2:{dictionary}"
-prouder {user.dictionary}: user.rz_insert_key_sequence(str("p3:") + "{dictionary}")
+prouder {user.dictionary}: user.rz_insert_key_sequence("{dictionary}")
 
 (Zulaikha | zoo like her): "Zulaikha"
 
@@ -37,3 +36,10 @@ middle drag | drag middle:
 
 ^next {user.clickless_mouse_action}$: 
     user.clickless_mouse_next_standstill_action(clickless_mouse_action)
+
+cap p <number_small>: "P{number_small}"
+cap p <number_small> dash <number_small>: "P{number_small_1}-{number_small_2}"
+
+replace all from clipboard:
+    edit.select_all()
+    edit.paste()
