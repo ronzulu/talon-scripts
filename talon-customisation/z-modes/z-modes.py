@@ -90,11 +90,11 @@ class ZModeActions:
     
     def rz_insert_key_sequence(text: str):
         "Inserts the supplied text, formatted as per last call to rz_set_format"
-        print(f"rz_insert_key_sequence: {text}")
+        # print(f"rz_insert_key_sequence: {text}")
         words = actions.user.extract_substrings(text)
         for w in words:
             word = str(w)
-            print(f"word: {word}")
+            # print(f"word: {word}")
             if word.startswith("{") and word.endswith("}"):
                 s = word[1:-1]
                 actions.user.handle_command(s)

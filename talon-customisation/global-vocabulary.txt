@@ -11,22 +11,88 @@ a b n dash: ABN-
 a b r six: ABR
 a j n dash: AJN-
 a j n six: AJN
+a p i six: "API"
+a p i gateway: "API Gateway"
+a p i: "api"
 a w s six: "AWS"
+a w s five: "aws"
+a w s amplify: "AWS Amplify"
+a w s batch: "AWS Batch"
+a w s config: "AWS Config"
+a w s credentials: "AWSCredentials"
+a w s e b s : "AWS EBS"
+a w s e c two: "AWS EC2"
+a w s e c s : "AWS ECS"
+a w s e k s: "AWS EKS"
+a w s edge: "AWS Edge"
+a w s far gate: "AWS Fargate"
+a w s fargate: "AWS Fargate"
+a w s glue: "AWS Glue"
+a w s i o t : "AWS IoT"
+a w s i q : "AWS IQ"
+a w s identity centre: "AWS Identity Centre"
+a w s lambda: "AWS Lambda"
+a w s local zones: "AWS Local Zones"
+a w s macie: "AWS Macie"
+a w s outposts: "AWS Outposts"
+a w s s three: "AWS S3"
+a w s shield: "AWS Shield"
+a w s v p c : "AWS VPC"
+a w s wavelength: "AWS Wavelength"
+act on l: Actonel
+act on l e c: Actonel EC
+air dot: a.
 and slash or: and/or
+API gateway: API Gateway
+add we now: Arduino
+add wino: Arduino
 ass sure: "Azure"
 asset net: Assetnet
+b l e six: BLE
+beetle one: Beetle
 block h: "Bloch"
+Brian
 cap bat: B
+catch ba: Gahba
+c d GitHub back: cd d:\GitHub\
 c i c d : "CI/CD"
+c l i: cli
+c o r s : "CORS"
 c s g six: CSG
+cito scape: Cytoscape
+d a c six: DAC
 d b cluster: DB cluster
 d b cluster three: DB Cluster
 d c p dash: DCP-
+d o c: doc
+d o m: dom
+data point one: DataPoint
+data point seven: dataPoint
+dock i d three: DocId
+dock under i d six: DOC_ID
 dock under six: DOC_
+dynamo d b: "DynamoDB"
 e n dash: EN-
+entity one: ENTITY1
+entity two: ENTITY2 
 f c f c o a: FCFCOA
 f m c six: FMC
+fix ologist: Fixologist
+form i k: Formik
+Gary Bortz
+gamma ba: Gahba
+gene one: Gen1
+Gentoo: Gen2
+goth ba: Gahba
+graph q l : "GraphQL"
+had dash phone number: had-phone-number
+ho why: Gahba
+how why: Gahba
+i d: id
+i d e: IDE
+i d e six: IDE
 i t six: "IT"
+i two c: I2C
 j ode ya: Joadja
 j c a six: JCA
 J P six: JP
@@ -37,11 +103,12 @@ jupiter notebook: Jupyter Notebook
 linked in six: LINKEDIN
 mark c: Marc
 merit on: Meriton
+m u i: mui
 my s q l three: "MySql"
 my s q l six: "MYSQL"
 my s q l: "MySql"
 name ass sure: "Azure"
-
+name bort: Bortz
 name Bowral: Bowral
 name crema: Karima
 name fern: Fern
@@ -58,34 +125,58 @@ name nicki c: Nicky
 name nicki k: Nikki
 name paul: Paul
 name pinball: Pymble
+name Jackie q: Jacqui
 name rob: Rob
+name save ta: Savta
 name ya hell: Yael
 name Yael Abraham: Yael Abraham
 name Yael Ferrer: Yael Ferrer
 name Yael Jimenez: Yael Jimenez
+navy bar one: NavBar
+navy one: Nav
 neo four j: "Neo4j"
+necks em: Nexium
 nine bot: Ninebot
 nine bot s two: Ninebot S2
+n p m run: "npm run "
+n p m run dev: "npm run dev"
+n p m run serve: "npm run serve"
 one drive: OneDrive
+placed-ad-for: 
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
+p w m six: PWM
 q under: "q_"
+react one: React
+Ronny
 rose w: rows
+rye al tress: Ryaltris
 s m h: SMH
 s q l six: "SQL"
 s three: "S3"
-safe ta: Savta
+save ta: Savta
 seg bot: Segbot
 shoe e: shoe
 shoe spec: shoe spec
+sauce o: source
+sauce under six: SOURCE_
 sparkle q: SPARQL
 spec c: spec
 speck c: spec
 specie: spec
 Speccy: spec
 Stephen v: Steven
+s v g: svg
+s v g six: SVG
 System net: Systemnet
 t n dash: TN-
+u r l: url
+u u i d: uuid
 used dash name: used-name
 v i s: vis
+v i t e: vite
 whats at: WhatsApp
+wool lara: Woollahra
+Woollahra
+Zulaikha
+

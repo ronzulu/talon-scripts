@@ -6,6 +6,8 @@ from talon import Context, Module, actions, app, fs, imgui, ui
 mod = Module()
 
 class tag_hierarchy_calculator:
+    TALON_COMMUNITY_DIR = r'C:\Users\ronny\AppData\Roaming\talon\user\talon-community'
+    TALON_COMMUNITY_GITHUB_APP_BASE = r'https://github.com/talonhub/community/tree/main/apps'
 
     @staticmethod
     def get_descendant_tag_list(tag: str, tag_to_child_tag_dict: dict[str, list[str]]) -> list[str]:
@@ -21,10 +23,11 @@ class tag_hierarchy_calculator:
         return result
 
     @staticmethod
-    def analyze_all_talon_community() -> tuple[dict[str, list[str]], dict[str, list[str]]]:
+    def analyze_all_talon_community() -> tuple[dict[str, list[str]], dict[str, list[str]], list[str]]:
         """Print out a sheet of talon commands"""
 
         app_to_child_tag_dict = dict()
+        app_to_filename_dict = dict()
         tag_to_child_tag_dict = dict()
 
         file_list = tag_hierarchy_calculator.generate_talon_file_list()
@@ -35,30 +38,45 @@ class tag_hierarchy_calculator:
                 if app_str and len(extra_match_list) > 0:
                     app_str += f" ({';'.join(extra_match_list)})"
                 app_to_child_tag_dict[app_str] = child_tag_list
+                app_to_filename_dict[app_str] = filename
             for tag in tag_list:
                 tag_to_child_tag_dict[tag] = child_tag_list
 
-        return [app_to_child_tag_dict, tag_to_child_tag_dict]
+        return [app_to_child_tag_dict, tag_to_child_tag_dict, app_to_filename_dict]
 
     @staticmethod
     def determine_command_group_list(app_to_child_tag_dict, tag_to_child_tag_dict) -> list[str]:
         """Print out a sheet of talon commands"""
 
-        print(f"determine_command_group_list: {app_to_child_tag_dict}, {tag_to_child_tag_dict}")
+        print(f"determine_command_group_list: app_to_child_tag_dict: {app_to_child_tag_dict}")
+        print(f"determine_command_group_list: tag_to_child_tag_dict: {tag_to_child_tag_dict}")
         s = set()
-        for command_group_list in app_to_child_tag_dict.items():
-            print(f"name1A: {type(command_group_list)} {command_group_list}")
-            for name in command_group_list:
-                print(f"name1B: {type(name)} {name}")
-                s.update(name)
-        for command_group_list in tag_to_child_tag_dict.items():
-            print(f"name2A: {type(command_group_list)} {command_group_list}")
-            for name in command_group_list:
-                print(f"name2B: {type(name)} {name}")
-                s.update(name)
+        s.add("one_password")
+        s.add("adobe_acrobat_reader_dc")
+        s.add("Zulaikha")
+        print(f"test: {s}")
+
+        s = set()
+        for app, tag_list in app_to_child_tag_dict.items():
+            print(f"name1A: {app} {tag_list}")
+            s.add(app)
+            print(f"name1B: {s}")
+            for name in tag_list:
+                print(f"name1C: {type(name)} {name}")
+                s.add(name)
+                print(f"name1D: {s}")
+        for app, tag_list in tag_to_child_tag_dict.items():
+            print(f"name2A: {app} {tag_list}")
+            s.add(app)
+            print(f"name2B: {s}")
+            for name in tag_list:
+                print(f"name1C: {type(name)} {name}")
+                s.add(name)
+                print(f"name1D: {s}")
 
         print(f"s: {s}")
-        result = list(s).sort()
+        result = list(s)
+        result.sort()
         print(f"result: {result}")
         return result
 
@@ -105,7 +123,7 @@ class tag_hierarchy_calculator:
     def generate_talon_file_list():
         """This function is a test."""
         result = []
-        w = os.walk(r'C:\Users\ronny\AppData\Roaming\talon\user\talon-community')
+        w = os.walk(tag_hierarchy_calculator.TALON_COMMUNITY_DIR)
         for (dirpath, dirnames, filenames) in w:
             for filename in filenames:
                 f, file_extension = os.path.splitext(filename)
@@ -119,30 +137,36 @@ class user_actions:
     def tag_hierarchy_lister():
         """Print out a sheet of talon commands"""
         #open file
-        app_to_child_tag_dict, tag_to_child_tag_dict = tag_hierarchy_calculator.analyze_all_talon_community()
+        app_to_child_tag_dict, tag_to_child_tag_dict, app_to_filename_dict = tag_hierarchy_calculator.analyze_all_talon_community()
 
         this_dir = os.path.dirname(os.path.realpath(__file__))
         file_path = os.path.join(this_dir, 'tag-hierarchy-list.md')
         file = open(file_path,"w") 
 
-        file.write(f"# Command group list\n\n")
-        file.write("| Command Groups |")
-        file.write("| -------------- |")
-        command_group_list = tag_hierarchy_calculator.determine_command_group_list(app_to_child_tag_dict, tag_to_child_tag_dict)
-        for command_group_name in command_group_list:
-            file.write(f"| {command_group_name} |\n")
+        # file.write(f"# Command group list\n\n")
+        # file.write("| Command Groups |\n")
+        # file.write("| -------------- |\n")
+        # command_group_list = tag_hierarchy_calculator.determine_command_group_list(app_to_child_tag_dict, tag_to_child_tag_dict)
+        # for command_group_name in command_group_list:
+        #     file.write(f"| {command_group_name} |\n")
 
 
         file.write(f"# Application to command group list\n\n")
-        file.write("| Application               | Command Groups |")
-        file.write("| ------------------------- | -------------- |")
+        file.write("| Application               | Command Groups |\n")
+        file.write("| ------------------------- | -------------- |\n")
 
         for app, child_tag_list in app_to_child_tag_dict.items():
             list = child_tag_list
             for tag in child_tag_list:
                 list.extend(tag_hierarchy_calculator.get_descendant_tag_list(tag, tag_to_child_tag_dict))
             
-            file.write(f"| {app} | {user_actions.format_child_tag_list(list)} |\n")
+            p = app_to_filename_dict[app]
+            if p.startswith(tag_hierarchy_calculator.TALON_COMMUNITY_DIR):
+                startPos = len(tag_hierarchy_calculator.TALON_COMMUNITY_DIR) + 1
+                p = p[startPos:]
+
+            file_info = f"[{p}]({tag_hierarchy_calculator.TALON_COMMUNITY_GITHUB_APP_BASE}/{p})"
+            file.write(f"| {app} | {file_info} | {user_actions.format_child_tag_list(list)} |\n")
 
         file.close()
 
@@ -150,6 +174,7 @@ class user_actions:
     def format_child_tag_list(list: list[str]) -> str:
         """Print out a sheet of talon commands"""
         formatted_list = []
+        list.sort()
         for str in list:
             command_group = str.replace("'", "").replace("user.", "")
             formatted = f"[{command_group}](./Command%20Groups/{command_group}.md)"
