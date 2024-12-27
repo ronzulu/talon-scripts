@@ -5,9 +5,11 @@ from talon import Context, Module, actions, app, fs, imgui, ui
 
 mod = Module()
 
+TALON_COMMUNITY_DIR = r'C:\Users\ronny\AppData\Roaming\talon\user\talon-community'
+TALON_COMMUNITY_GITHUB_APP_BASE = r'https://github.com/talonhub/community/tree/main/apps'
+TERMINAL_APPS = ['chrome']
+
 class tag_hierarchy_calculator:
-    TALON_COMMUNITY_DIR = r'C:\Users\ronny\AppData\Roaming\talon\user\talon-community'
-    TALON_COMMUNITY_GITHUB_APP_BASE = r'https://github.com/talonhub/community/tree/main/apps'
 
     @staticmethod
     def get_descendant_tag_list(tag: str, tag_to_child_tag_dict: dict[str, list[str]]) -> list[str]:
@@ -123,7 +125,7 @@ class tag_hierarchy_calculator:
     def generate_talon_file_list():
         """This function is a test."""
         result = []
-        w = os.walk(tag_hierarchy_calculator.TALON_COMMUNITY_DIR)
+        w = os.walk(TALON_COMMUNITY_DIR)
         for (dirpath, dirnames, filenames) in w:
             for filename in filenames:
                 f, file_extension = os.path.splitext(filename)
@@ -131,6 +133,40 @@ class tag_hierarchy_calculator:
                     result.append(f"{dirpath}\\{filename}")
         
         return result
+
+class app_list_markdown_formatter:
+    def __init__(self, file): 
+        # This is an instance variable 
+        self.file = file
+
+    def format_app_to_command_group_list(self, app_to_child_tag_dict, tag_to_child_tag_dict, app_to_filename_dict): 
+        
+        self.file.write("| Application               | Command Groups |\n")
+        self.file.write("| ------------------------- | -------------- |\n")
+
+        for app, child_tag_list in app_to_child_tag_dict.items():
+            list = child_tag_list
+            for tag in child_tag_list:
+                list.extend(tag_hierarchy_calculator.get_descendant_tag_list(tag, tag_to_child_tag_dict))
+            
+            p = app_to_filename_dict[app]
+            if p.startswith(TALON_COMMUNITY_DIR):
+                startPos = len(TALON_COMMUNITY_DIR) + 1
+                p = p[startPos:]
+
+            file_info = f"[{p}]({TALON_COMMUNITY_GITHUB_APP_BASE}/{p})"
+            self.file.write(f"| {app} | {file_info} | {app_list_markdown_formatter.format_child_tag_list(list)} |\n")
+
+    @staticmethod
+    def format_child_tag_list(list: list[str]) -> str:
+        """Print out a sheet of talon commands"""
+        formatted_list = []
+        list.sort()
+        for str in list:
+            command_group = str.replace("'", "").replace("user.", "")
+            formatted = f"[{command_group}](./Command%20Groups/{command_group}.md)"
+            formatted_list.append(formatted)
+        return ", ".join(formatted_list)
 
 @mod.action_class
 class user_actions:
@@ -151,32 +187,16 @@ class user_actions:
         #     file.write(f"| {command_group_name} |\n")
 
 
-        file.write(f"# Application to command group list\n\n")
-        file.write("| Application               | Command Groups |\n")
-        file.write("| ------------------------- | -------------- |\n")
+        file.write(f"# GUI Applications\n\n")
+        formatter = app_list_markdown_formatter(file)
 
-        for app, child_tag_list in app_to_child_tag_dict.items():
-            list = child_tag_list
-            for tag in child_tag_list:
-                list.extend(tag_hierarchy_calculator.get_descendant_tag_list(tag, tag_to_child_tag_dict))
-            
-            p = app_to_filename_dict[app]
-            if p.startswith(tag_hierarchy_calculator.TALON_COMMUNITY_DIR):
-                startPos = len(tag_hierarchy_calculator.TALON_COMMUNITY_DIR) + 1
-                p = p[startPos:]
+        gui_subset_dict = {key: value for key, value in app_to_child_tag_dict.items() if key not in TERMINAL_APPS}
+        formatter.format_app_to_command_group_list(gui_subset_dict, tag_to_child_tag_dict, app_to_filename_dict)
 
-            file_info = f"[{p}]({tag_hierarchy_calculator.TALON_COMMUNITY_GITHUB_APP_BASE}/{p})"
-            file.write(f"| {app} | {file_info} | {user_actions.format_child_tag_list(list)} |\n")
+        file.write("\n\n")
+        file.write(f"# Terminal Applications\n\n")
+        terminal_subset_dict = {key: app_to_child_tag_dict[key] for key in TERMINAL_APPS}
+
+        formatter.format_app_to_command_group_list(terminal_subset_dict, tag_to_child_tag_dict, app_to_filename_dict)
 
         file.close()
-
-    @staticmethod
-    def format_child_tag_list(list: list[str]) -> str:
-        """Print out a sheet of talon commands"""
-        formatted_list = []
-        list.sort()
-        for str in list:
-            command_group = str.replace("'", "").replace("user.", "")
-            formatted = f"[{command_group}](./Command%20Groups/{command_group}.md)"
-            formatted_list.append(formatted)
-        return ", ".join(formatted_list)
