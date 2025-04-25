@@ -7,7 +7,9 @@ mod = Module()
 
 TALON_COMMUNITY_DIR = r'C:\Users\ronny\AppData\Roaming\talon\user\talon-community'
 TALON_COMMUNITY_GITHUB_APP_BASE = r'https://github.com/talonhub/community/tree/main/apps'
-TERMINAL_APPS = ['chrome']
+TERMINAL_APPS = ["anaconda", "git", "kubectl", "readline", "taskwarrior", "terminal_window", "terminal"]
+COMMAND_GROUPS_GUI_DIR = r'Command%20Groups%20GUI';
+COMMAND_GROUPS_TERMINAL_DIR = r'Command%20Groups%20Terminal';
 
 class tag_hierarchy_calculator:
 
@@ -164,9 +166,18 @@ class app_list_markdown_formatter:
         list.sort()
         for str in list:
             command_group = str.replace("'", "").replace("user.", "")
-            formatted = f"[{command_group}](./Command%20Groups/{command_group}.md)"
+            dir = app_list_markdown_formatter.get_command_group_dir(command_group)
+            formatted = f"[{command_group}](./{dir}/{command_group}.md)"
             formatted_list.append(formatted)
         return ", ".join(formatted_list)
+
+    @staticmethod
+    def get_command_group_dir(command_group: str) -> str:
+        if command_group in TERMINAL_APPS:
+            result = COMMAND_GROUPS_TERMINAL_DIR
+        else:
+            result = COMMAND_GROUPS_GUI_DIR
+        return result
 
 @mod.action_class
 class user_actions:

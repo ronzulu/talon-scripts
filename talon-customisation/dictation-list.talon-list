@@ -138,6 +138,8 @@ twenty twenty three under zero eight: "2023_08"
 twenty twenty three under zero nine: "2023_09"
 twenty twenty three under eleven: "2023_11"
 twenty twenty three: "2023"
+twenty twenty four: "2024"
+twenty twenty four dash: "2024-"
 twenty twenty four dash zero one: "2024-01"
 twenty twenty four dash zero two: "2024-02"
 twenty twenty four dash zero three: "2024-03"
@@ -150,9 +152,19 @@ twenty twenty four dash zero nine: "2024-09"
 twenty twenty four dash ten: "2024-10"
 twenty twenty four dash eleven: "2024-11"
 twenty twenty four dash twelve: "2024-12"
-twenty twenty four dash: "2024-"
-twenty twenty four: "2024"
 twenty twenty five: "2025"
+twenty twenty five dash zero one: "2025-01"
+twenty twenty five dash zero two: "2025-02"
+twenty twenty five dash zero three: "2025-03"
+twenty twenty five dash zero four: "2025-04"
+twenty twenty five dash zero five: "2025-05"
+twenty twenty five dash zero six: "2025-06"
+twenty twenty five dash zero seven: "2025-07"
+twenty twenty five dash zero eight: "2025-08"
+twenty twenty five dash zero nine: "2025-09"
+twenty twenty five dash ten: "2025-10"
+twenty twenty five dash eleven: "2025-11"
+twenty twenty five dash twelve: "2025-12"
 twenty twenty seven: "2027"
 twenty [hundred] [zero] eight r two: "2008R2"
 twenty [hundred] seventeen under zero five: "2017_05"
@@ -909,6 +921,7 @@ c combo: "combo"
 c comment line: "//////////////////////////////////////////////////////////////////////{enter}"
 c con less: "const {Z1L}"
 c con s: "const "
+c cone s: "const "
 c config: "CConfig"
 c const s: "const "
 c continue: "continue"
@@ -1775,7 +1788,8 @@ dollar l alpha: "$a"
 dollar l file one: "$file1"
 dollar l: "${Z1L}"
 dollar latest six: "$LATEST"
-dollar left brace l: "${{{{}}{Z1L}"
+dollar left brace: "${l-brace}"
+dollar left brace l: "${l-brace}"
 dollar left dollar right: "$($){left}"
 dollar left right brace left l: "${{{{}}}}{left}{Z1L}"
 dollar left right left: "$(){left}"
@@ -1786,8 +1800,9 @@ dollar quote: "$\""
 dollar result: "$result"
 dollar s t r dot: "$str."
 dollar s t r: "$str"
-dollar sign brace l: "${{{Z1L}"
-dollar sign brace: "${l-brace}{{}}"
+dollar sign brace l: "${l-brace}"
+dollar sign brace: "${l-brace}"
+dollar sign left brace: "${l-brace}"
 dollar sign dollar: "$$"
 dollar sign l: "${Z1L}"
 dollar sign sign: "$$"
@@ -3680,7 +3695,6 @@ o note r z: "> [!NOTE] RZ:{space}"
 o note: "> [!NOTE]{space}"
 o o i: "Ooi"
 o o m six: "OOM"
-o p five: "op"
 o p g six: "OPG"
 o p s six: "OPS"
 o p s works: "OpsWorks"
@@ -3721,7 +3735,6 @@ o t p six: "OTP"
 o t t six: "OTT"
 o table template: "| Col1 | Col2 | "
 o u six: "OU"
-o use: "OUs"
 o warning: "> [!WARNING]{enter}"
 o yam l: "---{enter}{enter}---{up}"
 o z five: "oz"
@@ -4001,7 +4014,7 @@ percent x-ray: "%X"
 perf mon: "perfmon"
 period s: ". "
 phase one: "Phase 1"
-phillips hue: "Phillips Hue"
+phillips hue: "Philips Hue"
 phone rob mobile: "0410 677 285"
 photo scan: "PhotoScan"
 pi max: "Pimax"
@@ -4020,6 +4033,7 @@ pip layer: "PipLayer"
 pip u dash one: "PIPU-1"
 pip u dash: "PIPU-"
 pip utility: "Pip Utility"
+pipe dollar brace: " | ${l-brace}"
 pipe six hundred: "|600"
 pipe six: "PIPE"
 pipe for each: " | ForEach { "
@@ -5898,6 +5912,7 @@ pie pie: PyPi
 # Otherwise, the content is appended to the existing content of the target files.
 # The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
 
+a b c six: ABC
 a b n dash: ABN-
 a b r six: ABR
 a j n dash: AJN-
@@ -5937,35 +5952,66 @@ and slash or: and/or
 API gateway: API Gateway
 add we now: Arduino
 add wino: Arduino
+a slash d: A/D
 ass sure: "Azure"
 asset net: Assetnet
 b l e six: BLE
+b m d six: BMD
 beetle one: Beetle
 block h: "Bloch"
+boolean one: Boolean
+broad link: Broadlink
+bully in five: boolean
 Brian
+brief dictionary: dict
 cap bat: B
 catch ba: Gahba
+hug Sameer: Chag sameach
+Chag sameach
+comma and: ", and"
+c s s: css
+havre haditha: Chevra Kadisha 
+here haditha: Chevra Kadisha 
+Hera haditha: Chevra Kadisha 
+hero haditha: Chevra Kadisha
 c d GitHub back: cd d:\GitHub\
 c i c d : "CI/CD"
 c l i: cli
 c o r s : "CORS"
+c r u d: crud
 c s g six: CSG
+c t scan: CT Scan
 cito scape: Cytoscape
+clothes five: close
+CHOLANGITIS
 d a c six: DAC
 d b cluster: DB cluster
 d b cluster three: DB Cluster
 d c p dash: DCP-
 d o c: doc
 d o m: dom
+d slash a: D/A
+dialogue: dialog
 data point one: DataPoint
 data point seven: dataPoint
+datapoint one: DataPoint
+datapoint seven: dataPoint
+day j s: dayjs
+doc you saw us: Docusaurus
 dock i d three: DocId
 dock under i d six: DOC_ID
 dock under six: DOC_
+double question: " ?? "
+double question null: " ?? null"
+doctor high field: Dr Highfield
 dynamo d b: "DynamoDB"
 e n dash: EN-
-entity one: ENTITY1
-entity two: ENTITY2 
+e dash waste: e-waste
+emanuel: Emanuel
+Immanuel: Emanuel
+entity one: Entity1
+entity two: Entity2
+e p o a: ePoA
 f c f c o a: FCFCOA
 f m c six: FMC
 fix ologist: Fixologist
@@ -5974,12 +6020,15 @@ Gary Bortz
 gamma ba: Gahba
 gene one: Gen1
 Gentoo: Gen2
+jill Annie: Gilana
 goth ba: Gahba
+g o v six: GOV
 graph q l : "GraphQL"
 had dash phone number: had-phone-number
 ho why: Gahba
 how why: Gahba
 i d: id
+i d one: Id
 i d e: IDE
 i d e six: IDE
 i t six: "IT"
@@ -5988,36 +6037,61 @@ j ode ya: Joadja
 j c a six: JCA
 J P six: JP
 J P dash: JP-
+Jason dot stringy fy: "JSON.stringify("
 jupiter lab: JupyterLab
 jupiter y: Jupyter
 jupiter notebook: Jupyter Notebook
 linked in six: LINKEDIN
+low dash: lodash
+Macquarie park: Macquarie Park
+mac cream: Macrium
+Macrium reflect: Macrium Reflect
 mark c: Marc
+mars three six: MARS3
+memo eyes: memoize
+Menorca monuments: Menucha Monuments
+Minorca monuments: Menucha Monuments
+minyan: minyan
 merit on: Meriton
 m u i: mui
 my s q l three: "MySql"
 my s q l six: "MYSQL"
 my s q l: "MySql"
 name ass sure: "Azure"
+name bigger or waters: Biggera Waters
 name bort: Bortz
 name Bowral: Bowral
+name Camille das Arlo: Camille Dezarnaulds
 name crema: Karima
+name das Arlo: Dezarnaulds
+name day anna: Dhyaana
+name dee anna: Dhyaana
 name fern: Fern
+name glenn: Glenn
 name near: Neer
 name nova peris: Nova Peris
 name car in: Karin
 name Ferrer: Ferrer
+name jazz man: Jasmann
 name Jimenez: Jimenez
 name ley or: Lior
 name lawn: Lorne
+name Leicester: Lester
 name Longobardi: Longobardi
 name marina: Marina
+name miss Abraham: Ms Abraham
+name Meyer: Myer
+name Mayer Zulaikha: Myer Zulaikha
 name nicki c: Nicky
 name nicki k: Nikki
 name paul: Paul
+name pisa: Peisah
+Peisah isms: Peisah-isms
 name pinball: Pymble
+name pro lea: Prolia
 name Jackie q: Jacqui
 name rob: Rob
+name roselle: Rozelle
 name save ta: Savta
 name ya hell: Yael
 name Yael Abraham: Yael Abraham
@@ -6027,26 +6101,54 @@ navy bar one: NavBar
 navy one: Nav
 neo four j: "Neo4j"
 necks em: Nexium
+new n: new
+nice fy: niceify
+nice fide: niceified
 nine bot: Ninebot
 nine bot s two: Ninebot S2
+n d i s: NDIS
+n m v six: NMV
 n p m run: "npm run "
+n p m run build: "npm run build"
 n p m run dev: "npm run dev"
 n p m run serve: "npm run serve"
+a lanza pin: Olanzapine
 one drive: OneDrive
+o p five: "op"
+Oh hell hayim: Ohel Chaim
+p d f dot j s: PDF.js
+p d f one: Pdf
+p d f five: pdf
+p d f six: PDF
+Phillips Hugh: Philips Hue
+pipe null: " | null"
 placed-ad-for: 
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
+p r o p s: props
+p r p six: PRP
 p w m six: PWM
 q under: "q_"
 react one: React
+red brace: }
 Ronny
+Ronny Zulaikha
+Brookwood: Rookwood
+rose: rows
 rose w: rows
 rye al tress: Ryaltris
 s m h: SMH
 s q l six: "SQL"
 s three: "S3"
+s three bucket one: "S3Bucket"
+saint vincents: "St Vincent's"
+saint george: "St George"
+Sat vincents: "St Vincent's"
+sit vincents: "St Vincent's"
 save ta: Savta
+se: see
 seg bot: Segbot
+segue: Segway
 shoe e: shoe
 shoe spec: shoe spec
 sauce o: source
@@ -6061,13 +6163,20 @@ s v g: svg
 s v g six: SVG
 System net: Systemnet
 t n dash: TN-
+talent: Talon
 u r l: url
 u u i d: uuid
+up sort: upsert
 used dash name: used-name
 v i s: vis
 v i t e: vite
+vera bored: veroboard
+vitamin k two: vitamin K2
 whats at: WhatsApp
 wool lara: Woollahra
 Woollahra
+work space: workspace
+wood l: would
+right w: write
 Zulaikha
 
