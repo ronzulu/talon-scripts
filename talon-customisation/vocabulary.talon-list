@@ -55,6 +55,8 @@ begin fragment: "<>"
 a b c six: ABC
 a b n dash: ABN-
 a b r six: ABR
+a c d ocean: ACDSee
+a e c six: AEC
 a j n dash: AJN-
 a j n six: AJN
 a p i six: "API"
@@ -87,18 +89,22 @@ a w s v p c : "AWS VPC"
 a w s wavelength: "AWS Wavelength"
 act on l: Actonel
 act on l e c: Actonel EC
+a genic: agentic
 air dot: a.
 and slash or: and/or
 API gateway: API Gateway
 add we now: Arduino
 add wino: Arduino
 a slash d: A/D
+and o r s: "& Ors"
 ass sure: "Azure"
 asset net: Assetnet
+auto regressive: autoregressive
 b l e six: BLE
 b m d six: BMD
 beetle one: Beetle
 block h: "Bloch"
+blue care: BlueCare
 boolean one: Boolean
 broad link: Broadlink
 bully in five: boolean
@@ -109,6 +115,8 @@ catch ba: Gahba
 hug Sameer: Chag sameach
 Chag sameach
 comma and: ", and"
+c d d six: CDD
+c s b six: "CSB"
 c s s: css
 havre haditha: Chevra Kadisha 
 here haditha: Chevra Kadisha 
@@ -124,6 +132,7 @@ c t scan: CT Scan
 cito scape: Cytoscape
 clothes five: close
 CHOLANGITIS
+ko reference: coreference
 d a c six: DAC
 d b cluster: DB cluster
 d b cluster three: DB Cluster
@@ -131,12 +140,16 @@ d c p dash: DCP-
 d o c: doc
 d o m: dom
 d slash a: D/A
+dash X X six: -XX
+d i n six: DIN
+doll dashi: DALL-E
 dialogue: dialog
 data point one: DataPoint
 data point seven: dataPoint
 datapoint one: DataPoint
 datapoint seven: dataPoint
 day j s: dayjs
+diff bot: Diffbot
 doc you saw us: Docusaurus
 dock i d three: DocId
 dock under i d six: DOC_ID
@@ -151,19 +164,28 @@ emanuel: Emanuel
 Immanuel: Emanuel
 entity one: Entity1
 entity two: Entity2
+e d u six: EDU
 e p o a: ePoA
+f c a six: FCA
 f c f c o a: FCFCOA
 f m c six: FMC
+f m c a six: FMCA
+f y i: FYI
+f y i six: FYI
 fix ologist: Fixologist
 form i k: Formik
+g o v t six: GOVT
 Gary Bortz
 gamma ba: Gahba
 gene one: Gen1
+gen sim: gensim
 Gentoo: Gen2
 jill Annie: Gilana
 goth ba: Gahba
+g n d six: GND
 g o v six: GOV
 graph q l : "GraphQL"
+h p six: HP
 had dash phone number: had-phone-number
 ho why: Gahba
 how why: Gahba
@@ -178,9 +200,19 @@ j c a six: JCA
 J P six: JP
 J P dash: JP-
 Jason dot stringy fy: "JSON.stringify("
+ja car: Jaycar
 jupiter lab: JupyterLab
 jupiter y: Jupyter
 jupiter notebook: Jupyter Notebook
+l e d five: "led"
+l e d six: "LED"
+l e das: "LEDs"
+l h s: LHS
+l h s six: LHS
+l l ems: LLMs
+l l m six: LLM
+i w i w d: iwiwd
+lang chain: LangChain
 linked in six: LINKEDIN
 low dash: lodash
 Macquarie park: Macquarie Park
@@ -193,10 +225,20 @@ Menorca monuments: Menucha Monuments
 Minorca monuments: Menucha Monuments
 minyan: minyan
 merit on: Meriton
+monte fury: Montefiore
 m u i: mui
 my s q l three: "MySql"
 my s q l six: "MYSQL"
 my s q l: "MySql"
+n d i s: NDIS
+n m v six: NMV
+n p m run: "npm run "
+n p m run build: "npm run build"
+n p m run dev: "npm run dev"
+n p m run serve: "npm run serve"
+name a not: Anat
+name Annie: Annie
+name Annie Goldberg: Annie Goldberg
 name ass sure: "Azure"
 name bigger or waters: Biggera Waters
 name bort: Bortz
@@ -206,6 +248,7 @@ name crema: Karima
 name das Arlo: Dezarnaulds
 name day anna: Dhyaana
 name dee anna: Dhyaana
+name Ezra: Ezra
 name fern: Fern
 name glenn: Glenn
 name near: Neer
@@ -214,6 +257,7 @@ name car in: Karin
 name Ferrer: Ferrer
 name jazz man: Jasmann
 name Jimenez: Jimenez
+name leon: Leon
 name ley or: Lior
 name lawn: Lorne
 name Leicester: Lester
@@ -222,6 +266,8 @@ name marina: Marina
 name miss Abraham: Ms Abraham
 name Meyer: Myer
 name Mayer Zulaikha: Myer Zulaikha
+name moche: Moshe
+name Natalya: Netanya
 name nicki c: Nicky
 name nicki k: Nikki
 name paul: Paul
@@ -230,62 +276,91 @@ Peisah isms: Peisah-isms
 name pinball: Pymble
 name pro lea: Prolia
 name Jackie q: Jacqui
+name Pauli: Pauli
 name rob: Rob
+name ron it: Ronit
 name roselle: Rozelle
 name save ta: Savta
+name shroud dinger: Schrödinger
 name ya hell: Yael
 name Yael Abraham: Yael Abraham
 name Yael Ferrer: Yael Ferrer
 name Yael Jimenez: Yael Jimenez
+name samel: Zamel
+name Zelden: Zelden
+name z liker: Zlekha
+name Zoltan: Zoltan
 navy bar one: NavBar
 navy one: Nav
 neo four j: "Neo4j"
 necks em: Nexium
+new k: knew
 new n: new
+nice cat: NCAT
 nice fy: niceify
 nice fide: niceified
 nine bot: Ninebot
 nine bot s two: Ninebot S2
-n d i s: NDIS
-n m v six: NMV
-n p m run: "npm run "
-n p m run build: "npm run build"
-n p m run dev: "npm run dev"
-n p m run serve: "npm run serve"
+no k: know
+no w: know
 a lanza pin: Olanzapine
 one drive: OneDrive
+onto text: Ontotext
 o p five: "op"
+o r m six: ORM
 Oh hell hayim: Ohel Chaim
+owl six: OWL
 p d f dot j s: PDF.js
 p d f one: Pdf
 p d f five: pdf
 p d f six: PDF
+perf board: perfboard
+permittivity
+permit dimity: permittivity
+per motility: permittivity
+permit vite: permittivity
 Phillips Hugh: Philips Hue
 pipe null: " | null"
 placed-ad-for: 
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
+p c b six: PCB
+p period: period
 p r o p s: props
 p r p six: PRP
 p w m six: PWM
+Piksters
 q under: "q_"
+r a d six: RAD
 react one: React
 red brace: }
 Ronny
 Ronny Zulaikha
 Brookwood: Rookwood
+r d f six: RDF
+r h s: RHS
+r h s six: RHS
+r n enz : "RNNs"
+r n n six: "RNN"
+r t v six: RTV
 rose: rows
 rose w: rows
 rye al tress: Ryaltris
+s c l six: SCL
+s d a six: SDA
 s m h: SMH
+s q l alchemy: SQLAlchemy
 s q l six: "SQL"
+s q light: "SQLite"
 s three: "S3"
 s three bucket one: "S3Bucket"
 saint vincents: "St Vincent's"
 saint george: "St George"
 Sat vincents: "St Vincent's"
+saturn six: SATURN
 sit vincents: "St Vincent's"
 save ta: Savta
+science click: ScienceClic
 se: see
 seg bot: Segbot
 segue: Segway
@@ -293,6 +368,8 @@ shoe e: shoe
 shoe spec: shoe spec
 sauce o: source
 sauce under six: SOURCE_
+shin greeks: Shingrix
+space time: spacetime
 sparkle q: SPARQL
 spec c: spec
 speck c: spec
@@ -301,22 +378,33 @@ Speccy: spec
 Stephen v: Steven
 s v g: svg
 s v g six: SVG
+s w r l six: SWRL
 System net: Systemnet
 t n dash: TN-
 talent: Talon
+talk q: torque
 u r l: url
+u s b six: "USB"
+u s b: "usb"
 u u i d: uuid
 up sort: upsert
 used dash name: used-name
 v i s: vis
 v i t e: vite
 vera bored: veroboard
+vera crypt: VeraCrypt
 vitamin k two: vitamin K2
+vodaphone: Vodafone
+weight g: weight
+weights g: weights
 whats at: WhatsApp
+will one: Will
 wool lara: Woollahra
 Woollahra
+word to vac: Word2Vec
 work space: workspace
 wood l: would
 right w: write
+Zola runic: zoledronic
 Zulaikha
 

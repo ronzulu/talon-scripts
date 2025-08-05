@@ -146,3 +146,4 @@ dot el: user.rz_insert_key_sequence(".{{Z1L}}")
 p hot mail: user.rz_insert_key_sequence("bellyB@44HM{{enter}}")
 r z five: "rz"
 
+show notifications: key(win-n)
