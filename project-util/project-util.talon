@@ -1,1 +1,2 @@
-obsidian project create: user.rz_update_talon_list()
+obsidian project create: user.obsidian_project_create()
+obsidian task create: user.obsidian_task_create()

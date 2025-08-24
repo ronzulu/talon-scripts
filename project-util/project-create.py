@@ -108,7 +108,7 @@ class ProjectCreator:
 
 @mod.action_class
 class user_actions:
-    def rz_update_talon_list():
+    def obsidian_project_create():
         """Trigger project creation from Talon voice command."""
         creator = ProjectCreator()
         creator.create_project()
