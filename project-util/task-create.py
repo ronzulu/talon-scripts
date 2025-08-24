@@ -67,14 +67,14 @@ class TaskCreator:
         front_matter["project-id"] = project_id
         front_matter["task-id"] = task_id
         front_matter["task-status"] = "Open"
-        front_matter["task-open-date"] = today
+        front_matter["task-open-date"] = f"'{today}'"
 
         updated_front_matter = yaml.dump(front_matter, sort_keys=False).strip()
         return f"---\n{updated_front_matter}\n---\n{body}"
 
     def create_task_file(self, project_folder, task_description, project_id, task_id):
         safe_filename = re.sub(r'[\\/*?:"<>|]', "_", task_description)
-        md_path = os.path.join(project_folder, f"{safe_filename}.md")
+        md_path = os.path.join(project_folder, "Tasks", f"{safe_filename}.md")
 
         template = self.load_template()
         populated = self.populate_template(template, project_id, task_id)
