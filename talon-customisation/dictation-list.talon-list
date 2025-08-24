@@ -1105,8 +1105,6 @@ c p decimal: "CpDecimal"
 c p defeat: "cpDfeit"
 c p exception: "CpException"
 c p f d r: "CpFdr"
-c p i : "CPI"
-c p i six: "CPI"
 c p info sec: "CP_INFOSEC"
 c p line segment: "CpLineSegment"
 c p line: "CpLine"
@@ -1628,7 +1626,8 @@ dash and dash: "-and-"
 dash bravo six: "-B"
 dash cap alpha: "-A"
 dash cap bravo: "-B"
-dash choose: "-Tue"
+dash choose day: "-Tue"
+dash Tuesday: "-Tue"
 dash claire to ronny: "- Claire to Ronny -"
 dash force: " -Force "
 dash fry: "-Fri"
@@ -1651,6 +1650,7 @@ dash ronny to yael: "- Ronny to Yael -"
 dash sat: "-Sat"
 dash space: "-{space}"
 dash sue: "-Thu"
+dash Thursday: "-Thu"
 dash sun: "-Sun"
 dash tab key: "-{tab}"
 dash to dash: "-to-"
@@ -2107,7 +2107,6 @@ ear buds: "earbuds"
 earth sized: "earth-sized"
 easy card: "EasyCard"
 echo colon back: "e:\\"
-echo space: "echo "
 edge cliff: "Edgecliff"
 elana zulaikha: "Elana Zulaikha"
 elastic cache: "Elasticache"
@@ -3028,6 +3027,7 @@ label seven: "label"
 lambda at edge: "Lambda@Edge"
 land tenure: "Land Tenure"
 land v i c : "LandVIC"
+lang extract: LangExtract
 laser six: "LASER"
 last write time: "LastWriteTime"
 lat long: "LatLong"
@@ -3686,6 +3686,7 @@ o h s: "ohs"
 o info: "> [!INFO]{enter}"
 o k five: "ok"
 o k six: "OK"
+o l lama: Ollama
 o l a p six: "OLAP"
 o l e d b : "OleDb"
 o l e: "ole"
@@ -4747,7 +4748,9 @@ see far six: "SEIFA"
 see far: "seifa"
 see ya six: "SEIYA"
 seg bot: "Segbot"
+seg e dash zero: "SEG-0"
 seggy dash zero: "SEG-0"
+sake dash zero: "SEG-0"
 segway chat: "SegwayChat"
 select star from: "SELECT * FROM "
 self dash: "self-"
@@ -5905,7 +5908,7 @@ talon h u d: Talon HUD
 pie pie: PyPi
 
 ##### GLOBAL_VOCAB_MARKER
-# This file explicitly does not have a `.talon-list` extension, because we don't want talon to read it.
+ This file explicitly does not have a `.talon-list` extension, because we don't want talon to read it.
 # Instead this is included into both and `dictation-list.tolan-list` and `vocabulary.talon-list`.
 # as talon doesn't have a "#include" mechanism, the contents of this file is
 # added into both of these files by custom code.
@@ -5914,10 +5917,16 @@ pie pie: PyPi
 # Otherwise, the content is appended to the existing content of the target files.
 # The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
 
+today y m d: 2025-08-24
+
+four g: 4G
+four g six: 4G
+five g: 5G
 a b c six: ABC
 a b n dash: ABN-
 a b r six: ABR
 a c d ocean: ACDSee
+a d c six: ADC
 a e c six: AEC
 a j n dash: AJN-
 a j n six: AJN
@@ -5951,6 +5960,7 @@ a w s v p c : "AWS VPC"
 a w s wavelength: "AWS Wavelength"
 act on l: Actonel
 act on l e c: Actonel EC
+admin dash zero: ADMIN-0
 a genic: agentic
 air dot: a.
 and slash or: and/or
@@ -5962,11 +5972,17 @@ and o r s: "& Ors"
 ass sure: "Azure"
 asset net: Assetnet
 auto regressive: autoregressive
+b five dash: B5-
+b eleven dash: B11-
+b eleven dash a: B11-A
+b eleven dash b: B11-B
 b l e six: BLE
 b m d six: BMD
+brat six: BRAT
 beetle one: Beetle
 block h: "Bloch"
 blue care: BlueCare
+
 boolean one: Boolean
 broad link: Broadlink
 bully in five: boolean
@@ -5979,6 +5995,8 @@ Chag sameach
 comma and: ", and"
 c d d six: CDD
 c s b six: "CSB"
+c s b c eight: "CSB C8"
+c s b c twelve: "CSB C12"
 c s s: css
 havre haditha: Chevra Kadisha 
 here haditha: Chevra Kadisha 
@@ -5988,12 +6006,16 @@ c d GitHub back: cd d:\GitHub\
 c i c d : "CI/CD"
 c l i: cli
 c o r s : "CORS"
+c p i : "CPI"
+c p i six: "CPI"
 c r u d: crud
 c s g six: CSG
 c t scan: CT Scan
+high flix: ChaiFlicks
 cito scape: Cytoscape
 clothes five: close
 CHOLANGITIS
+comp dash zero: COMP-0
 ko reference: coreference
 d a c six: DAC
 d b cluster: DB cluster
@@ -6001,7 +6023,9 @@ d b cluster three: DB Cluster
 d c p dash: DCP-
 d o c: doc
 d o m: dom
+d p h six: DPHI
 d slash a: D/A
+dad dash zero: DAD-0
 dash X X six: -XX
 d i n six: DIN
 doll dashi: DALL-E
@@ -6016,9 +6040,11 @@ doc you saw us: Docusaurus
 dock i d three: DocId
 dock under i d six: DOC_ID
 dock under six: DOC_
+dot a u: .au
 double question: " ?? "
 double question null: " ?? null"
 doctor high field: Dr Highfield
+dragon dictate: DragonDictate
 dynamo d b: "DynamoDB"
 e n dash: EN-
 e dash waste: e-waste
@@ -6028,15 +6054,21 @@ entity one: Entity1
 entity two: Entity2
 e d u six: EDU
 e p o a: ePoA
+e t f six: ETF
+e t efs: ETFs
 f c a six: FCA
 f c f c o a: FCFCOA
 f m c six: FMC
 f m c a six: FMCA
 f y i: FYI
 f y i six: FYI
+fair dash zero: FAIR-0
 fix ologist: Fixologist
 form i k: Formik
+finance dash zero: FIN-0
+fun dash zero: FUN-0
 g o v t six: GOVT
+catch ba dash zero: GAHBA-0
 Gary Bortz
 gamma ba: Gahba
 gene one: Gen1
@@ -6046,10 +6078,13 @@ jill Annie: Gilana
 goth ba: Gahba
 g n d six: GND
 g o v six: GOV
-graph q l : "GraphQL"
+graph q l: "GraphQL"
+graph d b: "GraphDB"
+graph fusion: Graphusion
 h p six: HP
 had dash phone number: had-phone-number
 ho why: Gahba
+home dash zero: HOME-0
 how why: Gahba
 i d: id
 i d one: Id
@@ -6066,6 +6101,7 @@ ja car: Jaycar
 jupiter lab: JupyterLab
 jupiter y: Jupyter
 jupiter notebook: Jupyter Notebook
+k g c six: KGC
 l e d five: "led"
 l e d six: "LED"
 l e das: "LEDs"
@@ -6082,22 +6118,26 @@ mac cream: Macrium
 Macrium reflect: Macrium Reflect
 mark c: Marc
 mars three six: MARS3
+mede bank: Medibank
 memo eyes: memoize
 Menorca monuments: Menucha Monuments
 Minorca monuments: Menucha Monuments
 minyan: minyan
 merit on: Meriton
 monte fury: Montefiore
+m six six: M6
 m u i: mui
 my s q l three: "MySql"
 my s q l six: "MYSQL"
 my s q l: "MySql"
 n d i s: NDIS
+n e l six: NEL
 n m v six: NMV
 n p m run: "npm run "
 n p m run build: "npm run build"
 n p m run dev: "npm run dev"
 n p m run serve: "npm run serve"
+n t u six: NTU
 name a not: Anat
 name Annie: Annie
 name Annie Goldberg: Annie Goldberg
@@ -6129,6 +6169,7 @@ name miss Abraham: Ms Abraham
 name Meyer: Myer
 name Mayer Zulaikha: Myer Zulaikha
 name moche: Moshe
+name more wire: Moriah
 name Natalya: Netanya
 name nicki c: Nicky
 name nicki k: Nikki
@@ -6165,6 +6206,7 @@ nine bot: Ninebot
 nine bot s two: Ninebot S2
 no k: know
 no w: know
+no votel: Novotel
 a lanza pin: Olanzapine
 one drive: OneDrive
 onto text: Ontotext
@@ -6177,6 +6219,7 @@ p d f one: Pdf
 p d f five: pdf
 p d f six: PDF
 perf board: perfboard
+period p: period
 permittivity
 permit dimity: permittivity
 per motility: permittivity
@@ -6188,6 +6231,7 @@ post gres: "Postgres"
 post gres s q l: "PostgresSQL"
 p c b six: PCB
 p period: period
+p r e d: pred
 p r o p s: props
 p r p six: PRP
 p w m six: PWM
@@ -6210,6 +6254,7 @@ rose w: rows
 rye al tress: Ryaltris
 s c l six: SCL
 s d a six: SDA
+s e m: sem
 s m h: SMH
 s q l alchemy: SQLAlchemy
 s q l six: "SQL"
@@ -6225,7 +6270,10 @@ save ta: Savta
 science click: ScienceClic
 se: see
 seg bot: Segbot
+Seg bot dash zero: SEGBOT-0
 segue: Segway
+Segway s three: Segway S3
+Segway s eight: Segway S8
 shoe e: shoe
 shoe spec: shoe spec
 sauce o: source
@@ -6245,12 +6293,17 @@ System net: Systemnet
 t n dash: TN-
 talent: Talon
 talk q: torque
+talon dash zero: TALON-0
+Tanya y: Tanya
+tech dash zero: TECH-0
+tell stra: Telstra
 u r l: url
 u s b six: "USB"
 u s b: "usb"
 u u i d: uuid
 up sort: upsert
 used dash name: used-name
+v b a six: VBA
 v i s: vis
 v i t e: vite
 vera bored: veroboard
@@ -6267,6 +6320,7 @@ word to vac: Word2Vec
 work space: workspace
 wood l: would
 right w: write
+yager six: YAGO
 Zola runic: zoledronic
 Zulaikha
-
+zi tell: Zyxel
