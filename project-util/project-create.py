@@ -1,5 +1,6 @@
 import os
 import re
+import yaml
 from datetime import datetime
 from talon import Module
 
@@ -60,13 +61,25 @@ class ProjectCreator:
         project_class = self.project_class_map.get(group_name, group_name)
         today = datetime.today().strftime("%Y-%m-%d")
 
-        # Replace front matter attributes
-        template = re.sub(r"(project-id:\s*).*", rf"\1{project_id}", template)
-        template = re.sub(r"(project-class:\s*).*", rf"\1{project_class}", template)
-        template = re.sub(r"(project-date-opened:\s*).*", rf"\1{today}", template)
-        template = re.sub(r"(project-status:\s*).*", r"\1Open", template)
+        # Extract front matter block
+        front_matter_match = re.match(r"(?s)^---\n(.*?)\n---\n(.*)", template)
+        if not front_matter_match:
+            raise ValueError("Template does not contain valid front matter.")
 
-        return template
+        front_matter_raw, body = front_matter_match.groups()
+        front_matter = yaml.safe_load(front_matter_raw) or {}
+
+        # Update specified attributes
+        front_matter["project-id"] = project_id
+        front_matter["project-class"] = project_class
+        front_matter["project-date-opened"] = today
+        front_matter["project-status"] = "Open"
+
+        # Reconstruct front matter block
+        updated_front_matter = yaml.dump(front_matter, sort_keys=False).strip()
+        updated_template = f"---\n{updated_front_matter}\n---\n{body}"
+
+        return updated_template
 
     def create_markdown_file(self, project_path, description, project_id, group_name):
         safe_filename = re.sub(r'[\\/*?:"<>|]', "_", description)
