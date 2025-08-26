@@ -73,8 +73,11 @@ class TaskCreator:
         return f"---\n{updated_front_matter}\n---\n{body}"
 
     def create_task_file(self, project_folder, task_description, project_id, task_id):
+        task_folder = os.path.join(project_folder, "Tasks")
+        os.makedirs(task_folder, exist_ok=True)
+
         safe_filename = re.sub(r'[\\/*?:"<>|]', "_", task_description)
-        md_path = os.path.join(project_folder, "Tasks", f"{safe_filename}.md")
+        md_path = os.path.join(task_folder, f"{safe_filename}.md")
 
         template = self.load_template()
         populated = self.populate_template(template, project_id, task_id)

@@ -52,7 +52,7 @@ begin fragment: "<>"
 # Otherwise, the content is appended to the existing content of the target files.
 # The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
 
-today y m d: 2025-08-24
+today y m d: 2025-08-26
 
 four g: 4G
 four g six: 4G
@@ -89,6 +89,7 @@ a w s lambda: "AWS Lambda"
 a w s local zones: "AWS Local Zones"
 a w s macie: "AWS Macie"
 a w s outposts: "AWS Outposts"
+a w s power shell: AWSPowerShell
 a w s s three: "AWS S3"
 a w s shield: "AWS Shield"
 a w s v p c : "AWS VPC"
@@ -176,6 +177,7 @@ dock i d three: DocId
 dock under i d six: DOC_ID
 dock under six: DOC_
 dot a u: .au
+dot net Core: .NetCore
 double question: " ?? "
 double question null: " ?? null"
 doctor high field: Dr Highfield
