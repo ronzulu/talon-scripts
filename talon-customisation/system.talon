@@ -147,3 +147,7 @@ p hot mail: user.rz_insert_key_sequence("bellyB@44HM{{enter}}")
 r z five: "rz"
 
 show notifications: key(win-n)
+
+today y m d:
+    result = user.my_custom_date_function()
+    insert(result)

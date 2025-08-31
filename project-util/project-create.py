@@ -12,7 +12,9 @@ class ProjectCreator:
         self.base_folder = r"C:\Obsidian\Obsidian\Projects"
         self.template_path = r"C:\Obsidian\Obsidian\My Stuff\Obsidian\Templates\Project.md"
         self.project_class_map = {
-            "TECH": "technical"
+            "TECH": "Technical",
+            "FIN": "Finance",
+            "ENV": "Environment"
         }
 
     def extract_project_info(self):
@@ -51,6 +53,9 @@ class ProjectCreator:
         folder_name = f"{project_id} {description}"
         project_path = os.path.join(group_folder_path, folder_name)
         os.makedirs(project_path, exist_ok=True)
+        files_path = os.path.join(project_path, "files")
+        os.makedirs(files_path, exist_ok=True)
+
         return project_path
 
     def load_template(self):
@@ -78,6 +83,8 @@ class ProjectCreator:
         # Reconstruct front matter block
         updated_front_matter = yaml.dump(front_matter, sort_keys=False).strip()
         updated_template = f"---\n{updated_front_matter}\n---\n{body}"
+        
+        updated_template = updated_template.replace("PROJECT_MARKER", project_id)
 
         return updated_template
 

@@ -7,8 +7,6 @@
 # Otherwise, the content is appended to the existing content of the target files.
 # The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
 
-today y m d: 2025-08-26
-
 four g: 4G
 four g six: 4G
 five g: 5G
@@ -58,6 +56,7 @@ and slash or: and/or
 API gateway: API Gateway
 add we now: Arduino
 add wino: Arduino
+admin six: ADMIN
 a slash d: A/D
 and o r s: "& Ors"
 ass sure: "Azure"
@@ -96,6 +95,7 @@ hero haditha: Chevra Kadisha
 c d GitHub back: cd d:\GitHub\
 c i c d : "CI/CD"
 c l i: cli
+c o l six: COL
 c o r s : "CORS"
 c p i : "CPI"
 c p i six: "CPI"
@@ -106,6 +106,8 @@ high flix: ChaiFlicks
 cito scape: Cytoscape
 clothes five: close
 CHOLANGITIS
+calls e: Coles
+comma and: ", and"
 comp dash zero: COMP-0
 ko reference: coreference
 d a c six: DAC
@@ -139,6 +141,8 @@ doctor high field: Dr Highfield
 dragon dictate: DragonDictate
 dynamo d b: "DynamoDB"
 e n dash: EN-
+e n v six: ENV
+e n v dash zero: ENV-0
 e dash waste: e-waste
 emanuel: Emanuel
 Immanuel: Emanuel
@@ -150,17 +154,23 @@ e t f six: ETF
 e t efs: ETFs
 f c a six: FCA
 f c f c o a: FCFCOA
+fin six: FIN
 f m c six: FMC
 f m c a six: FMCA
 f y i: FYI
 f y i six: FYI
+family dash zero: FAMILY-0
+family six: FAMILY
 fair dash zero: FAIR-0
 fix ologist: Fixologist
 form i k: Formik
 finance dash zero: FIN-0
 fun dash zero: FUN-0
 g o v t six: GOVT
+gab web dash zero: GABWEB-0
+gab web six: GABWEB
 catch ba dash zero: GAHBA-0
+catch ba six: GAHBA
 Gary Bortz
 gamma ba: Gahba
 gene one: Gen1
@@ -183,6 +193,8 @@ i d one: Id
 i d e: IDE
 i d e six: IDE
 i t six: "IT"
+I star twenty nine fifty five: "I*2955"
+I star twenty nine eighty: "I*2980"
 i two c: I2C
 j ode ya: Joadja
 j c a six: JCA
@@ -193,6 +205,7 @@ ja car: Jaycar
 jupiter lab: JupyterLab
 jupiter y: Jupyter
 jupiter notebook: Jupyter Notebook
+key pass: Keepass
 k g c six: KGC
 l e d five: "led"
 l e d six: "LED"
@@ -218,10 +231,13 @@ minyan: minyan
 merit on: Meriton
 monte fury: Montefiore
 m six six: M6
+m u f g: MUFG
+m u f g six: MUFG
 m u i: mui
 my s q l three: "MySql"
 my s q l six: "MYSQL"
 my s q l: "MySql"
+n c c six: NCC
 n d i s: NDIS
 n e l six: NEL
 n m v six: NMV
@@ -338,6 +354,9 @@ Brookwood: Rookwood
 r d f six: RDF
 r h s: RHS
 r h s six: RHS
+r g n six: RGN
+agin six: RGN
+asian six: RGN
 r n enz : "RNNs"
 r n n six: "RNN"
 r t v six: RTV
@@ -382,6 +401,7 @@ s v g: svg
 s v g six: SVG
 s w r l six: SWRL
 System net: Systemnet
+t e c h six: TECH
 t n dash: TN-
 talent: Talon
 talk q: torque
@@ -390,6 +410,8 @@ Tanya y: Tanya
 tech dash zero: TECH-0
 tell stra: Telstra
 u r l: url
+u r l six: URL
+u r else: URLs
 u s b six: "USB"
 u s b: "usb"
 u u i d: uuid
@@ -402,6 +424,7 @@ vera bored: veroboard
 vera crypt: VeraCrypt
 vitamin k two: vitamin K2
 vodaphone: Vodafone
+w b c six: WBC
 weight g: weight
 weights g: weights
 whats at: WhatsApp
@@ -412,6 +435,7 @@ word to vac: Word2Vec
 work space: workspace
 wood l: would
 right w: write
+x star eighty three forty: "X*8340"
 yager six: YAGO
 Zola runic: zoledronic
 Zulaikha

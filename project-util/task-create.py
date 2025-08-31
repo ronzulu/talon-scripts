@@ -67,7 +67,7 @@ class TaskCreator:
         front_matter["project-id"] = project_id
         front_matter["task-id"] = task_id
         front_matter["task-status"] = "Open"
-        front_matter["task-open-date"] = f"'{today}'"
+        front_matter["task-open-date"] = today
 
         updated_front_matter = yaml.dump(front_matter, sort_keys=False).strip()
         return f"---\n{updated_front_matter}\n---\n{body}"
