@@ -14,7 +14,8 @@ class ProjectCreator:
         self.project_class_map = {
             "TECH": "Technical",
             "FIN": "Finance",
-            "ENV": "Environment"
+            "ENV": "Environment",
+            "SEGGY": "Segway"
         }
 
     def extract_project_info(self):

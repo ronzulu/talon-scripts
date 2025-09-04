@@ -164,6 +164,7 @@ family six: FAMILY
 fair dash zero: FAIR-0
 fix ologist: Fixologist
 form i k: Formik
+fin dash zero: FIN-0
 finance dash zero: FIN-0
 fun dash zero: FUN-0
 g o v t six: GOVT
@@ -228,12 +229,15 @@ memo eyes: memoize
 Menorca monuments: Menucha Monuments
 Minorca monuments: Menucha Monuments
 minyan: minyan
+Mitre ten: Mitre 10
 merit on: Meriton
 monte fury: Montefiore
 m six six: M6
 m u f g: MUFG
 m u f g six: MUFG
 m u i: mui
+my gov: "myGov"
+my id: "myID"
 my s q l three: "MySql"
 my s q l six: "MYSQL"
 my s q l: "MySql"
@@ -316,6 +320,7 @@ no k: know
 no w: know
 no votel: Novotel
 a lanza pin: Olanzapine
+office works: Officeworks
 one drive: OneDrive
 onto text: Ontotext
 o p five: "op"
@@ -326,6 +331,8 @@ p d f dot j s: PDF.js
 p d f one: Pdf
 p d f five: pdf
 p d f six: PDF
+pass key: passkey
+pass keys: passkeys
 perf board: perfboard
 period p: period
 permittivity
@@ -365,6 +372,8 @@ rose w: rows
 rye al tress: Ryaltris
 s c l six: SCL
 s d a six: SDA
+s e g six: SEG
+s e g dash zero: SEG-0
 s e m: sem
 s m h: SMH
 s q l alchemy: SQLAlchemy
@@ -382,6 +391,10 @@ science click: ScienceClic
 se: see
 seg bot: Segbot
 Seg bot dash zero: SEGBOT-0
+seg e dash zero: "SEGGY-0"
+seggy dash zero: "SEGGY-0"
+sake dash zero: "SEG-0"
+seggy six: SEGGY
 segue: Segway
 Segway s three: Segway S3
 Segway s eight: Segway S8
@@ -437,6 +450,7 @@ wood l: would
 right w: write
 x star eighty three forty: "X*8340"
 yager six: YAGO
+yon cupar: Yom Kippur
 Zola runic: zoledronic
 Zulaikha
 zi tell: Zyxel
