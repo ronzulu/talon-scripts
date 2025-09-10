@@ -11,6 +11,7 @@ class ProjectCore:
         self.obsidian_folder = r"C:\Obsidian\Obsidian"
         self.base_folder = os.path.join(self.obsidian_folder, "Projects")
         self.template_folder = os.path.join(self.obsidian_folder, "My Stuff\Obsidian\Templates")
+        self.obsidian_temp_folder = r"C:\temp\Obsidian"
         self.project_class_map = {
             "TECH": "Technical",
             "FIN": "Finance",

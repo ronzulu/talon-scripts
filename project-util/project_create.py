@@ -10,7 +10,7 @@ mod = Module()
 class ProjectCreator:
     def __init__(self):
         self.core = ProjectCore()
-        self.filename = r"C:\temp\obsidian project create.txt"
+        self.filename = os.path.join(self.core.obsidian_temp_folder, "obsidian project create.txt")
         self.template_path = os.path.join(self.core.template_folder, "Project.md")
 
     def extract_project_info(self):

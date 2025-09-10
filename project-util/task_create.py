@@ -10,7 +10,7 @@ mod = Module()
 class TaskCreator:
     def __init__(self):
         self.core = ProjectCore()
-        self.filename = r"C:\temp\obsidian task create.txt"
+        self.filename = os.path.join(self.core.obsidian_temp_folder, "obsidian task create.txt")
         self.template_path = os.path.join(self.core.template_folder, "Task.md")
 
     def extract_task_info(self):

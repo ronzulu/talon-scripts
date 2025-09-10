@@ -2,17 +2,18 @@ import os
 import shutil
 import yaml
 from datetime import datetime
-from project_scanner import ProjectScanner
+from .project_scanner import ProjectScanner
+from .project_core import ProjectCore
 
 class ProjectArchiver:
     def __init__(self):
-        self.base_folder = r"C:\Obsidian\Obsidian\Projects"
+        self.core = ProjectCore()
         self.archive_folder = r"C:\Obsidian\Obsidian\Projects\_Archive"
-        self.log_path = r"C:\temp\obsidian_archive_log.txt"
+        self.log_path = os.path.join(self.core.obsidian_temp_folder, "obsidian_archive_log.txt")
 
     def archive_project(self, group_name, project_id):
         # Locate project folder
-        group_path = os.path.join(self.base_folder, group_name)
+        group_path = os.path.join(self.core.base_folder, group_name)
         if not os.path.isdir(group_path):
             raise FileNotFoundError(f"Group folder '{group_name}' not found.")
 
