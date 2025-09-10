@@ -45,7 +45,6 @@ class ProjectArchiver:
 
         front_matter_raw, body = match
         front_matter = yaml.safe_load(front_matter_raw) or {}
-        front_matter["project-status"] = "Archived"
         front_matter["project-date-archived"] = datetime.today().strftime("%Y-%m-%d")
 
         updated_front_matter = yaml.dump(front_matter, sort_keys=False).strip()
