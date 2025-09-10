@@ -2,14 +2,12 @@ import os
 import re
 import yaml
 from datetime import datetime
-from talon import Module
-
-mod = Module()
 
 class ProjectCore:
     def __init__(self):
         self.obsidian_folder = r"C:\Obsidian\Obsidian"
         self.base_folder = os.path.join(self.obsidian_folder, "Projects")
+        self.project_completed_folder = os.path.join(self.base_folder, "{Complete}")
         self.template_folder = os.path.join(self.obsidian_folder, "My Stuff\Obsidian\Templates")
         self.obsidian_temp_folder = r"C:\temp\Obsidian"
         self.project_class_map = {
@@ -30,6 +28,36 @@ class ProjectCore:
                 return os.path.join(group_folder_path, folder)
 
         raise FileNotFoundError(f"No folder found starting with '{project_id}' in '{group_folder_path}'.")
+
+    def find_group_project_folder(self, group_name, project_id):
+        # Locate project folder
+        group_path = os.path.join(self.base_folder, group_name)
+        if not os.path.isdir(group_path):
+            raise FileNotFoundError(f"Group folder '{group_name}' not found.")
+
+        project_folder = None
+        for folder in os.listdir(group_path):
+            if folder.startswith(project_id):
+                project_folder = os.path.join(group_path, folder)
+                break
+
+        if not project_folder or not os.path.isdir(project_folder):
+            raise FileNotFoundError(f"Project folder for ID '{project_id}' not found.")
+
+        return project_folder
+
+    def find_markdown_file(self, project_folder):
+        # Locate markdown file
+        md_file = None
+        for file in os.listdir(project_folder):
+            if file.endswith(".md"):
+                md_file = os.path.join(project_folder, file)
+                break
+
+        if not md_file:
+            raise FileNotFoundError("Markdown file not found in project folder.")
+
+        return md_file
 
     def find_existing_project_ids(self, group_name):
         pattern = re.compile(rf"^{re.escape(group_name)}-(\d+)")

@@ -4,39 +4,38 @@ import yaml
 from datetime import datetime
 from .project_scanner import ProjectScanner
 from .project_core import ProjectCore
+from talon import Module
+
+mod = Module()
 
 class ProjectArchiver:
     def __init__(self):
         self.core = ProjectCore()
-        self.archive_folder = r"C:\Obsidian\Obsidian\Projects\_Archive"
         self.log_path = os.path.join(self.core.obsidian_temp_folder, "obsidian_archive_log.txt")
 
     def archive_project(self, group_name, project_id):
         # Locate project folder
-        group_path = os.path.join(self.core.base_folder, group_name)
-        if not os.path.isdir(group_path):
-            raise FileNotFoundError(f"Group folder '{group_name}' not found.")
-
-        project_folder = None
-        for folder in os.listdir(group_path):
-            if folder.startswith(project_id):
-                project_folder = os.path.join(group_path, folder)
-                break
-
-        if not project_folder or not os.path.isdir(project_folder):
-            raise FileNotFoundError(f"Project folder for ID '{project_id}' not found.")
+        project_folder = self.core.find_group_project_folder(group_name, project_id)
 
         # Locate markdown file
-        md_file = None
-        for file in os.listdir(project_folder):
-            if file.endswith(".md"):
-                md_file = os.path.join(project_folder, file)
-                break
-
-        if not md_file:
-            raise FileNotFoundError("Markdown file not found in project folder.")
+        md_file = self.core.find_markdown_file(project_folder)
 
         # Update front matter
+        self.update_front_matter(md_file)
+
+        # Move folder to archive
+        group_folder = os.path.join(self.core.project_completed_folder, group_name)
+        os.makedirs(group_folder, exist_ok=True)
+        archived_path = os.path.join(group_folder, os.path.basename(project_folder))
+        shutil.move(project_folder, archived_path)
+
+        # Log action
+        with open(self.log_path, "a", encoding="utf-8") as log:
+            log.write(f"[{datetime.now()}] Archived {project_id} → {archived_path}\n")
+
+        print(f"📦 Archived: {project_id}")
+
+    def update_front_matter(self, md_file):
         with open(md_file, "r", encoding="utf-8") as f:
             content = f.read()
 
@@ -55,29 +54,29 @@ class ProjectArchiver:
         with open(md_file, "w", encoding="utf-8") as f:
             f.write(updated_md)
 
-        # Move folder to archive
-        os.makedirs(self.archive_folder, exist_ok=True)
-        archived_path = os.path.join(self.archive_folder, os.path.basename(project_folder))
-        shutil.move(project_folder, archived_path)
-
-        # Log action
-        with open(self.log_path, "a", encoding="utf-8") as log:
-            log.write(f"[{datetime.now()}] Archived {project_id} → {archived_path}\n")
-
-        print(f"📦 Archived: {project_id}")
-        print(f"📝 Updated Markdown: {md_file}")
-        print(f"📁 Moved to: {archived_path}")
-
 def yaml_front_matter(content):
     import re
     match = re.match(r"(?s)^---\n(.*?)\n---\n(.*)", content)
     return match.groups() if match else None
 
 
-# Example usage
+""" # Example usage
 scanner = ProjectScanner()
 closed = scanner.scan_closed_projects()
+archiver = ProjectArchiver()
 
 print("📋 Closed Projects:")
-for group, pid in closed:
-    print(f"🔹 {group} → {pid}")    
+for group, project_id in closed:
+    print(f"🔹 {group} → {project_id}")
+    archiver.archive_project(group, project_id) """
+
+
+@mod.action_class
+class user_actions:
+    def obsidian_archive_closed_projects():
+        """Trigger project creation from Talon voice command."""
+        scanner = ProjectScanner()
+        closed = scanner.scan_closed_projects()
+        archiver = ProjectArchiver()
+        for group, project_id in closed:
+            archiver.archive_project(group, project_id)
