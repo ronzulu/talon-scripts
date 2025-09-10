@@ -2,6 +2,7 @@ import os
 import shutil
 import yaml
 from datetime import datetime
+from project_scanner import ProjectScanner
 
 class ProjectArchiver:
     def __init__(self):
@@ -70,3 +71,12 @@ def yaml_front_matter(content):
     import re
     match = re.match(r"(?s)^---\n(.*?)\n---\n(.*)", content)
     return match.groups() if match else None
+
+
+# Example usage
+scanner = ProjectScanner()
+closed = scanner.scan_closed_projects()
+
+print("📋 Closed Projects:")
+for group, pid in closed:
+    print(f"🔹 {group} → {pid}")    

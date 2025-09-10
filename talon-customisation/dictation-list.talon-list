@@ -398,8 +398,6 @@ a t l five: "atl"
 a t l: "ATL"
 a t mega: "atmega"
 a t n: "atn"
-a t o five: "ato"
-a t o six: "ATO"
 a t r six: "ATR"
 a t r: "atr"
 a t s i c six: "ATSIC"
@@ -5928,6 +5926,9 @@ a j n six: AJN
 a p i six: "API"
 a p i gateway: "API Gateway"
 a p i: "api"
+a s i c s: Asics
+a t o five: "ato"
+a t o six: "ATO"
 a w s six: "AWS"
 a w s five: "aws"
 a w s amplify: "AWS Amplify"
@@ -5957,6 +5958,7 @@ a w s wavelength: "AWS Wavelength"
 act on l: Actonel
 act on l e c: Actonel EC
 admin dash zero: ADMIN-0
+affair dash zero: AFFAIR-0
 a genic: agentic
 air dot: a.
 and slash or: and/or
@@ -6045,6 +6047,7 @@ dot net Core: .NetCore
 double question: " ?? "
 double question null: " ?? null"
 doctor high field: Dr Highfield
+doctor DeLuca: Dr De Luca
 dragon dictate: DragonDictate
 dynamo d b: "DynamoDB"
 e n dash: EN-
@@ -6068,7 +6071,6 @@ f y i: FYI
 f y i six: FYI
 family dash zero: FAMILY-0
 family six: FAMILY
-fair dash zero: FAIR-0
 fix ologist: Fixologist
 form i k: Formik
 fin dash zero: FIN-0
@@ -6161,6 +6163,7 @@ name a not: Anat
 name Annie: Annie
 name Annie Goldberg: Annie Goldberg
 name ass sure: "Azure"
+name and Tunis: Antunes
 name bigger or waters: Biggera Waters
 name bort: Bortz
 name Bowral: Bowral
@@ -6221,6 +6224,7 @@ new n: new
 nice cat: NCAT
 nice fy: niceify
 nice fide: niceified
+night k: knight
 nine bot: Ninebot
 nine bot s two: Ninebot S2
 no k: know
@@ -6249,6 +6253,7 @@ permit vite: permittivity
 Phillips Hugh: Philips Hue
 pipe null: " | null"
 placed-ad-for: 
+point p: point
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
 p c b six: PCB
@@ -6290,6 +6295,7 @@ s three: "S3"
 s three bucket one: "S3Bucket"
 saint vincents: "St Vincent's"
 saint george: "St George"
+salmon o: Salomon
 Sat vincents: "St Vincent's"
 saturn six: SATURN
 sit vincents: "St Vincent's"
@@ -6327,6 +6333,8 @@ talent: Talon
 talk q: torque
 talon dash zero: TALON-0
 Tanya y: Tanya
+tax table: tax table
+tax tables: tax tables
 tech dash zero: TECH-0
 tell stra: Telstra
 u r l: url
