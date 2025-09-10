@@ -3,14 +3,15 @@ import re
 import yaml
 from datetime import datetime
 from talon import Module
+from .project_core import ProjectCore
 
 mod = Module()
 
 class TaskCreator:
     def __init__(self):
+        self.core = ProjectCore()
         self.filename = r"C:\temp\obsidian task create.txt"
-        self.base_folder = r"C:\Obsidian\Obsidian\Projects"
-        self.template_path = r"C:\Obsidian\Obsidian\My Stuff\Obsidian\Templates\Task.md"
+        self.template_path = os.path.join(self.core.template_folder, "Task.md")
 
     def extract_task_info(self):
         with open(self.filename, "r", encoding="utf-8") as f:
@@ -19,18 +20,6 @@ class TaskCreator:
                 raise ValueError("Input line must contain a tab separator.")
             project_id, task_description = line.split("\t", 1)
             return project_id.strip(), task_description.strip()
-
-    def find_project_folder(self, project_id):
-        group_name = project_id.split("-")[0]
-        group_folder_path = os.path.join(self.base_folder, group_name)
-        if not os.path.isdir(group_folder_path):
-            raise FileNotFoundError(f"Group folder '{group_name}' not found.")
-
-        for folder in os.listdir(group_folder_path):
-            if folder.startswith(project_id):
-                return os.path.join(group_folder_path, folder)
-
-        raise FileNotFoundError(f"No folder found starting with '{project_id}' in '{group_folder_path}'.")
 
     def find_existing_task_ids(self, project_folder):
         task_ids = []
@@ -89,7 +78,7 @@ class TaskCreator:
 
     def create_task(self):
         project_id, task_description = self.extract_task_info()
-        project_folder = self.find_project_folder(project_id)
+        project_folder = self.core.find_project_folder(project_id)
         existing_ids = self.find_existing_task_ids(project_folder)
         next_task_id = max(existing_ids, default=0) + 1
         md_file_path = self.create_task_file(project_folder, task_description, project_id, next_task_id)
