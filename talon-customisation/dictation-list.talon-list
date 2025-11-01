@@ -718,22 +718,30 @@ back approximate: "\\approx"
 back back v m ware host: "\\\\vmware-host"
 back c dot: "\\cdot"
 back comma: "\\,"
+back d e l: "\\del "
 back delta three: "\\Delta"
 back epsilon: "\\epsilon"
+back epsilon nought: "\\epsilon_0"
 back f r a c: "\\frac"
 back gamma: "\\gamma"
+back hat: "\\hat "
 back huge: "\\huge"
 back l t: "\\lt"
 back lambda: "\\lambda"
 back large: "\\large"
+back left: "\\left"
 back link: "backlink"
 back links: "backlinks"
+back m u: "\\mu"
+back m u nought: "\\mu_0"
+back nabla: "\\nabla"
 back not equals: "\\neq"
 back november: "\\\\n"
 back o s r enter: "\\osr{enter}{enter}"
 back o s r: "\\osr"
 back omega: "\\omega"
 back p h i: "\\phi"
+back partial: "\\partial "
 back pi: "\\pi"
 back prop to: "\\propto"
 back propagation: "backpropagation"
@@ -746,6 +754,7 @@ back r h o: "\\rho"
 back romeo november two: "\\r\\n\\r\\n"
 back romeo november: "\\r\\n"
 back romeo: "\\r"
+back right: "\\right"
 back s u m: "\\sum"
 back shared folders: "\\Shared Folders"
 back t a u: "\\tau"
@@ -1338,7 +1347,7 @@ charlie colon back: "c:\\"
 chat g p t : "ChatGPT"
 check box one: "CheckBox"
 check box seven: "checkBox"
-cheers ronny: "Cheers"
+cheers ronny: "Cheers{enter}Ronny"
 cheese els: "Cheezels"
 cheque q: "cheque"
 child item : "ChildItem "
@@ -1785,6 +1794,9 @@ dollar i d x: "$idx"
 dollar l alpha: "$a"
 dollar l file one: "$file1"
 dollar l: "${Z1L}"
+dollar large vector air: "$\\large\\vec {l-brace}a{r-brace}$"
+dollar large vector bat: "$\\large\\vec {l-brace}b{r-brace}$"
+dollar large vector cute: "$\\large\\vec {l-brace}c{r-brace}$"
 dollar latest six: "$LATEST"
 dollar left brace: "${l-brace}"
 dollar left brace l: "${l-brace}"
@@ -2857,6 +2869,7 @@ include back: "include\\"
 info sec: "InfoSec"
 initialize dash: "Initialize-"
 ink scape: "Inkscape"
+inscape: "Inkscape"
 input under five: "input_"
 insta gram: "Instagram"
 install dash: "Install-"
@@ -3691,9 +3704,14 @@ o m e o: "Omeo"
 o m g six: "OMG"
 o media: "oOhmedia"
 o n c: "onc"
+o copilot: "> [!copilot]{space}"
 o note enter: "> [!NOTE]{enter}"
 o note r z: "> [!NOTE] RZ:{space}"
 o note: "> [!NOTE]{space}"
+o question: "> [!QUESTION]{space}"
+o success: "> [!SUCCESS]{space}"
+o tip: "> [!TIP]{space}"
+o todo: "> [!TODO]{space}"
 o o i: "Ooi"
 o o m six: "OOM"
 o p g six: "OPG"
@@ -3755,7 +3773,6 @@ on net: "On-Net"
 once off: "once-off"
 one dash hot: "one-hot"
 one drive: "OneDrive"
-one note: "OneNote"
 one time: "OneTime"
 op ex: "OpEx"
 open a i : "OpenAI"
@@ -3835,7 +3852,6 @@ p f l six: "PFL"
 p f l: "pfl"
 p f olsen: "PF Olsen"
 p f x six: "PFX"
-p fishing: "phishing"
 p g c six: "PGC"
 p g p six: "PGP"
 p h e t: "phet"
@@ -3845,7 +3861,6 @@ p i d s: "PIDs"
 p i d: "pid"
 p i i six: "PII"
 p i m six: "PIM"
-p i n six: "PIN"
 p i n v: "pinv"
 p i n: "pin"
 p i p u six: "PIPU"
@@ -5006,6 +5021,7 @@ string ampersand: "string&"
 string builder: "StringBuilder"
 string s t r: "string str"
 strings dot: "strings."
+stuff dash zero: STUFF-0
 sub address: "subaddress"
 sub addresses: "subaddresses"
 sub deck: "subdeck"
@@ -5065,7 +5081,6 @@ sys dash: "SYS-"
 system dot: "System."
 system net: "Systemnet"
 t  zero: "T0"
-t twenty four: "T24"
 t three equals: "{space}==={space}"
 t a b: "tab"
 t a n a: "Tana"
@@ -5622,6 +5637,7 @@ victor four: "v4"
 victor five: "v5"
 victor six: "v6"
 victor seventeen: "v17"
+video dash zero: "VIDEO-0"
 virtual box: "VirtualBox"
 visual s v n : "VisualSVN"
 visual studio: "Visual Studio"
@@ -5734,6 +5750,7 @@ windows x p: "Windows XP"
 winter ton: "Winterton"
 wise ems dees: "yyyyMMdd"
 word shoresh grammar: "WordShoreshGrammar"
+word naught: naught
 work book: "workbook"
 work spaces web: "WorkSpaces Web"
 work spaces: "WorkSpaces"
@@ -5908,10 +5925,13 @@ pie pie: PyPi
 # as talon doesn't have a "#include" mechanism, the contents of this file is
 # added into both of these files by custom code.
 #
+# The custom code is triggered by the phrase "update talon list"
+#
 # The content here replaces the "global vocabulary section" in the target files if already present.
 # Otherwise, the content is appended to the existing content of the target files.
 # The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
 
+three b one b: 3B1B
 four g: 4G
 four g six: 4G
 five g: 5G
@@ -5929,6 +5949,10 @@ a p i: "api"
 a s i c s: Asics
 a t o five: "ato"
 a t o six: "ATO"
+a toe six: "ATO"
+a two six: "ATO"
+at toe six: "ATO"
+ozzie toe six: "ATO"
 a w s six: "AWS"
 a w s five: "aws"
 a w s amplify: "AWS Amplify"
@@ -5957,10 +5981,13 @@ a w s v p c : "AWS VPC"
 a w s wavelength: "AWS Wavelength"
 act on l: Actonel
 act on l e c: Actonel EC
+a double d y: Addy
 admin dash zero: ADMIN-0
 affair dash zero: AFFAIR-0
 a genic: agentic
+a men: amen
 air dot: a.
+alan key: Allen key
 and slash or: and/or
 API gateway: API Gateway
 add we now: Arduino
@@ -5968,6 +5995,7 @@ add wino: Arduino
 admin six: ADMIN
 a slash d: A/D
 and o r s: "& Ors"
+Arvin Ash
 ass sure: "Azure"
 asset net: Assetnet
 auto regressive: autoregressive
@@ -5975,23 +6003,25 @@ b five dash: B5-
 b eleven dash: B11-
 b eleven dash a: B11-A
 b eleven dash b: B11-B
+b i o s: BIOS
 b l e six: BLE
 b m d six: BMD
 brat six: BRAT
 beetle one: Beetle
 block h: "Bloch"
 blue care: BlueCare
-
 boolean one: Boolean
 broad link: Broadlink
 bully in five: boolean
 Brian
 brief dictionary: dict
 cap bat: B
+cast brothers: Cass Brothers
 catch ba: Gahba
 hug Sameer: Chag sameach
 Chag sameach
 comma and: ", and"
+comma andy: ", and"
 c d d six: CDD
 c s b six: "CSB"
 c s b c eight: "CSB C8"
@@ -6012,8 +6042,12 @@ c r u d: crud
 c s g six: CSG
 c t scan: CT Scan
 high flix: ChaiFlicks
+Chevron
 cito scape: Cytoscape
 clothes five: close
+Coulomb
+shale zion: chalazion
+cale zion: chalazion
 CHOLANGITIS
 calls e: Coles
 comma and: ", and"
@@ -6026,6 +6060,7 @@ d c p dash: DCP-
 d o c: doc
 d o m: dom
 d p h six: DPHI
+d p i six: DPI
 d slash a: D/A
 dad dash zero: DAD-0
 dash X X six: -XX
@@ -6042,13 +6077,16 @@ doc you saw us: Docusaurus
 dock i d three: DocId
 dock under i d six: DOC_ID
 dock under six: DOC_
+doctor tractor: Dr Tracton
 dot a u: .au
 dot net Core: .NetCore
 double question: " ?? "
 double question null: " ?? null"
 doctor high field: Dr Highfield
 doctor DeLuca: Dr De Luca
+doctor Yim: Dr Yim
 dragon dictate: DragonDictate
+duo denim: duodenum
 dynamo d b: "DynamoDB"
 e n dash: EN-
 e n v six: ENV
@@ -6056,29 +6094,46 @@ e n v dash zero: ENV-0
 e dash waste: e-waste
 emanuel: Emanuel
 Immanuel: Emanuel
+endeavor: endeavour
 entity one: Entity1
 entity two: Entity2
+ever ready: Eveready
+every circuit one: EveryCircuit
 e d u six: EDU
 e p o a: ePoA
 e t f six: ETF
 e t efs: ETFs
+e t s y: Etsy
 f c a six: FCA
 f c f c o a: FCFCOA
 fin six: FIN
 f m c six: FMC
 f m c a six: FMCA
+f y eighteen: "FY18"
+f y nineteen: "FY19"
+f y twenty: "FY20"
+f y twenty one: "FY21"
+f y twenty two: "FY22"
+f y twenty three: "FY23"
+f y twenty four: "FY24"
+f y twenty five: "FY25"
+f y twenty six: "FY26"
 f y i: FYI
 f y i six: FYI
 family dash zero: FAMILY-0
 family six: FAMILY
+fin dash zero: "FIN-0"
+thin dash zero: "FIN-0"
 fix ologist: Fixologist
 form i k: Formik
 fin dash zero: FIN-0
 finance dash zero: FIN-0
 fun dash zero: FUN-0
+fun six: FUN
 g o v t six: GOVT
 gab web dash zero: GABWEB-0
 gab web six: GABWEB
+gravy table of contents: "```table-of-contents"
 catch ba dash zero: GAHBA-0
 catch ba six: GAHBA
 Gary Bortz
@@ -6090,11 +6145,15 @@ jill Annie: Gilana
 goth ba: Gahba
 g n d six: GND
 g o v six: GOV
+g p s six: GPS
+geo zebra: GeoGebra
 graph q l: "GraphQL"
 graph d b: "GraphDB"
 graph fusion: Graphusion
 h p six: HP
 had dash phone number: had-phone-number
+Hebrew good luck: mazal tov
+Hebrew good luck three: Mazal Tov
 ho why: Gahba
 home dash zero: HOME-0
 how why: Gahba
@@ -6140,11 +6199,13 @@ Minorca monuments: Menucha Monuments
 minyan: minyan
 Mitre ten: Mitre 10
 merit on: Meriton
+money smart: Moneysmart
 monte fury: Montefiore
 m six six: M6
 m u f g: MUFG
 m u f g six: MUFG
 m u i: mui
+mole x: Molex
 my gov: "myGov"
 my id: "myID"
 my s q l three: "MySql"
@@ -6168,6 +6229,7 @@ name bigger or waters: Biggera Waters
 name bort: Bortz
 name Bowral: Bowral
 name Camille das Arlo: Camille Dezarnaulds
+name honey: Chani
 name crema: Karima
 name das Arlo: Dezarnaulds
 name day anna: Dhyaana
@@ -6179,6 +6241,7 @@ name near: Neer
 name nova peris: Nova Peris
 name car in: Karin
 name Ferrer: Ferrer
+name fine man: Feynman
 name jazz man: Jasmann
 name Jimenez: Jimenez
 name leon: Leon
@@ -6207,6 +6270,8 @@ name ron it: Ronit
 name roselle: Rozelle
 name save ta: Savta
 name shroud dinger: Schrödinger
+name Tammany: Tmne
+name thor: Thor
 name ya hell: Yael
 name Yael Abraham: Yael Abraham
 name Yael Ferrer: Yael Ferrer
@@ -6234,9 +6299,17 @@ a lanza pin: Olanzapine
 office works: Officeworks
 one drive: OneDrive
 onto text: Ontotext
+o h m one: Ohm
+physics om: Ohm
+o h m s one: Ohm's
+h m s one: Ohm's
+physics Ohm apostrophe s: Ohm's
 o p five: "op"
 o r m six: ORM
+o s recovery: OS Recovery
+o u pin: Oupiin
 Oh hell hayim: Ohel Chaim
+opt e sooth: Opti-Soothe
 owl six: OWL
 p d f dot j s: PDF.js
 p d f one: Pdf
@@ -6244,6 +6317,7 @@ p d f five: pdf
 p d f six: PDF
 pass key: passkey
 pass keys: passkeys
+pay pal: PayPal
 perf board: perfboard
 period p: period
 permittivity
@@ -6257,12 +6331,16 @@ point p: point
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
 p c b six: PCB
+p i n six: "PIN"
 p period: period
 p r e d: pred
 p r o p s: props
 p r p six: PRP
 p w m six: PWM
+p fishing: "phishing"
+phase s: phase
 Piksters
+presence t: presents
 q under: "q_"
 r a d six: RAD
 react one: React
@@ -6278,7 +6356,9 @@ agin six: RGN
 asian six: RGN
 r n enz : "RNNs"
 r n n six: "RNN"
-r t v six: RTV
+r p i d: "RP ID"
+r p six: RP
+r t v six: RTVList
 rose: rows
 rose w: rows
 rye al tress: Ryaltris
@@ -6288,16 +6368,20 @@ s e g six: SEG
 s e g dash zero: SEG-0
 s e m: sem
 s m h: SMH
+s p thirteen: SP13
 s q l alchemy: SQLAlchemy
 s q l six: "SQL"
 s q light: "SQLite"
 s three: "S3"
 s three bucket one: "S3Bucket"
+s two six: S2
+s twenty one: S21
 saint vincents: "St Vincent's"
 saint george: "St George"
 salmon o: Salomon
 Sat vincents: "St Vincent's"
 saturn six: SATURN
+savour e: saver
 sit vincents: "St Vincent's"
 save ta: Savta
 science click: ScienceClic
@@ -6311,10 +6395,12 @@ seggy six: SEGGY
 segue: Segway
 Segway s three: Segway S3
 Segway s eight: Segway S8
+Sir tulane: Sertraline
 shoe e: shoe
 shoe spec: shoe spec
 sauce o: source
 sauce under six: SOURCE_
+Shanna tava: Shana Tova
 shin greeks: Shingrix
 space time: spacetime
 sparkle q: SPARQL
@@ -6323,20 +6409,39 @@ speck c: spec
 specie: spec
 Speccy: spec
 Stephen v: Steven
+support assist: SupportAssist
 s v g: svg
 s v g six: SVG
 s w r l six: SWRL
+scale are: scalar
+stem dash zero: "STEM-0"
+stem six: STEM
+sty i: stye
+sty eyes: styes
+super guide: SuperGuide
+sus agen: Sustagen
+sustain y: Systane
 System net: Systemnet
+t twenty four: "T24"
 t e c h six: TECH
 t n dash: TN-
+t s b six: TSB
 talent: Talon
 talk q: torque
 talon dash zero: TALON-0
 Tanya y: Tanya
+tap where: tapware
 tax table: tax table
 tax tables: tax tables
+tax x: tax
+tax e d: taxed
 tech dash zero: TECH-0
 tell stra: Telstra
+to brix: Tobrex
+talk q: torque
+talks x: Torx
+Thor technologies: Thor Technologies
+torque x: Torx
 u r l: url
 u r l six: URL
 u r else: URLs
@@ -6344,12 +6449,14 @@ u s b six: "USB"
 u s b: "usb"
 u u i d: uuid
 up sort: upsert
+up and atom: Up and Atom
 used dash name: used-name
 v b a six: VBA
 v i s: vis
 v i t e: vite
 vera bored: veroboard
 vera crypt: VeraCrypt
+vista print: VistaPrint
 vitamin k two: vitamin K2
 vodaphone: Vodafone
 w b c six: WBC
@@ -6357,12 +6464,17 @@ weight g: weight
 weights g: weights
 whats at: WhatsApp
 will one: Will
+windows eleven: Windows 11
 wool lara: Woollahra
+Wool worths: Woolworths
 Woollahra
 word to vac: Word2Vec
 work space: workspace
 wood l: would
 right w: write
+x l r six: XLR
+x ray: X-ray
+x rays: X-rays
 x star eighty three forty: "X*8340"
 yager six: YAGO
 yon cupar: Yom Kippur
