@@ -34,6 +34,17 @@ class Actions:
         _, fm_text, body = text.split("---", 2)
         fm = yaml.safe_load(fm_text)
 
+        update_made = actions.user.rationalize_associated_item_properties(path, fm)
+        if update_made:
+            new_text = "---\n" + yaml.dump(fm) + "---" + body
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(new_text)
+            
+        return update_made
+
+    def rationalize_date_properties(path: str, fm: dict):
+        """rationalize_date_properties"""
+
         apt_date = fm.get("apt-date")
         procedure_date = fm.get("procedure-date")
         test_date = fm.get("test-date")
@@ -68,9 +79,43 @@ class Actions:
             fm["date"] = str(fm["test-date"])
             fm["item-type"] = "test"
             del fm["test-date"]
+            
+        return True
 
-        new_text = "---\n" + yaml.dump(fm) + "---" + body
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(new_text)
+    def rationalize_associated_item_properties(path: str, fm: dict):
+        """rationalize_associated_item_properties"""
+        # print(f"rationalize_associated_item_properties: {path}")
+
+        test_ordered_for = fm.get("test-ordered-for")
+        illness = fm.get("illness")
+        procedure_for = fm.get("procedure-for")
+        item_for = fm.get("item-for")
+        count = 0
+
+        if test_ordered_for: count += 1
+        if illness: count += 1
+        if procedure_for: count += 1
+
+        if test_ordered_for == None and illness == None and procedure_for == None:
+            return False
+        if item_for:
+            print(f"❌ File: {path}, item_for already has a value")
+            return False
+        if count > 1:
+            print(f"❌ File: {path}, count of item_for values: {count}")
+            return False
+        print(f"File: {path}, test-ordered-for: {test_ordered_for}, illness: {illness}, procedure-for: {procedure_for}, item-for: {item_for}")
+
+        if test_ordered_for:
+            fm["item-for"] = str(test_ordered_for)
+            del fm["test-ordered-for"]
+
+        if illness:
+            fm["item-for"] = str(illness)
+            del fm["illness"]
+
+        if procedure_for:
+            fm["item-for"] = str(procedure_for)
+            del fm["procedure-for"]
             
         return True
