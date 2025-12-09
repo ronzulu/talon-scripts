@@ -1,5 +1,8 @@
-from talon import Module
+import string
+from talon import Module, actions
 import time
+import yaml
+import glob
 
 mod = Module()
 
@@ -8,3 +11,66 @@ class Actions:
     def my_custom_date_function():
         """My custom date function"""
         return time.strftime("%Y-%m-%d")
+
+    def update_obsidian_medical_vault():
+        """update_obsidian_medical_vault"""
+        print(f"update_obsidian_medical_vault: Starting")
+        updates = 0
+        for file in glob.glob('C:/Obsidian/Medical/**/*.md', recursive=True):
+            if actions.user.copy_frontmatter(file):
+                updates += 1
+                if updates > 10:
+                    return
+
+    def copy_frontmatter(path: str):
+        """copy_frontmatter"""
+        # print(f"File: {path}")
+        with open(path, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        if not text.startswith("---"):
+            return False
+    
+        _, fm_text, body = text.split("---", 2)
+        fm = yaml.safe_load(fm_text)
+
+        apt_date = fm.get("apt-date")
+        procedure_date = fm.get("procedure-date")
+        test_date = fm.get("test-date")
+        date = fm.get("date")
+        count = 0
+
+        if apt_date: count += 1
+        if procedure_date: count += 1
+        if test_date: count += 1
+
+        if apt_date == None and procedure_date == None and test_date == None:
+            return False
+        if date:
+            print(f"❌ File: {path}, date already has a value")
+            return False
+        if count > 1:
+            print(f"❌ File: {path}, count of date values: {count}")
+            return False
+        print(f"File: {path}, date: {date}, apt-date: {apt_date}, procedure-date: {procedure_date}, test-date: {test_date}")
+
+        if apt_date:
+            fm["date"] = str(fm["apt-date"])
+            fm["item-type"] = "appointment"
+            del fm["apt-date"]
+
+        if procedure_date:
+            fm["date"] = str(fm["procedure-date"])
+            fm["item-type"] = "procedure"
+            del fm["procedure-date"]
+
+        if test_date:
+            fm["date"] = str(fm["test-date"])
+            fm["item-type"] = "test"
+            del fm["test-date"]
+
+        new_text = "---\n" + yaml.dump(fm) + "---" + body
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(new_text)
+            
+        return True

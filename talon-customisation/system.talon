@@ -151,3 +151,6 @@ show notifications: key(win-n)
 today y m d:
     result = user.my_custom_date_function()
     insert(result)
+
+update obsidian medical:
+    user.update_obsidian_medical_vault()

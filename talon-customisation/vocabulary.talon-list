@@ -42,7 +42,7 @@ e s six: ES6
 begin fragment: "<>"
 
 ##### GLOBAL_VOCAB_MARKER
- This file explicitly does not have a `.talon-list` extension, because we don't want talon to read it.
+# This file explicitly does not have a `.talon-list` extension, because we don't want talon to read it.
 # Instead this is included into both and `dictation-list.tolan-list` and `vocabulary.talon-list`.
 # as talon doesn't have a "#include" mechanism, the contents of this file is
 # added into both of these files by custom code.
@@ -62,13 +62,18 @@ a b n dash: ABN-
 a b r six: ABR
 a c d ocean: ACDSee
 a d c six: ADC
+a d s one: Ads
 a e c six: AEC
+a e m o: AEMO
+a e m o six: AEMO
 a j n dash: AJN-
 a j n six: AJN
+a n u six: ANU
 a p i six: "API"
 a p i gateway: "API Gateway"
 a p i: "api"
 a s i c s: Asics
+a s i c six: ASIC
 a t o five: "ato"
 a t o six: "ATO"
 a toe six: "ATO"
@@ -108,6 +113,7 @@ admin dash zero: ADMIN-0
 affair dash zero: AFFAIR-0
 a genic: agentic
 a men: amen
+add words: adwords
 air dot: a.
 alan key: Allen key
 and slash or: and/or
@@ -117,26 +123,46 @@ add wino: Arduino
 admin six: ADMIN
 a slash d: A/D
 and o r s: "& Ors"
+apex two: Apex 2
 Arvin Ash
 ass sure: "Azure"
 asset net: Assetnet
+a see: Aussie
+oz see: Aussie
+Aussie
+Aussie tire: tyre
 auto regressive: autoregressive
+axis bar: axis bar
+axis x: axis
+b one dash: B1-
+b two dash: B2-
+b three dash: B3-
+b for dash: B4-
 b five dash: B5-
+b six dash: B6-
+b seven dash: B7-
+b eight dash: B8-
+b nine dash: B9-
+b ten dash: B10-
 b eleven dash: B11-
 b eleven dash a: B11-A
 b eleven dash b: B11-B
 b i o s: BIOS
 b l e six: BLE
 b m d six: BMD
+bit locker: BitLocker
 brat six: BRAT
 beetle one: Beetle
 block h: "Bloch"
 blue care: BlueCare
+bondi junction: Bondi Junction
 boolean one: Boolean
 broad link: Broadlink
 bully in five: boolean
 Brian
 brief dictionary: dict
+bite y: byte
+bite wise: bytes
 cap bat: B
 cast brothers: Cass Brothers
 catch ba: Gahba
@@ -148,7 +174,9 @@ c d d six: CDD
 c s b six: "CSB"
 c s b c eight: "CSB C8"
 c s b c twelve: "CSB C12"
+c s i r o: CSIRO
 c s s: css
+cool an getter: Coolangatta
 havre haditha: Chevra Kadisha 
 here haditha: Chevra Kadisha 
 Hera haditha: Chevra Kadisha 
@@ -162,10 +190,12 @@ c p i : "CPI"
 c p i six: "CPI"
 c r u d: crud
 c s g six: CSG
+c s i r o: CSIRO
 c t scan: CT Scan
 high flix: ChaiFlicks
 Chevron
 cito scape: Cytoscape
+claude code: Claude Code
 clothes five: close
 Coulomb
 shale zion: chalazion
@@ -179,6 +209,7 @@ d a c six: DAC
 d b cluster: DB cluster
 d b cluster three: DB Cluster
 d c p dash: DCP-
+d f robot: DFRobot
 d o c: doc
 d o m: dom
 d p h six: DPHI
@@ -186,7 +217,10 @@ d p i six: DPI
 d slash a: D/A
 dad dash zero: DAD-0
 dash X X six: -XX
+de bounce: debounce
 d i n six: DIN
+doctor giri: "Dr Giri"
+doctor levin: "Dr Levin"
 doll dashi: DALL-E
 dialogue: dialog
 data point one: DataPoint
@@ -204,6 +238,7 @@ dot a u: .au
 dot net Core: .NetCore
 double question: " ?? "
 double question null: " ?? null"
+doctor heath: Dr Heath
 doctor high field: Dr Highfield
 doctor DeLuca: Dr De Luca
 doctor Yim: Dr Yim
@@ -221,6 +256,8 @@ entity one: Entity1
 entity two: Entity2
 ever ready: Eveready
 every circuit one: EveryCircuit
+equifax: Equifax
+ether net: Ethernet
 e d u six: EDU
 e p o a: ePoA
 e t f six: ETF
@@ -265,15 +302,19 @@ gen sim: gensim
 Gentoo: Gen2
 jill Annie: Gilana
 goth ba: Gahba
+g c twenty five: GC25
 g n d six: GND
 g o v six: GOV
 g p s six: GPS
+gen cost: GenCost
 geo zebra: GeoGebra
 graph q l: "GraphQL"
 graph d b: "GraphDB"
 graph fusion: Graphusion
 h p six: HP
 had dash phone number: had-phone-number
+health dash zero: "HEALTH-0"
+here here: Hear Here
 Hebrew good luck: mazal tov
 Hebrew good luck three: Mazal Tov
 ho why: Gahba
@@ -296,13 +337,17 @@ ja car: Jaycar
 jupiter lab: JupyterLab
 jupiter y: Jupyter
 jupiter notebook: Jupyter Notebook
+colman k: Kalman
 key pass: Keepass
 k g c six: KGC
+l c o e: LCOE
 l e d five: "led"
 l e d six: "LED"
 l e das: "LEDs"
 l h s: LHS
 l h s six: LHS
+l i dash ion: Li-ion
+l i dash ion one: Li-Ion
 l l ems: LLMs
 l l m six: LLM
 i w i w d: iwiwd
@@ -310,6 +355,7 @@ lang chain: LangChain
 linked in six: LINKEDIN
 low dash: lodash
 Macquarie park: Macquarie Park
+macro goal: Macrogol
 mac cream: Macrium
 Macrium reflect: Macrium Reflect
 mark c: Marc
@@ -336,6 +382,7 @@ my s q l: "MySql"
 n c c six: NCC
 n d i s: NDIS
 n e l six: NEL
+n e m six: NEM
 n m v six: NMV
 n p m run: "npm run "
 n p m run build: "npm run build"
@@ -343,14 +390,20 @@ n p m run dev: "npm run dev"
 n p m run serve: "npm run serve"
 n t u six: NTU
 name a not: Anat
+name Addie: Addy
 name Annie: Annie
 name Annie Goldberg: Annie Goldberg
 name ass sure: "Azure"
 name and Tunis: Antunes
+name a t o: ATO
 name bigger or waters: Biggera Waters
+name balcon: Belkin
 name bort: Bortz
 name Bowral: Bowral
 name Camille das Arlo: Camille Dezarnaulds
+name Claude: Claude
+name Coulomb: Coulomb
+name Coulombs: Coulombs
 name honey: Chani
 name crema: Karima
 name das Arlo: Dezarnaulds
@@ -393,6 +446,9 @@ name roselle: Rozelle
 name save ta: Savta
 name shroud dinger: Schrödinger
 name Tammany: Tmne
+name Tamara: Tamara
+name tea pee: TePe
+name tomorrow: Tamara
 name thor: Thor
 name ya hell: Yael
 name Yael Abraham: Yael Abraham
@@ -422,10 +478,9 @@ office works: Officeworks
 one drive: OneDrive
 onto text: Ontotext
 o h m one: Ohm
-physics om: Ohm
-o h m s one: Ohm's
-h m s one: Ohm's
-physics Ohm apostrophe s: Ohm's
+o h m s one: "Ohm's"
+h m s one: "Ohm's"
+physics Ohm apostrophe s: "Ohm's"
 o p five: "op"
 o r m six: ORM
 o s recovery: OS Recovery
@@ -437,6 +492,7 @@ p d f dot j s: PDF.js
 p d f one: Pdf
 p d f five: pdf
 p d f six: PDF
+p h e s six: PHES
 pass key: passkey
 pass keys: passkeys
 pay pal: PayPal
@@ -447,8 +503,15 @@ permit dimity: permittivity
 per motility: permittivity
 permit vite: permittivity
 Phillips Hugh: Philips Hue
+physics om: Ohm
+physics jewel: Joule
+physics g w h: GWh
+physics k w h: kWh
+physics m w h: MWh
+physics t w h: TWh
+physics vault: volt
+pick stars: Piksters
 pipe null: " | null"
-placed-ad-for: 
 point p: point
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
@@ -462,15 +525,21 @@ p w m six: PWM
 p fishing: "phishing"
 phase s: phase
 Piksters
+pe cabin: Pokolbin
 presence t: presents
 q under: "q_"
 r a d six: RAD
+raindrop dot io: Raindrop.io
 react one: React
 red brace: }
 Ronny
 Ronny Zulaikha
 Brookwood: Rookwood
+name rows bay: Rose Bay
+rows bay: Rose Bay
+rows bat: Rose Bay
 r d f six: RDF
+r d space: "rd "
 r h s: RHS
 r h s six: RHS
 r g n six: RGN
@@ -481,9 +550,11 @@ r n n six: "RNN"
 r p i d: "RP ID"
 r p six: RP
 r t v six: RTVList
+right r: right
 rose: rows
 rose w: rows
 rye al tress: Ryaltris
+r z six: "RZ"
 s c l six: SCL
 s d a six: SDA
 s e g six: SEG
@@ -501,6 +572,7 @@ s twenty one: S21
 saint vincents: "St Vincent's"
 saint george: "St George"
 salmon o: Salomon
+sand disk: Sandisk
 Sat vincents: "St Vincent's"
 saturn six: SATURN
 savour e: saver
@@ -513,6 +585,9 @@ Seg bot dash zero: SEGBOT-0
 seg e dash zero: "SEGGY-0"
 seggy dash zero: "SEGGY-0"
 sake dash zero: "SEG-0"
+seg dance: SEGdance
+seg dance six: SEGDANCE
+seg dance dash zero: SEGDANCE-0
 seggy six: SEGGY
 segue: Segway
 Segway s three: Segway S3
@@ -524,6 +599,8 @@ sauce o: source
 sauce under six: SOURCE_
 Shanna tava: Shana Tova
 shin greeks: Shingrix
+smart draw: SmartDraw
+snowy hydro two point oh: Snowy Hydro 2.0
 space time: spacetime
 sparkle q: SPARQL
 spec c: spec
@@ -547,6 +624,7 @@ System net: Systemnet
 t twenty four: "T24"
 t e c h six: TECH
 t n dash: TN-
+t p m six: TPM
 t s b six: TSB
 talent: Talon
 talk q: torque
@@ -564,6 +642,16 @@ talk q: torque
 talks x: Torx
 Thor technologies: Thor Technologies
 torque x: Torx
+took took: "tuk-tuk"
+twist ease: Twisties
+tire y: tyre
+tires y: tyres
+trans collusion: transclusion 
+transclusion
+transclude
+u e f i six: UEFI
+u e f i: UEFI
+u l fourteen forty nine: UL 1449
 u r l: url
 u r l six: URL
 u r else: URLs
@@ -593,11 +681,15 @@ Woollahra
 word to vac: Word2Vec
 work space: workspace
 wood l: would
+work tree: worktree
+work trees: worktrees
 right w: write
 x l r six: XLR
 x ray: X-ray
 x rays: X-rays
 x star eighty three forty: "X*8340"
+y b g: YBG
+y b g six: YBG
 yager six: YAGO
 yon cupar: Yom Kippur
 Zola runic: zoledronic

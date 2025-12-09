@@ -27,6 +27,7 @@ class TaskCreator:
             for file in files:
                 if file.endswith(".md"):
                     path = os.path.join(root, file)
+                    print(f"Info: {path}")
                     with open(path, "r", encoding="utf-8") as f:
                         content = f.read()
                         match = re.match(r"(?s)^---\n(.*?)\n---", content)
@@ -78,8 +79,11 @@ class TaskCreator:
 
     def create_task(self):
         project_id, task_description = self.extract_task_info()
+        print(f"Info: {project_id}|{task_description}")
         project_folder = self.core.find_project_folder(project_id)
+        print(f"Info: {project_id}|{task_description}|{project_folder}")
         existing_ids = self.find_existing_task_ids(project_folder)
+        print(f"Info: {project_id}|{task_description}|{project_folder}|{existing_ids}")
         next_task_id = max(existing_ids, default=0) + 1
         md_file_path = self.create_task_file(project_folder, task_description, project_id, next_task_id)
 

@@ -10,7 +10,16 @@ class ProjectScanner:
         self.project_id_pattern = re.compile(r"^([A-Z]+)-(\d{3})")
 
     def scan_closed_projects(self):
-        closed_projects = []
+        return self.scan_projects_with_status("Closed")
+
+    def scan_projects_with_status(self, target_statuses):
+        if isinstance(target_statuses, str):
+            target_statuses = [target_statuses]
+        elif target_statuses is None:
+            raise ValueError("target_statuses must be specified.")
+
+
+        result = []
 
         for group_name in os.listdir(self.base_folder):
             group_path = os.path.join(self.base_folder, group_name)
@@ -32,10 +41,10 @@ class ProjectScanner:
                     continue
 
                 status = self._extract_project_status(md_file)
-                if status == "Closed":
-                    closed_projects.append((group_name, project_id))
+                if status in target_statuses:
+                    result.append((group_name, project_id))
 
-        return closed_projects
+        return result
 
     def _find_markdown_file(self, folder_path):
         for file in os.listdir(folder_path):
