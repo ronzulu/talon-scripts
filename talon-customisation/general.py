@@ -34,7 +34,7 @@ class Actions:
         _, fm_text, body = text.split("---", 2)
         fm = yaml.safe_load(fm_text)
 
-        update_made = actions.user.rationalize_associated_item_properties(path, fm)
+        update_made = actions.user.rationalize_status_properties(path, fm)
         if update_made:
             new_text = "---\n" + yaml.dump(fm) + "---" + body
             with open(path, "w", encoding="utf-8") as f:
@@ -117,5 +117,38 @@ class Actions:
         if procedure_for:
             fm["item-for"] = str(procedure_for)
             del fm["procedure-for"]
+            
+        return True
+
+    def rationalize_status_properties(path: str, fm: dict):
+        """rationalize_status_properties"""
+        # print(f"rationalize_associated_item_properties: {path}")
+
+        apt_status = fm.get("apt-status")
+        procedure_status = fm.get("procedure-status")
+        item_status = fm.get("item-status")
+        count = 0
+
+        if apt_status: count += 1
+        if procedure_status: count += 1
+        if item_status: count += 1
+
+        if apt_status == None and procedure_status == None:
+            return False
+        if item_status:
+            print(f"❌ File: {path}, item_status already has a value")
+            return False
+        if count > 1:
+            print(f"❌ File: {path}, count of item_status values: {count}")
+            return False
+        print(f"File: {path}, apt-status: {apt_status}, procedure-status: {procedure_status}, item-status: {item_status}")
+
+        if apt_status:
+            fm["item-status"] = str(apt_status)
+            del fm["apt-status"]
+
+        if procedure_status:
+            fm["item-status"] = str(procedure_status)
+            del fm["procedure-status"]
             
         return True
