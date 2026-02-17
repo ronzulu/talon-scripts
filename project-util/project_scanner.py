@@ -32,6 +32,7 @@ class ProjectScanner:
                     continue
 
                 match = self.project_id_pattern.match(folder)
+                # print(f"🔹 {folder_path} → {match}")
                 if not match:
                     continue
 
@@ -58,7 +59,10 @@ class ProjectScanner:
 
         match = re.match(r"(?s)^---\n(.*?)\n---\n", content)
         if not match:
+            print(f"🔹Can't find frontmatter in {md_path}")
             return None
 
         front_matter = yaml.safe_load(match.group(1)) or {}
-        return front_matter.get("project-status")
+        status = front_matter.get("project-status")
+        print(f"🔹 {md_path} → {status}")
+        return status

@@ -78,4 +78,5 @@ class user_actions:
         closed = scanner.scan_closed_projects()
         archiver = ProjectArchiver()
         for group, project_id in closed:
+            # print(f"🔹 {group} → {project_id}")
             archiver.archive_project(group, project_id)

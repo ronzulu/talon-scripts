@@ -13,10 +13,12 @@ three b one b: 3B1B
 four g: 4G
 four g six: 4G
 five g: 5G
+a a b six: AAB
 a b c six: ABC
 a b n dash: ABN-
 a b r six: ABR
 a c d ocean: ACDSee
+a d b space: "adb "
 a d c six: ADC
 a d s one: Ads
 a e c six: AEC
@@ -24,18 +26,28 @@ a e m o: AEMO
 a e m o six: AEMO
 a j n dash: AJN-
 a j n six: AJN
+a m six: AM
 a n u six: ANU
 a p i six: "API"
 a p i gateway: "API Gateway"
-a p i: "api"
+a p eyes: "APIs"
+a p k six: "APK"
+a r m sixty four: arm64
 a s i c s: Asics
 a s i c six: ASIC
+a t six: AT
 a t o five: "ato"
 a t o six: "ATO"
+a t s o: atso
+a t s o six: ATSO
 a toe six: "ATO"
 a two six: "ATO"
+at so: atso
+at so dash zero: ATSO-0
+at so six: ATSO
 at toe six: "ATO"
 ozzie toe six: "ATO"
+a v d six: AVD
 a w s six: "AWS"
 a w s five: "aws"
 a w s amplify: "AWS Amplify"
@@ -64,6 +76,9 @@ a w s v p c : "AWS VPC"
 a w s wavelength: "AWS Wavelength"
 act on l: Actonel
 act on l e c: Actonel EC
+a addition: addition
+a edition: addition
+add edition: addition
 a double d y: Addy
 admin dash zero: ADMIN-0
 affair dash zero: AFFAIR-0
@@ -80,6 +95,7 @@ admin six: ADMIN
 a slash d: A/D
 and o r s: "& Ors"
 apex two: Apex 2
+Arduino Nano: Arduino Nano
 Arvin Ash
 ass sure: "Azure"
 asset net: Assetnet
@@ -106,7 +122,11 @@ b eleven dash b: B11-B
 b i o s: BIOS
 b l e six: BLE
 b m d six: BMD
+b o t o: boto
+b o t o three: boto3
 bit locker: BitLocker
+blue no: Bluno
+blue no b l e: Bluno BLE
 brat six: BRAT
 beetle one: Beetle
 block h: "Bloch"
@@ -114,29 +134,47 @@ blue care: BlueCare
 bondi junction: Bondi Junction
 boolean one: Boolean
 broad link: Broadlink
+build dot gradle: build.gradle
 bully in five: boolean
 Brian
 brief dictionary: dict
+byte code
 bite y: byte
 bite wise: bytes
+call e d: called
 cap bat: B
+cash c: cache
+cash c e d: cached
+cashed c: cached
+cash c sing: caching
+cash sing: caching
 cast brothers: Cass Brothers
 catch ba: Gahba
+sealing see: ceiling
 hug Sameer: Chag sameach
 Chag sameach
 comma and: ", and"
 comma andy: ", and"
+see await: "await "
+c c twenty five forty: CC2540
 c d d six: CDD
+c h s six: CHS
 c s b six: "CSB"
 c s b c eight: "CSB C8"
 c s b c twelve: "CSB C12"
 c s i r o: CSIRO
 c s s: css
+c u d a: CUDA
+co lab: colab
 cool an getter: Coolangatta
 havre haditha: Chevra Kadisha 
 here haditha: Chevra Kadisha 
-Hera haditha: Chevra Kadisha 
+Hera haditha: Chevra Kadisha
+Hera haditha one: ChevraKadisha
+havre haditha one: ChevraKadisha 
 hero haditha: Chevra Kadisha
+c d dot dot back: "cd ..\\"
+c d dot dot enter: "cd ..{enter}"
 c d GitHub back: cd d:\GitHub\
 c i c d : "CI/CD"
 c l i: cli
@@ -148,7 +186,9 @@ c r u d: crud
 c s g six: CSG
 c s i r o: CSIRO
 c t scan: CT Scan
+c make one: CMake
 high flix: ChaiFlicks
+ceiling i: ceiling
 Chevron
 cito scape: Cytoscape
 claude code: Claude Code
@@ -165,6 +205,7 @@ d a c six: DAC
 d b cluster: DB cluster
 d b cluster three: DB Cluster
 d c p dash: DCP-
+d e x six: DEX
 d f robot: DFRobot
 d o c: doc
 d o m: dom
@@ -172,8 +213,12 @@ d p h six: DPHI
 d p i six: DPI
 d slash a: D/A
 dad dash zero: DAD-0
+darling hurst: Darlinghurst
 dash X X six: -XX
+dash v eight a: "-v8a"
+dash v eight air: "-v8a"
 de bounce: debounce
+dear dash departed: dear-departed
 d i n six: DIN
 doctor giri: "Dr Giri"
 doctor levin: "Dr Levin"
@@ -184,6 +229,8 @@ data point seven: dataPoint
 datapoint one: DataPoint
 datapoint seven: dataPoint
 day j s: dayjs
+dear Depp six: DEARDEP
+dear Depp dash zero: DEARDEP-0
 diff bot: Diffbot
 doc you saw us: Docusaurus
 dock i d three: DocId
@@ -201,6 +248,7 @@ doctor Yim: Dr Yim
 dragon dictate: DragonDictate
 duo denim: duodenum
 dynamo d b: "DynamoDB"
+e a s six: EAS
 e n dash: EN-
 e n v six: ENV
 e n v dash zero: ENV-0
@@ -214,13 +262,17 @@ ever ready: Eveready
 every circuit one: EveryCircuit
 equifax: Equifax
 ether net: Ethernet
+expo o: expo
 e d u six: EDU
 e p o a: ePoA
+e s p thirty two: "ESP32"
 e t f six: ETF
 e t efs: ETFs
 e t s y: Etsy
+e x p dash: exp-
 f c a six: FCA
 f c f c o a: FCFCOA
+f c m six: FCM
 fin six: FIN
 f m c six: FMC
 f m c a six: FMCA
@@ -239,10 +291,12 @@ family dash zero: FAMILY-0
 family six: FAMILY
 fin dash zero: "FIN-0"
 thin dash zero: "FIN-0"
+fire base: firebase
 fix ologist: Fixologist
 form i k: Formik
 fin dash zero: FIN-0
 finance dash zero: FIN-0
+f pampa: Fumpa
 fun dash zero: FUN-0
 fun six: FUN
 g o v t six: GOVT
@@ -258,21 +312,31 @@ gen sim: gensim
 Gentoo: Gen2
 jill Annie: Gilana
 goth ba: Gahba
+g cradle: gradle
+g cradle w: gradlew
+cradle g: gradle
 g c twenty five: GC25
 g n d six: GND
 g o v six: GOV
 g p s six: GPS
 gen cost: GenCost
 geo zebra: GeoGebra
+google services Jason: google-services.json
+google services dot Jason: google-services.json
 graph q l: "GraphQL"
 graph d b: "GraphDB"
 graph fusion: Graphusion
+green power one: GreenPower
+h f d t: hfdt
 h p six: HP
 had dash phone number: had-phone-number
+hash f m six: "#FM"
 health dash zero: "HEALTH-0"
 here here: Hear Here
 Hebrew good luck: mazal tov
 Hebrew good luck three: Mazal Tov
+Hebrew friends: chevra
+Hebrew havre: chevra
 ho why: Gahba
 home dash zero: HOME-0
 how why: Gahba
@@ -280,20 +344,29 @@ i d: id
 i d one: Id
 i d e: IDE
 i d e six: IDE
+i m u six: IMU
+i m use: IMUs
 i t six: "IT"
 I star twenty nine fifty five: "I*2955"
 I star twenty nine eighty: "I*2980"
 i two c: I2C
+insole o: insole
+insoles o: insoles
 j ode ya: Joadja
+j b d six: JBD
+brief j b d: JBD
 j c a six: JCA
 J P six: JP
 J P dash: JP-
+j s six: JS
 Jason dot stringy fy: "JSON.stringify("
 ja car: Jaycar
 jupiter lab: JupyterLab
 jupiter y: Jupyter
 jupiter notebook: Jupyter Notebook
 colman k: Kalman
+cot line: Kotlin
+can more: Kenmore
 key pass: Keepass
 k g c six: KGC
 l c o e: LCOE
@@ -325,10 +398,15 @@ Mitre ten: Mitre 10
 merit on: Meriton
 money smart: Moneysmart
 monte fury: Montefiore
+m a u i: MAUI
+m a u i six: MAUI
+m f a six: "MFA"
+m f a: "mfa"
 m six six: M6
 m u f g: MUFG
 m u f g six: MUFG
 m u i: mui
+mobile dash SDK five one: mobile-sdk51
 mole x: Molex
 my gov: "myGov"
 my id: "myID"
@@ -337,14 +415,22 @@ my s q l six: "MYSQL"
 my s q l: "MySql"
 n c c six: NCC
 n d i s: NDIS
+n d k: ndk
+n d k six: NDK
 n e l six: NEL
 n e m six: NEM
 n m v six: NMV
+n p m: "npm"
+n p m six: "NPM"
 n p m run: "npm run "
+n p m run android: "npm run android"
+n p m run pre build: "npm run prebuild"
 n p m run build: "npm run build"
 n p m run dev: "npm run dev"
+n p m run sam colon: "npm run sam:"
 n p m run serve: "npm run serve"
 n t u six: NTU
+n p x: npx
 name a not: Anat
 name Addie: Addy
 name Annie: Annie
@@ -357,6 +443,7 @@ name balcon: Belkin
 name bort: Bortz
 name Bowral: Bowral
 name Camille das Arlo: Camille Dezarnaulds
+name chassis: chassis
 name Claude: Claude
 name Coulomb: Coulomb
 name Coulombs: Coulombs
@@ -375,6 +462,7 @@ name Ferrer: Ferrer
 name fine man: Feynman
 name jazz man: Jasmann
 name Jimenez: Jimenez
+name Condon: Kundan
 name leon: Leon
 name ley or: Lior
 name lawn: Lorne
@@ -382,6 +470,7 @@ name Leicester: Lester
 name Longobardi: Longobardi
 name marina: Marina
 name miss Abraham: Ms Abraham
+name marcato: Mercator
 name Meyer: Myer
 name Mayer Zulaikha: Myer Zulaikha
 name moche: Moshe
@@ -401,6 +490,7 @@ name ron it: Ronit
 name roselle: Rozelle
 name save ta: Savta
 name shroud dinger: Schrödinger
+name strawman: Straumann
 name Tammany: Tmne
 name Tamara: Tamara
 name tea pee: TePe
@@ -429,6 +519,8 @@ nine bot s two: Ninebot S2
 no k: know
 no w: know
 no votel: Novotel
+no tie fee: Notifee
+n p m install legacy: "npm install --legacy-peer-deps"
 a lanza pin: Olanzapine
 office works: Officeworks
 one drive: OneDrive
@@ -449,6 +541,15 @@ p d f one: Pdf
 p d f five: pdf
 p d f six: PDF
 p h e s six: PHES
+p m six: PM
+package dot Jason: package.json
+pass r: parse
+pass r two: parser
+pass rod: parsed
+pass r e d: parsed
+parse rod: parsed
+parse sing: parsing
+pass sing: parsing
 pass key: passkey
 pass keys: passkeys
 pay pal: PayPal
@@ -466,17 +567,26 @@ physics k w h: kWh
 physics m w h: MWh
 physics t w h: TWh
 physics vault: volt
+physics way: weigh
+physics what: watt
+physics what s: watts
 pick stars: Piksters
+pipe five hundred: "|500"
+pipe six hundred: "|600"
+pipe eight hundred: "|800"
+pipe one thousand: "|800"
 pipe null: " | null"
 point p: point
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
 p c b six: PCB
 p i n six: "PIN"
+p o a six: "POA"
 p period: period
 p r e d: pred
 p r o p s: props
 p r p six: PRP
+p s u six: PSU
 p w m six: PWM
 p fishing: "phishing"
 phase s: phase
@@ -485,6 +595,7 @@ pe cabin: Pokolbin
 presence t: presents
 q under: "q_"
 r a d six: RAD
+r arrow w: "R→W"
 raindrop dot io: Raindrop.io
 react one: React
 red brace: }
@@ -502,6 +613,7 @@ r g n six: RGN
 agin six: RGN
 asian six: RGN
 r n enz : "RNNs"
+r n f b six: RNFB
 r n n six: "RNN"
 r p i d: "RP ID"
 r p six: RP
@@ -509,10 +621,14 @@ r t v six: RTVList
 right r: right
 rose: rows
 rose w: rows
+rose i e: "Rosie"
+rose e: "Rosie"
 rye al tress: Ryaltris
 r z six: "RZ"
 s c l six: SCL
 s d a six: SDA
+s d k six: SDK
+s d k fifty one: sdk51
 s e g six: SEG
 s e g dash zero: SEG-0
 s e m: sem
@@ -541,6 +657,8 @@ Seg bot dash zero: SEGBOT-0
 seg e dash zero: "SEGGY-0"
 seggy dash zero: "SEGGY-0"
 sake dash zero: "SEG-0"
+seg con: SEGcon
+seg con dash zero: SEGCON-0
 seg dance: SEGdance
 seg dance six: SEGDANCE
 seg dance dash zero: SEGDANCE-0
@@ -548,6 +666,7 @@ seggy six: SEGGY
 segue: Segway
 Segway s three: Segway S3
 Segway s eight: Segway S8
+serial i: serial
 Sir tulane: Sertraline
 shoe e: shoe
 shoe spec: shoe spec
@@ -557,7 +676,9 @@ Shanna tava: Shana Tova
 shin greeks: Shingrix
 smart draw: SmartDraw
 snowy hydro two point oh: Snowy Hydro 2.0
+soba than: Sorbothane
 space time: spacetime
+space dub dub version: " --version"
 sparkle q: SPARQL
 spec c: spec
 speck c: spec
@@ -580,8 +701,10 @@ System net: Systemnet
 t twenty four: "T24"
 t e c h six: TECH
 t n dash: TN-
+t o u six: TOU
 t p m six: TPM
 t s b six: TSB
+t s six: TS
 talent: Talon
 talk q: torque
 talon dash zero: TALON-0
@@ -597,6 +720,7 @@ to brix: Tobrex
 talk q: torque
 talks x: Torx
 Thor technologies: Thor Technologies
+tie base: TiBase
 torque x: Torx
 took took: "tuk-tuk"
 twist ease: Twisties
@@ -605,6 +729,9 @@ tires y: tyres
 trans collusion: transclusion 
 transclusion
 transclude
+triple colon: "⫶"
+twenty twenty six: "2026"
+twenty twenty seven: "2027"
 u e f i six: UEFI
 u e f i: UEFI
 u l fourteen forty nine: UL 1449
@@ -614,10 +741,12 @@ u r else: URLs
 u s b six: "USB"
 u s b: "usb"
 u u i d: uuid
+unicode right arrow: "→"
 up sort: upsert
 up and atom: Up and Atom
 used dash name: used-name
 v b a six: VBA
+v in six: VIN
 v i s: vis
 v i t e: vite
 vera bored: veroboard
@@ -625,10 +754,13 @@ vera crypt: VeraCrypt
 vista print: VistaPrint
 vitamin k two: vitamin K2
 vodaphone: Vodafone
+w arrow a: "W→R"
 w b c six: WBC
 weight g: weight
 weights g: weights
 whats at: WhatsApp
+where h: where
+witch: which
 will one: Will
 windows eleven: Windows 11
 wool lara: Woollahra
@@ -648,6 +780,8 @@ y b g: YBG
 y b g six: YBG
 yager six: YAGO
 yon cupar: Yom Kippur
+you e: Youi
 Zola runic: zoledronic
 Zulaikha
 zi tell: Zyxel
+zoo stand: Zustand

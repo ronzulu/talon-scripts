@@ -1,7 +1,5 @@
 language: en
 -
-pass are: "parser"
-
 (c name space | c namespace | ten name space): "namespace "
 state new: "new "
 
