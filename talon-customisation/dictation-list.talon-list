@@ -993,19 +993,19 @@ c hotel: "h"
 c i five: "ci"
 c i d r : "CIDR"
 c i d: "cid"
-c i lambda: "i => "
+sir i lambda: "i => "
 c i t b : "CITB"
 c i t b six: "CITB"
 c if l: "if ({Z1L}"
 c if not l: "if (!{Z1L}"
-c if not: "if (!"
-c if: "if ("
+sir if not: "if (!"
+sir if: "if ("
 c in less: " in {Z1L}"
-c in question: "int?"
-c in s: " in "
-c in t s: "int "
-c in t: "int{tab}"
-c in: "int"
+sir in question: "int?"
+sir in s: " in "
+sir in t s: "int "
+sir in t: "int{tab}"
+sir in: "int"
 c inline: "inline "
 c int array: "int[] "
 c int less: "int {Z1L}"
@@ -1026,8 +1026,8 @@ c l i x m l: "clixml"
 c l i: "cli"
 c l p: "lp"
 c l y m: "Clym"
-c lambda: " => "
-c left shift: "<<"
+sir lambda: " => "
+sir left shift: "<<"
 c let l: "let {Z1L}"
 c let less: "let {Z1L}"
 c lock l: "lock ({Z1L}"
@@ -1049,7 +1049,7 @@ c map x: "CMapX"
 c mark l: "!{Z1L}"
 c mark: "!"
 c message s: "message{space}"
-c minus line: "-----------------------------------------------------------------------------"
+sir minus line: "-----------------------------------------------------------------------------"
 c n c six: "CNC"
 c n n six: "CNN"
 c n t: "cnt"
@@ -1057,7 +1057,7 @@ c name of: "nameof("
 c new block: "{l-brace}{enter}{enter}{r-brace}{up}{end}{tab}"
 c new: "new "
 c not equals l: " != {Z1L}"
-c not equals: " != "
+sir not equals: " != "
 c note: "NOTE: {Z2C}"
 c november: "n"
 c null: "NULL"
@@ -1086,16 +1086,16 @@ c o r p: "corp"
 c o s: "cos"
 c o t s six: "COTS"
 c object less: "object {Z1L}"
-c object s: "object "
-c object: "object"
+sir object s: "object "
+sir object: "object"
 c open brace: "{l-brace}{{}}{del}{backspace}"
-c operator: "operator"
-c order by: "orderby "
+sir operator: "operator"
+sir order by: "orderby "
 c oscar: "o"
 c out less: "out {Z1L}"
-c out s: "out "
-c out: "out"
-c override: "override"
+sir out s: "out "
+sir out: "out"
+sir override: "override"
 c p five: "cp"
 c p seven: "cp"
 c p c s: "CpCs"
@@ -1135,22 +1135,22 @@ c p table: "CpTable"
 c p under: "cp_"
 c p y: "cpy"
 c pack: "pack("
-c parameters s: "params "
+sir parameters s: "params "
 c percent delta: "%d"
 c percent sierra: "%s"
 c plus equals l: " += {Z1L}"
-c plus equals: " += "
+sir plus equals: " += "
 c point: "CPoint"
 c position: "POSITION"
 c pragma: "#pragma "
 c prams s: "params "
-c private colon: "private:{enter}"
+sir private colon: "private:{enter}"
 c private less: "private {Z1L}"
-c private s: "private "
-c private static: "private static "
-c private string: "private string "
-c private: "private"
-c protected s: "protected "
+sir private s: "private "
+sir private static: "private static "
+sir private string: "private string "
+sir private: "private"
+sir protected s: "protected "
 c protected: "protected"
 c public class: "public class "
 c public colon: "public:"
@@ -1172,12 +1172,12 @@ c r n t: "crnt"
 c r o n: "cron"
 c r p six: "CRP"
 c r s six: "CRS"
-c read only s: "readonly "
-c read only: "readonly "
+sir read only s: "readonly "
+sir read only: "readonly "
 c rect: "RECT"
 c ref less: "ref {Z1L}"
-c ref s: "ref "
-c ref: "ref"
+sir ref s: "ref "
+sir ref: "ref"
 c repeated s: "repeated{space}"
 c return false: "return false;"
 c return less: "return {Z1L}"
@@ -1205,19 +1205,19 @@ c s z: "sz"
 c scanf: "scanf("
 c select s: "select "
 c semi l: ";{enter}{Z1L}"
-c semi left: ";{enter}{backspace}"
+sir semi left: ";{enter}{backspace}"
 c semi s: "; "
-c semi: ";{enter}"
-c set: "set"
+sir semi: ";{enter}"
+sir set: "set"
 c sharp three: "CSharp"
 c sharp eight: "C# 8"
 c sharp: "C#"
-c short s: "short "
-c short: "short"
-c size of: "sizeof("
+sir short s: "short "
+sir short: "short"
+sir size of: "sizeof("
 c slash c: "// {Z2C}"
 c slash input: "//{space}Input:{enter}//{tab}{tab}"
-c slash return: "// Return:"
+sir slash star: "/* "
 c slash: "// {Z2}"
 c sss: "CSSS"
 c static s: "static "
@@ -2735,7 +2735,6 @@ hot mail: "hotmail"
 hotel three: "H3"
 hotel colon: "h:"
 hybrid geocoder: "Hybrid Geocoder"
-hyper v: "Hyper-V"
 i one six seven: "i167"
 i one eighty: "i180"
 i phone: "iPhone"
@@ -4837,6 +4836,7 @@ single quote quote left: "''{left}"
 single quote quote: "''"
 single quote s quote: "'{space}'"
 single quote y quote: "'Y'"
+sir question question: " ?? "
 sis tane: "Systane"
 size under t: "size_t"
 size under type: "size_type"
@@ -6000,6 +6000,8 @@ add words: adwords
 air dot: a.
 alan key: Allen key
 and slash or: and/or
+android manifest: AndroidManifest
+android x: AndroidX
 API gateway: API Gateway
 add we now: Arduino
 add wino: Arduino
@@ -6054,6 +6056,7 @@ byte code
 bite y: byte
 bite wise: bytes
 call e d: called
+call e e: callee
 cap bat: B
 cash c: cache
 cash c e d: cached
@@ -6085,6 +6088,8 @@ Hera haditha: Chevra Kadisha
 Hera haditha one: ChevraKadisha
 havre haditha one: ChevraKadisha 
 hero haditha: Chevra Kadisha
+havre watch one: ChevraWatch
+havre watch app one: ChevraWatchApp
 c d dot dot back: "cd ..\\"
 c d dot dot enter: "cd ..{enter}"
 c d GitHub back: cd d:\GitHub\
@@ -6135,6 +6140,7 @@ d i n six: DIN
 doctor giri: "Dr Giri"
 doctor levin: "Dr Levin"
 doll dashi: DALL-E
+dot net for android: ".NET for Android"
 dialogue: dialog
 data point one: DataPoint
 data point seven: dataPoint
@@ -6235,6 +6241,7 @@ gen cost: GenCost
 geo zebra: GeoGebra
 google services Jason: google-services.json
 google services dot Jason: google-services.json
+google play services one: GooglePlayServices
 graph q l: "GraphQL"
 graph d b: "GraphDB"
 graph fusion: Graphusion
@@ -6249,6 +6256,7 @@ Hebrew good luck: mazal tov
 Hebrew good luck three: Mazal Tov
 Hebrew friends: chevra
 Hebrew havre: chevra
+hyper v: "Hyper-V"
 ho why: Gahba
 home dash zero: HOME-0
 how why: Gahba
@@ -6563,7 +6571,6 @@ savour e: saver
 sit vincents: "St Vincent's"
 save ta: Savta
 science click: ScienceClic
-se: see
 seg bot: Segbot
 Seg bot dash zero: SEGBOT-0
 seg e dash zero: "SEGGY-0"
@@ -6666,7 +6673,7 @@ vera crypt: VeraCrypt
 vista print: VistaPrint
 vitamin k two: vitamin K2
 vodaphone: Vodafone
-w arrow a: "W→R"
+w arrow r: "W→R"
 w b c six: WBC
 weight g: weight
 weights g: weights
@@ -6688,6 +6695,7 @@ x l r six: XLR
 x ray: X-ray
 x rays: X-rays
 x star eighty three forty: "X*8340"
+xamarin dot firebase dot: Xamarin.Firebase.
 y b g: YBG
 y b g six: YBG
 yager six: YAGO

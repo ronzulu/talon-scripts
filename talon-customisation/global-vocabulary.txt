@@ -88,6 +88,8 @@ add words: adwords
 air dot: a.
 alan key: Allen key
 and slash or: and/or
+android manifest: AndroidManifest
+android x: AndroidX
 API gateway: API Gateway
 add we now: Arduino
 add wino: Arduino
@@ -142,6 +144,7 @@ byte code
 bite y: byte
 bite wise: bytes
 call e d: called
+call e e: callee
 cap bat: B
 cash c: cache
 cash c e d: cached
@@ -173,6 +176,8 @@ Hera haditha: Chevra Kadisha
 Hera haditha one: ChevraKadisha
 havre haditha one: ChevraKadisha 
 hero haditha: Chevra Kadisha
+havre watch one: ChevraWatch
+havre watch app one: ChevraWatchApp
 c d dot dot back: "cd ..\\"
 c d dot dot enter: "cd ..{enter}"
 c d GitHub back: cd d:\GitHub\
@@ -223,6 +228,7 @@ d i n six: DIN
 doctor giri: "Dr Giri"
 doctor levin: "Dr Levin"
 doll dashi: DALL-E
+dot net for android: ".NET for Android"
 dialogue: dialog
 data point one: DataPoint
 data point seven: dataPoint
@@ -323,6 +329,7 @@ gen cost: GenCost
 geo zebra: GeoGebra
 google services Jason: google-services.json
 google services dot Jason: google-services.json
+google play services one: GooglePlayServices
 graph q l: "GraphQL"
 graph d b: "GraphDB"
 graph fusion: Graphusion
@@ -337,6 +344,7 @@ Hebrew good luck: mazal tov
 Hebrew good luck three: Mazal Tov
 Hebrew friends: chevra
 Hebrew havre: chevra
+hyper v: "Hyper-V"
 ho why: Gahba
 home dash zero: HOME-0
 how why: Gahba
@@ -651,7 +659,6 @@ savour e: saver
 sit vincents: "St Vincent's"
 save ta: Savta
 science click: ScienceClic
-se: see
 seg bot: Segbot
 Seg bot dash zero: SEGBOT-0
 seg e dash zero: "SEGGY-0"
@@ -754,7 +761,7 @@ vera crypt: VeraCrypt
 vista print: VistaPrint
 vitamin k two: vitamin K2
 vodaphone: Vodafone
-w arrow a: "W→R"
+w arrow r: "W→R"
 w b c six: WBC
 weight g: weight
 weights g: weights
@@ -776,6 +783,7 @@ x l r six: XLR
 x ray: X-ray
 x rays: X-rays
 x star eighty three forty: "X*8340"
+xamarin dot firebase dot: Xamarin.Firebase.
 y b g: YBG
 y b g six: YBG
 yager six: YAGO
