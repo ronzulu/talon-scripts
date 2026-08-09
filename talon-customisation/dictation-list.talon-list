@@ -124,11 +124,9 @@ twenty twenty under zero four: "2020_04"
 twenty twenty under eleven s: "2020_11 "
 twenty twenty: "2020"
 twenty twenty one dash: "2021-"
-twenty twenty one: "2021"
 twenty twenty two dash: "2022-"
 twenty twenty two under zero seven: "2022_07"
 twenty twenty two under ten: "2022_10"
-twenty twenty two: "2022"
 twenty twenty three dash twelve: "2023-12"
 twenty twenty three dash: "2023-"
 twenty twenty three under zero one: "2023_01"
@@ -137,8 +135,6 @@ twenty twenty three under zero three: "2023_03"
 twenty twenty three under zero eight: "2023_08"
 twenty twenty three under zero nine: "2023_09"
 twenty twenty three under eleven: "2023_11"
-twenty twenty three: "2023"
-twenty twenty four: "2024"
 twenty twenty four dash: "2024-"
 twenty twenty four dash zero one: "2024-01"
 twenty twenty four dash zero two: "2024-02"
@@ -152,7 +148,6 @@ twenty twenty four dash zero nine: "2024-09"
 twenty twenty four dash ten: "2024-10"
 twenty twenty four dash eleven: "2024-11"
 twenty twenty four dash twelve: "2024-12"
-twenty twenty five: "2025"
 twenty twenty five dash zero one: "2025-01"
 twenty twenty five dash zero two: "2025-02"
 twenty twenty five dash zero three: "2025-03"
@@ -308,7 +303,6 @@ a f x message: "AfxMessageBox("
 a f x: "afx"
 a g g r under: "AGGR_"
 a g l six: "AGL"
-a g m six: "AGM"
 a g r six: "AGR"
 a h six: "AH"
 a h p r a: "ahpra"
@@ -844,8 +838,7 @@ byte five: "byte"
 byte by byte: "byte-by-byte"
 byte s: "BYTE "
 byte t: "BYTE{tab}"
-c  handle: "HANDLE"
-c  is: " is "
+sir  handle: "HANDLE"
 c two dot: "c2."
 c three s: "CCcs"
 c a b s: "CAbs"
@@ -862,14 +855,6 @@ c a s five: "cas"
 c a t e g: "categ"
 c a v v six: "CAVV"
 c a z: "caz"
-c abstract s: "abstract "
-c abstract: "abstract"
-c and: " && "
-c arrow: "->"
-c as: " as "
-c assert: "ASSERT("
-c async: "async "
-c await: "await "
 c b five: "cb"
 c b a six: "CBA"
 c b c t : "CBCT"
@@ -877,20 +862,6 @@ c b d six: "CBD"
 c b d: "cbd"
 c b f six: "CBF"
 c b t: "cbt"
-c bar equals: " |= "
-c base dot: "base."
-c base left: "base("
-c boil question: "bool?"
-c boil s: "BOOL "
-c boil t: "BOOL{tab}"
-c boolean: "BOOLEAN"
-c break semi: "break;"
-c break: "break"
-c by less: " by {Z1L}"
-c by: " by "
-c byte array: "byte[]"
-c byte s: "BYTE "
-c byte: "BYTE"
 c c a : "CCA"
 c c c s: "CCcs"
 c c colon: "CC:"
@@ -904,59 +875,26 @@ c c pen: "CPen"
 c c point: "CPoint"
 c c rect: "CRect"
 c c string: "CString"
-c case: "case "
-c cast control: "(Control)"
-c cast decimal: "(decimal)"
-c cast double: "(double)"
-c cast int: "(int)"
-c cast short: "(short)"
-c cast string: "(string)"
-c catch: "catch ("
 c caz: "CCas"
 c char less: "char {Z1L}"
-c char s: "char "
 c charlie: "c"
-c class s: "class "
-c class: "class"
 c colon back: "c:\\"
-c colon base: " : base("
 c colon less: ": {Z1L}"
 c colon software: "c:\\sw\\"
-c colon: " : "
 c combo: "combo"
-c comment line: "//////////////////////////////////////////////////////////////////////{enter}"
-c con less: "const {Z1L}"
-c con s: "const "
-c cone s: "const "
 c config: "CConfig"
-c const s: "const "
-c continue: "continue"
 c cos etsi: "CCosEtsi"
 c cos: "CCos"
+c d k deploy: "cdk deploy"
 c d k six: "CDK"
 c d l g: "dlg"
+c d c l i back: "cd cli\\"
+c d lib back: "cd lib\\"
+c d l i b back: "cd lib\\"
 c d space: "cd "
 c debug: "CDebug"
-c decimal less: "decimal {Z1L}"
-c default: "default:"
-c delegate s: "delegate "
-c delete p: "delete p"
-c delete: "delete "
-c do: "do"
 c dot l: "c.{Z1L}"
-c double less: "double {Z1L}"
-c double: "double"
-c e numb s: "enum "
-c e numb: "enum"
 c e r t: "cert"
-c else if: "else if ("
-c else: "else"
-c end if: "#endif{enter}"
-c equals l: " == {Z1L}"
-c equals: " == "
-c event s: "event "
-c explicit: "explicit "
-c external: "extern "
 c f five: "cf"
 c f six: "CF"
 c f d six: "CFD"
@@ -964,21 +902,8 @@ c f i s : "CFIS"
 c f i: "cfi"
 c f s six: "CFS"
 c file time: "FILETIME"
-c finally: "finally"
-c for each: "foreach ("
-c for i loop: "for (int i = 0; i < ; i++)"
-c for index: "for (Index = 0; Index < ; Index++)"
-c for j loop: "for (int j = 0; j < ; j++)"
-c friend: "friend "
-c from l: "from {Z1L}"
-c from less: "from {Z1L}"
 c g j : "CGJ"
 c g t six: "CGT"
-c get set: "{l-brace}{{}} get; set; {r-brace}"
-c get: "get"
-c group l: "group {Z1L}"
-c group less: "group {Z1L}"
-c group: "group "
 c h a g: "chag"
 c h a i: "Chai"
 c h a n i: "Chani"
@@ -988,33 +913,12 @@ c h d c six: "CHDC"
 c h q: "chq"
 c h r: "chr"
 c h v: "chv"
-c hat: " ^ "
 c hotel: "h"
 c i five: "ci"
 c i d r : "CIDR"
 c i d: "cid"
-sir i lambda: "i => "
 c i t b : "CITB"
 c i t b six: "CITB"
-c if l: "if ({Z1L}"
-c if not l: "if (!{Z1L}"
-sir if not: "if (!"
-sir if: "if ("
-c in less: " in {Z1L}"
-sir in question: "int?"
-sir in s: " in "
-sir in t s: "int "
-sir in t: "int{tab}"
-sir in: "int"
-c inline: "inline "
-c int array: "int[] "
-c int less: "int {Z1L}"
-c int s: "int "
-c interface: "interface"
-c internal s: "internal "
-c internal: "internal"
-c into less: " into {Z1L}"
-c into: " into "
 c iso: "CIso"
 c l six: "CL"
 c l a six: "CLA"
@@ -1026,15 +930,6 @@ c l i x m l: "clixml"
 c l i: "cli"
 c l p: "lp"
 c l y m: "Clym"
-sir lambda: " => "
-sir left shift: "<<"
-c let l: "let {Z1L}"
-c let less: "let {Z1L}"
-c lock l: "lock ({Z1L}"
-c lock: "lock ("
-c long less: "long {Z1L}"
-c long s: "long "
-c long: "long"
 c m b under: "cmb_"
 c m b: "cmb"
 c m d lambda: "(cmd) => "
@@ -1049,16 +944,6 @@ c map x: "CMapX"
 c mark l: "!{Z1L}"
 c mark: "!"
 c message s: "message{space}"
-sir minus line: "-----------------------------------------------------------------------------"
-c n c six: "CNC"
-c n n six: "CNN"
-c n t: "cnt"
-c name of: "nameof("
-c new block: "{l-brace}{enter}{enter}{r-brace}{up}{end}{tab}"
-c new: "new "
-c not equals l: " != {Z1L}"
-sir not equals: " != "
-c note: "NOTE: {Z2C}"
 c november: "n"
 c null: "NULL"
 c o two: "CO2"
@@ -1085,17 +970,10 @@ c o o r d: "coord"
 c o r p: "corp"
 c o s: "cos"
 c o t s six: "COTS"
-c object less: "object {Z1L}"
-sir object s: "object "
-sir object: "object"
-c open brace: "{l-brace}{{}}{del}{backspace}"
-sir operator: "operator"
-sir order by: "orderby "
+c n c six: "CNC"
+c n n six: "CNN"
+c n t: "cnt"
 c oscar: "o"
-c out less: "out {Z1L}"
-sir out s: "out "
-sir out: "out"
-sir override: "override"
 c p five: "cp"
 c p seven: "cp"
 c p c s: "CpCs"
@@ -1134,61 +1012,16 @@ c p table u r l: "CpTableUrl"
 c p table: "CpTable"
 c p under: "cp_"
 c p y: "cpy"
-c pack: "pack("
-sir parameters s: "params "
 c percent delta: "%d"
 c percent sierra: "%s"
-c plus equals l: " += {Z1L}"
-sir plus equals: " += "
 c point: "CPoint"
 c position: "POSITION"
-c pragma: "#pragma "
-c prams s: "params "
-sir private colon: "private:{enter}"
-c private less: "private {Z1L}"
-sir private s: "private "
-sir private static: "private static "
-sir private string: "private string "
-sir private: "private"
-sir protected s: "protected "
-c protected: "protected"
-c public class: "public class "
-c public colon: "public:"
-c public const: "public const "
-c public in t: "public int "
-c public l: "public {Z1L}"
-c public override: "public override "
-c public pool: "public bool "
-c public s: "public "
-c public static: "public static "
-c public string: "public string "
-c public void: "public void "
-c public: "public"
-c pure virtual: " const = 0"
-c question mark: " ? "
-c question question: " ?? "
 c r three: "Cr"
 c r n t: "crnt"
 c r o n: "cron"
 c r p six: "CRP"
 c r s six: "CRS"
-sir read only s: "readonly "
-sir read only: "readonly "
 c rect: "RECT"
-c ref less: "ref {Z1L}"
-sir ref s: "ref "
-sir ref: "ref"
-c repeated s: "repeated{space}"
-c return false: "return false;"
-c return less: "return {Z1L}"
-c return new: "return new "
-c return null: "return null;"
-c return result: "return result;"
-c return s: "return "
-c return semi: "return;"
-c return true: "return true;"
-c return: "return"
-c returns left: "returns ("
 c s five: "cs"
 c s a: "csa"
 c s con: " const"
@@ -1198,38 +1031,16 @@ c s p c: "CSpc"
 c s p: "csp"
 c s r six: "CSR"
 c s reference: "ref "
-c s s six: "CSS"
-c s s: "css"
 c s v: "csv"
 c s z: "sz"
 c scanf: "scanf("
-c select s: "select "
-c semi l: ";{enter}{Z1L}"
-sir semi left: ";{enter}{backspace}"
-c semi s: "; "
-sir semi: ";{enter}"
-sir set: "set"
-c sharp three: "CSharp"
-c sharp eight: "C# 8"
-c sharp: "C#"
-sir short s: "short "
-sir short: "short"
-sir size of: "sizeof("
-c slash c: "// {Z2C}"
+c sharp one: "C#"
 c slash input: "//{space}Input:{enter}//{tab}{tab}"
-sir slash star: "/* "
 c slash: "// {Z2}"
 c sss: "CSSS"
-c static s: "static "
-c static: "static"
 c string one: "CString1"
-c string array: "string[]"
 c string s: "CString "
 c string t: "CString{tab}"
-c struct: "struct"
-c structure: "struct"
-c switch l: "switch ({Z1L}"
-c switch: "switch ("
 c system time: "SYSTEMTIME"
 c t six: "CT"
 c t a p six: "CTAP"
@@ -1238,19 +1049,6 @@ c t r l: "ctrl"
 c t scan: "CT Scan"
 c t x: "ctx"
 c template: "template<"
-c this: "this"
-c throw new: "throw new "
-c throw s: "throw "
-c throw: "throw"
-c time span: "CTimeSpan"
-c to do: "// TODO: "
-c true: "TRUE"
-c try brace: "try{enter}{l-brace}{{}}"
-c try left: "try{enter}{{"
-c type definition: "typedef "
-c type name: "typename "
-c type of: "typeof("
-c typedef: "typedef "
 c u f a r: "Cufar"
 c u in pointer: "UIntPtr"
 c u int: "uint"
@@ -1259,32 +1057,13 @@ c u s t under: "cust_"
 c u s t: "cust"
 c u sim: "CUsim"
 c uick: "CUicc"
-c union: "union "
-c using left: "using ("
-c using: "using "
 c v five: "cv"
 c v s e com: "C:\\sw\\cas\\cvsmnt\\ecom\\"
 c v v six: "CVV"
 c v v: "cvv"
-c value: "value"
-c var l: "var {Z1L}"
-c var less: "var {Z1L}"
-c var s: "var "
 c variant: "VARIANT"
-c void s: "void "
-c void t: "void{tab}"
-c void: "void"
-c volatile: "volatile "
-c where less: "where {Z1L}"
-c while less: "while ({Z1L}"
-c while: "while"
 c win thirty two: "WIN32"
-c word s: "WORD "
-c word: "WORD"
 c y b g six: "CYBG"
-c yield return: "yield return "
-c yield s: "yield "
-c yield: "yield"
 ccolon colon l: "::{Z1L}"
 clpcstr: "LPCSTR"
 cad parcel id six: "CAD_PARCEL_ID"
@@ -1342,7 +1121,6 @@ char s star l: "char *{Z1L}"
 charge back: "chargeback"
 charlie three: "C3"
 charlie colon back: "c:\\"
-chat g p t : "ChatGPT"
 check box one: "CheckBox"
 check box seven: "checkBox"
 cheers ronny: "Cheers{enter}Ronny"
@@ -1587,6 +1365,7 @@ d v i r: "Dvir"
 d word s: "DWORD "
 d word t: "DWORD{tab}"
 darrell one l: "Darrel"
+dash dash all: " --all"
 dash zero one: "-01"
 dash zero two: "-02"
 dash zero three: "-03"
@@ -1883,6 +1662,11 @@ dot m under: ".m_"
 dot message: ".Message"
 dot n e t sixty six: ".NET 6"
 dot name: ".Name"
+dot net add space: "dotnet add "
+dot net build enter: "dotnet build{enter}"
+dot net clean enter: "dotnet clean{enter}"
+dot net solution space: "dotnet sln "
+dot net watch enter: "dotnet watch{enter}"
 dot net four point eight: ".NET4.8"
 dot net five: "dotnet"
 dot net seven: ".NET 7"
@@ -1891,6 +1675,8 @@ dot net e f: "dotnet ef"
 dot net framework: ".NET Framework"
 dot net lambda: "dotnet Lambda"
 dot net standard: ".NET Standard"
+dot net run: "dotnet run{enter}"
+dot net test: "dotnet test{enter}"
 dot net tool: "dotnet tool"
 dot new line: ".NewLine"
 dot non: ".Non"
@@ -1916,6 +1702,7 @@ dot to array: ".ToArray"
 dot to be: ".toBe"
 dot to equal: ".toEqual("
 dot to list: ".ToList"
+dot to lower: ".ToLower()"
 dot to string: ".ToString()"
 dot to: ".To"
 dot total: ".Total"
@@ -2589,9 +2376,7 @@ h result s: "HRESULT "
 h result t: "HRESULT{tab}"
 h result: "HRESULT"
 h s l six: "HSL"
-h t m l six: "HTML"
 h t m l element: "HTMLElement"
-h t m l: "html"
 h t t p six: "HTTP"
 h t t p colon: "http://"
 h t t p dash: "HTTP-"
@@ -2601,8 +2386,6 @@ h t t p w: "http://www."
 h t t p: "http"
 h t w six: "HTW"
 h triple c: "HCCC"
-h w l six: "HWL"
-h w l e : "HWLE"
 h w l e dash: "HWLE-"
 h w n d six: "HWND"
 h w n d: "hWnd"
@@ -2800,7 +2583,6 @@ i n c i t s: "incits"
 i n c: "inc"
 i n f o: "info"
 i n f: "inf"
-i n g six: "ING"
 i n g: "ing"
 i n i t: "init"
 i n m: "inm"
@@ -2899,7 +2681,6 @@ j o n o: "Jono"
 j p e g: "jpeg"
 j q l: "jql"
 j s five: "js"
-j s o n: "json"
 j t t six: "JTT"
 j t t: "jtt"
 j u l a i: "Julai"
@@ -2915,7 +2696,6 @@ jequals three: "{space}==={space}"
 jack green: "Jackgreen"
 january twenty nineteen: "January 2019"
 january twenty twenty three: "January 2023"
-jason six: "JSON"
 java c: "javac "
 java s: "java "
 java script five: "javascript"
@@ -3485,6 +3265,7 @@ my email elana: "elana.zulaikha@gmail.com"
 my email g mail: "ronny.zulaikha@gmail.com"
 my email hot mail: "ronnyzulaikha@hotmail.com"
 my email on microsoft: "ronzul@ronzul.onmicrosoft.com"
+my email pexsa: "ronzul+pexsa@zulaikha.com.au"
 my email z: "ronzul@zulaikha.com.au"
 my email zulaikha: "ronzul@zulaikha.com.au"
 my home number: "(02) 9328 2575"
@@ -3661,7 +3442,6 @@ o auth: "OAuth"
 o b i e: "Obie"
 o b j: "obj"
 o c i six: "OCI"
-o c r six: "OCR"
 o c t eighteen: "OCT18"
 o c t six: "OCT"
 o c t: "oct"
@@ -4621,7 +4401,6 @@ s p eight five three five: "sp8535"
 s p a six: "SPA"
 s p a h r: "Spahr"
 s p c: "spc"
-s p e c: "spec"
 s p o f: "spof"
 s p type: "SP Type"
 s p under p: " p_p"
@@ -4709,7 +4488,6 @@ s u p under: "sup_"
 s u p: "sup"
 s v c: "svc"
 s v d six: "SVD"
-s v h six: "SVH"
 s v n six: "SVN"
 s v n: "svn"
 s v r: "svr"
@@ -4836,7 +4614,241 @@ single quote quote left: "''{left}"
 single quote quote: "''"
 single quote s quote: "'{space}'"
 single quote y quote: "'Y'"
+sir abstract s: "abstract "
+sir abstract: "abstract"
+sir and: " && "
+sir arrow: "->"
+sir as: " as "
+sir assert: "ASSERT("
+sir async: "async "
+sir await: "await "
+sir bar equals: " |= "
+sir base dot: "base."
+sir base left: "base("
+sir boil question: "bool?"
+sir boil s: "BOOL "
+sir boil t: "BOOL{tab}"
+sir boolean: "BOOLEAN"
+sir break semi: "break;"
+sir break: "break"
+sir by less: " by {Z1L}"
+sir by: " by "
+sir byte array: "byte[]"
+sir byte s: "BYTE "
+sir byte: "BYTE"
+sir case: "case "
+sir cast control: "(Control)"
+sir cast decimal: "(decimal)"
+sir cast double: "(double)"
+sir cast int: "(int)"
+sir cast short: "(short)"
+sir cast string: "(string)"
+sir catch: "catch ("
+sir char s: "char "
+sir class s: "class "
+sir class: "class"
+sir colon base: " : base("
+sir colon: " : "
+sir comment line: "//////////////////////////////////////////////////////////////////////{enter}"
+sir con less: "const {Z1L}"
+sir con s: "const "
+sir cone s: "const "
+sir const s: "const "
+sir continue: "continue"
+sir decimal less: "decimal {Z1L}"
+sir default: "default:"
+sir delegate s: "delegate "
+sir delete p: "delete p"
+sir delete: "delete "
+sir do: "do"
+sir double less: "double {Z1L}"
+sir double: "double"
+sir e numb s: "enum "
+sir e numb: "enum"
+sir else if: "else if ("
+sir else: "else"
+sir end if: "#endif{enter}"
+sir equals l: " == {Z1L}"
+sir equals near: " = new "
+sir equals new: " = new "
+sir equals null: " == null"
+sir equals: " == "
+sir event s: "event "
+sir explicit: "explicit "
+sir external: "extern "
+sir finally: "finally"
+sir for each: "foreach ("
+sir for i loop: "for (int i = 0; i < ; i++)"
+sir for index: "for (Index = 0; Index < ; Index++)"
+sir for j loop: "for (int j = 0; j < ; j++)"
+sir friend: "friend "
+sir from l: "from {Z1L}"
+sir from less: "from {Z1L}"
+sir get set: "{l-brace}{{}} get; set; {r-brace}"
+sir get: "get"
+sir group l: "group {Z1L}"
+sir group less: "group {Z1L}"
+sir group: "group "
+sir hat: " ^ "
+sir i lambda: "i => "
+sir if l: "if ({Z1L}"
+sir if not l: "if (!{Z1L}"
+sir if not: "if (!"
+sir if: "if ("
+sir in less: " in {Z1L}"
+sir in question: "int?"
+sir in s: " in "
+sir in t s: "int "
+sir in t: "int{tab}"
+sir in: "int"
+sir inline: "inline "
+sir int array: "int[] "
+sir int less: "int {Z1L}"
+sir int s: "int "
+sir interface: "interface"
+sir internal s: "internal "
+sir internal: "internal"
+sir into less: " into {Z1L}"
+sir into: " into "
+sir is: " is "
+sir lambda: " => "
+sir left shift: "<<"
+sir let l: "let {Z1L}"
+sir let less: "let {Z1L}"
+sir lock l: "lock ({Z1L}"
+sir lock: "lock ("
+sir long less: "long {Z1L}"
+sir long s: "long "
+sir long: "long"
+sir minus line: "-----------------------------------------------------------------------------"
+sir name of: "nameof("
+sir name space: "namespace "
+sir name space: "namespace "
+sir new block: "{l-brace}{enter}{enter}{r-brace}{up}{end}{tab}"
+sir new: "new "
+sir not equals l: " != {Z1L}"
+sir not equals null: " != null"
+sir not equals: " != "
+sir note: "NOTE: {Z2C}"
+sir null coalesce: " ?? "
+sir nullable decimal: "decimal? "
+sir nullable double: "double? "
+sir nullable in t: "int? "
+sir nullable integer: "int? "
+sir nullable string: "string? "
+sir object less: "object {Z1L}"
+sir object s: "object "
+sir object: "object"
+sir open brace: "{l-brace}{{}}{del}{backspace}"
+sir operator: "operator"
+sir order by: "orderby "
+sir out less: "out {Z1L}"
+sir out s: "out "
+sir out: "out"
+sir override: "override"
+sir pack: "pack("
+sir parameters s: "params "
+sir plus equals l: " += {Z1L}"
+sir plus equals: " += "
+sir pragma: "#pragma "
+sir prams s: "params "
+sir private a sink: "private async "
+sir private colon: "private:{enter}"
+sir private less: "private {Z1L}"
+sir private readonly: "private readonly "
+sir private s: "private "
+sir privates: "private "
+sir private static: "private static "
+sir private string: "private string "
+sir private: "private"
+sir protected s: "protected "
+sir protected: "protected"
+sir public boil: "public bool "
+sir public class: "public class "
+sir public colon: "public:"
+sir public const: "public const "
+sir public e numb: "public enum "
+sir public in t: "public int "
+sir public interface: "public interface "
+sir public l: "public {Z1L}"
+sir public override: "public override "
+sir public pool: "public bool "
+sir public s: "public "
+sir public static: "public static "
+sir public string: "public string "
+sir public void: "public void "
+sir public: "public"
+sir pure virtual: " const = 0"
+sir question mark: " ? "
 sir question question: " ?? "
+sir question question: " ?? "
+sir read only s: "readonly "
+sir read only: "readonly "
+sir ref less: "ref {Z1L}"
+sir ref s: "ref "
+sir ref: "ref"
+sir repeated s: "repeated{space}"
+sir return false: "return false;"
+sir return less: "return {Z1L}"
+sir return new: "return new "
+sir return null: "return null;"
+sir return result: "return result;"
+sir return s: "return "
+sir return semi: "return;"
+sir return true: "return true;"
+sir return: "return"
+sir returns left: "returns ("
+sir select s: "select "
+sir semi l: ";{enter}{Z1L}"
+sir semi left: ";{enter}{backspace}"
+sir semi s: "; "
+sir semi: ";{enter}"
+sir set: "set"
+sir sharp eight: "C# 8"
+sir short s: "short "
+sir short: "short"
+sir size of: "sizeof("
+sir slash c: "// {Z2C}"
+sir slash star: "/* "
+sir static s: "static "
+sir static: "static"
+sir string array: "string[]"
+sir struct: "struct"
+sir structure: "struct"
+sir switch l: "switch ({Z1L}"
+sir switch: "switch ("
+sir this: "this"
+sir throw new: "throw new "
+sir throw s: "throw "
+sir throw: "throw"
+sir time span: "CTimeSpan"
+sir to do: "// TODO: "
+sir true: "TRUE"
+sir try brace: "try{enter}{l-brace}{{}}"
+sir try left: "try{enter}{{"
+sir type definition: "typedef "
+sir type name: "typename "
+sir type of: "typeof("
+sir typedef: "typedef "
+sir union: "union "
+sir using left: "using ("
+sir using: "using "
+sir value: "value"
+sir var l: "var {Z1L}"
+sir var less: "var {Z1L}"
+sir var s: "var "
+sir void s: "void "
+sir void t: "void{tab}"
+sir void: "void"
+sir volatile: "volatile "
+sir where less: "where {Z1L}"
+sir while less: "while ({Z1L}"
+sir while: "while"
+sir word s: "WORD "
+sir word: "WORD"
+sir yield return: "yield return "
+sir yield s: "yield "
+sir yield: "yield"
 sis tane: "Systane"
 size under t: "size_t"
 size under type: "size_type"
@@ -5006,6 +5018,7 @@ street under locality p i d : "STREET_LOCALITY_PID"
 street under locality: "STREET_LOCALITY"
 string five less: "string {Z1L}"
 string five s: "string "
+string fives: "string "
 string five t: "string{tab}"
 string five: "string"
 string ampersand: "string&"
@@ -5141,7 +5154,6 @@ t n t six: "TNT"
 t new block: "{space}{l-brace}{{}}{enter}"
 t node i d: "TNodeId"
 t number: "number"
-t o five: "to"
 t o b y: "Toby"
 t o c six: "TOC"
 t o colon s: "To: "
@@ -5921,32 +5933,85 @@ pie pie: PyPi
 # Otherwise, the content is appended to the existing content of the target files.
 # The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
 
+ten kilometers per hour: 10km/h
+one terabyte: 1TB
 three b one b: 3B1B
+nineteen ninety: 1990
+nineteen ninety one: 1991
+nineteen ninety two: 1992
+nineteen ninety three: 1993
+nineteen ninety four: 1994
+nineteen ninety five: 1995
+nineteen ninety six: 1996
+nineteen ninety seven: 1997
+nineteen ninety eight: 1998
+nineteen ninety nine: 1999
+two thousand: 2000
+two thousand and one: 2001
+two thousand and two: 2002
+two thousand and three: 2003
+two thousand and four: 2004
+two thousand and five: 2005
+two thousand and six: 2006
+two thousand and seven: 2007
+two thousand and eight: 2008
+twenty ten: "2010"
+twenty eleven: "2011"
+twenty twelve: "2012"
+twenty thirteen: "2013"
+twenty fourteen: "2014"
+twenty fifteen: "2015"
+twenty sixteen: "2016"
+twenty seventeen: "2017"
+twenty eighteen: "2018"
+twenty nineteen: "2019"
+twenty twenty: "2020"
 four g: 4G
 four g six: 4G
 five g: 5G
+sixty four flex sixty four: 64x64
+eighty x eighty: 80x80
+eighty plex eighty: 80x80
 a a b six: AAB
 a b c six: ABC
 a b n dash: ABN-
 a b r six: ABR
 a c d ocean: ACDSee
+a c u six: ACU
 a d b space: "adb "
 a d c six: ADC
 a d s one: Ads
 a e c six: AEC
 a e m o: AEMO
 a e m o six: AEMO
+a g m six: AGM
+a i o five: aio
 a j n dash: AJN-
 a j n six: AJN
+a m d one: Amd
+a m d five: amd
+a m d six: AMD
 a m six: AM
+a n s i one: Ansi
+a n z six: ANZ
+anne si one: Ansi
+an see one: Ansi
 a n u six: ANU
 a p i six: "API"
 a p i gateway: "API Gateway"
 a p eyes: "APIs"
 a p k six: "APK"
+a r c six: ARC
+a r c six dash: ARC-
+a r g one: Arg
+a r g s one: Args
 a r m sixty four: arm64
 a s i c s: Asics
 a s i c six: ASIC
+a s thirty six ninety five: AS 3695
+a sink one: Async
+a s u s one: Asus
+a s x six: ASX
 a t six: AT
 a t o five: "ato"
 a t o six: "ATO"
@@ -5954,12 +6019,16 @@ a t s o: atso
 a t s o six: ATSO
 a toe six: "ATO"
 a two six: "ATO"
+at office six: "ATO"
 at so: atso
 at so dash zero: ATSO-0
 at so six: ATSO
+at star space: "@* "
 at toe six: "ATO"
 ozzie toe six: "ATO"
+a p i one: Api
 a v d six: AVD
+a w s one: "Aws"
 a w s six: "AWS"
 a w s five: "aws"
 a w s amplify: "AWS Amplify"
@@ -5986,7 +6055,10 @@ a w s s three: "AWS S3"
 a w s shield: "AWS Shield"
 a w s v p c : "AWS VPC"
 a w s wavelength: "AWS Wavelength"
+a slash prof: A/Prof
 act on l: Actonel
+atonal: Actonel
+Octanol: Actonel
 act on l e c: Actonel EC
 a addition: addition
 a edition: addition
@@ -5996,6 +6068,7 @@ admin dash zero: ADMIN-0
 affair dash zero: AFFAIR-0
 a genic: agentic
 a men: amen
+a tax office six: ATO
 add words: adwords
 air dot: a.
 alan key: Allen key
@@ -6007,10 +6080,14 @@ add we now: Arduino
 add wino: Arduino
 admin six: ADMIN
 a slash d: A/D
+all in one five: all-in-one
 and o r s: "& Ors"
 apex two: Apex 2
 Arduino Nano: Arduino Nano
+arm six: ARM
+arm six dash: ARM-
 Arvin Ash
+ass key one: Ascii
 ass sure: "Azure"
 asset net: Assetnet
 a see: Aussie
@@ -6020,6 +6097,7 @@ Aussie tire: tyre
 auto regressive: autoregressive
 axis bar: axis bar
 axis x: axis
+b b six: BB
 b one dash: B1-
 b two dash: B2-
 b three dash: B3-
@@ -6033,20 +6111,34 @@ b ten dash: B10-
 b eleven dash: B11-
 b eleven dash a: B11-A
 b eleven dash b: B11-B
+b d b n: BDBN
+b d b n six: BDBN
+b e n d six: BEND
+b h p six: BHP
 b i o s: BIOS
+b l d six: BLD
 b l e six: BLE
 b m d six: BMD
 b o t o: boto
 b o t o three: boto3
+b u y one: Buy
+Bank Australia
+Bendigo Bank
+bis phosphor ate: bisphosphonate
 bit locker: BitLocker
 blue no: Bluno
 blue no b l e: Bluno BLE
+bob Zelden: Bob Zelden
 brat six: BRAT
 beetle one: Beetle
+blazer: Blazor
+blazer oh: Blazor
+blazer wasm: Blazor WASM
 block h: "Bloch"
 blue care: BlueCare
 bondi junction: Bondi Junction
 boolean one: Boolean
+Brian Becker: Brian Beckor
 broad link: Broadlink
 build dot gradle: build.gradle
 bully in five: boolean
@@ -6055,6 +6147,7 @@ brief dictionary: dict
 byte code
 bite y: byte
 bite wise: bytes
+by w x h one: ByWxH
 call e d: called
 call e e: callee
 cap bat: B
@@ -6071,16 +6164,16 @@ Chag sameach
 comma and: ", and"
 comma andy: ", and"
 see await: "await "
-c c twenty five forty: CC2540
-c d d six: CDD
-c h s six: CHS
-c s b six: "CSB"
-c s b c eight: "CSB C8"
-c s b c twelve: "CSB C12"
-c s i r o: CSIRO
-c s s: css
-c u d a: CUDA
+chart j s: ChartJS
+chat g p t : "ChatGPT"
 co lab: colab
+coal: call
+coal end space: ": "
+come sack: CommSec
+come sec: CommSec
+computer spec one: ComputerSpec
+console dot: "Console."
+console one: "Console"
 cool an getter: Coolangatta
 havre haditha: Chevra Kadisha 
 here haditha: Chevra Kadisha 
@@ -6090,26 +6183,54 @@ havre haditha one: ChevraKadisha
 hero haditha: Chevra Kadisha
 havre watch one: ChevraWatch
 havre watch app one: ChevraWatchApp
+c c six dash: CC-
+c c twenty five forty: CC2540
+c d d six: CDD
 c d dot dot back: "cd ..\\"
 c d dot dot enter: "cd ..{enter}"
 c d GitHub back: cd d:\GitHub\
+c d i a five: cdia
+c d i a six: CDIA
+c d k six: CDK
+c h s six: CHS
 c i c d : "CI/CD"
+c l i one: Cli
+c l i one back: "Cli\"
 c l i: cli
+c m one: Cm
+c o d a six: CODA
 c o l six: COL
 c o r s : "CORS"
 c p i : "CPI"
 c p i six: "CPI"
+c p u: cpu
+c p u one: Cpu
+c p u six: CPU
+c p u five: cpu
 c r u d: crud
+c s b c eight: "CSB C8"
+c s b c twelve: "CSB C12"
+c s i r o: CSIRO
 c s g six: CSG
 c s i r o: CSIRO
+c s b six: "CSB"
+c s s one: Css
+c s s six: CSS
+c s s five: css
+c s s: css
 c t scan: CT Scan
+c u d a: CUDA
+c x o six: CXO
 c make one: CMake
+catalogue: catalog
 high flix: ChaiFlicks
 ceiling i: ceiling
 Chevron
 cito scape: Cytoscape
 claude code: Claude Code
 clothes five: close
+clothes quote: "{quote}"
+Comm speck five: comspec
 Coulomb
 shale zion: chalazion
 cale zion: chalazion
@@ -6121,25 +6242,49 @@ ko reference: coreference
 d a c six: DAC
 d b cluster: DB cluster
 d b cluster three: DB Cluster
+d b s one: Dbs
 d c p dash: DCP-
+d d r three six: DDR3
+d d r four six: DDR4
+d d r five six: DDR5
+d e s c one: Desc
 d e x six: DEX
 d f robot: DFRobot
+d i c t one: Dict
+d n six: DN
 d o c: doc
+d o d five: dod
+d o d nine: DoD
 d o m: dom
+d o m one: Dom
+d o m point nine: DomPoint
+d o m wrecked nine: DomRect
+d o m size nine: DomSize
 d p h six: DPHI
 d p i six: DPI
+d r one: Dr
 d slash a: D/A
 dad dash zero: DAD-0
 darling hurst: Darlinghurst
-dash X X six: -XX
+dash X X six: "-XX"
 dash v eight a: "-v8a"
 dash v eight air: "-v8a"
+data sheets: datasheets
 de bounce: debounce
 dear dash departed: dear-departed
+desired u i one: DesiredUi
 d i n six: DIN
+doctor con amicus: Dr Con Yiannikas
+doctor cherry: Dr Cherry
 doctor giri: "Dr Giri"
+doctor stacy yankovic: Dr Stacey Jankelowitz
+doctor yankovic: Dr Jankelowitz
 doctor levin: "Dr Levin"
+doctor lisa raven: Dr Lisa Raven
+doctor raven: Dr Raven
+doctor one: Dr
 doll dashi: DALL-E
+dot get one: .Get
 dot net for android: ".NET for Android"
 dialogue: dialog
 data point one: DataPoint
@@ -6150,27 +6295,43 @@ day j s: dayjs
 dear Depp six: DEARDEP
 dear Depp dash zero: DEARDEP-0
 diff bot: Diffbot
+discreet: discrete
+display port: DisplayPort
 doc you saw us: Docusaurus
 dock i d three: DocId
+dock u sign: Docusign
+dock u signed: Docusigned
 dock under i d six: DOC_ID
 dock under six: DOC_
 doctor tractor: Dr Tracton
 dot a u: .au
 dot net Core: .NetCore
+dot razor: .razor
+dot razor dot c s: .razor.cs
 double question: " ?? "
 double question null: " ?? null"
+double quotes: "{quote}{quote}"
+doctor a ronny: Dr Jim Aroney
+doctor Javanese: Dr Darveniza
 doctor heath: Dr Heath
 doctor high field: Dr Highfield
 doctor DeLuca: Dr De Luca
+doctor Jenkinson: Dr Jankelson
 doctor Yim: Dr Yim
 dragon dictate: DragonDictate
 duo denim: duodenum
 dynamo d b: "DynamoDB"
 e a s six: EAS
+e dash waste: e-waste
+e l one: El
 e n dash: EN-
+e m g six: EMG
+e numb one: Enum
+e num one: Enum
 e n v six: ENV
 e n v dash zero: ENV-0
-e dash waste: e-waste
+e o l: eol
+e t c: etc
 emanuel: Emanuel
 Immanuel: Emanuel
 endeavor: endeavour
@@ -6180,20 +6341,27 @@ ever ready: Eveready
 every circuit one: EveryCircuit
 equifax: Equifax
 ether net: Ethernet
+ex kelly draw: Excalidraw
 expo o: expo
 e d u six: EDU
+e m m c six: eMMC
 e p o a: ePoA
 e s p thirty two: "ESP32"
+e dash bike: e-bike
+e dash scooter: e-scooter
+e t c five: etc
 e t f six: ETF
 e t efs: ETFs
 e t s y: Etsy
 e x p dash: exp-
+e x t one: Ext
 f c a six: FCA
 f c f c o a: FCFCOA
 f c m six: FCM
 fin six: FIN
 f m c six: FMC
 f m c a six: FMCA
+f r a c g p: FRACGP
 f y eighteen: "FY18"
 f y nineteen: "FY19"
 f y twenty: "FY20"
@@ -6207,6 +6375,8 @@ f y i: FYI
 f y i six: FYI
 family dash zero: FAMILY-0
 family six: FAMILY
+field value scale: FieldValueScale
+field value unit: FieldValueUnit
 fin dash zero: "FIN-0"
 thin dash zero: "FIN-0"
 fire base: firebase
@@ -6217,19 +6387,29 @@ finance dash zero: FIN-0
 f pampa: Fumpa
 fun dash zero: FUN-0
 fun six: FUN
+g b e three: GbE
+g h z one: GHz
 g o v t six: GOVT
 gab web dash zero: GABWEB-0
 gab web six: GABWEB
 gravy table of contents: "```table-of-contents"
+geek k: geek
 catch ba dash zero: GAHBA-0
 catch ba six: GAHBA
 Gary Bortz
 gamma ba: Gahba
+Gabriella: Gavriella
 gene one: Gen1
+gene two: Gen2
+gene three: Gen3
+gene four: Gen4
+gene five: Gen5
 gen sim: gensim
 Gentoo: Gen2
 jill Annie: Gilana
 goth ba: Gahba
+g b one: Gb
+g b p s one: Gbps
 g cradle: gradle
 g cradle w: gradlew
 cradle g: gradle
@@ -6237,8 +6417,11 @@ g c twenty five: GC25
 g n d six: GND
 g o v six: GOV
 g p s six: GPS
+g p u six: GPU
+g p u six dash: GPU-
 gen cost: GenCost
 geo zebra: GeoGebra
+gillion bare syndrome: Guillain-Barré Syndrome
 google services Jason: google-services.json
 google services dot Jason: google-services.json
 google play services one: GooglePlayServices
@@ -6246,8 +6429,20 @@ graph q l: "GraphQL"
 graph d b: "GraphDB"
 graph fusion: Graphusion
 green power one: GreenPower
+group able: groupable
 h f d t: hfdt
+h i b m six: HIBM
+h p one: Hp
+h p five: hp
 h p six: HP
+h right arrow r: HWLE → R
+h t m l: "html"
+h t m l one: "Html"
+h t m l document: "HtmlDocument"
+h t m l five: "html"
+h t m l six: "HTML"
+h w l six: "HWL"
+h w l e : "HWLE"
 had dash phone number: had-phone-number
 hash f m six: "#FM"
 health dash zero: "HEALTH-0"
@@ -6255,30 +6450,55 @@ here here: Hear Here
 Hebrew good luck: mazal tov
 Hebrew good luck three: Mazal Tov
 Hebrew friends: chevra
+Hebrew friends one: Chevra
 Hebrew havre: chevra
 hyper v: "Hyper-V"
 ho why: Gahba
 home dash zero: HOME-0
 how why: Gahba
+i b k r six: IBKR
+i broadcast: iBroadcast
 i d: id
 i d one: Id
 i d e: IDE
 i d e six: IDE
+i d x one: Idx
+i filter one: IFilter
 i m u six: IMU
 i m use: IMUs
+i n g six: "ING"
+i n t one: Int
+i n t l one: Intl
+i r s six: IRS
+i read only: "IReadOnly"
+i read only list left: "IReadOnlyList<"
 i t six: "IT"
 I star twenty nine fifty five: "I*2955"
 I star twenty nine eighty: "I*2980"
 i two c: I2C
+icon apartments: Ikon Apartments
+import: input
+import o: import
+in foe: info
+iris x e: Iris Xe
 insole o: insole
 insoles o: insoles
 j ode ya: Joadja
 j b d six: JBD
+j b high fy: JB Hi-Fi
+j b haifa: JB Hi-Fi
+j b hi phi: JB Hi-Fi
+j b high fy one: JBHiFi
+j b hi phi one: JBHiFi
+j b hi five: jbhifi
 brief j b d: JBD
 j c a six: JCA
 J P six: JP
 J P dash: JP-
 j s six: JS
+j s o n: "json"
+jason one: "Json"
+jason six: "JSON"
 Jason dot stringy fy: "JSON.stringify("
 ja car: Jaycar
 jupiter lab: JupyterLab
@@ -6287,32 +6507,50 @@ jupiter notebook: Jupyter Notebook
 colman k: Kalman
 cot line: Kotlin
 can more: Kenmore
+cat umbo: Katoomba
+Kasper ski: Kaspersky
+Kaspersky k r d: Kaspersky KRD
+key boots: Kibbutz
 key pass: Keepass
 k g c six: KGC
+k g one: Kg
 l c o e: LCOE
 l e d five: "led"
 l e d six: "LED"
 l e das: "LEDs"
 l h s: LHS
 l h s six: LHS
-l i dash ion: Li-ion
+l i b one: Lib
+l i dash ion: Li-ionaddTalonv
 l i dash ion one: Li-Ion
 l l ems: LLMs
 l l m six: LLM
 i w i w d: iwiwd
+l y c six: LYC
 lang chain: LangChain
+last right time one: LastWriteTime
+left archive right: "{{archive}}"
+left d n right: "(DN){left}"
+left t right space: "(T) {left}{left}"
+legalize: legalise
+legalization: legalisation
+levee: levy
 linked in six: LINKEDIN
+list two: List2
+lombardy: Lombardi
 low dash: lodash
 Macquarie park: Macquarie Park
 macro goal: Macrogol
 mac cream: Macrium
 Macrium reflect: Macrium Reflect
 mark c: Marc
+mark murr: Marc Mer
 mars three six: MARS3
 mede bank: Medibank
 memo eyes: memoize
 Menorca monuments: Menucha Monuments
 Minorca monuments: Menucha Monuments
+mermaid h: mehrmaid
 minyan: minyan
 Mitre ten: Mitre 10
 merit on: Meriton
@@ -6320,14 +6558,30 @@ money smart: Moneysmart
 monte fury: Montefiore
 m a u i: MAUI
 m a u i six: MAUI
+m a x one: Max
+m b p s one: Mbps
+m dot two: M.2
 m f a six: "MFA"
 m f a: "mfa"
+m i n one: Min
+m r one: Mr
 m six six: M6
+m t s one: Mts
 m u f g: MUFG
 m u f g six: MUFG
 m u i: mui
+mamou: Mummoo
+min max one: MinMax
+mister William Lombardi: Mr William Lombardi
+mum mo: Mummoo
+max one: Max
+max dash q: Max-Q
+Michael mode: Michael Mote
+m v v m six: MVVM
+m y r six: MYR
 mobile dash SDK five one: mobile-sdk51
 mole x: Molex
+motorized: motorised
 my gov: "myGov"
 my id: "myID"
 my s q l three: "MySql"
@@ -6339,6 +6593,7 @@ n d k: ndk
 n d k six: NDK
 n e l six: NEL
 n e m six: NEM
+n h c six: NHC
 n m v six: NMV
 n p m: "npm"
 n p m six: "NPM"
@@ -6351,14 +6606,19 @@ n p m run sam colon: "npm run sam:"
 n p m run serve: "npm run serve"
 n t u six: NTU
 n p x: npx
+n video: NVIDIA
+n video six: NVIDIA
 name a not: Anat
+name Ada: Ada
 name Addie: Addy
 name Annie: Annie
 name Annie Goldberg: Annie Goldberg
 name ass sure: "Azure"
 name and Tunis: Antunes
 name a t o: ATO
+name becker: Beckor
 name bigger or waters: Biggera Waters
+name barrel i: Birrell
 name balcon: Belkin
 name bort: Bortz
 name Bowral: Bowral
@@ -6380,6 +6640,7 @@ name nova peris: Nova Peris
 name car in: Karin
 name Ferrer: Ferrer
 name fine man: Feynman
+name indoor pill e: Indooroopilly
 name jazz man: Jasmann
 name Jimenez: Jimenez
 name Condon: Kundan
@@ -6398,24 +6659,31 @@ name more wire: Moriah
 name Natalya: Netanya
 name nicki c: Nicky
 name nicki k: Nikki
+name o dead: Oded
 name paul: Paul
 name pisa: Peisah
 Peisah isms: Peisah-isms
+name pink evil: Penkivil
 name pinball: Pymble
 name pro lea: Prolia
 name Jackie q: Jacqui
 name Pauli: Pauli
+name ram prasad: Ram Prasad
 name rob: Rob
 name ron it: Ronit
 name roselle: Rozelle
+name sammy: Sammie
 name save ta: Savta
 name shroud dinger: Schrödinger
 name strawman: Straumann
 name Tammany: Tmne
 name Tamara: Tamara
 name tea pee: TePe
+name terry sheer: Terri Scheer
 name tomorrow: Tamara
 name thor: Thor
+name u c services: Uc Services
+name you see services: Uc Services
 name ya hell: Yael
 name Yael Abraham: Yael Abraham
 name Yael Ferrer: Yael Ferrer
@@ -6436,17 +6704,30 @@ nice fide: niceified
 night k: knight
 nine bot: Ninebot
 nine bot s two: Ninebot S2
-no k: know
+null one: Null
+no k: 
+no u i slider: noUiSlider
+no u i slider five: nouislider
 no w: know
 no votel: Novotel
 no tie fee: Notifee
 n p m install legacy: "npm install --legacy-peer-deps"
+n t s c six: NTSC
+n u m one: Num
+n v m six: NVM
+n v m six e: NVMe
+knowable: nullable
+null able: nullable
 a lanza pin: Olanzapine
 office works: Officeworks
 one drive: OneDrive
 onto text: Ontotext
+o c r six: "OCR"
+o checklist item: "- [ ] "
 o h m one: Ohm
 o h m s one: "Ohm's"
+o l e d six: OLED
+o led six: OLED
 h m s one: "Ohm's"
 physics Ohm apostrophe s: "Ohm's"
 o p five: "op"
@@ -6454,31 +6735,68 @@ o r m six: ORM
 o s recovery: OS Recovery
 o u pin: Oupiin
 Oh hell hayim: Ohel Chaim
+on site one: Onsite
 opt e sooth: Opti-Soothe
+option two: Option2
 owl six: OWL
+p c a six: PCA
+p c i e four: "PCIe 4"
+p c i e five: "PCIe 5"
 p d f dot j s: PDF.js
 p d f one: Pdf
 p d f five: pdf
 p d f six: PDF
+p f k six: PFK
+p g one: Pg
 p h e s six: PHES
 p m six: PM
+p n one: Pn
+p r t six: PRT
+p right arrow: " → "
 package dot Jason: package.json
+padded right arrow: " → "
+part option: PartOption
+part options: PartOptions
 pass r: parse
+pass are: parse
+pass r one: parse
+passer one: parse
+pass r r: parser
 pass r two: parser
+passer: parser
 pass rod: parsed
+pass r d: parsed
 pass r e d: parsed
+pass said: parsed
 parse rod: parsed
-parse sing: parsing
+passer d: parsed
+passer s: parses
+pass ring: parsing
+pass r sing: parsing
 pass sing: parsing
+parse sing: parsing
+passer ring: parsing
+passer ing: parsing
+pass mark: passmark
+pass mark one: PassMark
 pass key: passkey
 pass keys: passkeys
 pay pal: PayPal
+pixie: Pexsa
+pixie five: pexsa
+p e x sar: Pexsa
+peck sar: Pexsa
+peck say: Pexsa
+pick say: Pexsa
+pecks ah: Pexsa
+pec say: Pexsa
 perf board: perfboard
 period p: period
 permittivity
 permit dimity: permittivity
 per motility: permittivity
 permit vite: permittivity
+phantom j s: PhantomJs
 Phillips Hugh: Philips Hue
 physics om: Ohm
 physics jewel: Joule
@@ -6496,40 +6814,70 @@ pipe six hundred: "|600"
 pipe eight hundred: "|800"
 pipe one thousand: "|800"
 pipe null: " | null"
+pixie data: PexsaData
+pixie data scraper: PexsaDataScraper
+pixie wasm: PexsaWasm
+pixie wasm one: PexsaWasm
 point p: point
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
+powershell: PowerShell
 p c b six: PCB
+p c i six: PCI
+p c i six e: PCIe
+p d c six: PDC
 p i n six: "PIN"
+p m d six: PMD
 p o a six: "POA"
 p period: period
 p r e d: pred
 p r o p s: props
 p r p six: PRP
 p s u six: PSU
+p t y l t d: Pty Ltd
+p w d six: PWD
 p w m six: PWM
 p fishing: "phishing"
+pe tonga: Patonga
 phase s: phase
 Piksters
 pe cabin: Pokolbin
 presence t: presents
+prod ex a: Prodexa
+prod ex err: Prodexa
+prod xer: Prodexa
+prod ex err six: PRODEXA
+pro lea: Prolia
 q under: "q_"
+q a n six: QAN
 r a d six: RAD
+r e c t one: Rect
+r e s one: Res
 r arrow w: "R→W"
+rad eon six: RADEON
+rad eon six dash: RADEON-
+razor five: razor
 raindrop dot io: Raindrop.io
 react one: React
 red brace: }
+rez s t r nine: ResStr
+Ronnie: Ronny
 Ronny
 Ronny Zulaikha
+route: root
+root u: route
 Brookwood: Rookwood
 name rows bay: Rose Bay
 rows bay: Rose Bay
 rows bat: Rose Bay
+r a w: raw
 r d f six: RDF
+r d s one: Rds
 r d space: "rd "
 r h s: RHS
 r h s six: RHS
 r g n six: RGN
+r j dash forty five: RJ-45
 agin six: RGN
 asian six: RGN
 r n enz : "RNNs"
@@ -6537,13 +6885,40 @@ r n f b six: RNFB
 r n n six: "RNN"
 r p i d: "RP ID"
 r p six: RP
+r right arrow h: R → HWLE
+r t a five: rta
+r t a six: RTA
 r t v six: RTVList
+r t x six: RTX
+r t x fifty: RTX 50
+arty x six: RTX
+arty fifty: RTX 50
+arty x fifty ninety: RTX 5090
+arty x pro: RTX Pro
+r y z e n: Ryzen
+rate a: rate
+read only one: ReadOnly
+real tech: Realtek
+reg ex one: Regex
+right a: rate
+rison 3: Ryzen 3
+rison 5: Ryzen 5
+rise on three: Ryzen 3
+rise on five: Ryzen 5
+rise on seven: Ryzen 7
+rise on nine: Ryzen 9
 right r: right
 rose: rows
 rose w: rows
 rose i e: "Rosie"
 rose e: "Rosie"
+rush cutters: Rushcutters
 rye al tress: Ryaltris
+rise on six: RYZEN
+rising z: Ryzen
+rising z three: Ryzen 3
+rising z five: Ryzen 5
+rising z seven: Ryzen 7
 r z six: "RZ"
 s c l six: SCL
 s d a six: SDA
@@ -6552,25 +6927,51 @@ s d k fifty one: sdk51
 s e g six: SEG
 s e g dash zero: SEG-0
 s e m: sem
+s f f five: sff
+s f f six: SFF
+s i scale nine: SiScale
+s m s f: SMSF
+s m s f six: SMSF
 s m h: SMH
+s k u one: Sku
+s p e c: "spec"
+s p e c s: "specs"
+spec c: spec
+spec c one: Spec
+speck c: spec
+speck c s: specs
+spec group one: SpecGroup
+spec item one: SpecItem
+specie: spec
+Speccy: spec
+s i one: Si
 s p thirteen: SP13
 s q l alchemy: SQLAlchemy
 s q l six: "SQL"
 s q light: "SQLite"
+s r g b six: sRGB
+s t g one: STG
+s t one: St
+s t r one: Str
 s three: "S3"
 s three bucket one: "S3Bucket"
 s two six: S2
 s twenty one: S21
+s v h six: "SVH"
 saint vincents: "St Vincent's"
 saint george: "St George"
 salmon o: Salomon
+sam i e: SammieoList
 sand disk: Sandisk
 Sat vincents: "St Vincent's"
 saturn six: SATURN
+sauce: source
 savour e: saver
+sir sharp one: "CSharp"
 sit vincents: "St Vincent's"
 save ta: Savta
 science click: ScienceClic
+scrap e: scrapy
 seg bot: Segbot
 Seg bot dash zero: SEGBOT-0
 seg e dash zero: "SEGGY-0"
@@ -6583,8 +6984,10 @@ seg dance six: SEGDANCE
 seg dance dash zero: SEGDANCE-0
 seggy six: SEGGY
 segue: Segway
+segues: Segways
 Segway s three: Segway S3
 Segway s eight: Segway S8
+sell one: Sell
 serial i: serial
 Sir tulane: Sertraline
 shoe e: shoe
@@ -6596,21 +6999,34 @@ shin greeks: Shingrix
 smart draw: SmartDraw
 snowy hydro two point oh: Snowy Hydro 2.0
 soba than: Sorbothane
+sort r: sort
 space time: spacetime
 space dub dub version: " --version"
 sparkle q: SPARQL
 spec c: spec
 speck c: spec
+specks c: specs
+speck sees: specs
+specks sees: specs
+spec item one: SpecItem
 specie: spec
 Speccy: spec
+star at: " *@"
 Stephen v: Steven
+sun core: Suncorp
+super six: SUPER
 support assist: SupportAssist
+s n five fifty: SN550
+s p e c s: specs
 s v g: svg
 s v g six: SVG
 s w r l six: SWRL
 scale are: scalar
+size one: Size
 stem dash zero: "STEM-0"
 stem six: STEM
+strata dynamics: Strata Dynamics
+strata plus: Strata Plus
 sty i: stye
 sty eyes: styes
 super guide: SuperGuide
@@ -6618,12 +7034,21 @@ sus agen: Sustagen
 sustain y: Systane
 System net: Systemnet
 t twenty four: "T24"
+t d six dash: "TD-"
 t e c h six: TECH
+t f n s w: TfNSW
+t f n six: TFN
+t i one: Ti
+t i six: TI
+t m d s six: TMDS
 t n dash: TN-
+t o one: To
+t o five: to
 t o u six: TOU
 t p m six: TPM
 t s b six: TSB
 t s six: TS
+t vase: TVs
 talent: Talon
 talk q: torque
 talon dash zero: TALON-0
@@ -6635,32 +7060,54 @@ tax x: tax
 tax e d: taxed
 tech dash zero: TECH-0
 tell stra: Telstra
+Terry Dodds
+test lib one: TestLib
 to brix: Tobrex
 talk q: torque
 talks x: Torx
+tame: team
+tegra toll: Tegretol
 Thor technologies: Thor Technologies
 tie base: TiBase
 torque x: Torx
 took took: "tuk-tuk"
+tower t two: Tower T2
 twist ease: Twisties
 tire y: tyre
 tires y: tyres
+trading view: Trading View
 trans collusion: transclusion 
 transclusion
 transclude
 triple colon: "⫶"
+twenty twenty one: "2021"
+twenty twenty two: "2022"
+twenty twenty three: "2023"
+twenty twenty four: "2024"
+twenty twenty five: "2025"
 twenty twenty six: "2026"
 twenty twenty seven: "2027"
+u dim six: UDIMM
 u e f i six: UEFI
 u e f i: UEFI
+u f s six: UFS
 u l fourteen forty nine: UL 1449
 u r l: url
+u r l one: Url
 u r l six: URL
 u r else: URLs
+u r w six: URW
+you are w six: URW
+u s six: US
 u s b six: "USB"
 u s b: "usb"
+u s b dash a: "USB-A"
+u s b dash c: "USB-C"
+u s d t: USDT
+u t i l one: Util
 u u i d: uuid
 unicode right arrow: "→"
+unit of measure nine: UnitOfMeasure
 up sort: upsert
 up and atom: Up and Atom
 used dash name: used-name
@@ -6668,19 +7115,44 @@ v b a six: VBA
 v in six: VIN
 v i s: vis
 v i t e: vite
+v ram: vram
+v ram six: VRAM
 vera bored: veroboard
 vera crypt: VeraCrypt
 vista print: VistaPrint
 vitamin k two: vitamin K2
 vodaphone: Vodafone
+w a s m: wasm
+wasm one: Wasm
+w a s m one: Wasm
+wasm six: WASM
+w a s m six: WASM
 w arrow r: "W→R"
 w b c six: WBC
+w d blue: WD Blue
+w d s six: WDS
+w d six: WD
+w dash eight ben: W-8BEN
+w e s six: WES
+w dot lombardy: W. Lombardi
+w lombardy: W Lombardi
+w x h one: WxH
+wait a: wait
+waverly: Waverley
+week e: week
+wait g: weight
+wait g one: Weight
 weight g: weight
 weights g: weights
+west mead: Westmead
+west pack: Westpac
 whats at: WhatsApp
 where h: where
 witch: which
 will one: Will
+William Lombardi: William Lombardi
+Williams birthday: 07111959
+Williams mobile: 0422570534
 windows eleven: Windows 11
 wool lara: Woollahra
 Wool worths: Woolworths
@@ -6691,17 +7163,24 @@ wood l: would
 work tree: worktree
 work trees: worktrees
 right w: write
+x axis two: x-axis
+x e one: Xe
 x l r six: XLR
 x ray: X-ray
 x rays: X-rays
 x star eighty three forty: "X*8340"
+x y z one: Xyz
 xamarin dot firebase dot: Xamarin.Firebase.
+y axis two: y-axis
 y b g: YBG
 y b g six: YBG
 yager six: YAGO
 yon cupar: Yom Kippur
 you e: Youi
 Zola runic: zoledronic
+Zorro Markets
+sorrow markets: Zorro Markets
 Zulaikha
 zi tell: Zyxel
 zoo stand: Zustand
+site z: Zyte
