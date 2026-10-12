@@ -10,8 +10,13 @@
 # The content is wrapped in comment markers in the target files so that we know what section needs to be replaced.
 
 ten kilometers per hour: 10km/h
+ten slash twenty one Waverley street: 10/21 Waverley Street
+one g b e: 1GbE
+one g b e nine: 1GbE
 one terabyte: 1TB
 three b one b: 3B1B
+two point five g b e: 2.5GbE
+two point five g b e nine: 2.5GbE
 nineteen ninety: 1990
 nineteen ninety one: 1991
 nineteen ninety two: 1992
@@ -22,6 +27,7 @@ nineteen ninety six: 1996
 nineteen ninety seven: 1997
 nineteen ninety eight: 1998
 nineteen ninety nine: 1999
+two point four giga hertz: 2.4GHz
 two thousand: 2000
 two thousand and one: 2001
 two thousand and two: 2002
@@ -45,6 +51,8 @@ twenty twenty: "2020"
 four g: 4G
 four g six: 4G
 five g: 5G
+five gigahertz: 5GHz
+six gigahertz: 6GHz
 sixty four flex sixty four: 64x64
 eighty x eighty: 80x80
 eighty plex eighty: 80x80
@@ -53,6 +61,8 @@ a b c six: ABC
 a b n dash: ABN-
 a b r six: ABR
 a c d ocean: ACDSee
+a c i s one: Acis
+a c s c: ACSC
 a c u six: ACU
 a d b space: "adb "
 a d c six: ADC
@@ -73,6 +83,7 @@ a n z six: ANZ
 anne si one: Ansi
 an see one: Ansi
 a n u six: ANU
+a oh me six: AOMEI
 a p i six: "API"
 a p i gateway: "API Gateway"
 a p eyes: "APIs"
@@ -103,6 +114,7 @@ at star space: "@* "
 at toe six: "ATO"
 ozzie toe six: "ATO"
 a p i one: Api
+a u s one: Aus
 a v d six: AVD
 a w s one: "Aws"
 a w s six: "AWS"
@@ -157,6 +169,8 @@ add wino: Arduino
 admin six: ADMIN
 a slash d: A/D
 all in one five: all-in-one
+analyze: analyse
+analyzed: analysed
 and o r s: "& Ors"
 apex two: Apex 2
 Arduino Nano: Arduino Nano
@@ -179,6 +193,8 @@ b two dash: B2-
 b three dash: B3-
 b for dash: B4-
 b five dash: B5-
+b five dash a: B5-A
+b five dash b: B5-B
 b six dash: B6-
 b seven dash: B7-
 b eight dash: B8-
@@ -195,16 +211,23 @@ b i o s: BIOS
 b l d six: BLD
 b l e six: BLE
 b m d six: BMD
+b m s six: BMS
 b o t o: boto
 b o t o three: boto3
+b s a six: BSA
 b u y one: Buy
 Bank Australia
+bank west: Bankwest
+bells access: Bells Access
 Bendigo Bank
 bis phosphor ate: bisphosphonate
+bit defender: Bitdefender
 bit locker: BitLocker
+bit warden: Bitwarden
 blue no: Bluno
 blue no b l e: Bluno BLE
 bob Zelden: Bob Zelden
+bond line: Bondline
 brat six: BRAT
 beetle one: Beetle
 blazer: Blazor
@@ -259,6 +282,7 @@ havre haditha one: ChevraKadisha
 hero haditha: Chevra Kadisha
 havre watch one: ChevraWatch
 havre watch app one: ChevraWatchApp
+c b a six: "CBA"
 c c six dash: CC-
 c c twenty five forty: CC2540
 c d d six: CDD
@@ -274,8 +298,10 @@ c l i one: Cli
 c l i one back: "Cli\"
 c l i: cli
 c m one: Cm
+c moss six: CMOS
 c o d a six: CODA
 c o l six: COL
+c o n f dash: conf-
 c o r s : "CORS"
 c p i : "CPI"
 c p i six: "CPI"
@@ -296,17 +322,23 @@ c s s five: css
 c s s: css
 c t scan: CT Scan
 c u d a: CUDA
+c u six: CU
 c x o six: CXO
 c make one: CMake
 catalogue: catalog
 high flix: ChaiFlicks
 ceiling i: ceiling
+cereal: serial
 Chevron
 cito scape: Cytoscape
 claude code: Claude Code
 clothes five: close
 clothes quote: "{quote}"
+colin l: Collin
+colin two elves: Collin
+Comm bank: CommBank
 Comm speck five: comspec
+core boot: coreboot
 Coulomb
 shale zion: chalazion
 cale zion: chalazion
@@ -314,6 +346,7 @@ CHOLANGITIS
 calls e: Coles
 comma and: ", and"
 comp dash zero: COMP-0
+chrome os flex: ChromeOS Flex
 ko reference: coreference
 d a c six: DAC
 d b cluster: DB cluster
@@ -326,7 +359,10 @@ d d r five six: DDR5
 d e s c one: Desc
 d e x six: DEX
 d f robot: DFRobot
+d g b six: DGB
 d i c t one: Dict
+d l twenty four: DL24
+d m z six: DMZ
 d n six: DN
 d o c: doc
 d o d five: dod
@@ -342,6 +378,7 @@ d r one: Dr
 d slash a: D/A
 dad dash zero: DAD-0
 darling hurst: Darlinghurst
+dash day six: " - DAY "
 dash X X six: "-XX"
 dash v eight a: "-v8a"
 dash v eight air: "-v8a"
@@ -362,16 +399,21 @@ doctor one: Dr
 doll dashi: DALL-E
 dot get one: .Get
 dot net for android: ".NET for Android"
+dot c six: ".C"
+dot p six: ".P"
+dot s six: ".S"
 dialogue: dialog
 data point one: DataPoint
 data point seven: dataPoint
 datapoint one: DataPoint
 datapoint seven: dataPoint
 day j s: dayjs
+deer: dear
 dear Depp six: DEARDEP
 dear Depp dash zero: DEARDEP-0
 diff bot: Diffbot
 discreet: discrete
+discuss e d: discussed
 display port: DisplayPort
 doc you saw us: Docusaurus
 dock i d three: DocId
@@ -407,10 +449,17 @@ e num one: Enum
 e n v six: ENV
 e n v dash zero: ENV-0
 e o l: eol
+e s d six: ESD
 e t c: etc
+edge cliff: Edgecliff
+edge cliff wool Lara: Edgecliff-Woollahra
+edge cliff dash wool Lara: Edgecliff-Woollahra
+edge cliff road: Edgecliff Rd
+entre one: Entra
 emanuel: Emanuel
 Immanuel: Emanuel
 endeavor: endeavour
+on sweet: ensuite
 entity one: Entity1
 entity two: Entity2
 ever ready: Eveready
@@ -418,13 +467,17 @@ every circuit one: EveryCircuit
 equifax: Equifax
 ether net: Ethernet
 ex kelly draw: Excalidraw
+exploit jim: ExploitGym
+exploit jim one: ExploitGym
 expo o: expo
 e d u six: EDU
+e e v blog: EEVblog
 e m m c six: eMMC
 e p o a: ePoA
 e s p thirty two: "ESP32"
 e dash bike: e-bike
 e dash scooter: e-scooter
+e dash w: E-W
 e t c five: etc
 e t f six: ETF
 e t efs: ETFs
@@ -438,6 +491,8 @@ fin six: FIN
 f m c six: FMC
 f m c a six: FMCA
 f r a c g p: FRACGP
+f s r six: FSR
+f w four b: FW4B
 f y eighteen: "FY18"
 f y nineteen: "FY19"
 f y twenty: "FY20"
@@ -465,6 +520,7 @@ fun dash zero: FUN-0
 fun six: FUN
 g b e three: GbE
 g h z one: GHz
+g h zed one: GHz
 g o v t six: GOVT
 gab web dash zero: GABWEB-0
 gab web six: GABWEB
@@ -485,11 +541,14 @@ Gentoo: Gen2
 jill Annie: Gilana
 goth ba: Gahba
 g b one: Gb
+g b e nine: GbE
 g b p s one: Gbps
 g cradle: gradle
 g cradle w: gradlew
 cradle g: gradle
 g c twenty five: GC25
+g k strata: "GK Strata"
+name g k strata: "GK Strata"
 g n d six: GND
 g o v six: GOV
 g p s six: GPS
@@ -508,19 +567,23 @@ green power one: GreenPower
 group able: groupable
 h f d t: hfdt
 h i b m six: HIBM
+h i n six: HIN
 h p one: Hp
 h p five: hp
 h p six: HP
-h right arrow r: HWLE → R
+h arrow r dash: "HWLE → R - "
+h to r dash: "HWLE → R - "
 h t m l: "html"
 h t m l one: "Html"
 h t m l document: "HtmlDocument"
 h t m l five: "html"
 h t m l six: "HTML"
 h w l six: "HWL"
-h w l e : "HWLE"
+h w l e: "HWLE"
+h w l e five: "hwle"
 had dash phone number: had-phone-number
 hash f m six: "#FM"
+hash fin twenty seven: "#fin027"
 health dash zero: "HEALTH-0"
 here here: Hear Here
 Hebrew good luck: mazal tov
@@ -528,10 +591,14 @@ Hebrew good luck three: Mazal Tov
 Hebrew friends: chevra
 Hebrew friends one: Chevra
 Hebrew havre: chevra
+hick vision: Hikvision
 hyper v: "Hyper-V"
 ho why: Gahba
+halter one: Holter
+halter monitor: Holter monitor
 home dash zero: HOME-0
 how why: Gahba
+hugging face: Hugging Face
 i b k r six: IBKR
 i broadcast: iBroadcast
 i d: id
@@ -539,12 +606,15 @@ i d one: Id
 i d e: IDE
 i d e six: IDE
 i d x one: Idx
-i filter one: IFilter
+i filter one: IFilter9
+i map six: IMAP
 i m u six: IMU
 i m use: IMUs
+i n a two three eight: INA238
 i n g six: "ING"
 i n t one: Int
 i n t l one: Intl
+i o t nine: IoT
 i r s six: IRS
 i read only: "IReadOnly"
 i read only list left: "IReadOnlyList<"
@@ -553,9 +623,12 @@ I star twenty nine fifty five: "I*2955"
 I star twenty nine eighty: "I*2980"
 i two c: I2C
 icon apartments: Ikon Apartments
+initials r z: RZ
+initials r zed: RZ
 import: input
 import o: import
 in foe: info
+in telly hub: Intellihub
 iris x e: Iris Xe
 insole o: insole
 insoles o: insoles
@@ -577,6 +650,7 @@ jason one: "Json"
 jason six: "JSON"
 Jason dot stringy fy: "JSON.stringify("
 ja car: Jaycar
+jewish dash zero: "JEWISH-0"
 jupiter lab: JupyterLab
 jupiter y: Jupyter
 jupiter notebook: Jupyter Notebook
@@ -590,7 +664,9 @@ key boots: Kibbutz
 key pass: Keepass
 k g c six: KGC
 k g one: Kg
+l a n six: LAN
 l c o e: LCOE
+l d l cholesterol: LDL Cholesterol
 l e d five: "led"
 l e d six: "LED"
 l e das: "LEDs"
@@ -603,8 +679,10 @@ l l ems: LLMs
 l l m six: LLM
 i w i w d: iwiwd
 l y c six: LYC
+lan plus: Lanplus
 lang chain: LangChain
 last right time one: LastWriteTime
+lean steer: Leansteer
 left archive right: "{{archive}}"
 left d n right: "(DN){left}"
 left t right space: "(T) {left}{left}"
@@ -648,6 +726,7 @@ m u f g six: MUFG
 m u i: mui
 mamou: Mummoo
 min max one: MinMax
+mister prasad: Mr Prasad
 mister William Lombardi: Mr William Lombardi
 mum mo: Mummoo
 max one: Max
@@ -663,6 +742,8 @@ my id: "myID"
 my s q l three: "MySql"
 my s q l six: "MYSQL"
 my s q l: "MySql"
+n a t six: NAT
+n a z a one: Naza
 n c c six: NCC
 n d i s: NDIS
 n d k: ndk
@@ -680,18 +761,24 @@ n p m run build: "npm run build"
 n p m run dev: "npm run dev"
 n p m run sam colon: "npm run sam:"
 n p m run serve: "npm run serve"
-n t u six: NTU
 n p x: npx
+n t u six: NTU
+n v r six: NVR
 n video: NVIDIA
 n video six: NVIDIA
 name a not: Anat
+name a c d see: ACDSee
 name Ada: Ada
 name Addie: Addy
 name Annie: Annie
 name Annie Goldberg: Annie Goldberg
+name Arthur Huxtable: Arthur Huxtable
+name Arthur hucks table: Arthur Huxtable
 name ass sure: "Azure"
 name and Tunis: Antunes
 name a t o: ATO
+name a u s grid: Ausgrid
+name Belmont: Bellmont
 name becker: Beckor
 name bigger or waters: Biggera Waters
 name barrel i: Birrell
@@ -701,6 +788,7 @@ name Bowral: Bowral
 name Camille das Arlo: Camille Dezarnaulds
 name chassis: chassis
 name Claude: Claude
+name colleague of ram: Colleague of Ram
 name Coulomb: Coulomb
 name Coulombs: Coulombs
 name honey: Chani
@@ -708,14 +796,19 @@ name crema: Karima
 name das Arlo: Dezarnaulds
 name day anna: Dhyaana
 name dee anna: Dhyaana
+name dee g tech: Digitech
+name aaron mulan: Erin Molan
 name Ezra: Ezra
 name fern: Fern
+name flash Le: Flashli
 name glenn: Glenn
 name near: Neer
 name nova peris: Nova Peris
 name car in: Karin
 name Ferrer: Ferrer
 name fine man: Feynman
+name god free: Godfrey
+name Godfrey: Godfrey
 name indoor pill e: Indooroopilly
 name jazz man: Jasmann
 name Jimenez: Jimenez
@@ -743,6 +836,7 @@ name pink evil: Penkivil
 name pinball: Pymble
 name pro lea: Prolia
 name Jackie q: Jacqui
+name jess Bertie: Jesverty
 name Pauli: Pauli
 name ram prasad: Ram Prasad
 name rob: Rob
@@ -752,19 +846,24 @@ name sammy: Sammie
 name save ta: Savta
 name shroud dinger: Schrödinger
 name strawman: Straumann
+name tenure: Tanya
 name Tammany: Tmne
 name Tamara: Tamara
+name tagus: Targus
 name tea pee: TePe
 name terry sheer: Terri Scheer
 name tomorrow: Tamara
 name thor: Thor
-name u c services: Uc Services
-name you see services: Uc Services
+name u c services: UC Services
+name you see services: UC Services
 name ya hell: Yael
 name Yael Abraham: Yael Abraham
 name Yael Ferrer: Yael Ferrer
 name Yael Jimenez: Yael Jimenez
 name samel: Zamel
+name shirley: Shirley
+name shirley y a u: Shirley Yau
+name shirley yow: Shirley Yau
 name Zelden: Zelden
 name z liker: Zlekha
 name Zoltan: Zoltan
@@ -772,6 +871,7 @@ navy bar one: NavBar
 navy one: Nav
 neo four j: "Neo4j"
 necks em: Nexium
+net bank: NetBank
 new k: knew
 new n: new
 nice cat: NCAT
@@ -787,6 +887,7 @@ no u i slider five: nouislider
 no w: know
 no votel: Novotel
 no tie fee: Notifee
+none one: None
 n p m install legacy: "npm install --legacy-peer-deps"
 n t s c six: NTSC
 n u m one: Num
@@ -804,6 +905,7 @@ o h m one: Ohm
 o h m s one: "Ohm's"
 o l e d six: OLED
 o led six: OLED
+o p n sense: OPNsense
 h m s one: "Ohm's"
 physics Ohm apostrophe s: "Ohm's"
 o p five: "op"
@@ -814,7 +916,13 @@ Oh hell hayim: Ohel Chaim
 on site one: Onsite
 opt e sooth: Opti-Soothe
 option two: Option2
+order menu: Ord Minnett
+organization: organisation
+organize: organise
+organized: organised
 owl six: OWL
+p one one zero: P110
+p one one zero m: P110M
 p c a six: PCA
 p c i e four: "PCIe 4"
 p c i e five: "PCIe 5"
@@ -827,10 +935,13 @@ p g one: Pg
 p h e s six: PHES
 p m six: PM
 p n one: Pn
+p o p six: POP
 p r t six: PRT
+p mid dot: " · "
 p right arrow: " → "
 package dot Jason: package.json
 padded right arrow: " → "
+paramatta: Parramatta
 part option: PartOption
 part options: PartOptions
 pass r: parse
@@ -858,6 +969,7 @@ pass mark one: PassMark
 pass key: passkey
 pass keys: passkeys
 pay pal: PayPal
+pay to: PayTo
 pixie: Pexsa
 pixie five: pexsa
 p e x sar: Pexsa
@@ -874,6 +986,7 @@ per motility: permittivity
 permit vite: permittivity
 phantom j s: PhantomJs
 Phillips Hugh: Philips Hue
+physics am meter: ammeter
 physics om: Ohm
 physics jewel: Joule
 physics g w h: GWh
@@ -881,10 +994,12 @@ physics k w h: kWh
 physics m w h: MWh
 physics t w h: TWh
 physics vault: volt
+physics vaults: volts
 physics way: weigh
 physics what: watt
 physics what s: watts
 pick stars: Piksters
+pipe four hundred: "|400"
 pipe five hundred: "|500"
 pipe six hundred: "|600"
 pipe eight hundred: "|800"
@@ -898,6 +1013,7 @@ point p: point
 post gres: "Postgres"
 post gres s q l: "PostgresSQL"
 powershell: PowerShell
+p c six: PC
 p c b six: PCB
 p c i six: PCI
 p c i six e: PCIe
@@ -905,7 +1021,7 @@ p d c six: PDC
 p i n six: "PIN"
 p m d six: PMD
 p o a six: "POA"
-p period: period
+p period: period.
 p r e d: pred
 p r o p s: props
 p r p six: PRP
@@ -914,6 +1030,8 @@ p t y l t d: Pty Ltd
 p w d six: PWD
 p w m six: PWM
 p fishing: "phishing"
+par o consulting: Paro Consulting
+par o one: Paro
 pe tonga: Patonga
 phase s: phase
 Piksters
@@ -924,8 +1042,13 @@ prod ex err: Prodexa
 prod xer: Prodexa
 prod ex err six: PRODEXA
 pro lea: Prolia
+pro sumer: prosumer
+protect ley: Protectli
+protect ley vault: Protectli Vault
+procs max: Proxmox
 q under: "q_"
 q a n six: QAN
+q m dash fifteen twenty: QM-1520
 r a d six: RAD
 r e c t one: Rect
 r e s one: Res
@@ -953,6 +1076,7 @@ r d space: "rd "
 r h s: RHS
 r h s six: RHS
 r g n six: RGN
+r j forty five: RJ45
 r j dash forty five: RJ-45
 agin six: RGN
 asian six: RGN
@@ -961,7 +1085,10 @@ r n f b six: RNFB
 r n n six: "RNN"
 r p i d: "RP ID"
 r p six: RP
-r right arrow h: R → HWLE
+r q s t: rqst
+r arrow h dash: "R → HWLE - "
+r to h dash: "R → HWLE - "
+r to you see dash: "R → UC - "
 r t a five: rta
 r t a six: RTA
 r t v six: RTVList
@@ -972,6 +1099,9 @@ arty fifty: RTX 50
 arty x fifty ninety: RTX 5090
 arty x pro: RTX Pro
 r y z e n: Ryzen
+r dash h dash: rz-hwle-
+h dash r dash: hwle-rz-
+ram six: RAM
 rate a: rate
 read only one: ReadOnly
 real tech: Realtek
@@ -996,6 +1126,7 @@ rising z three: Ryzen 3
 rising z five: Ryzen 5
 rising z seven: Ryzen 7
 r z six: "RZ"
+r said six: "RZ"
 s c l six: SCL
 s d a six: SDA
 s d k six: SDK
@@ -1005,6 +1136,7 @@ s e g dash zero: SEG-0
 s e m: sem
 s f f five: sff
 s f f six: SFF
+s g e six: SGE
 s i scale nine: SiScale
 s m s f: SMSF
 s m s f six: SMSF
@@ -1021,11 +1153,18 @@ spec item one: SpecItem
 specie: spec
 Speccy: spec
 s i one: Si
+s o n o s: "Sonos"
 s p thirteen: SP13
+s p eighty five thirty five: "SP8535"
+s p eighty five thirty five six: "SP8535"
+s p eighty five thirty five five: "sp8535"
 s q l alchemy: SQLAlchemy
 s q l six: "SQL"
 s q light: "SQLite"
 s r g b six: sRGB
+s s id: SSID
+s s i dees: SSIDs
+s s i d s: SSIDs
 s t g one: STG
 s t one: St
 s t r one: Str
@@ -1076,6 +1215,7 @@ smart draw: SmartDraw
 snowy hydro two point oh: Snowy Hydro 2.0
 soba than: Sorbothane
 sort r: sort
+so knows one: "Sonos"
 space time: spacetime
 space dub dub version: " --version"
 sparkle q: SPARQL
@@ -1092,12 +1232,15 @@ Stephen v: Steven
 sun core: Suncorp
 super six: SUPER
 support assist: SupportAssist
+s m s f: SMSF
+s m s f six: SMSF
 s n five fifty: SN550
 s p e c s: specs
 s v g: svg
 s v g six: SVG
 s w r l six: SWRL
 scale are: scalar
+shred O S six: ShredOS
 size one: Size
 stem dash zero: "STEM-0"
 stem six: STEM
@@ -1106,11 +1249,15 @@ strata plus: Strata Plus
 sty i: stye
 sty eyes: styes
 super guide: SuperGuide
+superfund: super fund
+superfund three: Super Fund
 sus agen: Sustagen
 sustain y: Systane
 System net: Systemnet
 t twenty four: "T24"
 t d six dash: "TD-"
+t dash score: "T-Score"
+t score: "T-Score"
 t e c h six: TECH
 t f n s w: TfNSW
 t f n six: TFN
@@ -1122,6 +1269,9 @@ t o one: To
 t o five: to
 t o u six: TOU
 t p m six: TPM
+t p link: TP-Link
+t p dash link: TP-Link
+t p link five: tplink
 t s b six: TSB
 t s six: TS
 t vase: TVs
@@ -1156,6 +1306,7 @@ trans collusion: transclusion
 transclusion
 transclude
 triple colon: "⫶"
+trust deed: trust deed
 twenty twenty one: "2021"
 twenty twenty two: "2022"
 twenty twenty three: "2023"
@@ -1163,11 +1314,15 @@ twenty twenty four: "2024"
 twenty twenty five: "2025"
 twenty twenty six: "2026"
 twenty twenty seven: "2027"
+twist ease: Twisties
+twist tease: Twisties
 u dim six: UDIMM
 u e f i six: UEFI
 u e f i: UEFI
 u f s six: UFS
+u i c six: UIC
 u l fourteen forty nine: UL 1449
+u p n p nine: UPnP
 u r l: url
 u r l one: Url
 u r l six: URL
@@ -1183,6 +1338,7 @@ u s d t: USDT
 u t i l one: Util
 u u i d: uuid
 unicode right arrow: "→"
+unicode mid dot: "·"
 unit of measure nine: UnitOfMeasure
 up sort: upsert
 up and atom: Up and Atom
@@ -1191,8 +1347,12 @@ v b a six: VBA
 v in six: VIN
 v i s: vis
 v i t e: vite
+v lan six: VLAN
+v l a n six: VLAN
+v lands: VLANs
 v ram: vram
 v ram six: VRAM
+vault one: Vault
 vera bored: veroboard
 vera crypt: VeraCrypt
 vista print: VistaPrint
@@ -1212,8 +1372,11 @@ w dash eight ben: W-8BEN
 w e s six: WES
 w dot lombardy: W. Lombardi
 w lombardy: W Lombardi
+z dash score: "Z-Score"
+z score: "Z-Score"
 w x h one: WxH
 wait a: wait
+wave share: Waveshare
 waverly: Waverley
 week e: week
 wait g: weight
@@ -1224,6 +1387,11 @@ west mead: Westmead
 west pack: Westpac
 whats at: WhatsApp
 where h: where
+wi fi six: WiFi 6
+wi fi six e: WiFi 6e
+wi dash fi six: Wi-Fi 6
+wi fi seven: WiFi 7
+wi dash fi seven: Wi-Fi 7
 witch: which
 will one: Will
 William Lombardi: William Lombardi
@@ -1253,6 +1421,7 @@ y b g six: YBG
 yager six: YAGO
 yon cupar: Yom Kippur
 you e: Youi
+you see to r dash: "UC → R - "
 Zola runic: zoledronic
 Zorro Markets
 sorrow markets: Zorro Markets

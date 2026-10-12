@@ -5,7 +5,7 @@ from datetime import datetime
 
 class ProjectCore:
     def __init__(self):
-        self.obsidian_folder = r"D:\Obsidian\Obsidian"
+        self.obsidian_folder = r"C:\Obsidian\Obsidian"
         self.base_folder = os.path.join(self.obsidian_folder, "Projects")
         self.project_completed_folder = os.path.join(self.base_folder, "{Complete}")
         self.template_folder = os.path.join(self.obsidian_folder, "My Stuff\Obsidian\Templates")
