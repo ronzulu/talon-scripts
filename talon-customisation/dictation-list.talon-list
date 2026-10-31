@@ -343,7 +343,6 @@ a p d u under five: "apdu_"
 a p dash south east: "ap-southeast"
 a p p bar one: "AppBar"
 a p p dash: "app-"
-a p p l: "appl"
 a p p s: "apps"
 a p p: "app"
 a p south east two: "ap-southeast-2"
@@ -709,7 +708,8 @@ back twenty twenty four enter: "\\2024{enter}"
 back alpha: "\\alpha"
 back approximate: "\\approx"
 back back v m ware host: "\\\\vmware-host"
-back c dot: "\\cdot"
+back c dot: "\\cdot "
+back see dot: "\\cdot "
 back comma: "\\,"
 back d e l: "\\del "
 back delta three: "\\Delta"
@@ -753,6 +753,7 @@ back shared folders: "\\Shared Folders"
 back t a u: "\\tau"
 back tango: "\\t"
 back therefore: "\\therefore"
+back theta: "\\theta"
 back theta one: "\\theta_1"
 back tick: "`"
 back times: "\\times"
@@ -1267,9 +1268,6 @@ d d fix: "DdFix"
 d d k: "DDK"
 d d o s : "DDoS"
 d d p six: "DDP"
-d d r dash: "DDR-"
-d d r under: "DDR_"
-d d r: "ddr"
 d e c twenty two: "DEC22"
 d e c six: "DEC"
 d e c: "dec"
@@ -1548,7 +1546,6 @@ doctor o o i: "Dr Ooi"
 doctor shill off: "Dr Chilov"
 doctor spar: "Dr Spahr"
 doctor we: "Dr Ooi"
-doctor wettstein: "Dr Wettstein"
 documents amatek: "D:\\Documents\\Amatek"
 documents callpoint: "C:\\Users\\ronny\\Documents\\CallPoint"
 documents codet: "D:\\Documents\\Amatek\\Codet"
@@ -2546,7 +2543,6 @@ i d s six: "IDS"
 i d s under: "IDS_{Z6}"
 i d under n b n : "ID_NBN"
 i d x: "idx"
-i dash med: "I-Med"
 i data: "iData"
 i disposable: "IDisposable"
 i dot: "i."
@@ -5991,6 +5987,7 @@ a e c six: AEC
 a e m o: AEMO
 a e m o six: AEMO
 a g m six: AGM
+a h to r dash: "AH → R - "
 a i o five: aio
 a j n dash: AJN-
 a j n six: AJN
@@ -6008,6 +6005,7 @@ a p i six: "API"
 a p i gateway: "API Gateway"
 a p eyes: "APIs"
 a p k six: "APK"
+a p p l: "appl"
 a r c six: ARC
 a r c six dash: ARC-
 a r g one: Arg
@@ -6019,6 +6017,8 @@ a s thirty six ninety five: AS 3695
 a sink one: Async
 a s u s one: Asus
 a s x six: ASX
+a t h six: ATH
+ate h six: ATH
 a t six: AT
 a t o five: "ato"
 a t o six: "ATO"
@@ -6100,6 +6100,9 @@ Arvin Ash
 ass key one: Ascii
 ass sure: "Azure"
 asset net: Assetnet
+a sus one: Asus
+a sus twenty six: ASUS26
+a sus p seven hundred: Asus P700
 a see: Aussie
 oz see: Aussie
 Aussie
@@ -6123,6 +6126,9 @@ b ten dash: B10-
 b eleven dash: B11-
 b eleven dash a: B11-A
 b eleven dash b: B11-B
+b ninety nine dash: B99-
+b ninety nine dash a: B99-A
+b ninety nine dash b: B99-B
 b d b n: BDBN
 b d b n six: BDBN
 b e n d six: BEND
@@ -6138,6 +6144,8 @@ b s a six: BSA
 b u y one: Buy
 Bank Australia
 bank west: Bankwest
+banks town: Bankstown
+bella vista: Bella Vista
 bells access: Bells Access
 Bendigo Bank
 bis phosphor ate: bisphosphonate
@@ -6147,6 +6155,7 @@ bit warden: Bitwarden
 blue no: Bluno
 blue no b l e: Bluno BLE
 bob Zelden: Bob Zelden
+Boseman Science
 bond line: Bondline
 brat six: BRAT
 beetle one: Beetle
@@ -6248,7 +6257,9 @@ c make one: CMake
 catalogue: catalog
 high flix: ChaiFlicks
 ceiling i: ceiling
+center e: centre
 cereal: serial
+cherry brook: Cherrybrook
 Chevron
 cito scape: Cytoscape
 claude code: Claude Code
@@ -6273,6 +6284,10 @@ d b cluster: DB cluster
 d b cluster three: DB Cluster
 d b s one: Dbs
 d c p dash: DCP-
+d d r dash: "DDR-"
+d d r under: "DDR_"
+d d r: "ddr"
+d d r two six: DDR2
 d d r three six: DDR3
 d d r four six: DDR4
 d d r five six: DDR5
@@ -6342,6 +6357,7 @@ dock u signed: Docusigned
 dock under i d six: DOC_ID
 dock under six: DOC_
 doctor tractor: Dr Tracton
+doctor wettstein: "Dr Wettstein"
 dot a u: .au
 dot net Core: .NetCore
 dot razor: .razor
@@ -6357,10 +6373,13 @@ doctor DeLuca: Dr De Luca
 doctor Jenkinson: Dr Jankelson
 doctor Yim: Dr Yim
 dragon dictate: DragonDictate
+drop box: dropbox
 duo denim: duodenum
+duo lingo: Duolingo
 dynamo d b: "DynamoDB"
 e a s six: EAS
 e dash waste: e-waste
+e did six: EDID
 e l one: El
 e n dash: EN-
 e m g six: EMG
@@ -6392,6 +6411,7 @@ exploit jim one: ExploitGym
 expo o: expo
 e d u six: EDU
 e e v blog: EEVblog
+e g m six: EGM
 e m m c six: eMMC
 e p o a: ePoA
 e s p thirty two: "ESP32"
@@ -6410,6 +6430,8 @@ f c m six: FCM
 fin six: FIN
 f m c six: FMC
 f m c a six: FMCA
+f o b t: FOBT
+f o b t six: FOBT
 f r a c g p: FRACGP
 f s r six: FSR
 f w four b: FW4B
@@ -6483,6 +6505,7 @@ google play services one: GooglePlayServices
 graph q l: "GraphQL"
 graph d b: "GraphDB"
 graph fusion: Graphusion
+grain: green
 green power one: GreenPower
 group able: groupable
 h f d t: hfdt
@@ -6516,12 +6539,14 @@ hyper v: "Hyper-V"
 ho why: Gahba
 halter one: Holter
 halter monitor: Holter monitor
+home bush: Homebush
 home dash zero: HOME-0
 how why: Gahba
 hugging face: Hugging Face
 i b k r six: IBKR
 i broadcast: iBroadcast
 i d: id
+i dash med: "I-Med"
 i d one: Id
 i d e: IDE
 i d e six: IDE
@@ -6549,6 +6574,7 @@ import: input
 import o: import
 in foe: info
 in telly hub: Intellihub
+intel core: Intel Core
 iris x e: Iris Xe
 insole o: insole
 insoles o: insoles
@@ -6580,12 +6606,14 @@ can more: Kenmore
 cat umbo: Katoomba
 Kasper ski: Kaspersky
 Kaspersky k r d: Kaspersky KRD
+kellyville: Kellyville
 key boots: Kibbutz
 key pass: Keepass
 k g c six: KGC
 k g one: Kg
 l a n six: LAN
 l c o e: LCOE
+l c d six: LCD
 l d l cholesterol: LDL Cholesterol
 l e d five: "led"
 l e d six: "LED"
@@ -6621,6 +6649,7 @@ mark c: Marc
 mark murr: Marc Mer
 mars three six: MARS3
 mede bank: Medibank
+mega six: MEGA
 memo eyes: memoize
 Menorca monuments: Menucha Monuments
 Minorca monuments: Menucha Monuments
@@ -6637,14 +6666,22 @@ m b p s one: Mbps
 m dot two: M.2
 m f a six: "MFA"
 m f a: "mfa"
+m h n d u: MHNDU
 m i n one: Min
+m r i six: MRI
+m r c p six: MRCP
 m r one: Mr
+m s i six: MSI
 m six six: M6
 m t s one: Mts
 m u f g: MUFG
 m u f g six: MUFG
 m u i: mui
+m wave: Mwave
+Macquarie Park
 mamou: Mummoo
+mid dot: "·"
+middle dot: "·"
 min max one: MinMax
 mister prasad: Mr Prasad
 mister William Lombardi: Mr William Lombardi
@@ -6682,6 +6719,7 @@ n p m run dev: "npm run dev"
 n p m run sam colon: "npm run sam:"
 n p m run serve: "npm run serve"
 n p x: npx
+n p u six: NPU
 n t u six: NTU
 n v r six: NVR
 n video: NVIDIA
@@ -6692,9 +6730,11 @@ name Ada: Ada
 name Addie: Addy
 name Annie: Annie
 name Annie Goldberg: Annie Goldberg
+name Arthur: Arthur
 name Arthur Huxtable: Arthur Huxtable
 name Arthur hucks table: Arthur Huxtable
 name ass sure: "Azure"
+name analyse: Analise
 name and Tunis: Antunes
 name a t o: ATO
 name a u s grid: Ausgrid
@@ -6723,6 +6763,7 @@ name fern: Fern
 name flash Le: Flashli
 name glenn: Glenn
 name near: Neer
+name nigh Zack: Nizac
 name nova peris: Nova Peris
 name car in: Karin
 name Ferrer: Ferrer
@@ -6739,10 +6780,12 @@ name lawn: Lorne
 name Leicester: Lester
 name Longobardi: Longobardi
 name marina: Marina
+name matter: Meta
 name miss Abraham: Ms Abraham
 name marcato: Mercator
 name Meyer: Myer
 name Mayer Zulaikha: Myer Zulaikha
+name Mr Prasad: Mr Prasad
 name moche: Moshe
 name more wire: Moriah
 name Natalya: Netanya
@@ -6774,6 +6817,8 @@ name tea pee: TePe
 name terry sheer: Terri Scheer
 name tomorrow: Tamara
 name thor: Thor
+name oo bun too: Ubuntu
+name u bun too: Ubuntu
 name u c services: UC Services
 name you see services: UC Services
 name ya hell: Yael
@@ -6790,6 +6835,7 @@ name Zoltan: Zoltan
 navy bar one: NavBar
 navy one: Nav
 neo four j: "Neo4j"
+neck see em: Nexium
 necks em: Nexium
 net bank: NetBank
 new k: knew
@@ -6797,6 +6843,7 @@ new n: new
 nice cat: NCAT
 nice fy: niceify
 nice fide: niceified
+nigh Zack: Nizac
 night k: knight
 nine bot: Ninebot
 nine bot s two: Ninebot S2
@@ -6846,17 +6893,21 @@ p one one zero m: P110M
 p c a six: PCA
 p c i e four: "PCIe 4"
 p c i e five: "PCIe 5"
+p d f dash exchange: PDF-XChange
 p d f dot j s: PDF.js
 p d f one: Pdf
 p d f five: pdf
 p d f six: PDF
+p d fill: PDFill
 p f k six: PFK
 p g one: Pg
 p h e s six: PHES
 p m six: PM
 p n one: Pn
 p o p six: POP
+p r p imaging: PRP Imaging
 p r t six: PRT
+p seven hundred: P700
 p mid dot: " · "
 p right arrow: " → "
 package dot Jason: package.json
@@ -6968,6 +7019,8 @@ protect ley vault: Protectli Vault
 procs max: Proxmox
 q under: "q_"
 q a n six: QAN
+q g i s: QGIS
+q g i s six: QGIS
 q m dash fifteen twenty: QM-1520
 r a d six: RAD
 r e c t one: Rect
@@ -6979,6 +7032,7 @@ razor five: razor
 raindrop dot io: Raindrop.io
 react one: React
 red brace: }
+wren wood: Renwood
 rez s t r nine: ResStr
 Ronnie: Ronny
 Ronny
@@ -7007,6 +7061,7 @@ r p i d: "RP ID"
 r p six: RP
 r q s t: rqst
 r arrow h dash: "R → HWLE - "
+r to a h dash: "R → AH - "
 r to h dash: "R → HWLE - "
 r to you see dash: "R → UC - "
 r t a five: rta
@@ -7026,6 +7081,9 @@ rate a: rate
 read only one: ReadOnly
 real tech: Realtek
 reg ex one: Regex
+rezone one: Rezone
+rezone six: REZONE
+rezone dash zero: REZONE-0
 right a: rate
 rison 3: Ryzen 3
 rison 5: Ryzen 5
@@ -7034,6 +7092,7 @@ rise on five: Ryzen 5
 rise on seven: Ryzen 7
 rise on nine: Ryzen 9
 right r: right
+robot copy: robocopy
 rose: rows
 rose w: rows
 rose i e: "Rosie"
@@ -7046,6 +7105,8 @@ rising z three: Ryzen 3
 rising z five: Ryzen 5
 rising z seven: Ryzen 7
 r z six: "RZ"
+r zed six: "RZ"
+red zed six: "RZ"
 r said six: "RZ"
 s c l six: SCL
 s d a six: SDA
@@ -7064,6 +7125,7 @@ s m h: SMH
 s k u one: Sku
 s p e c: "spec"
 s p e c s: "specs"
+scope tech: Scorptec
 spec c: spec
 spec c one: Spec
 speck c: spec
@@ -7095,6 +7157,7 @@ s twenty one: S21
 s v h six: "SVH"
 saint vincents: "St Vincent's"
 saint george: "St George"
+saint Leonards: St Leonards
 salmon o: Salomon
 sam i e: SammieoList
 sand disk: Sandisk
@@ -7164,6 +7227,7 @@ shred O S six: ShredOS
 size one: Size
 stem dash zero: "STEM-0"
 stem six: STEM
+strath field: Strathfield
 strata dynamics: Strata Dynamics
 strata plus: Strata Plus
 sty i: stye
@@ -7181,6 +7245,8 @@ t score: "T-Score"
 t e c h six: TECH
 t f n s w: TfNSW
 t f n six: TFN
+t f t six: TFT
+t h w t six: THWT
 t i one: Ti
 t i six: TI
 t m d s six: TMDS
@@ -7195,6 +7261,7 @@ t p link five: tplink
 t s b six: TSB
 t s six: TS
 t vase: TVs
+taco dine: Tacidine
 talent: Talon
 talk q: torque
 talon dash zero: TALON-0
@@ -7221,6 +7288,7 @@ tower t two: Tower T2
 twist ease: Twisties
 tire y: tyre
 tires y: tyres
+tune in one: TuneIn
 trading view: Trading View
 trans collusion: transclusion 
 transclusion
@@ -7257,9 +7325,13 @@ u s b dash c: "USB-C"
 u s d t: USDT
 u t i l one: Util
 u u i d: uuid
+ultra five: Ultra 5
+ultra seven: Ultra 7
+ultra nine: Ultra 9
 unicode right arrow: "→"
 unicode mid dot: "·"
 unit of measure nine: UnitOfMeasure
+unit terabyte: TB
 up sort: upsert
 up and atom: Up and Atom
 used dash name: used-name
